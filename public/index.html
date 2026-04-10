@@ -3,33 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRISPR-Cas12a Paper-Based Diagnostic | Hackathon</title>
+    <title>BacDetect - Teste Rapido para Hospitais</title>
     <style>
         :root {
             --primary: #0f766e;
             --primary-light: #14b8a6;
-            --primary-dark: #0d5c56;
             --accent: #f59e0b;
-            --danger: #ef4444;
             --bg: #0f172a;
             --bg-card: #1e293b;
-            --bg-card-alt: #1a2332;
             --text: #e2e8f0;
             --text-muted: #94a3b8;
             --border: #334155;
             --success: #22c55e;
+            --danger: #ef4444;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
 
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        /* ── NAV ── */
+        /* NAV */
         nav {
             position: fixed; top: 0; width: 100%; z-index: 100;
             background: rgba(15,23,42,0.95); backdrop-filter: blur(12px);
@@ -39,81 +30,62 @@
         }
         nav .logo { font-weight: 700; font-size: 1.1rem; color: var(--primary-light); }
         nav .nav-links { display: flex; gap: 1.5rem; }
-        nav .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        nav .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; }
         nav .nav-links a:hover { color: var(--primary-light); }
 
-        /* ── HERO ── */
+        /* HERO */
         .hero {
             min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; padding: 6rem 2rem 4rem;
             background: linear-gradient(135deg, var(--bg) 0%, #0d2137 50%, #0a2a2a 100%);
-            position: relative; overflow: hidden;
         }
-        .hero::before {
-            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
-            background: radial-gradient(circle at 60% 40%, rgba(20,184,166,0.08) 0%, transparent 50%),
-                        radial-gradient(circle at 30% 70%, rgba(245,158,11,0.05) 0%, transparent 40%);
-        }
-        .hero > * { position: relative; }
         .hero .badge {
             display: inline-block; padding: 0.4rem 1rem; border-radius: 100px;
             background: rgba(20,184,166,0.15); color: var(--primary-light);
             font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;
             border: 1px solid rgba(20,184,166,0.3);
         }
-        .hero h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; max-width: 800px; }
+        .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.15; margin-bottom: 1rem; max-width: 800px; }
         .hero h1 span { background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin-bottom: 2rem; }
-
-        .hero-stats {
-            display: flex; gap: 3rem; margin-top: 2rem;
-        }
+        .hero p { font-size: 1.2rem; color: var(--text-muted); max-width: 650px; margin-bottom: 2rem; }
+        .hero-stats { display: flex; gap: 3rem; margin-top: 2rem; flex-wrap: wrap; justify-content: center; }
         .hero-stats .stat { text-align: center; }
         .hero-stats .stat-value { font-size: 2rem; font-weight: 800; color: var(--primary-light); }
         .hero-stats .stat-label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
-        /* ── SECTIONS ── */
-        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
-        .section-title {
-            font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;
-        }
-        .section-subtitle { color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem; }
+        /* SECTIONS */
+        section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+        .section-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .section-subtitle { color: var(--text-muted); margin-bottom: 3rem; font-size: 1.05rem; }
 
-        /* ── PROBLEM ── */
-        .problem-grid {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
-        }
-        .problem-card {
+        /* CARDS GRID */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .card {
             background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
-            padding: 2rem; transition: transform 0.2s, border-color 0.2s;
+            padding: 2rem; transition: transform 0.2s;
         }
-        .problem-card:hover { transform: translateY(-2px); border-color: var(--primary); }
-        .problem-card .icon { font-size: 2rem; margin-bottom: 1rem; }
-        .problem-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .problem-card p { color: var(--text-muted); font-size: 0.95rem; }
+        .card:hover { transform: translateY(-2px); }
+        .card .icon { font-size: 2.2rem; margin-bottom: 1rem; }
+        .card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
 
-        /* ── WORKFLOW ── */
-        .workflow {
-            display: flex; align-items: center; gap: 0; flex-wrap: wrap; justify-content: center;
-            margin: 2rem 0;
-        }
-        .workflow-step {
+        /* WORKFLOW */
+        .workflow { display: flex; align-items: center; gap: 0; flex-wrap: wrap; justify-content: center; margin: 2rem 0; }
+        .wf-step {
             background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
-            padding: 1.2rem 1.5rem; text-align: center; min-width: 150px; position: relative;
+            padding: 1.2rem 1.4rem; text-align: center; min-width: 140px;
         }
-        .workflow-step .step-num {
-            width: 28px; height: 28px; border-radius: 50%; background: var(--primary);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 0.75rem; font-weight: 700; margin: 0 auto 0.6rem; color: white;
+        .wf-step .num {
+            width: 30px; height: 30px; border-radius: 50%; background: var(--primary);
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.8rem; font-weight: 700; margin-bottom: 0.5rem;
         }
-        .workflow-step h4 { font-size: 0.9rem; margin-bottom: 0.3rem; }
-        .workflow-step p { font-size: 0.75rem; color: var(--text-muted); }
-        .workflow-arrow { font-size: 1.5rem; color: var(--primary-light); padding: 0 0.5rem; }
+        .wf-step h4 { font-size: 0.9rem; margin-bottom: 0.2rem; }
+        .wf-step p { font-size: 0.75rem; color: var(--text-muted); }
+        .wf-arrow { font-size: 1.5rem; color: var(--primary-light); padding: 0 0.4rem; }
 
-        /* ── DEVICE ── */
-        .device-container {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
-        }
+        /* DEVICE */
+        .device-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
         .device-visual {
             background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
             padding: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
@@ -121,489 +93,450 @@
         .spot {
             aspect-ratio: 1; border-radius: 16px; display: flex; flex-direction: column;
             align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;
-            transition: transform 0.3s;
         }
-        .spot:hover { transform: scale(1.05); }
         .spot-label { font-size: 0.75rem; font-weight: 400; color: rgba(255,255,255,0.7); margin-top: 0.3rem; }
         .spot-positive { background: linear-gradient(135deg, #166534, #22c55e); border: 2px solid #22c55e; }
         .spot-mecA { background: linear-gradient(135deg, #7c2d12, #f97316); border: 2px solid #f97316; }
         .spot-negative { background: linear-gradient(135deg, #1e293b, #475569); border: 2px solid #475569; }
         .spot-kpc { background: linear-gradient(135deg, #581c87, #a855f7); border: 2px solid #a855f7; }
-
         .device-info h3 { font-size: 1.3rem; margin-bottom: 1rem; }
         .device-info ul { list-style: none; }
-        .device-info li { padding: 0.6rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.6rem; }
-        .device-info li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--primary-light); flex-shrink: 0; }
+        .device-info li { padding: 0.6rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: baseline; gap: 0.6rem; }
+        .device-info li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--primary-light); flex-shrink: 0; margin-top: 0.4rem; }
 
-        /* ── TARGETS TABLE ── */
-        .targets-table {
-            width: 100%; border-collapse: collapse; margin: 2rem 0;
-            background: var(--bg-card); border-radius: 16px; overflow: hidden;
-            border: 1px solid var(--border);
-        }
-        .targets-table th {
-            background: var(--primary-dark); padding: 1rem 1.2rem; text-align: left;
-            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.9);
-        }
-        .targets-table td { padding: 0.9rem 1.2rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
-        .targets-table tr:last-child td { border-bottom: none; }
-        .targets-table tr:hover td { background: rgba(20,184,166,0.05); }
-
-        /* ── SEQUENCES (code blocks) ── */
-        .seq-block {
-            background: #0c1222; border: 1px solid var(--border); border-radius: 12px;
-            padding: 1.5rem; margin: 1.5rem 0; overflow-x: auto;
-        }
-        .seq-block .seq-label { font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        .seq-block code { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 0.85rem; color: #fbbf24; letter-spacing: 0.05em; word-break: break-all; }
-        .seq-block .seq-meta { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; }
-
-        /* ── SPECIFICITY ── */
-        .spec-result {
+        /* RESULT BOX */
+        .result-box {
             display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem;
             background: var(--bg-card); border-radius: 12px; margin: 0.8rem 0;
             border-left: 4px solid var(--success);
         }
-        .spec-result.warning { border-left-color: var(--accent); }
-        .spec-result .badge-ok { background: rgba(34,197,94,0.15); color: var(--success); padding: 0.2rem 0.8rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; }
-        .spec-result .spec-text { flex: 1; }
-        .spec-result .spec-text strong { display: block; font-size: 0.95rem; }
-        .spec-result .spec-text span { color: var(--text-muted); font-size: 0.85rem; }
+        .result-box .badge-ok { background: rgba(34,197,94,0.15); color: var(--success); padding: 0.25rem 0.8rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; white-space: nowrap; }
+        .result-box .rb-text { flex: 1; }
+        .result-box .rb-text strong { display: block; font-size: 0.95rem; }
+        .result-box .rb-text span { color: var(--text-muted); font-size: 0.85rem; }
 
-        /* ── OLIGOS TABLE ── */
+        /* BLAST BOX */
+        .blast-box {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+            padding: 1.8rem; margin: 1.2rem 0;
+        }
+        .blast-box h4 { margin-bottom: 0.5rem; }
+        .blast-box .blast-score { font-size: 1.4rem; font-weight: 800; color: var(--success); margin: 0.5rem 0; }
+        .blast-box .blast-explain { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem; }
+        .blast-box .blast-hits { font-size: 0.85rem; color: var(--text-muted); }
+        .blast-box .blast-hits em { color: var(--primary-light); }
+
+        /* OLIGO CARD */
         .oligo-card {
             background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
-            padding: 1.2rem 1.5rem; margin: 0.8rem 0;
-            display: grid; grid-template-columns: 200px 1fr auto; align-items: center; gap: 1rem;
+            padding: 1rem 1.5rem; margin: 0.6rem 0;
+            display: grid; grid-template-columns: 180px 1fr auto; align-items: center; gap: 1rem;
         }
         .oligo-card .oligo-name { font-weight: 600; font-size: 0.9rem; }
         .oligo-card .oligo-type { font-size: 0.75rem; color: var(--primary-light); }
-        .oligo-card .oligo-seq { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: #fbbf24; word-break: break-all; }
+        .oligo-card .oligo-seq { font-family: 'Courier New', monospace; font-size: 0.78rem; color: #fbbf24; word-break: break-all; }
         .oligo-card .oligo-info { text-align: right; font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
 
-        /* ── PIPELINE ── */
-        .pipeline-step {
-            display: flex; gap: 1.5rem; margin: 1.5rem 0; align-items: flex-start;
+        /* COST */
+        .cost-box {
+            background: linear-gradient(135deg, #0d5c56, #0a3a35);
+            border-radius: 16px; padding: 2.5rem; text-align: center;
+            border: 1px solid var(--primary); margin-top: 2.5rem;
         }
-        .pipeline-num {
+        .cost-box .cost-value { font-size: 3rem; font-weight: 800; color: var(--accent); }
+        .cost-box .cost-label { color: var(--text-muted); }
+        .cost-items { display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; flex-wrap: wrap; }
+        .cost-items .ci { text-align: center; }
+        .cost-items .ci .val { font-size: 1.2rem; font-weight: 700; }
+        .cost-items .ci .lab { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* PIPELINE */
+        .pipe-step { display: flex; gap: 1.5rem; margin: 1.5rem 0; align-items: flex-start; }
+        .pipe-num {
             width: 40px; height: 40px; border-radius: 50%; background: var(--primary);
             display: flex; align-items: center; justify-content: center;
             font-weight: 700; font-size: 0.9rem; flex-shrink: 0;
         }
-        .pipeline-content { flex: 1; }
-        .pipeline-content h4 { margin-bottom: 0.3rem; }
-        .pipeline-content p { color: var(--text-muted); font-size: 0.9rem; }
-        .pipeline-content code { background: rgba(20,184,166,0.1); padding: 0.15rem 0.5rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: var(--primary-light); }
+        .pipe-content { flex: 1; }
+        .pipe-content h4 { margin-bottom: 0.3rem; }
+        .pipe-content p { color: var(--text-muted); font-size: 0.9rem; }
+        .pipe-content code { background: rgba(20,184,166,0.1); padding: 0.15rem 0.5rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: var(--primary-light); }
 
-        /* ── COST ── */
-        .cost-summary {
-            background: linear-gradient(135deg, var(--primary-dark), #0a3a35);
-            border-radius: 16px; padding: 2.5rem; text-align: center;
-            border: 1px solid var(--primary);
+        /* EXPLAINER */
+        .explainer {
+            background: rgba(20,184,166,0.08); border: 1px solid rgba(20,184,166,0.2);
+            border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; font-size: 0.95rem;
         }
-        .cost-summary .cost-value { font-size: 3rem; font-weight: 800; color: var(--accent); }
-        .cost-summary .cost-label { color: var(--text-muted); font-size: 1rem; }
-        .cost-breakdown { display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; }
-        .cost-item { text-align: center; }
-        .cost-item .val { font-size: 1.2rem; font-weight: 700; }
-        .cost-item .lab { font-size: 0.8rem; color: var(--text-muted); }
+        .explainer strong { color: var(--primary-light); }
 
-        /* ── FOOTER ── */
-        footer {
-            text-align: center; padding: 3rem 2rem; color: var(--text-muted);
-            border-top: 1px solid var(--border); font-size: 0.85rem;
-        }
+        footer { text-align: center; padding: 3rem 2rem; color: var(--text-muted); border-top: 1px solid var(--border); font-size: 0.85rem; }
 
-        /* ── RESPONSIVE ── */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
-            .problem-grid, .device-container { grid-template-columns: 1fr; }
+            .grid-2, .device-container { grid-template-columns: 1fr; }
             .hero-stats { flex-direction: column; gap: 1rem; }
             .workflow { flex-direction: column; }
-            .workflow-arrow { transform: rotate(90deg); }
-            .oligo-card { grid-template-columns: 1fr; }
+            .wf-arrow { transform: rotate(90deg); }
+            .oligo-card { grid-template-columns: 1fr; gap: 0.3rem; }
             nav .nav-links { display: none; }
         }
     </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
     <div class="logo">BacDetect CRISPR</div>
     <div class="nav-links">
-        <a href="#problem">Problema</a>
-        <a href="#solution">Solucao</a>
-        <a href="#targets">Alvos</a>
-        <a href="#device">Dispositivo</a>
-        <a href="#specificity">Validacao</a>
-        <a href="#pipeline">Pipeline</a>
-        <a href="#oligos">Oligos</a>
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Como funciona</a>
+        <a href="#dispositivo">Dispositivo</a>
+        <a href="#validacao">Validacao</a>
+        <a href="#pipeline">Tecnologia</a>
+        <a href="#oligos">Materiais</a>
     </div>
 </nav>
 
-<!-- HERO -->
+<!-- ============ HERO ============ -->
 <section class="hero">
-    <div class="badge">Hackathon 2026 &mdash; Harvard</div>
-    <h1>Diagnostico <span>CRISPR-Cas12a</span> Paper-Based para Residuos Hospitalares</h1>
-    <p>Deteccao rapida de bacterias multirresistentes em residuos fecais hospitalares em 30 minutos, sem laboratorio.</p>
+    <div class="badge">Hackathon 2026</div>
+    <h1>Teste rapido que detecta <span>superbacterias</span> em hospitais</h1>
+    <p>Um papel inteligente que muda de cor quando encontra bacterias perigosas em residuos hospitalares. Sem laboratorio, sem equipamento caro. Resultado em 30 minutos.</p>
     <div class="hero-stats">
         <div class="stat">
             <div class="stat-value">30 min</div>
-            <div class="stat-label">Tempo ate resultado</div>
+            <div class="stat-label">Resultado rapido</div>
         </div>
         <div class="stat">
-            <div class="stat-value">2 alvos</div>
-            <div class="stat-label">MRSA + CRE</div>
+            <div class="stat-value">2 bacterias</div>
+            <div class="stat-label">Detectadas ao mesmo tempo</div>
         </div>
         <div class="stat">
-            <div class="stat-value">$207</div>
-            <div class="stat-label">Custo dos oligos</div>
+            <div class="stat-value">~R$25</div>
+            <div class="stat-label">Por teste</div>
         </div>
         <div class="stat">
             <div class="stat-value">37&#176;C</div>
-            <div class="stat-label">Sem termociclador</div>
+            <div class="stat-label">Temperatura do corpo</div>
         </div>
     </div>
 </section>
 
-<!-- PROBLEM -->
-<section id="problem">
+<!-- ============ PROBLEMA ============ -->
+<section id="problema">
     <h2 class="section-title">O Problema</h2>
-    <p class="section-subtitle">Infeccoes associadas a cuidados de saude (HAIs) sao uma crise global.</p>
-    <div class="problem-grid">
-        <div class="problem-card">
+    <p class="section-subtitle">Hospitais enfrentam uma crise silenciosa: bacterias que nao respondem mais a antibioticos.</p>
+    <div class="grid-2">
+        <div class="card">
             <div class="icon">&#x1F3E5;</div>
-            <h3>1.7 milhao de HAIs/ano</h3>
-            <p>Nos EUA, infeccoes hospitalares afetam ~1 em 31 pacientes. Residuos fecais contaminados sao um vetor importante de disseminacao.</p>
+            <h3>1,7 milhao de infeccoes por ano</h3>
+            <p>Nos EUA, 1 em cada 31 pacientes pega uma infeccao dentro do hospital. Residuos contaminados ajudam a espalhar essas bacterias entre pacientes.</p>
         </div>
-        <div class="problem-card">
+        <div class="card">
             <div class="icon">&#x26A0;</div>
-            <h3>Resistencia antimicrobiana</h3>
-            <p>MRSA e bacterias produtoras de carbapenemase (CRE) estao entre os patogenos mais perigosos classificados pela OMS como prioridade critica.</p>
+            <h3>Superbacterias resistentes</h3>
+            <p>Bacterias como MRSA e CRE evoluiram para resistir a quase todos os antibioticos. A OMS classifica essas bacterias como <strong>ameaca critica</strong> para a saude global.</p>
         </div>
-        <div class="problem-card">
+        <div class="card">
             <div class="icon">&#x23F1;</div>
-            <h3>Diagnostico lento</h3>
-            <p>Cultura bacteriana leva 24-72h. PCR requer equipamento caro (~$50k). Nao ha teste rapido e barato para triagem de residuos no ponto de cuidado.</p>
+            <h3>Testes atuais sao lentos e caros</h3>
+            <p>Hoje, identificar essas bacterias exige cultivar amostras em laboratorio (24-72 horas) ou usar equipamentos de PCR que custam mais de R$250 mil.</p>
         </div>
-        <div class="problem-card">
+        <div class="card">
             <div class="icon">&#x1F4A1;</div>
-            <h3>Nossa solucao</h3>
-            <p>Teste paper-based CRISPR-Cas12a: coleta simples, amplificacao isotermica (37&#176;C), resultado fluorescente em 30 min. Custo &lt;$5/teste.</p>
+            <h3>Nossa solucao: um papel que brilha</h3>
+            <p>Criamos um teste em papel que usa a tecnologia CRISPR &mdash; a mesma "tesoura molecular" que ganhou o Nobel &mdash; para detectar superbacterias em minutos.</p>
         </div>
     </div>
 </section>
 
-<!-- SOLUTION / WORKFLOW -->
-<section id="solution">
+<!-- ============ COMO FUNCIONA ============ -->
+<section id="solucao">
     <h2 class="section-title">Como Funciona</h2>
-    <p class="section-subtitle">Workflow de 7 passos, do residuo ao resultado.</p>
+    <p class="section-subtitle">Simples como um teste de gravidez, mas para detectar bacterias perigosas.</p>
+
+    <div class="explainer">
+        <strong>A ideia em uma frase:</strong> O papel contem uma "tesoura molecular" (CRISPR) programada para reconhecer o DNA de bacterias especificas. Quando ela encontra o DNA da bacteria, corta um corante preso no papel e libera fluorescencia &mdash; o papel brilha verde, indicando que a bacteria esta presente.
+    </div>
+
     <div class="workflow">
-        <div class="workflow-step">
-            <div class="step-num">1</div>
+        <div class="wf-step">
+            <div class="num">1</div>
             <h4>Coleta</h4>
-            <p>Amostra do residuo fecal hospitalar</p>
+            <p>Funcionario coleta amostra do residuo</p>
         </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">2</div>
-            <h4>Lise</h4>
-            <p>Glass fiber pad com buffer de lise</p>
+        <div class="wf-arrow">&#x27A1;</div>
+        <div class="wf-step">
+            <div class="num">2</div>
+            <h4>Aplica no papel</h4>
+            <p>Coloca a amostra no dispositivo</p>
         </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">3</div>
-            <h4>Extracao</h4>
-            <p>Fluxo lateral no papel</p>
+        <div class="wf-arrow">&#x27A1;</div>
+        <div class="wf-step">
+            <div class="num">3</div>
+            <h4>Dobra o papel</h4>
+            <p>O DNA e extraido automaticamente</p>
         </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">4</div>
-            <h4>Eluicao</h4>
-            <p>Buffer de eluicao nos spots</p>
+        <div class="wf-arrow">&#x27A1;</div>
+        <div class="wf-step">
+            <div class="num">4</div>
+            <h4>Espera 30 min</h4>
+            <p>Na temperatura do corpo (37&#176;C)</p>
         </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">5</div>
-            <h4>RPA</h4>
-            <p>Amplificacao 37&#176;C / 20 min</p>
-        </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">6</div>
-            <h4>CRISPR</h4>
-            <p>Cas12a trans-cleavage</p>
-        </div>
-        <div class="workflow-arrow">&#x27A1;</div>
-        <div class="workflow-step">
-            <div class="step-num">7</div>
-            <h4>Leitura</h4>
-            <p>UV ou camera de smartphone</p>
+        <div class="wf-arrow">&#x27A1;</div>
+        <div class="wf-step">
+            <div class="num">5</div>
+            <h4>Le o resultado</h4>
+            <p>Brilhou = bacteria detectada</p>
         </div>
     </div>
 
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="color:var(--text-muted); font-size:0.9rem;">
-            <strong style="color:var(--primary-light);">Principio:</strong>
-            O Cas12a reconhece o DNA-alvo via crRNA &rarr; ativa cleavage colateral (trans) &rarr;
-            corta reporters ssDNA-FAM/BHQ-1 &rarr; fluorescencia liberada = sinal positivo.
-        </p>
+    <div class="explainer">
+        <strong>Por que CRISPR?</strong> O sistema CRISPR-Cas12a funciona como um "detetive molecular". Ele recebe uma "foto" (guia de RNA) da bacteria que deve procurar. Quando encontra o DNA correspondente, ele ativa uma reacao em cadeia que corta milhares de moleculas de corante ao mesmo tempo, gerando um sinal visivel. Isso garante <strong>alta sensibilidade</strong> mesmo com pouco material.
     </div>
 </section>
 
-<!-- TARGETS -->
-<section id="targets">
-    <h2 class="section-title">Alvos Moleculares</h2>
-    <p class="section-subtitle">Genes de resistencia antimicrobiana como biomarcadores de deteccao.</p>
-
-    <table class="targets-table">
-        <thead>
-            <tr>
-                <th>Alvo</th>
-                <th>Gene</th>
-                <th>Organismo</th>
-                <th>Accession</th>
-                <th>Tamanho</th>
-                <th>Relevancia</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong style="color:#f97316">MRSA</strong></td>
-                <td>mecA</td>
-                <td><em>Staphylococcus aureus</em></td>
-                <td>NG_047945.1</td>
-                <td>2107 bp</td>
-                <td>Resistencia a meticilina &mdash; principal HAI</td>
-            </tr>
-            <tr>
-                <td><strong style="color:#a855f7">CRE/CRAB</strong></td>
-                <td>blaKPC</td>
-                <td><em>Acinetobacter baumannii</em></td>
-                <td>NG_049243.1</td>
-                <td>882 bp</td>
-                <td>Resistencia a carbapenemicos &mdash; prioridade critica OMS</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- mecA -->
-    <h3 style="margin-top:2.5rem;">mecA &mdash; MRSA</h3>
-    <div class="seq-block">
-        <div class="seq-label">crRNA Guide (LbCas12a) &mdash; Score: 130.0</div>
-        <code>5'-<span style="color:#94a3b8">AATTTCTACTAAGTGTAGAT</span><span style="color:#fbbf24">GACCGAAACAATGTGGAATT</span>-3'</code>
-        <div class="seq-meta">Direct Repeat (cinza) + Spacer 20nt (amarelo) | PAM: TTTA (+) | GC: 40% | Posicao: 461/2107</div>
-    </div>
-    <div class="seq-block">
-        <div class="seq-label">RPA Primers &mdash; Amplicon: 158 bp</div>
-        <code>FWD: 5'-TTAGATTGGGATCATAGCGTCATTATTCCAGG-3'</code><br>
-        <code>REV: 5'-TTCTTTGGAACGATGCCTATCTCATATGCTGT-3'</code>
-        <div class="seq-meta">32nt cada | Tm: 60.5&#176;C / 60.5&#176;C | GC: 41% / 41% | &Delta;Tm: 0&#176;C</div>
-    </div>
-
-    <!-- blaKPC -->
-    <h3 style="margin-top:2.5rem;">blaKPC &mdash; CRE</h3>
-    <div class="seq-block">
-        <div class="seq-label">crRNA Guide (LbCas12a) &mdash; Score: 130.0</div>
-        <code>5'-<span style="color:#94a3b8">AATTTCTACTAAGTGTAGAT</span><span style="color:#fbbf24">TTGCTGAAGGAGTTGGGCGG</span>-3'</code>
-        <div class="seq-meta">Direct Repeat (cinza) + Spacer 20nt (amarelo) | PAM: TTTG (+) | GC: 60% | Posicao: 404/882</div>
-    </div>
-    <div class="seq-block">
-        <div class="seq-label">RPA Primers &mdash; Amplicon: 149 bp</div>
-        <code>FWD: 5'-TATCTGACAACAGGCATGACGGTGGCGGAGCT-3'</code><br>
-        <code>REV: 5'-CGGAACGTGGTATCGCCGATAGAGCGCATGAA-3'</code>
-        <div class="seq-meta">32nt cada | Tm: 67.0&#176;C / 67.0&#176;C | GC: 56% / 56% | &Delta;Tm: 0&#176;C</div>
-    </div>
-</section>
-
-<!-- DEVICE -->
-<section id="device">
-    <h2 class="section-title">Dispositivo Paper-Based</h2>
-    <p class="section-subtitle">4 spots: 2 alvos + controle positivo + controle negativo.</p>
+<!-- ============ DISPOSITIVO ============ -->
+<section id="dispositivo">
+    <h2 class="section-title">O Dispositivo</h2>
+    <p class="section-subtitle">4 areas de teste em um unico papel: 2 bacterias + 2 controles de qualidade.</p>
 
     <div class="device-container">
         <div class="device-visual">
             <div class="spot spot-positive">
                 P (+)
-                <div class="spot-label">16S rRNA</div>
+                <div class="spot-label">Controle positivo</div>
             </div>
             <div class="spot spot-mecA">
-                mecA
-                <div class="spot-label">MRSA</div>
+                MRSA
+                <div class="spot-label">Superbacteria 1</div>
             </div>
             <div class="spot spot-negative">
                 N (&minus;)
-                <div class="spot-label">NTC</div>
+                <div class="spot-label">Controle negativo</div>
             </div>
             <div class="spot spot-kpc">
-                KPC
-                <div class="spot-label">CRE</div>
+                CRE
+                <div class="spot-label">Superbacteria 2</div>
             </div>
         </div>
         <div class="device-info">
-            <h3>Componentes do Dispositivo</h3>
+            <h3>Como interpretar</h3>
             <ul>
-                <li><strong>Parte I:</strong> Papel de filtro com canais de cera hidrofobica</li>
-                <li><strong>Parte II:</strong> Glass fiber pad para lise e filtracao</li>
-                <li><strong>Parte III:</strong> Placa plastica com spots de reacao pre-carregados</li>
-                <li><strong>Reporter:</strong> ssDNA-FAM/BHQ-1 (fluorescencia verde 520nm)</li>
-                <li><strong>Leitura:</strong> UV 485nm ou app de smartphone</li>
-                <li><strong>Resultado:</strong> Spot fluorescente = patogeno detectado</li>
+                <li><strong>Spot P (verde):</strong> Deve sempre brilhar. Confirma que o teste funcionou e que havia DNA bacteriano na amostra.</li>
+                <li><strong>Spot N (cinza):</strong> Nunca deve brilhar. Se brilhar, indica contaminacao no teste.</li>
+                <li><strong>Spot MRSA (laranja):</strong> Brilhou = detectou <em>Staphylococcus aureus</em> resistente a meticilina. Causa infeccoes graves de pele, sangue e pulmao.</li>
+                <li><strong>Spot CRE (roxo):</strong> Brilhou = detectou bacteria resistente a carbapenems. Considerada pela OMS como a ameaca bacteriana mais critica do mundo.</li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- SPECIFICITY -->
-<section id="specificity">
-    <h2 class="section-title">Validacao de Especificidade</h2>
-    <p class="section-subtitle">Cross-reactivity entre guides do painel e analise BLAST.</p>
+<!-- ============ O QUE DETECTAMOS ============ -->
+<section id="alvos">
+    <h2 class="section-title">O Que Detectamos</h2>
+    <p class="section-subtitle">Cada bacteria possui "genes de resistencia" unicos &mdash; como uma impressao digital. Nosso teste procura exatamente esses genes.</p>
 
-    <div class="spec-result">
-        <span class="badge-ok">OK</span>
-        <div class="spec-text">
-            <strong>mecA vs blaKPC &mdash; Sem cross-reactivity</strong>
-            <span>Identidade: 35.0% (7/20 matches) &mdash; threshold de risco: >75%</span>
+    <div class="grid-2">
+        <div class="card" style="border-color: #f97316;">
+            <h3 style="color:#f97316;">MRSA &mdash; Gene mecA</h3>
+            <p><strong>O que e:</strong> <em>Staphylococcus aureus</em> resistente a meticilina. Uma das infeccoes hospitalares mais comuns.</p>
+            <p style="margin-top:0.5rem;"><strong>O gene mecA</strong> e o que torna essa bacteria resistente. Ele produz uma proteina que impede os antibioticos de funcionarem. Nosso teste procura esse gene no DNA da amostra.</p>
+            <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted);">Fonte: NCBI RefSeq NG_047945.1 | 2.107 pares de bases</p>
         </div>
-    </div>
-    <div class="spec-result">
-        <span class="badge-ok">OK</span>
-        <div class="spec-text">
-            <strong>GC Content &mdash; Dentro do range ideal</strong>
-            <span>mecA spacer: 40% | blaKPC spacer: 60% | Range aceitavel: 30-70%</span>
-        </div>
-    </div>
-    <div class="spec-result">
-        <span class="badge-ok">OK</span>
-        <div class="spec-text">
-            <strong>Homopolimeros &mdash; Sem runs longos</strong>
-            <span>Max run: 3nt em ambos os spacers | Limite: 4nt</span>
-        </div>
-    </div>
-    <div class="spec-result">
-        <span class="badge-ok">OK</span>
-        <div class="spec-text">
-            <strong>Primers RPA &mdash; Tm balanceada</strong>
-            <span>mecA: &Delta;Tm=0&#176;C | blaKPC: &Delta;Tm=0&#176;C | Amplicons: 158bp / 149bp</span>
+        <div class="card" style="border-color: #a855f7;">
+            <h3 style="color:#a855f7;">CRE &mdash; Gene blaKPC</h3>
+            <p><strong>O que e:</strong> Bacterias resistentes a carbapenems (os antibioticos "de ultimo recurso"). Prioridade critica da OMS.</p>
+            <p style="margin-top:0.5rem;"><strong>O gene blaKPC</strong> produz uma enzima que destroi os carbapenems. Quando uma bacteria tem esse gene, quase nenhum antibiotico funciona contra ela.</p>
+            <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--text-muted);">Fonte: NCBI RefSeq NG_049243.1 | 882 pares de bases</p>
         </div>
     </div>
 </section>
 
-<!-- PIPELINE -->
+<!-- ============ VALIDACAO ============ -->
+<section id="validacao">
+    <h2 class="section-title">Validacao Cientifica</h2>
+    <p class="section-subtitle">Testamos computacionalmente se nosso teste e preciso e confiavel antes de ir para o laboratorio.</p>
+
+    <div class="explainer">
+        <strong>O que significa "validar"?</strong> Antes de fabricar o teste, precisamos garantir que ele vai reconhecer SOMENTE as bacterias corretas, sem confundir uma com a outra ou dar resultados falsos. Fizemos isso comparando nossas sequencias contra um banco de dados com mais de 124 milhoes de genomas.
+    </div>
+
+    <h3 style="margin-top:2rem;">Testes de qualidade</h3>
+
+    <div class="result-box">
+        <span class="badge-ok">OK</span>
+        <div class="rb-text">
+            <strong>Sem confusao entre as bacterias</strong>
+            <span>Os "detetives moleculares" do MRSA e do CRE sao muito diferentes entre si (apenas 35% parecidos). Nao ha risco de um acionar o resultado do outro.</span>
+        </div>
+    </div>
+    <div class="result-box">
+        <span class="badge-ok">OK</span>
+        <div class="rb-text">
+            <strong>Composicao quimica equilibrada</strong>
+            <span>As sequencias-guia tem proporcao ideal de bases (40-60% GC), o que garante que vao se ligar corretamente ao DNA-alvo.</span>
+        </div>
+    </div>
+    <div class="result-box">
+        <span class="badge-ok">OK</span>
+        <div class="rb-text">
+            <strong>Sem repeticoes problematicas</strong>
+            <span>As sequencias nao tem trechos repetitivos longos que poderiam causar erros na reacao.</span>
+        </div>
+    </div>
+    <div class="result-box">
+        <span class="badge-ok">OK</span>
+        <div class="rb-text">
+            <strong>Amplificacao balanceada</strong>
+            <span>Os pares de primers (iniciadores da reacao) tem temperaturas de funcionamento identicas, garantindo que ambos os testes rodem nas mesmas condicoes.</span>
+        </div>
+    </div>
+
+    <h3 style="margin-top:2.5rem;">Resultado do BLAST &mdash; Busca em banco de dados global</h3>
+
+    <div class="explainer">
+        <strong>O que e BLAST?</strong> E como um "Google para DNA". Pegamos a regiao que nosso teste detecta (~150 letras do codigo genetico) e procuramos no maior banco de dados de genomas do mundo (NCBI, com 124 milhoes de sequencias). Se encontrar correspondencia apenas nas bacterias corretas, o teste e especifico.
+    </div>
+
+    <div class="blast-box">
+        <h4 style="color:#f97316;">MRSA (gene mecA) &mdash; Amplicon de 158 pares de bases</h4>
+        <div class="blast-score">100% de correspondencia</div>
+        <div class="blast-explain">
+            A regiao detectada pelo nosso teste bateu com <strong>100% de identidade</strong> em genomas de <em>Staphylococcus aureus</em> e <em>S. epidermidis</em> portadores do gene mecA. Nao bateu com nenhuma bacteria que nao tenha esse gene.
+        </div>
+        <div class="blast-hits">
+            Organismos encontrados: <em>S. aureus</em> TCH32929, <em>S. aureus</em> AG21-0607, <em>S. aureus</em> BSN49, <em>S. epidermidis</em> KUHPSE08, entre outros.<br>
+            E-value: 8e-73 (quanto menor, mais confiavel &mdash; valores abaixo de 0,01 ja sao excelentes)
+        </div>
+    </div>
+
+    <div class="blast-box">
+        <h4 style="color:#a855f7;">CRE (gene blaKPC) &mdash; Amplicon de 149 pares de bases</h4>
+        <div class="blast-score">100% de correspondencia</div>
+        <div class="blast-explain">
+            A regiao detectada bateu com <strong>100% de identidade</strong> exclusivamente em organismos que carregam o gene blaKPC. Nenhum falso positivo.
+        </div>
+        <div class="blast-hits">
+            Organismos encontrados: Isolados KPC de diversas especies (OQ821199.1, NG_231551.1, CP184047.1, entre outros).<br>
+            E-value: 6e-68 (extremamente confiavel)
+        </div>
+    </div>
+
+    <div class="explainer" style="border-color: rgba(34,197,94,0.3); background: rgba(34,197,94,0.08);">
+        <strong style="color:var(--success);">Conclusao:</strong> Os dois testes sao altamente especificos. Eles reconhecem apenas as bacterias corretas entre 124 milhoes de sequencias no banco de dados, sem confundir com nenhum outro organismo.
+    </div>
+</section>
+
+<!-- ============ PIPELINE ============ -->
 <section id="pipeline">
-    <h2 class="section-title">Pipeline Computacional</h2>
-    <p class="section-subtitle">5 scripts Python, executados sequencialmente.</p>
+    <h2 class="section-title">Como Construimos</h2>
+    <p class="section-subtitle">Todo o design foi feito computacionalmente em 5 etapas automatizadas.</p>
 
-    <div class="pipeline-step">
-        <div class="pipeline-num">1</div>
-        <div class="pipeline-content">
-            <h4><code>fetch_sequences.py</code></h4>
-            <p>Busca sequencias DNA dos genes via NCBI Entrez API. Baixou mecA (2107 bp) e blaKPC (882 bp) automaticamente.</p>
+    <div class="pipe-step">
+        <div class="pipe-num">1</div>
+        <div class="pipe-content">
+            <h4>Buscar os genes no banco de dados</h4>
+            <p>Baixamos as sequencias de DNA dos genes mecA e blaKPC diretamente do NCBI (o maior banco de dados de genomas do mundo). Codigo: <code>fetch_sequences.py</code></p>
         </div>
     </div>
-    <div class="pipeline-step">
-        <div class="pipeline-num">2</div>
-        <div class="pipeline-content">
-            <h4><code>design_guides.py</code></h4>
-            <p>Escaneia PAM TTTV em ambas as fitas, extrai spacers 20nt, pontua por GC%, homopolimeros, hairpins e posicao. Top 5 guides por gene.</p>
+    <div class="pipe-step">
+        <div class="pipe-num">2</div>
+        <div class="pipe-content">
+            <h4>Desenhar os "detetives moleculares"</h4>
+            <p>Analisamos cada gene para encontrar as melhores regioes de reconhecimento. O algoritmo testou 127 candidatos para mecA e 14 para blaKPC, selecionando os 5 melhores de cada. Codigo: <code>design_guides.py</code></p>
         </div>
     </div>
-    <div class="pipeline-step">
-        <div class="pipeline-num">3</div>
-        <div class="pipeline-content">
-            <h4><code>design_primers.py</code></h4>
-            <p>Primers RPA 30-35nt flanqueando o site do crRNA. Amplicon 100-200bp, Tm 54-67&#176;C. Top 5 pares ranqueados.</p>
+    <div class="pipe-step">
+        <div class="pipe-num">3</div>
+        <div class="pipe-content">
+            <h4>Desenhar os "amplificadores"</h4>
+            <p>Como a amostra pode ter pouco DNA, usamos primers RPA que multiplicam o trecho-alvo milhoes de vezes em 20 minutos, a 37&#176;C, sem necessidade de equipamento. Codigo: <code>design_primers.py</code></p>
         </div>
     </div>
-    <div class="pipeline-step">
-        <div class="pipeline-num">4</div>
-        <div class="pipeline-content">
-            <h4><code>specificity_check.py</code></h4>
-            <p>Cross-reactivity local entre guides + BLAST remoto (NCBI API) para validar especificidade contra genomas completos.</p>
+    <div class="pipe-step">
+        <div class="pipe-num">4</div>
+        <div class="pipe-content">
+            <h4>Validar contra o mundo inteiro</h4>
+            <p>Comparamos nossas sequencias contra 124 milhoes de genomas para garantir que nao ha falsos positivos. Resultado: 100% especifico. Codigo: <code>specificity_check.py</code></p>
         </div>
     </div>
-    <div class="pipeline-step">
-        <div class="pipeline-num">5</div>
-        <div class="pipeline-content">
-            <h4><code>multiplex_panel.py</code></h4>
-            <p>Monta painel final: layout do dispositivo, folha de encomenda de oligos, protocolo e estimativa de custo.</p>
+    <div class="pipe-step">
+        <div class="pipe-num">5</div>
+        <div class="pipe-content">
+            <h4>Montar a lista de materiais</h4>
+            <p>Geramos automaticamente a lista de moleculas que precisam ser fabricadas, com especificacoes prontas para enviar ao fornecedor. Codigo: <code>multiplex_panel.py</code></p>
         </div>
     </div>
 </section>
 
-<!-- OLIGOS -->
+<!-- ============ OLIGOS ============ -->
 <section id="oligos">
-    <h2 class="section-title">Folha de Encomenda de Oligos</h2>
-    <p class="section-subtitle">7 oligonucleotideos prontos para sintese.</p>
+    <h2 class="section-title">Lista de Materiais</h2>
+    <p class="section-subtitle">7 moleculas sinteticas necessarias para fabricar o teste. Prontas para encomendar.</p>
 
+    <div class="explainer">
+        <strong>O que sao esses "oligos"?</strong> Sao pequenas moleculas de DNA ou RNA feitas em laboratorio. Os <strong>crRNAs</strong> sao os "detetives" que reconhecem cada bacteria. Os <strong>primers</strong> sao os "amplificadores" que multiplicam o DNA. O <strong>reporter</strong> e o "sinalizador" que brilha quando a bacteria e encontrada.
+    </div>
+
+    <h3 style="margin:1.5rem 0 1rem;">Para detectar MRSA</h3>
     <div class="oligo-card">
-        <div><div class="oligo-name">crRNA_mecA</div><div class="oligo-type">crRNA &mdash; LbCas12a</div></div>
+        <div><div class="oligo-name">Detetive MRSA</div><div class="oligo-type">crRNA para Cas12a</div></div>
         <div class="oligo-seq">AATTTCTACTAAGTGTAGATGACCGAAACAATGTGGAATT</div>
-        <div class="oligo-info">40nt | PAGE | 10 nmol</div>
+        <div class="oligo-info">40 letras</div>
     </div>
     <div class="oligo-card">
-        <div><div class="oligo-name">RPA_FWD_mecA</div><div class="oligo-type">Primer forward</div></div>
+        <div><div class="oligo-name">Amplificador FWD</div><div class="oligo-type">Primer RPA</div></div>
         <div class="oligo-seq">TTAGATTGGGATCATAGCGTCATTATTCCAGG</div>
-        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
+        <div class="oligo-info">32 letras</div>
     </div>
     <div class="oligo-card">
-        <div><div class="oligo-name">RPA_REV_mecA</div><div class="oligo-type">Primer reverse</div></div>
+        <div><div class="oligo-name">Amplificador REV</div><div class="oligo-type">Primer RPA</div></div>
         <div class="oligo-seq">TTCTTTGGAACGATGCCTATCTCATATGCTGT</div>
-        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
-    </div>
-    <div class="oligo-card">
-        <div><div class="oligo-name">crRNA_blaKPC</div><div class="oligo-type">crRNA &mdash; LbCas12a</div></div>
-        <div class="oligo-seq">AATTTCTACTAAGTGTAGATTTGCTGAAGGAGTTGGGCGG</div>
-        <div class="oligo-info">40nt | PAGE | 10 nmol</div>
-    </div>
-    <div class="oligo-card">
-        <div><div class="oligo-name">RPA_FWD_blaKPC</div><div class="oligo-type">Primer forward</div></div>
-        <div class="oligo-seq">TATCTGACAACAGGCATGACGGTGGCGGAGCT</div>
-        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
-    </div>
-    <div class="oligo-card">
-        <div><div class="oligo-name">RPA_REV_blaKPC</div><div class="oligo-type">Primer reverse</div></div>
-        <div class="oligo-seq">CGGAACGTGGTATCGCCGATAGAGCGCATGAA</div>
-        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
-    </div>
-    <div class="oligo-card" style="border-color: var(--accent);">
-        <div><div class="oligo-name">Reporter_ssDNA_FQ</div><div class="oligo-type">Reporter FAM/BHQ-1</div></div>
-        <div class="oligo-seq">/56-FAM/ TTATTATT /3BHQ_1/</div>
-        <div class="oligo-info">8nt | HPLC | 100 nmol</div>
+        <div class="oligo-info">32 letras</div>
     </div>
 
-    <!-- COST -->
-    <div class="cost-summary" style="margin-top:3rem;">
-        <div class="cost-label">Custo estimado total dos oligos</div>
-        <div class="cost-value">$207.20</div>
-        <div class="cost-breakdown">
-            <div class="cost-item">
-                <div class="val">2</div>
-                <div class="lab">crRNAs</div>
-            </div>
-            <div class="cost-item">
-                <div class="val">4</div>
-                <div class="lab">Primers RPA</div>
-            </div>
-            <div class="cost-item">
-                <div class="val">1</div>
-                <div class="lab">Reporter FQ</div>
-            </div>
-            <div class="cost-item">
-                <div class="val">&lt;$5</div>
-                <div class="lab">Custo/teste</div>
-            </div>
+    <h3 style="margin:2rem 0 1rem;">Para detectar CRE</h3>
+    <div class="oligo-card">
+        <div><div class="oligo-name">Detetive CRE</div><div class="oligo-type">crRNA para Cas12a</div></div>
+        <div class="oligo-seq">AATTTCTACTAAGTGTAGATTTGCTGAAGGAGTTGGGCGG</div>
+        <div class="oligo-info">40 letras</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">Amplificador FWD</div><div class="oligo-type">Primer RPA</div></div>
+        <div class="oligo-seq">TATCTGACAACAGGCATGACGGTGGCGGAGCT</div>
+        <div class="oligo-info">32 letras</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">Amplificador REV</div><div class="oligo-type">Primer RPA</div></div>
+        <div class="oligo-seq">CGGAACGTGGTATCGCCGATAGAGCGCATGAA</div>
+        <div class="oligo-info">32 letras</div>
+    </div>
+
+    <h3 style="margin:2rem 0 1rem;">Sinalizador (compartilhado)</h3>
+    <div class="oligo-card" style="border-color: var(--accent);">
+        <div><div class="oligo-name">Sinalizador</div><div class="oligo-type">Reporter FAM/BHQ-1</div></div>
+        <div class="oligo-seq">/56-FAM/ TTATTATT /3BHQ_1/</div>
+        <div class="oligo-info">8 letras</div>
+    </div>
+
+    <div class="cost-box">
+        <div class="cost-label">Custo estimado dos materiais</div>
+        <div class="cost-value">~US$ 207</div>
+        <div class="cost-items">
+            <div class="ci"><div class="val">2</div><div class="lab">Detetives (crRNA)</div></div>
+            <div class="ci"><div class="val">4</div><div class="lab">Amplificadores</div></div>
+            <div class="ci"><div class="val">1</div><div class="lab">Sinalizador</div></div>
+            <div class="ci"><div class="val">~R$25</div><div class="lab">Custo por teste</div></div>
         </div>
     </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
-    <p>CRISPR-Cas12a Paper-Based Diagnostic &mdash; Hackathon 2026</p>
-    <p style="margin-top:0.5rem;">Pipeline gerado computacionalmente | Dados: NCBI RefSeq | Enzima: LbCas12a (DETECTR)</p>
+    <p><strong>BacDetect CRISPR</strong> &mdash; Hackathon 2026</p>
+    <p style="margin-top:0.5rem;">Projeto computacional completo: do gene ao dispositivo paper-based</p>
     <p style="margin-top:0.5rem; font-size:0.75rem; color:#475569;">
-        Genes: mecA (NG_047945.1) | blaKPC (NG_049243.1) | Protein refs: WP_057521704.1 | WP_063860633.1
+        Tecnologia: CRISPR-Cas12a (DETECTR) + RPA | Dados: NCBI RefSeq | Genes: mecA (NG_047945.1) &bull; blaKPC (NG_049243.1)
     </p>
 </footer>
 
