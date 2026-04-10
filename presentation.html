@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRISPR-Cas12a Paper-Based Diagnostic | Hackathon</title>
+    <style>
+        :root {
+            --primary: #0f766e;
+            --primary-light: #14b8a6;
+            --primary-dark: #0d5c56;
+            --accent: #f59e0b;
+            --danger: #ef4444;
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-alt: #1a2332;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --success: #22c55e;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(15,23,42,0.95); backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 0.8rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        nav .logo { font-weight: 700; font-size: 1.1rem; color: var(--primary-light); }
+        nav .nav-links { display: flex; gap: 1.5rem; }
+        nav .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        nav .nav-links a:hover { color: var(--primary-light); }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; padding: 6rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--bg) 0%, #0d2137 50%, #0a2a2a 100%);
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at 60% 40%, rgba(20,184,166,0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 30% 70%, rgba(245,158,11,0.05) 0%, transparent 40%);
+        }
+        .hero > * { position: relative; }
+        .hero .badge {
+            display: inline-block; padding: 0.4rem 1rem; border-radius: 100px;
+            background: rgba(20,184,166,0.15); color: var(--primary-light);
+            font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem;
+            border: 1px solid rgba(20,184,166,0.3);
+        }
+        .hero h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; max-width: 800px; }
+        .hero h1 span { background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin-bottom: 2rem; }
+
+        .hero-stats {
+            display: flex; gap: 3rem; margin-top: 2rem;
+        }
+        .hero-stats .stat { text-align: center; }
+        .hero-stats .stat-value { font-size: 2rem; font-weight: 800; color: var(--primary-light); }
+        .hero-stats .stat-label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+        /* ── SECTIONS ── */
+        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .section-title {
+            font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;
+        }
+        .section-subtitle { color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem; }
+
+        /* ── PROBLEM ── */
+        .problem-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
+        }
+        .problem-card {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+            padding: 2rem; transition: transform 0.2s, border-color 0.2s;
+        }
+        .problem-card:hover { transform: translateY(-2px); border-color: var(--primary); }
+        .problem-card .icon { font-size: 2rem; margin-bottom: 1rem; }
+        .problem-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .problem-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* ── WORKFLOW ── */
+        .workflow {
+            display: flex; align-items: center; gap: 0; flex-wrap: wrap; justify-content: center;
+            margin: 2rem 0;
+        }
+        .workflow-step {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+            padding: 1.2rem 1.5rem; text-align: center; min-width: 150px; position: relative;
+        }
+        .workflow-step .step-num {
+            width: 28px; height: 28px; border-radius: 50%; background: var(--primary);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.75rem; font-weight: 700; margin: 0 auto 0.6rem; color: white;
+        }
+        .workflow-step h4 { font-size: 0.9rem; margin-bottom: 0.3rem; }
+        .workflow-step p { font-size: 0.75rem; color: var(--text-muted); }
+        .workflow-arrow { font-size: 1.5rem; color: var(--primary-light); padding: 0 0.5rem; }
+
+        /* ── DEVICE ── */
+        .device-container {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+        }
+        .device-visual {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;
+            padding: 2.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+        }
+        .spot {
+            aspect-ratio: 1; border-radius: 16px; display: flex; flex-direction: column;
+            align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        .spot:hover { transform: scale(1.05); }
+        .spot-label { font-size: 0.75rem; font-weight: 400; color: rgba(255,255,255,0.7); margin-top: 0.3rem; }
+        .spot-positive { background: linear-gradient(135deg, #166534, #22c55e); border: 2px solid #22c55e; }
+        .spot-mecA { background: linear-gradient(135deg, #7c2d12, #f97316); border: 2px solid #f97316; }
+        .spot-negative { background: linear-gradient(135deg, #1e293b, #475569); border: 2px solid #475569; }
+        .spot-kpc { background: linear-gradient(135deg, #581c87, #a855f7); border: 2px solid #a855f7; }
+
+        .device-info h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        .device-info ul { list-style: none; }
+        .device-info li { padding: 0.6rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.6rem; }
+        .device-info li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--primary-light); flex-shrink: 0; }
+
+        /* ── TARGETS TABLE ── */
+        .targets-table {
+            width: 100%; border-collapse: collapse; margin: 2rem 0;
+            background: var(--bg-card); border-radius: 16px; overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        .targets-table th {
+            background: var(--primary-dark); padding: 1rem 1.2rem; text-align: left;
+            font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.9);
+        }
+        .targets-table td { padding: 0.9rem 1.2rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        .targets-table tr:last-child td { border-bottom: none; }
+        .targets-table tr:hover td { background: rgba(20,184,166,0.05); }
+
+        /* ── SEQUENCES (code blocks) ── */
+        .seq-block {
+            background: #0c1222; border: 1px solid var(--border); border-radius: 12px;
+            padding: 1.5rem; margin: 1.5rem 0; overflow-x: auto;
+        }
+        .seq-block .seq-label { font-size: 0.75rem; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .seq-block code { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 0.85rem; color: #fbbf24; letter-spacing: 0.05em; word-break: break-all; }
+        .seq-block .seq-meta { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; }
+
+        /* ── SPECIFICITY ── */
+        .spec-result {
+            display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem;
+            background: var(--bg-card); border-radius: 12px; margin: 0.8rem 0;
+            border-left: 4px solid var(--success);
+        }
+        .spec-result.warning { border-left-color: var(--accent); }
+        .spec-result .badge-ok { background: rgba(34,197,94,0.15); color: var(--success); padding: 0.2rem 0.8rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; }
+        .spec-result .spec-text { flex: 1; }
+        .spec-result .spec-text strong { display: block; font-size: 0.95rem; }
+        .spec-result .spec-text span { color: var(--text-muted); font-size: 0.85rem; }
+
+        /* ── OLIGOS TABLE ── */
+        .oligo-card {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+            padding: 1.2rem 1.5rem; margin: 0.8rem 0;
+            display: grid; grid-template-columns: 200px 1fr auto; align-items: center; gap: 1rem;
+        }
+        .oligo-card .oligo-name { font-weight: 600; font-size: 0.9rem; }
+        .oligo-card .oligo-type { font-size: 0.75rem; color: var(--primary-light); }
+        .oligo-card .oligo-seq { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: #fbbf24; word-break: break-all; }
+        .oligo-card .oligo-info { text-align: right; font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
+
+        /* ── PIPELINE ── */
+        .pipeline-step {
+            display: flex; gap: 1.5rem; margin: 1.5rem 0; align-items: flex-start;
+        }
+        .pipeline-num {
+            width: 40px; height: 40px; border-radius: 50%; background: var(--primary);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.9rem; flex-shrink: 0;
+        }
+        .pipeline-content { flex: 1; }
+        .pipeline-content h4 { margin-bottom: 0.3rem; }
+        .pipeline-content p { color: var(--text-muted); font-size: 0.9rem; }
+        .pipeline-content code { background: rgba(20,184,166,0.1); padding: 0.15rem 0.5rem; border-radius: 4px; font-family: monospace; font-size: 0.85rem; color: var(--primary-light); }
+
+        /* ── COST ── */
+        .cost-summary {
+            background: linear-gradient(135deg, var(--primary-dark), #0a3a35);
+            border-radius: 16px; padding: 2.5rem; text-align: center;
+            border: 1px solid var(--primary);
+        }
+        .cost-summary .cost-value { font-size: 3rem; font-weight: 800; color: var(--accent); }
+        .cost-summary .cost-label { color: var(--text-muted); font-size: 1rem; }
+        .cost-breakdown { display: flex; justify-content: center; gap: 3rem; margin-top: 1.5rem; }
+        .cost-item { text-align: center; }
+        .cost-item .val { font-size: 1.2rem; font-weight: 700; }
+        .cost-item .lab { font-size: 0.8rem; color: var(--text-muted); }
+
+        /* ── FOOTER ── */
+        footer {
+            text-align: center; padding: 3rem 2rem; color: var(--text-muted);
+            border-top: 1px solid var(--border); font-size: 0.85rem;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .problem-grid, .device-container { grid-template-columns: 1fr; }
+            .hero-stats { flex-direction: column; gap: 1rem; }
+            .workflow { flex-direction: column; }
+            .workflow-arrow { transform: rotate(90deg); }
+            .oligo-card { grid-template-columns: 1fr; }
+            nav .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">BacDetect CRISPR</div>
+    <div class="nav-links">
+        <a href="#problem">Problema</a>
+        <a href="#solution">Solucao</a>
+        <a href="#targets">Alvos</a>
+        <a href="#device">Dispositivo</a>
+        <a href="#specificity">Validacao</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#oligos">Oligos</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="badge">Hackathon 2026 &mdash; Harvard</div>
+    <h1>Diagnostico <span>CRISPR-Cas12a</span> Paper-Based para Residuos Hospitalares</h1>
+    <p>Deteccao rapida de bacterias multirresistentes em residuos fecais hospitalares em 30 minutos, sem laboratorio.</p>
+    <div class="hero-stats">
+        <div class="stat">
+            <div class="stat-value">30 min</div>
+            <div class="stat-label">Tempo ate resultado</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">2 alvos</div>
+            <div class="stat-label">MRSA + CRE</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">$207</div>
+            <div class="stat-label">Custo dos oligos</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">37&#176;C</div>
+            <div class="stat-label">Sem termociclador</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+    <h2 class="section-title">O Problema</h2>
+    <p class="section-subtitle">Infeccoes associadas a cuidados de saude (HAIs) sao uma crise global.</p>
+    <div class="problem-grid">
+        <div class="problem-card">
+            <div class="icon">&#x1F3E5;</div>
+            <h3>1.7 milhao de HAIs/ano</h3>
+            <p>Nos EUA, infeccoes hospitalares afetam ~1 em 31 pacientes. Residuos fecais contaminados sao um vetor importante de disseminacao.</p>
+        </div>
+        <div class="problem-card">
+            <div class="icon">&#x26A0;</div>
+            <h3>Resistencia antimicrobiana</h3>
+            <p>MRSA e bacterias produtoras de carbapenemase (CRE) estao entre os patogenos mais perigosos classificados pela OMS como prioridade critica.</p>
+        </div>
+        <div class="problem-card">
+            <div class="icon">&#x23F1;</div>
+            <h3>Diagnostico lento</h3>
+            <p>Cultura bacteriana leva 24-72h. PCR requer equipamento caro (~$50k). Nao ha teste rapido e barato para triagem de residuos no ponto de cuidado.</p>
+        </div>
+        <div class="problem-card">
+            <div class="icon">&#x1F4A1;</div>
+            <h3>Nossa solucao</h3>
+            <p>Teste paper-based CRISPR-Cas12a: coleta simples, amplificacao isotermica (37&#176;C), resultado fluorescente em 30 min. Custo &lt;$5/teste.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUTION / WORKFLOW -->
+<section id="solution">
+    <h2 class="section-title">Como Funciona</h2>
+    <p class="section-subtitle">Workflow de 7 passos, do residuo ao resultado.</p>
+    <div class="workflow">
+        <div class="workflow-step">
+            <div class="step-num">1</div>
+            <h4>Coleta</h4>
+            <p>Amostra do residuo fecal hospitalar</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">2</div>
+            <h4>Lise</h4>
+            <p>Glass fiber pad com buffer de lise</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">3</div>
+            <h4>Extracao</h4>
+            <p>Fluxo lateral no papel</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">4</div>
+            <h4>Eluicao</h4>
+            <p>Buffer de eluicao nos spots</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">5</div>
+            <h4>RPA</h4>
+            <p>Amplificacao 37&#176;C / 20 min</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">6</div>
+            <h4>CRISPR</h4>
+            <p>Cas12a trans-cleavage</p>
+        </div>
+        <div class="workflow-arrow">&#x27A1;</div>
+        <div class="workflow-step">
+            <div class="step-num">7</div>
+            <h4>Leitura</h4>
+            <p>UV ou camera de smartphone</p>
+        </div>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+        <p style="color:var(--text-muted); font-size:0.9rem;">
+            <strong style="color:var(--primary-light);">Principio:</strong>
+            O Cas12a reconhece o DNA-alvo via crRNA &rarr; ativa cleavage colateral (trans) &rarr;
+            corta reporters ssDNA-FAM/BHQ-1 &rarr; fluorescencia liberada = sinal positivo.
+        </p>
+    </div>
+</section>
+
+<!-- TARGETS -->
+<section id="targets">
+    <h2 class="section-title">Alvos Moleculares</h2>
+    <p class="section-subtitle">Genes de resistencia antimicrobiana como biomarcadores de deteccao.</p>
+
+    <table class="targets-table">
+        <thead>
+            <tr>
+                <th>Alvo</th>
+                <th>Gene</th>
+                <th>Organismo</th>
+                <th>Accession</th>
+                <th>Tamanho</th>
+                <th>Relevancia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong style="color:#f97316">MRSA</strong></td>
+                <td>mecA</td>
+                <td><em>Staphylococcus aureus</em></td>
+                <td>NG_047945.1</td>
+                <td>2107 bp</td>
+                <td>Resistencia a meticilina &mdash; principal HAI</td>
+            </tr>
+            <tr>
+                <td><strong style="color:#a855f7">CRE/CRAB</strong></td>
+                <td>blaKPC</td>
+                <td><em>Acinetobacter baumannii</em></td>
+                <td>NG_049243.1</td>
+                <td>882 bp</td>
+                <td>Resistencia a carbapenemicos &mdash; prioridade critica OMS</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- mecA -->
+    <h3 style="margin-top:2.5rem;">mecA &mdash; MRSA</h3>
+    <div class="seq-block">
+        <div class="seq-label">crRNA Guide (LbCas12a) &mdash; Score: 130.0</div>
+        <code>5'-<span style="color:#94a3b8">AATTTCTACTAAGTGTAGAT</span><span style="color:#fbbf24">GACCGAAACAATGTGGAATT</span>-3'</code>
+        <div class="seq-meta">Direct Repeat (cinza) + Spacer 20nt (amarelo) | PAM: TTTA (+) | GC: 40% | Posicao: 461/2107</div>
+    </div>
+    <div class="seq-block">
+        <div class="seq-label">RPA Primers &mdash; Amplicon: 158 bp</div>
+        <code>FWD: 5'-TTAGATTGGGATCATAGCGTCATTATTCCAGG-3'</code><br>
+        <code>REV: 5'-TTCTTTGGAACGATGCCTATCTCATATGCTGT-3'</code>
+        <div class="seq-meta">32nt cada | Tm: 60.5&#176;C / 60.5&#176;C | GC: 41% / 41% | &Delta;Tm: 0&#176;C</div>
+    </div>
+
+    <!-- blaKPC -->
+    <h3 style="margin-top:2.5rem;">blaKPC &mdash; CRE</h3>
+    <div class="seq-block">
+        <div class="seq-label">crRNA Guide (LbCas12a) &mdash; Score: 130.0</div>
+        <code>5'-<span style="color:#94a3b8">AATTTCTACTAAGTGTAGAT</span><span style="color:#fbbf24">TTGCTGAAGGAGTTGGGCGG</span>-3'</code>
+        <div class="seq-meta">Direct Repeat (cinza) + Spacer 20nt (amarelo) | PAM: TTTG (+) | GC: 60% | Posicao: 404/882</div>
+    </div>
+    <div class="seq-block">
+        <div class="seq-label">RPA Primers &mdash; Amplicon: 149 bp</div>
+        <code>FWD: 5'-TATCTGACAACAGGCATGACGGTGGCGGAGCT-3'</code><br>
+        <code>REV: 5'-CGGAACGTGGTATCGCCGATAGAGCGCATGAA-3'</code>
+        <div class="seq-meta">32nt cada | Tm: 67.0&#176;C / 67.0&#176;C | GC: 56% / 56% | &Delta;Tm: 0&#176;C</div>
+    </div>
+</section>
+
+<!-- DEVICE -->
+<section id="device">
+    <h2 class="section-title">Dispositivo Paper-Based</h2>
+    <p class="section-subtitle">4 spots: 2 alvos + controle positivo + controle negativo.</p>
+
+    <div class="device-container">
+        <div class="device-visual">
+            <div class="spot spot-positive">
+                P (+)
+                <div class="spot-label">16S rRNA</div>
+            </div>
+            <div class="spot spot-mecA">
+                mecA
+                <div class="spot-label">MRSA</div>
+            </div>
+            <div class="spot spot-negative">
+                N (&minus;)
+                <div class="spot-label">NTC</div>
+            </div>
+            <div class="spot spot-kpc">
+                KPC
+                <div class="spot-label">CRE</div>
+            </div>
+        </div>
+        <div class="device-info">
+            <h3>Componentes do Dispositivo</h3>
+            <ul>
+                <li><strong>Parte I:</strong> Papel de filtro com canais de cera hidrofobica</li>
+                <li><strong>Parte II:</strong> Glass fiber pad para lise e filtracao</li>
+                <li><strong>Parte III:</strong> Placa plastica com spots de reacao pre-carregados</li>
+                <li><strong>Reporter:</strong> ssDNA-FAM/BHQ-1 (fluorescencia verde 520nm)</li>
+                <li><strong>Leitura:</strong> UV 485nm ou app de smartphone</li>
+                <li><strong>Resultado:</strong> Spot fluorescente = patogeno detectado</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIFICITY -->
+<section id="specificity">
+    <h2 class="section-title">Validacao de Especificidade</h2>
+    <p class="section-subtitle">Cross-reactivity entre guides do painel e analise BLAST.</p>
+
+    <div class="spec-result">
+        <span class="badge-ok">OK</span>
+        <div class="spec-text">
+            <strong>mecA vs blaKPC &mdash; Sem cross-reactivity</strong>
+            <span>Identidade: 35.0% (7/20 matches) &mdash; threshold de risco: >75%</span>
+        </div>
+    </div>
+    <div class="spec-result">
+        <span class="badge-ok">OK</span>
+        <div class="spec-text">
+            <strong>GC Content &mdash; Dentro do range ideal</strong>
+            <span>mecA spacer: 40% | blaKPC spacer: 60% | Range aceitavel: 30-70%</span>
+        </div>
+    </div>
+    <div class="spec-result">
+        <span class="badge-ok">OK</span>
+        <div class="spec-text">
+            <strong>Homopolimeros &mdash; Sem runs longos</strong>
+            <span>Max run: 3nt em ambos os spacers | Limite: 4nt</span>
+        </div>
+    </div>
+    <div class="spec-result">
+        <span class="badge-ok">OK</span>
+        <div class="spec-text">
+            <strong>Primers RPA &mdash; Tm balanceada</strong>
+            <span>mecA: &Delta;Tm=0&#176;C | blaKPC: &Delta;Tm=0&#176;C | Amplicons: 158bp / 149bp</span>
+        </div>
+    </div>
+</section>
+
+<!-- PIPELINE -->
+<section id="pipeline">
+    <h2 class="section-title">Pipeline Computacional</h2>
+    <p class="section-subtitle">5 scripts Python, executados sequencialmente.</p>
+
+    <div class="pipeline-step">
+        <div class="pipeline-num">1</div>
+        <div class="pipeline-content">
+            <h4><code>fetch_sequences.py</code></h4>
+            <p>Busca sequencias DNA dos genes via NCBI Entrez API. Baixou mecA (2107 bp) e blaKPC (882 bp) automaticamente.</p>
+        </div>
+    </div>
+    <div class="pipeline-step">
+        <div class="pipeline-num">2</div>
+        <div class="pipeline-content">
+            <h4><code>design_guides.py</code></h4>
+            <p>Escaneia PAM TTTV em ambas as fitas, extrai spacers 20nt, pontua por GC%, homopolimeros, hairpins e posicao. Top 5 guides por gene.</p>
+        </div>
+    </div>
+    <div class="pipeline-step">
+        <div class="pipeline-num">3</div>
+        <div class="pipeline-content">
+            <h4><code>design_primers.py</code></h4>
+            <p>Primers RPA 30-35nt flanqueando o site do crRNA. Amplicon 100-200bp, Tm 54-67&#176;C. Top 5 pares ranqueados.</p>
+        </div>
+    </div>
+    <div class="pipeline-step">
+        <div class="pipeline-num">4</div>
+        <div class="pipeline-content">
+            <h4><code>specificity_check.py</code></h4>
+            <p>Cross-reactivity local entre guides + BLAST remoto (NCBI API) para validar especificidade contra genomas completos.</p>
+        </div>
+    </div>
+    <div class="pipeline-step">
+        <div class="pipeline-num">5</div>
+        <div class="pipeline-content">
+            <h4><code>multiplex_panel.py</code></h4>
+            <p>Monta painel final: layout do dispositivo, folha de encomenda de oligos, protocolo e estimativa de custo.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OLIGOS -->
+<section id="oligos">
+    <h2 class="section-title">Folha de Encomenda de Oligos</h2>
+    <p class="section-subtitle">7 oligonucleotideos prontos para sintese.</p>
+
+    <div class="oligo-card">
+        <div><div class="oligo-name">crRNA_mecA</div><div class="oligo-type">crRNA &mdash; LbCas12a</div></div>
+        <div class="oligo-seq">AATTTCTACTAAGTGTAGATGACCGAAACAATGTGGAATT</div>
+        <div class="oligo-info">40nt | PAGE | 10 nmol</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">RPA_FWD_mecA</div><div class="oligo-type">Primer forward</div></div>
+        <div class="oligo-seq">TTAGATTGGGATCATAGCGTCATTATTCCAGG</div>
+        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">RPA_REV_mecA</div><div class="oligo-type">Primer reverse</div></div>
+        <div class="oligo-seq">TTCTTTGGAACGATGCCTATCTCATATGCTGT</div>
+        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">crRNA_blaKPC</div><div class="oligo-type">crRNA &mdash; LbCas12a</div></div>
+        <div class="oligo-seq">AATTTCTACTAAGTGTAGATTTGCTGAAGGAGTTGGGCGG</div>
+        <div class="oligo-info">40nt | PAGE | 10 nmol</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">RPA_FWD_blaKPC</div><div class="oligo-type">Primer forward</div></div>
+        <div class="oligo-seq">TATCTGACAACAGGCATGACGGTGGCGGAGCT</div>
+        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
+    </div>
+    <div class="oligo-card">
+        <div><div class="oligo-name">RPA_REV_blaKPC</div><div class="oligo-type">Primer reverse</div></div>
+        <div class="oligo-seq">CGGAACGTGGTATCGCCGATAGAGCGCATGAA</div>
+        <div class="oligo-info">32nt | Desalt | 25 nmol</div>
+    </div>
+    <div class="oligo-card" style="border-color: var(--accent);">
+        <div><div class="oligo-name">Reporter_ssDNA_FQ</div><div class="oligo-type">Reporter FAM/BHQ-1</div></div>
+        <div class="oligo-seq">/56-FAM/ TTATTATT /3BHQ_1/</div>
+        <div class="oligo-info">8nt | HPLC | 100 nmol</div>
+    </div>
+
+    <!-- COST -->
+    <div class="cost-summary" style="margin-top:3rem;">
+        <div class="cost-label">Custo estimado total dos oligos</div>
+        <div class="cost-value">$207.20</div>
+        <div class="cost-breakdown">
+            <div class="cost-item">
+                <div class="val">2</div>
+                <div class="lab">crRNAs</div>
+            </div>
+            <div class="cost-item">
+                <div class="val">4</div>
+                <div class="lab">Primers RPA</div>
+            </div>
+            <div class="cost-item">
+                <div class="val">1</div>
+                <div class="lab">Reporter FQ</div>
+            </div>
+            <div class="cost-item">
+                <div class="val">&lt;$5</div>
+                <div class="lab">Custo/teste</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>CRISPR-Cas12a Paper-Based Diagnostic &mdash; Hackathon 2026</p>
+    <p style="margin-top:0.5rem;">Pipeline gerado computacionalmente | Dados: NCBI RefSeq | Enzima: LbCas12a (DETECTR)</p>
+    <p style="margin-top:0.5rem; font-size:0.75rem; color:#475569;">
+        Genes: mecA (NG_047945.1) | blaKPC (NG_049243.1) | Protein refs: WP_057521704.1 | WP_063860633.1
+    </p>
+</footer>
+
+</body>
+</html>

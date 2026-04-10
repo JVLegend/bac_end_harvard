@@ -68,15 +68,20 @@ def get_blast_results(rid: str) -> dict | None:
         "RID": rid,
     }
     try:
-        response = requests.get(BLAST_API, params=params, timeout=60)
+        response = requests.get(BLAST_API, params=params, timeout=120)
         response.raise_for_status()
+        text = response.text.strip()
+        # NCBI pode retornar HTML enquanto ainda processa
+        if text.startswith("<!DOCTYPE") or text.startswith("<html"):
+            print(f"    NCBI retornou HTML (ainda processando ou erro)")
+            return None
         return response.json()
     except (requests.RequestException, ValueError) as e:
         print(f"    Erro ao recuperar resultados: {e}")
         return None
 
 
-def run_blast_check(sequence: str, seq_name: str, max_wait: int = 120) -> list[dict]:
+def run_blast_check(sequence: str, seq_name: str, max_wait: int = 300) -> list[dict]:
     """Executa BLAST completo e retorna hits."""
     print(f"    Submetendo {seq_name} ao BLAST...")
     rid = submit_blast(sequence)
@@ -86,11 +91,11 @@ def run_blast_check(sequence: str, seq_name: str, max_wait: int = 120) -> list[d
 
     print(f"    RID: {rid} - aguardando resultados...")
 
-    # Poll até resultado pronto
+    # Poll até resultado pronto (BLAST pode levar vários minutos)
     elapsed = 0
     while elapsed < max_wait:
-        time.sleep(15)
-        elapsed += 15
+        time.sleep(20)
+        elapsed += 20
         status = check_blast_status(rid)
         if status == "READY":
             break
