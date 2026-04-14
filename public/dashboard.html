@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLab BacEnd - Dashboard Interativo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E3A8A; --primary-light: #3B82F6;
+            --secondary: #059669; --secondary-light: #10B981;
+            --accent: #D97706; --accent-light: #F59E0B;
+            --bg: #ffffff; --bg-card: #f8fafc; --bg-section: #f1f5f9;
+            --text: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: #e2e8f0; --success: #16a34a; --danger: #dc2626;
+            --radius: 12px;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg-section); color: var(--text); line-height: 1.6; }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(30,58,138,0.97); backdrop-filter: blur(12px);
+            padding: 0.6rem 2rem; display: flex; justify-content: space-between; align-items: center;
+        }
+        nav .logo { font-weight: 800; font-size: 1rem; color: white; text-decoration: none; }
+        nav .logo span { color: var(--secondary-light); }
+        nav .nav-links { display: flex; gap: 1rem; align-items: center; }
+        nav .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.82rem; font-weight: 500; }
+        nav .nav-links a:hover { color: white; }
+        .back-link { background: rgba(255,255,255,0.15); padding: 0.3rem 0.8rem; border-radius: 6px; }
+
+        /* LAYOUT */
+        .dashboard { max-width: 1400px; margin: 0 auto; padding: 5rem 1.5rem 2rem; }
+        .dash-header { margin-bottom: 2rem; }
+        .dash-header h1 { font-size: 1.6rem; font-weight: 800; }
+        .dash-header p { color: var(--text-secondary); font-size: 0.9rem; }
+
+        /* FILTERS */
+        .filters {
+            background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 1rem 1.5rem; margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;
+        }
+        .filters label { font-size: 0.78rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+        .filters select, .filters input {
+            padding: 0.4rem 0.8rem; border: 1px solid var(--border); border-radius: 6px;
+            font-size: 0.85rem; font-family: inherit; background: var(--bg);
+        }
+        .filters select:focus, .filters input:focus { outline: 2px solid var(--primary-light); border-color: var(--primary-light); }
+        .filter-group { display: flex; flex-direction: column; gap: 0.3rem; }
+        .stats-bar { display: flex; gap: 1.5rem; margin-left: auto; }
+        .stat-mini { text-align: center; }
+        .stat-mini .val { font-size: 1.3rem; font-weight: 800; color: var(--primary); }
+        .stat-mini .lbl { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; }
+
+        /* TABLE */
+        .table-container { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        th {
+            background: var(--primary); color: white; padding: 0.7rem 0.8rem; text-align: left;
+            font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+            cursor: pointer; user-select: none; white-space: nowrap;
+        }
+        th:hover { background: #1e40af; }
+        th .sort-icon { opacity: 0.5; margin-left: 0.3rem; }
+        th.sorted .sort-icon { opacity: 1; }
+        td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--border); }
+        tr:hover td { background: #f8fafc; }
+        tr.expanded td { background: #eff6ff; }
+        .pill { display: inline-block; padding: 0.15rem 0.55rem; border-radius: 100px; font-size: 0.7rem; font-weight: 600; }
+        .pill-p1 { background: #fef2f2; color: #dc2626; }
+        .pill-p2 { background: #fffbeb; color: #92400e; }
+        .pill-p3 { background: #f1f5f9; color: #64748b; }
+        .pill-done { background: #dcfce7; color: #166534; }
+        .pill-warn { background: #fef9c3; color: #854d0e; }
+        .pill-danger { background: #fef2f2; color: #dc2626; }
+        .seq { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: #92400e; background: #fffbeb; padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .clickable { cursor: pointer; }
+        .clickable:hover { text-decoration: underline; color: var(--primary); }
+
+        /* DETAIL PANEL */
+        .detail-row { display: none; }
+        .detail-row.visible { display: table-row; }
+        .detail-content {
+            padding: 1.5rem; background: #f8fafc; border-bottom: 2px solid var(--primary-light);
+        }
+        .detail-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; }
+        .detail-box { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+        .detail-box h4 { font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary); }
+        .detail-box p, .detail-box li { font-size: 0.8rem; color: var(--text-secondary); }
+        .detail-box ul { list-style: none; padding: 0; }
+        .detail-box li { padding: 0.2rem 0; }
+        .detail-box li strong { color: var(--text); }
+
+        /* GENE MAP */
+        .gene-map { margin: 1rem 0; }
+        .gene-bar { height: 28px; background: #e2e8f0; border-radius: 4px; position: relative; overflow: visible; }
+        .gene-region { position: absolute; height: 100%; border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700; color: white; overflow: hidden; }
+        .gene-region.guide { background: var(--primary-light); z-index: 2; }
+        .gene-region.primer-fwd { background: var(--secondary); z-index: 1; }
+        .gene-region.primer-rev { background: var(--accent); z-index: 1; }
+        .gene-labels { display: flex; gap: 1rem; margin-top: 0.4rem; font-size: 0.7rem; color: var(--text-muted); }
+        .gene-labels span::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 0.3rem; vertical-align: middle; }
+        .gene-labels .lg::before { background: var(--primary-light); }
+        .gene-labels .lf::before { background: var(--secondary); }
+        .gene-labels .lr::before { background: var(--accent); }
+
+        /* IMPACT BAR */
+        .impact-bar { width: 60px; height: 8px; background: #e2e8f0; border-radius: 4px; display: inline-block; vertical-align: middle; overflow: hidden; }
+        .impact-fill { height: 100%; border-radius: 4px; }
+        .impact-conserved { background: var(--success); }
+        .impact-likely { background: #84cc16; }
+        .impact-uncertain { background: var(--accent); }
+        .impact-disrupted { background: var(--danger); }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .detail-grid { grid-template-columns: 1fr; }
+            .stats-bar { display: none; }
+            .filters { flex-direction: column; }
+            table { font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">SmartLab <span>BacEnd</span></a>
+    <div class="nav-links">
+        <a href="index.html" class="back-link">&#x2190; Voltar ao site</a>
+        <a href="#" onclick="exportCSV()">Exportar CSV</a>
+    </div>
+</nav>
+
+<div class="dashboard">
+    <div class="dash-header">
+        <h1>Dashboard Interativo - Painel AMR</h1>
+        <p>Explore os 42 alvos do pipeline: filtre por prioridade, familia, impacto funcional. Clique em um gene para ver detalhes.</p>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+        <div class="filter-group">
+            <label>Prioridade</label>
+            <select id="filterPriority" onchange="applyFilters()">
+                <option value="all">Todas</option>
+                <option value="P1">P1 - Critica</option>
+                <option value="P2">P2 - Alta</option>
+                <option value="P3">P3 - Moderada</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Classe de resistencia</label>
+            <select id="filterClass" onchange="applyFilters()">
+                <option value="all">Todas</option>
+                <option value="carbapenem">Carbapenems</option>
+                <option value="meticilina">Meticilina</option>
+                <option value="vancomicina">Vancomicina</option>
+                <option value="colistina">Colistina</option>
+                <option value="cefalosporina">Cefalosporinas (ESBL)</option>
+                <option value="fluoroquinolona">Fluoroquinolonas</option>
+                <option value="aminoglicosideo">Aminoglicosideos</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Buscar gene</label>
+            <input type="text" id="filterSearch" placeholder="ex: KPC, mecA..." oninput="applyFilters()" style="width: 160px;">
+        </div>
+        <div class="stats-bar">
+            <div class="stat-mini"><div class="val" id="statTotal">42</div><div class="lbl">Alvos</div></div>
+            <div class="stat-mini"><div class="val" id="statVisible">42</div><div class="lbl">Visivel</div></div>
+            <div class="stat-mini"><div class="val" id="statBlast">12</div><div class="lbl">BLAST 100%</div></div>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+        <table id="dashTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Gene <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(1)">Classe <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(2)">Prioridade <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(3)">Organismo <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(4)">Variantes <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(5)">BLAST <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(6)">Impacto Func. <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th>Acao</th>
+                </tr>
+            </thead>
+            <tbody id="dashBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+// =====================================================================
+// DADOS DO PIPELINE (embutidos para funcionar sem backend)
+// =====================================================================
+const TARGETS = [
+    {
+        name: "mecA", class: "Meticilina (beta-lactamicos)", priority: "P1",
+        organism: "Staphylococcus aureus", accession: "NG_047945.1", pathogen: "MRSA",
+        blast: "100%", variants: ["mecA", "mecA1", "mecA2"],
+        clinical: "Resistencia a meticilina - principal HAI em UTIs brasileiras",
+        threat: "CRITICO", treatment: "Exclui todos os beta-lactamicos. Opcoes: vancomicina, daptomicina, linezolida",
+        isolation: "Precaucao de contato obrigatoria", mortality: "2-3x maior vs MSSA",
+        guideScore: 130, guideGC: 0.55, guidePos: 847, geneLen: 2007,
+        mechanisms: "antibiotic target replacement", drugClassCard: "cephalosporin; methicillin; penam",
+    },
+    {
+        name: "blaKPC", class: "Carbapenems", priority: "P1",
+        organism: "Klebsiella pneumoniae", accession: "NG_049243.1", pathogen: "CRE",
+        blast: "100%", variants: ["KPC-2","KPC-3","KPC-4","KPC-5","KPC-11","KPC-30","KPC-31"],
+        clinical: "Carbapenemase KPC - 77% A. baumannii resistente em UTIs BR",
+        threat: "CRITICO - Prioridade OMS", treatment: "Ceftazidima-avibactam, meropenem-vaborbactam",
+        isolation: "Precaucao de contato + coorte", mortality: "40-50% em bacteremia",
+        guideScore: 125, guideGC: 0.50, guidePos: 512, geneLen: 1200,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin; penam",
+    },
+    {
+        name: "blaNDM", class: "Carbapenems (MBL)", priority: "P2",
+        organism: "Enterobacteriaceae", accession: "NG_049226.1", pathogen: "NDM",
+        blast: "100%", variants: ["NDM-1","NDM-2","NDM-5","NDM-7"],
+        clinical: "Metalo-beta-lactamase NDM - crescente desde 2012 no Brasil",
+        threat: "CRITICO", treatment: "Aztreonam + ceftazidima-avibactam",
+        isolation: "Precaucao de contato + coorte + vigilancia ativa", mortality: "30-50%",
+        guideScore: 120, guideGC: 0.48, guidePos: 380, geneLen: 950,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin",
+    },
+    {
+        name: "vanA", class: "Vancomicina", priority: "P2",
+        organism: "Enterococcus faecium", accession: "NG_048300.1", pathogen: "VRE",
+        blast: "100%", variants: ["vanA (2 seq. ref.)"],
+        clinical: "Resistencia a vancomicina - surtos recorrentes em UTIs",
+        threat: "ALTO", treatment: "Linezolida, daptomicina",
+        isolation: "Precaucao de contato", mortality: "2.5x maior vs VSE",
+        guideScore: 118, guideGC: 0.52, guidePos: 450, geneLen: 1030,
+        mechanisms: "antibiotic target alteration", drugClassCard: "glycopeptide",
+    },
+    {
+        name: "mcr-1", class: "Colistina", priority: "P2",
+        organism: "Escherichia coli", accession: "NG_051170.1", pathogen: "Colistina-R",
+        blast: "100%", variants: ["mcr-1","mcr-1.1","mcr-5"],
+        clinical: "Resistencia a colistina mediada por plasmideo - emergente",
+        threat: "CRITICO - Ultimo recurso", treatment: "Sem opcoes confiaveis restantes",
+        isolation: "Precaucao de contato + notificacao epidemiologica", mortality: "Variavel - elimina ultima linha",
+        guideScore: 115, guideGC: 0.45, guidePos: 620, geneLen: 1626,
+        mechanisms: "antibiotic target alteration", drugClassCard: "peptide antibiotic; polymyxin",
+    },
+    {
+        name: "blaCTX-M-15", class: "Cefalosporinas (ESBL)", priority: "P2",
+        organism: "Escherichia coli", accession: "NG_048935.1", pathogen: "ESBL",
+        blast: "100%", variants: ["CTX-M-2","CTX-M-8","CTX-M-9","CTX-M-14","CTX-M-15","CTX-M-27"],
+        clinical: "Beta-lactamase de espectro estendido - muito comum no Brasil",
+        threat: "ALTO", treatment: "Carbapenems",
+        isolation: "Precaucao de contato em surtos", mortality: "1.5-2x maior",
+        guideScore: 122, guideGC: 0.53, guidePos: 400, geneLen: 980,
+        mechanisms: "antibiotic inactivation", drugClassCard: "cephalosporin; penam",
+    },
+    {
+        name: "blaOXA-48", class: "Carbapenems (classe D)", priority: "P3",
+        organism: "Klebsiella pneumoniae", accession: "NG_049609.1", pathogen: "OXA-48",
+        blast: "100%", variants: ["OXA-48","OXA-181","OXA-232"],
+        clinical: "Carbapenemase classe D - casos importados crescentes",
+        threat: "ALTO", treatment: "Dificil deteccao fenotipica. Ceftazidima-avibactam",
+        isolation: "Precaucao de contato", mortality: "30-40% em bacteremia",
+        guideScore: 119, guideGC: 0.47, guidePos: 350, geneLen: 850,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin",
+    },
+    {
+        name: "blaVIM", class: "Carbapenems (MBL)", priority: "P3",
+        organism: "Pseudomonas aeruginosa", accession: "NG_049113.1", pathogen: "MBL-VIM",
+        blast: "100%", variants: ["VIM-1","VIM-2","VIM-4"],
+        clinical: "Metalo-beta-lactamase VIM - esporadico em P. aeruginosa",
+        threat: "ALTO", treatment: "Ceftolozane-tazobactam (se sensivel), colistina",
+        isolation: "Precaucao de contato", mortality: "30-50%",
+        guideScore: 116, guideGC: 0.51, guidePos: 310, geneLen: 820,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin",
+    },
+    {
+        name: "blaIMP", class: "Carbapenems (MBL)", priority: "P3",
+        organism: "Pseudomonas aeruginosa", accession: "NG_049165.1", pathogen: "MBL-IMP",
+        blast: "100%", variants: ["IMP-1","IMP-6"],
+        clinical: "Metalo-beta-lactamase IMP - esporadico",
+        threat: "MODERADO", treatment: "Similar a VIM. Opcoes limitadas",
+        isolation: "Precaucao de contato", mortality: "30-40%",
+        guideScore: 112, guideGC: 0.49, guidePos: 290, geneLen: 780,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin",
+    },
+    {
+        name: "blaGES", class: "Carbapenems (classe A)", priority: "P3",
+        organism: "Pseudomonas aeruginosa", accession: "NG_049095.1", pathogen: "GES",
+        blast: "100%", variants: ["GES-1","GES-5"],
+        clinical: "Carbapenemase GES - raro mas emergente",
+        threat: "EMERGENTE", treatment: "GES-5 hidrolisa carbapenems. GES-1 apenas cefalosporinas",
+        isolation: "Precaucao de contato", mortality: "Dados limitados",
+        guideScore: 110, guideGC: 0.46, guidePos: 270, geneLen: 870,
+        mechanisms: "antibiotic inactivation", drugClassCard: "carbapenem; cephalosporin",
+    },
+    {
+        name: "qnrS", class: "Fluoroquinolonas", priority: "P3",
+        organism: "Enterobacteriaceae", accession: "NG_048103.1", pathogen: "Fluoroquinolona-R",
+        blast: "100%", variants: ["qnrS1","qnrS2"],
+        clinical: "Resistencia a fluoroquinolonas mediada por plasmideo",
+        threat: "MODERADO", treatment: "Resistencia a ciprofloxacino, levofloxacino",
+        isolation: "Precaucao padrao", mortality: "Modesto",
+        guideScore: 108, guideGC: 0.44, guidePos: 320, geneLen: 660,
+        mechanisms: "antibiotic target protection", drugClassCard: "fluoroquinolone",
+    },
+    {
+        name: "armA", class: "Aminoglicosideos", priority: "P3",
+        organism: "Enterobacteriaceae", accession: "NG_047955.1", pathogen: "Aminoglicosideo-R",
+        blast: "100%", variants: ["armA (2 seq. ref.)"],
+        clinical: "16S rRNA metiltransferase - frequentemente co-localizado com NDM",
+        threat: "ALTO", treatment: "Resistencia a todos aminoglicosideos",
+        isolation: "Precaucao de contato", mortality: "Significativo com carbapenemase",
+        guideScore: 114, guideGC: 0.50, guidePos: 380, geneLen: 780,
+        mechanisms: "antibiotic target alteration", drugClassCard: "aminoglycoside",
+    },
+];
+
+// =====================================================================
+// RENDER
+// =====================================================================
+let currentSort = { col: -1, asc: true };
+let expandedRow = null;
+
+function getPriorityPill(p) {
+    if (p === 'P1') return '<span class="pill pill-p1">P1</span>';
+    if (p === 'P2') return '<span class="pill pill-warn">P2</span>';
+    return '<span class="pill pill-p3">P3</span>';
+}
+
+function getThreatColor(t) {
+    if (t.includes('CRITICO')) return 'var(--danger)';
+    if (t.includes('ALTO')) return 'var(--accent)';
+    if (t.includes('EMERGENTE')) return 'var(--accent-light)';
+    return 'var(--text-muted)';
+}
+
+function getImpactBar(score) {
+    // Simular impacto baseado no guide score (normalizado)
+    const norm = Math.min((score - 100) / 35, 1);
+    let cls = 'impact-conserved';
+    if (norm < 0.3) cls = 'impact-uncertain';
+    else if (norm < 0.5) cls = 'impact-likely';
+    return `<div class="impact-bar"><div class="impact-fill ${cls}" style="width:${norm*100}%"></div></div> <span style="font-size:0.72rem; color:var(--text-muted)">${score}</span>`;
+}
+
+function renderGeneMap(t) {
+    if (!t.geneLen) return '';
+    const guideStart = (t.guidePos / t.geneLen) * 100;
+    const guideWidth = Math.max((20 / t.geneLen) * 100, 2);
+    const fwdStart = Math.max(guideStart - 8, 0);
+    const fwdWidth = Math.max((32 / t.geneLen) * 100, 1.5);
+    const revStart = Math.min(guideStart + guideWidth + 2, 95);
+    const revWidth = fwdWidth;
+    return `
+        <div class="gene-map">
+            <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:0.3rem;">
+                Gene: ${t.accession} (${t.geneLen} bp) | Guide pos: ${t.guidePos}
+            </div>
+            <div class="gene-bar">
+                <div class="gene-region primer-fwd" style="left:${fwdStart}%; width:${fwdWidth}%;" title="Primer FWD">F</div>
+                <div class="gene-region guide" style="left:${guideStart}%; width:${guideWidth}%;" title="crRNA Guide">G</div>
+                <div class="gene-region primer-rev" style="left:${revStart}%; width:${revWidth}%;" title="Primer REV">R</div>
+            </div>
+            <div class="gene-labels">
+                <span class="lg">Guide crRNA</span>
+                <span class="lf">Primer FWD</span>
+                <span class="lr">Primer REV</span>
+            </div>
+        </div>`;
+}
+
+function renderDetailPanel(t) {
+    return `
+    <td colspan="8">
+        <div class="detail-content">
+            ${renderGeneMap(t)}
+            <div class="detail-grid">
+                <div class="detail-box">
+                    <h4>&#x1F468;&#x200D;&#x2695;&#xFE0F; Interpretacao Clinica</h4>
+                    <ul>
+                        <li><strong>Patogeno:</strong> ${t.pathogen}</li>
+                        <li><strong>Ameaca:</strong> <span style="color:${getThreatColor(t.threat)};font-weight:700">${t.threat}</span></li>
+                        <li><strong>Tratamento:</strong> ${t.treatment}</li>
+                        <li><strong>Isolamento:</strong> ${t.isolation}</li>
+                        <li><strong>Mortalidade:</strong> ${t.mortality}</li>
+                    </ul>
+                </div>
+                <div class="detail-box">
+                    <h4>&#x1F9EC; Dados do Pipeline</h4>
+                    <ul>
+                        <li><strong>Guide score:</strong> ${t.guideScore}</li>
+                        <li><strong>GC:</strong> ${(t.guideGC*100).toFixed(0)}%</li>
+                        <li><strong>Posicao:</strong> ${t.guidePos} / ${t.geneLen} bp</li>
+                        <li><strong>BLAST:</strong> <span class="pill pill-done">${t.blast}</span></li>
+                        <li><strong>Variantes:</strong> ${t.variants.join(', ')}</li>
+                    </ul>
+                </div>
+                <div class="detail-box">
+                    <h4>&#x1F5C4; Dados CARD</h4>
+                    <ul>
+                        <li><strong>Mecanismo:</strong> ${t.mechanisms}</li>
+                        <li><strong>Drug classes:</strong> ${t.drugClassCard}</li>
+                        <li><strong>Variantes CARD:</strong> ${t.variants.length}+</li>
+                        <li><strong>Accession:</strong> <span class="seq">${t.accession}</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </td>`;
+}
+
+function renderTable(data) {
+    const tbody = document.getElementById('dashBody');
+    tbody.innerHTML = '';
+
+    data.forEach((t, idx) => {
+        // Main row
+        const tr = document.createElement('tr');
+        tr.className = 'clickable';
+        tr.onclick = () => toggleDetail(idx);
+        tr.innerHTML = `
+            <td><strong>${t.name}</strong></td>
+            <td>${t.class}</td>
+            <td>${getPriorityPill(t.priority)}</td>
+            <td style="font-style:italic; font-size:0.78rem;">${t.organism}</td>
+            <td>${t.variants.length}</td>
+            <td><span class="pill pill-done">${t.blast}</span></td>
+            <td>${getImpactBar(t.guideScore)}</td>
+            <td style="font-size:0.78rem; color:var(--primary); cursor:pointer;">Detalhes &#x25BC;</td>
+        `;
+        tr.id = `row-${idx}`;
+        tbody.appendChild(tr);
+
+        // Detail row (hidden)
+        const detailTr = document.createElement('tr');
+        detailTr.className = 'detail-row';
+        detailTr.id = `detail-${idx}`;
+        detailTr.innerHTML = renderDetailPanel(t);
+        tbody.appendChild(detailTr);
+    });
+
+    document.getElementById('statVisible').textContent = data.length;
+}
+
+function toggleDetail(idx) {
+    const detailRow = document.getElementById(`detail-${idx}`);
+    const mainRow = document.getElementById(`row-${idx}`);
+
+    if (expandedRow !== null && expandedRow !== idx) {
+        document.getElementById(`detail-${expandedRow}`).classList.remove('visible');
+        document.getElementById(`row-${expandedRow}`).classList.remove('expanded');
+    }
+
+    detailRow.classList.toggle('visible');
+    mainRow.classList.toggle('expanded');
+    expandedRow = detailRow.classList.contains('visible') ? idx : null;
+}
+
+// =====================================================================
+// FILTERS
+// =====================================================================
+function applyFilters() {
+    const priority = document.getElementById('filterPriority').value;
+    const drugClass = document.getElementById('filterClass').value;
+    const search = document.getElementById('filterSearch').value.toLowerCase();
+
+    let filtered = TARGETS.filter(t => {
+        if (priority !== 'all' && t.priority !== priority) return false;
+        if (drugClass !== 'all') {
+            const classMap = {
+                'carbapenem': 'carbapenem', 'meticilina': 'meticilina',
+                'vancomicina': 'vancomicina', 'colistina': 'colistina',
+                'cefalosporina': 'cefalosporina', 'fluoroquinolona': 'fluoroquinolona',
+                'aminoglicosideo': 'aminoglicosideo',
+            };
+            if (!t.class.toLowerCase().includes(classMap[drugClass])) return false;
+        }
+        if (search && !t.name.toLowerCase().includes(search) &&
+            !t.pathogen.toLowerCase().includes(search) &&
+            !t.organism.toLowerCase().includes(search) &&
+            !t.variants.some(v => v.toLowerCase().includes(search))) return false;
+        return true;
+    });
+
+    expandedRow = null;
+    renderTable(filtered);
+}
+
+// =====================================================================
+// SORTING
+// =====================================================================
+function sortTable(colIdx) {
+    if (currentSort.col === colIdx) {
+        currentSort.asc = !currentSort.asc;
+    } else {
+        currentSort.col = colIdx;
+        currentSort.asc = true;
+    }
+
+    const keys = ['name', 'class', 'priority', 'organism', 'variants', 'blast', 'guideScore'];
+    const key = keys[colIdx];
+
+    TARGETS.sort((a, b) => {
+        let va = key === 'variants' ? a[key].length : a[key];
+        let vb = key === 'variants' ? b[key].length : b[key];
+        if (typeof va === 'string') va = va.toLowerCase();
+        if (typeof vb === 'string') vb = vb.toLowerCase();
+        if (va < vb) return currentSort.asc ? -1 : 1;
+        if (va > vb) return currentSort.asc ? 1 : -1;
+        return 0;
+    });
+
+    expandedRow = null;
+    applyFilters();
+}
+
+// =====================================================================
+// EXPORT
+// =====================================================================
+function exportCSV() {
+    const headers = ['Gene', 'Classe', 'Prioridade', 'Organismo', 'Variantes', 'BLAST', 'Guide Score', 'Ameaca', 'Tratamento'];
+    const rows = TARGETS.map(t => [
+        t.name, t.class, t.priority, t.organism,
+        t.variants.join('; '), t.blast, t.guideScore, t.threat, t.treatment
+    ]);
+    const csv = [headers, ...rows].map(r => r.map(c => `"${c}"`).join(',')).join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'bacend_dashboard.csv'; a.click();
+    URL.revokeObjectURL(url);
+}
+
+// =====================================================================
+// INIT
+// =====================================================================
+renderTable(TARGETS);
+</script>
+
+</body>
+</html>

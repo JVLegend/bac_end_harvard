@@ -165,11 +165,11 @@ Adaptar a abordagem de **covariance probes** da Goodfire:
 
 | Fase | Melhoria | Esforco | Impacto | Status |
 |------|----------|---------|---------|--------|
-| 1 | Integracao CARD database | Medio | Alto | Pendente |
-| 2 | Explicacoes via Claude API | Baixo | Alto | Pendente |
-| 3 | Score funcional Evo 2 | Alto | Muito alto | Pendente |
-| 4 | Dashboard interativo | Medio | Alto | Pendente |
-| 5 | Covariance probes | Muito alto | Diferencial | Pendente |
+| 1 | Integracao CARD database | Medio | Alto | **Concluida** |
+| 2 | Explicacoes via Claude API | Baixo | Alto | **Concluida** |
+| 3 | Score funcional Evo 2 | Alto | Muito alto | **Concluida** |
+| 4 | Dashboard interativo | Medio | Alto | **Concluida** |
+| 5 | Covariance probes | Muito alto | Diferencial | **Concluida** |
 
 ---
 

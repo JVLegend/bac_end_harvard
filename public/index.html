@@ -132,6 +132,10 @@
     <div class="nav-links">
         <a href="#diferencial">Diferencial</a>
         <a href="#dashboard">Dashboard</a>
+        <a href="#evo2">Evo 2</a>
+        <a href="#interpretacao">IA Clinica</a>
+        <a href="#card">CARD</a>
+        <a href="#probes">Probes</a>
         <a href="#tecnologia">Tecnologia</a>
         <a href="#validação">Validação</a>
         <a href="#team">Team</a>
@@ -148,6 +152,11 @@
         <div class="stat"><div class="stat-value">12</div><div class="stat-label">Fam&iacute;lias g&ecirc;nicas + 30 variantes</div></div>
         <div class="stat"><div class="stat-value">~R$25</div><div class="stat-label">Custo por teste (vs R$200+ PCR)</div></div>
         <div class="stat"><div class="stat-value">30 min</div><div class="stat-label">Resultado sem termociclador</div></div>
+    </div>
+    <div style="margin-top: 2rem;">
+        <a href="dashboard.html" style="display:inline-block; padding: 0.7rem 2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 0.95rem; box-shadow: 0 4px 12px rgba(30,58,138,0.3); transition: transform 0.2s;">
+            &#x1F4CA; Abrir Dashboard Interativo
+        </a>
     </div>
 </section>
 
@@ -263,19 +272,187 @@
     </div>
 </div>
 
+<!-- EVO2 SCORING -->
+<section id="evo2">
+    <h2 class="stitle">Score Funcional de Variantes</h2>
+    <p class="ssub">Analise de impacto funcional inspirada no Evo 2 (Arc Institute) e EVEE (Goodfire/Mayo Clinic). Vai alem do mismatch count.</p>
+
+    <div class="grid-2">
+        <div>
+            <div class="callout callout-blue">
+                <strong>Problema:</strong> Contagem de mismatches (0-5) nao distingue entre mutacao silenciosa e mutacao que altera funcao de resistencia. KPC-2 com 2 mismatches pode ser tao virulenta quanto KPC-3 com 0 mismatches.
+            </div>
+            <div class="callout callout-green" style="margin-top: 0.8rem;">
+                <strong>Solucao:</strong> Score funcional multi-dimensional baseado em: perfil de k-mers (proxy para embeddings), adaptacao de codons bacterianos, bias de dinucleotideos, complexidade de sequencia. Modo GPU disponivel com Evo 2 completo.
+            </div>
+        </div>
+        <div>
+            <div class="card" style="border: 2px solid var(--primary);">
+                <h3 style="text-align:center; margin-bottom: 1rem;">Classificacao de Impacto</h3>
+                <div style="font-size: 0.85rem;">
+                    <div style="padding: 0.4rem 0; border-bottom: 1px solid var(--border);">
+                        <span class="pill pill-done">Conservada</span> Funcao de resistencia mantida (dist &lt; 0.02)
+                    </div>
+                    <div style="padding: 0.4rem 0; border-bottom: 1px solid var(--border);">
+                        <span class="pill pill-progress">Provavel</span> Provavelmente conservada (dist 0.02-0.08)
+                    </div>
+                    <div style="padding: 0.4rem 0; border-bottom: 1px solid var(--border);">
+                        <span class="pill pill-pending">Incerto</span> Impacto funcional incerto (dist 0.08-0.20)
+                    </div>
+                    <div style="padding: 0.4rem 0;">
+                        <span class="pill" style="background:#fef2f2; color:#dc2626;">Alterada</span> Funcao provavelmente perdida (dist &gt; 0.20)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: var(--bg-section); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-top: 1.5rem;">
+        <h3 style="text-align:center; margin-bottom: 1rem; color: var(--primary); font-weight: 800; font-size: 0.95rem;">5 DIMENSOES DE ANALISE FUNCIONAL</h3>
+        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; text-align: center; font-size: 0.78rem;">
+            <div style="background: var(--bg); padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border);">
+                <div style="font-size: 1.2rem;">&#x1F9EC;</div>
+                <strong>K-mer Profile</strong>
+                <div style="color: var(--text-muted);">Proxy para embedding distance (35%)</div>
+            </div>
+            <div style="background: var(--bg); padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border);">
+                <div style="font-size: 1.2rem;">&#x1F504;</div>
+                <strong>Codon Adapt.</strong>
+                <div style="color: var(--text-muted);">Uso de codons bacterianos (25%)</div>
+            </div>
+            <div style="background: var(--bg); padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border);">
+                <div style="font-size: 1.2rem;">&#x1F4CA;</div>
+                <strong>GC Shift</strong>
+                <div style="color: var(--text-muted);">Deslocamento composicional (15%)</div>
+            </div>
+            <div style="background: var(--bg); padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border);">
+                <div style="font-size: 1.2rem;">&#x1F52C;</div>
+                <strong>Dinucleotideo</strong>
+                <div style="color: var(--text-muted);">Bias CpG e contexto (15%)</div>
+            </div>
+            <div style="background: var(--bg); padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border);">
+                <div style="font-size: 1.2rem;">&#x1F9E9;</div>
+                <strong>Complexidade</strong>
+                <div style="color: var(--text-muted);">Entropia de Shannon (10%)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLINICAL INTERPRETER -->
+<div class="section-alt" id="interpretacao">
+    <div class="inner">
+        <h2 class="stitle">Interpretacao Clinica por IA</h2>
+        <p class="ssub">Inspirado no EVEE (Goodfire/Mayo Clinic): dados do pipeline traduzidos em linguagem natural para diferentes audiencias.</p>
+
+        <div class="grid-3">
+            <div class="card" style="border-top: 3px solid var(--danger);">
+                <div class="icon">&#x1F468;&#x200D;&#x2695;&#xFE0F;</div>
+                <h3>Para o Medico</h3>
+                <p>Impacto clinico direto: o que o resultado positivo significa, opcoes terapeuticas, decisao de isolamento e mortalidade associada. Linguagem clinica acessivel.</p>
+                <div style="margin-top: 0.8rem; padding: 0.6rem; background: #fef2f2; border-radius: 6px; font-size: 0.78rem; color: #991b1b;">
+                    <strong>Exemplo:</strong> "Resultado POSITIVO para mecA indica MRSA. Exclui todos beta-lactamicos. Isolamento de contato obrigatorio."
+                </div>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--primary);">
+                <div class="icon">&#x1F4CA;</div>
+                <h3>Para o Gestor</h3>
+                <p>Custo-beneficio, ROI vs cultura/PCR, impacto na taxa de HAI. Linguagem administrativa para diretores de CCIH e gestores hospitalares.</p>
+                <div style="margin-top: 0.8rem; padding: 0.6rem; background: #eff6ff; border-radius: 6px; font-size: 0.78rem; color: #1e3a8a;">
+                    <strong>Exemplo:</strong> "Detecta CRE em 30min por R$25/teste vs R$200+ GeneXpert. Isolamento precoce reduz transmissao cruzada."
+                </div>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--secondary);">
+                <div class="icon">&#x1F52C;</div>
+                <h3>Para o Pesquisador</h3>
+                <p>Detalhes tecnicos: sequencia do spacer, scoring, cobertura de variantes, mecanismo molecular de resistencia, dados CARD/BLAST.</p>
+                <div style="margin-top: 0.8rem; padding: 0.6rem; background: #ecfdf5; border-radius: 6px; font-size: 0.78rem; color: #065f46;">
+                    <strong>Exemplo:</strong> "Spacer pos 847-867, score=92.3, GC=55%. Cobertura: 7/7 variantes KPC exact match."
+                </div>
+            </div>
+        </div>
+
+        <div class="callout callout-amber" style="margin-top: 1.5rem;">
+            <strong>Abordagem EVEE adaptada:</strong> Assim como o EVEE traduz embeddings genomicos em explicacoes clinicas via LLM, nosso <code>clinical_interpreter.py</code> traduz dados computacionais do pipeline (scores, BLAST, conservacao) em interpretacoes acionaveis. Suporta Claude API (online) ou modo pre-computado (offline).
+        </div>
+    </div>
+</div>
+
+<!-- CARD INTEGRATION -->
+<section id="card">
+    <h2 class="stitle">Integracao CARD Database</h2>
+    <p class="ssub">Enriquecimento automatico com dados do Comprehensive Antibiotic Resistance Database (McMaster University).</p>
+
+    <div class="grid-2">
+        <div class="card" style="border-left: 4px solid var(--primary);">
+            <div class="icon">&#x1F5C4;</div>
+            <h3>Auto-descoberta de variantes</h3>
+            <p>O modulo <code>card_integration.py</code> baixa o catalogo CARD completo, mapeia entradas para as 12 familias genicas do pipeline e identifica variantes novas nao rastreadas.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid var(--secondary);">
+            <div class="icon">&#x1F9EC;</div>
+            <h3>Metadados enriquecidos</h3>
+            <p>Cada variante recebe: <strong>mecanismo de resistencia</strong> (inativacao, efluxo, alteracao de alvo), <strong>classe de droga</strong>, <strong>ontologia ARO</strong> e familia genica CARD.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid var(--accent);">
+            <div class="icon">&#x1F504;</div>
+            <h3>Atualizacao periodica</h3>
+            <p>Cache de 7 dias com re-download automatico. Comando: <code>python card_integration.py</code> ou <code>--force</code> para forcar atualizacao.</p>
+        </div>
+        <div class="card" style="border-left: 4px solid var(--danger);">
+            <div class="icon">&#x1F50D;</div>
+            <h3>Relatorio de descobertas</h3>
+            <p>Gera <code>card_new_variants.csv</code> com variantes AMR relevantes que o pipeline ainda nao rastreia, priorizadas para inclusao futura.</p>
+        </div>
+    </div>
+
+    <div class="callout callout-green" style="margin-top: 1.5rem;">
+        <strong>Fontes de dados combinadas:</strong> NCBI RefSeq + AMRFinderPlus (sequencias e validacao BLAST) + CARD (ontologia, mecanismos, drug classes). Tres bases complementares para cobertura maxima.
+    </div>
+</section>
+
+<!-- COVARIANCE PROBES -->
+<section id="probes">
+    <h2 class="stitle">Covariance Probes - Scoring Avancado</h2>
+    <p class="ssub">18 features biofisicas + matriz de covariancia para prever eficacia real de clivagem Cas12a. Diferencial competitivo inspirado no EVEE.</p>
+
+    <div class="grid-2">
+        <div>
+            <div class="callout callout-blue">
+                <strong>Rule-based (original):</strong> 5 features lineares independentes (GC%, homopolimero, poly-T, auto-complementaridade, posicao). Score = soma ponderada. Nao captura interacoes entre features.
+            </div>
+            <div class="callout callout-green" style="margin-top: 0.8rem;">
+                <strong>Covariance probes (novo):</strong> 18 features biofisicas + covariancia. Score = w<sup>T</sup>f + &alpha; &middot; f<sup>T</sup>Cf. Captura interacoes: ex. "seed GC alta + acessibilidade baixa = guide ruim apesar de cada feature parecer ok isoladamente".
+            </div>
+        </div>
+        <div class="card" style="border: 2px solid var(--secondary);">
+            <h3 style="margin-bottom: 0.8rem;">Features adicionais vs rule-based</h3>
+            <div style="font-size: 0.82rem; line-height: 1.8;">
+                <div><span class="pill pill-done">NOVO</span> Seed region (pos 1-8): GC, purinas, homopolimero</div>
+                <div><span class="pill pill-done">NOVO</span> Termodinamica: &Delta;G nearest-neighbor, energia da seed, gradiente de estabilidade</div>
+                <div><span class="pill pill-done">NOVO</span> Acessibilidade estrutural: palindromes, repeticoes invertidas, AT-richness</div>
+                <div><span class="pill pill-done">NOVO</span> Preferencias posicionais: concordancia com dados experimentais Cas12a</div>
+                <div><span class="pill pill-done">NOVO</span> Matriz de covariancia: interacoes par-a-par entre todas as 18 features</div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- TECNOLOGIA -->
 <section id="tecnologia">
     <h2 class="stitle">Como Funciona</h2>
-    <p class="ssub">Pipeline computacional de 5 etapas, cada uma executada por um agente Python autônomo.</p>
+    <p class="ssub">Pipeline computacional de 7 etapas, incluindo scoring avancado e interpretacao por IA.</p>
 
-    <div class="pipe-step"><div class="pipe-num">1</div><div class="pipe-content"><h4>Busca de genomas</h4><p>Agente busca sequências DNA dos genes AMR via NCBI Entrez API. Catalogo base: AMRFinderPlus (12+ genes priorizados). <code>fetch_sequences.py</code></p></div></div>
-    <div class="pipe-step"><div class="pipe-num">2</div><div class="pipe-content"><h4>Design de crRNA guides</h4><p>Scan de sites PAM TTTV em ambas as fitas, scoring por GC%, homopolímeros, posição e estabilidade. Top 5 guides por gene. <code>design_guides.py</code></p></div></div>
-    <div class="pipe-step"><div class="pipe-num">3</div><div class="pipe-content"><h4>Design de primers RPA</h4><p>Primers 30-35nt flanqueando o crRNA, amplicon 100-200bp, Tm 54-67C. Amplificação isotérmica a 37C sem termociclador. <code>design_primers.py</code></p></div></div>
-    <div class="pipe-step"><div class="pipe-num">4</div><div class="pipe-content"><h4>Validação BLAST</h4><p>Amplicons completos (~150bp) submetidos ao NCBI BLAST contra 124M genomas. mecA e blaKPC: 100% match. <code>specificity_check.py</code></p></div></div>
-    <div class="pipe-step"><div class="pipe-num">5</div><div class="pipe-content"><h4>Montagem do painel</h4><p>Gera folha de encomenda de oligos, layout do dispositivo e estimativa de custo. <code>multiplex_panel.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">1</div><div class="pipe-content"><h4>Busca de genomas</h4><p>Agente busca sequencias DNA dos genes AMR via NCBI Entrez API. Catalogo base: AMRFinderPlus (12+ genes priorizados). <code>fetch_sequences.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">2</div><div class="pipe-content"><h4>Design de crRNA guides</h4><p>Scan de sites PAM TTTV em ambas as fitas, scoring por GC%, homopolimeros, posicao e estabilidade. Top 5 guides por gene. <code>design_guides.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">3</div><div class="pipe-content"><h4>Covariance Probes</h4><p>Re-scoring com 18 features biofisicas + covariancia: seed region, termodinamica, acessibilidade estrutural. <code>covariance_probes.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">4</div><div class="pipe-content"><h4>Design de primers RPA</h4><p>Primers 30-35nt flanqueando o crRNA, amplicon 100-200bp, Tm 54-67C. Amplificacao isotermica a 37C sem termociclador. <code>design_primers.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">5</div><div class="pipe-content"><h4>Validacao BLAST</h4><p>Amplicons completos (~150bp) submetidos ao NCBI BLAST contra 124M genomas. Todas as 12 familias: 100% match. <code>specificity_check.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">6</div><div class="pipe-content"><h4>Score funcional + CARD</h4><p>Analise de impacto funcional de variantes (Evo 2 inspired) + enriquecimento CARD. <code>evo2_scoring.py</code> + <code>card_integration.py</code></p></div></div>
+    <div class="pipe-step"><div class="pipe-num">7</div><div class="pipe-content"><h4>Interpretacao clinica + Painel</h4><p>Interpretacao por IA para 3 audiencias + montagem do painel com folha de oligos. <code>clinical_interpreter.py</code> + <code>multiplex_panel.py</code></p></div></div>
 
     <div class="callout callout-blue" style="margin-top:1.5rem;">
-        <strong>Batch mode:</strong> <code style="background:white; padding:0.1rem 0.4rem; border-radius:3px;">python run_batch.py 4 --skip-blast</code> processa os próximos 4 genes da fila automaticamente. O tracking CSV é atualizado em tempo real.
+        <strong>Batch mode:</strong> <code style="background:white; padding:0.1rem 0.4rem; border-radius:3px;">python run_batch.py 4 --skip-blast</code> processa os proximos 4 genes da fila automaticamente. O tracking CSV e atualizado em tempo real.
     </div>
 </section>
 
