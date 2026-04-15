@@ -339,9 +339,17 @@ def generate_enriched_csv(matched: dict, existing_variants: set):
 
     # Escrever CSV enriquecido
     if enriched:
-        fieldnames = list(enriched[0].keys())
+        # Coletar todas as chaves possiveis de todas as linhas
+        all_keys = []
+        seen = set()
+        for row in enriched:
+            for k in row.keys():
+                if k not in seen:
+                    all_keys.append(k)
+                    seen.add(k)
+        fieldnames = all_keys
         with open(CARD_ENRICHED_CSV, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore')
             writer.writeheader()
             for row in enriched:
                 writer.writerow(row)
