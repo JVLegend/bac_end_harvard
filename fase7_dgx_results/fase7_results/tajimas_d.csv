@@ -1,0 +1,9 @@
+family,n_seqs,tajimas_d,interpretation
+mecA,3,,insuficiente
+blaKPC,8,2.5691,selecao_balanceada
+blaNDM,5,2.5269,selecao_balanceada
+blaCTX-M,6,1.9928,selecao_balanceada
+blaVIM,4,2.5413,selecao_balanceada
+blaIMP,3,,insuficiente
+blaGES,3,,insuficiente
+qnrS,3,,insuficiente

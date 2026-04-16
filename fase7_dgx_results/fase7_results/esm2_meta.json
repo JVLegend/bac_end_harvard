@@ -1,0 +1,280 @@
+{
+  "use_esm": false,
+  "dim": 640,
+  "n": 39,
+  "items": [
+    {
+      "family": "mecA",
+      "header": "NG_047945.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/mecA.fasta",
+      "prot_len": 668,
+      "dim": 640
+    },
+    {
+      "family": "mecA",
+      "header": "NG_047952.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/mecA2.fasta",
+      "prot_len": 1,
+      "dim": 640
+    },
+    {
+      "family": "mecA",
+      "header": "NG_047950.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/mecA1.fasta",
+      "prot_len": 671,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049243.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC.fasta",
+      "prot_len": 293,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049253.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-2.fasta",
+      "prot_len": 294,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_054685.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-30.fasta",
+      "prot_len": 293,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049244.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-11.fasta",
+      "prot_len": 293,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049259.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-5.fasta",
+      "prot_len": 11,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049257.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-3.fasta",
+      "prot_len": 293,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_055494.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-31.fasta",
+      "prot_len": 15,
+      "dim": 640
+    },
+    {
+      "family": "blaKPC",
+      "header": "NG_049258.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaKPC-4.fasta",
+      "prot_len": 297,
+      "dim": 640
+    },
+    {
+      "family": "blaNDM",
+      "header": "NG_049326.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaNDM-1.fasta",
+      "prot_len": 11,
+      "dim": 640
+    },
+    {
+      "family": "blaNDM",
+      "header": "NG_049337.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaNDM-5.fasta",
+      "prot_len": 11,
+      "dim": 640
+    },
+    {
+      "family": "blaNDM",
+      "header": "NG_049226.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaNDM.fasta",
+      "prot_len": 261,
+      "dim": 640
+    },
+    {
+      "family": "blaNDM",
+      "header": "NG_049334.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaNDM-2.fasta",
+      "prot_len": 270,
+      "dim": 640
+    },
+    {
+      "family": "blaNDM",
+      "header": "NG_049339.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaNDM-7.fasta",
+      "prot_len": 270,
+      "dim": 640
+    },
+    {
+      "family": "vanA",
+      "header": "NG_048300.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/vanA.fasta",
+      "prot_len": 27,
+      "dim": 640
+    },
+    {
+      "family": "mcr-1",
+      "header": "NG_051170.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/mcr-1.fasta",
+      "prot_len": 1,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_048976.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-27.fasta",
+      "prot_len": 291,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_049043.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-9.fasta",
+      "prot_len": 21,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_048929.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-14.fasta",
+      "prot_len": 3,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_049032.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-8.fasta",
+      "prot_len": 4,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_048935.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-15.fasta",
+      "prot_len": 1,
+      "dim": 640
+    },
+    {
+      "family": "blaCTX-M",
+      "header": "NG_048968.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaCTX-M-2.fasta",
+      "prot_len": 292,
+      "dim": 640
+    },
+    {
+      "family": "blaOXA-48",
+      "header": "NG_049609.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaOXA-48.fasta",
+      "prot_len": 274,
+      "dim": 640
+    },
+    {
+      "family": "blaVIM",
+      "header": "NG_050367.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaVIM-4.fasta",
+      "prot_len": 288,
+      "dim": 640
+    },
+    {
+      "family": "blaVIM",
+      "header": "NG_049113.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaVIM.fasta",
+      "prot_len": 0,
+      "dim": 640
+    },
+    {
+      "family": "blaVIM",
+      "header": "NG_050336.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaVIM-1.fasta",
+      "prot_len": 299,
+      "dim": 640
+    },
+    {
+      "family": "blaVIM",
+      "header": "NG_050347.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaVIM-2.fasta",
+      "prot_len": 299,
+      "dim": 640
+    },
+    {
+      "family": "blaIMP",
+      "header": "NG_049165.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaIMP.fasta",
+      "prot_len": 292,
+      "dim": 640
+    },
+    {
+      "family": "blaIMP",
+      "header": "NG_049220.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaIMP-6.fasta",
+      "prot_len": 246,
+      "dim": 640
+    },
+    {
+      "family": "blaIMP",
+      "header": "NG_049172.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaIMP-1.fasta",
+      "prot_len": 9,
+      "dim": 640
+    },
+    {
+      "family": "blaGES",
+      "header": "NG_049111.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaGES-1.fasta",
+      "prot_len": 0,
+      "dim": 640
+    },
+    {
+      "family": "blaGES",
+      "header": "NG_049095.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaGES.fasta",
+      "prot_len": 10,
+      "dim": 640
+    },
+    {
+      "family": "blaGES",
+      "header": "NG_049137.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/blaGES-5.fasta",
+      "prot_len": 287,
+      "dim": 640
+    },
+    {
+      "family": "qnrS",
+      "header": "NG_050543.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/qnrS1.fasta",
+      "prot_len": 1,
+      "dim": 640
+    },
+    {
+      "family": "qnrS",
+      "header": "NG_050544.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/qnrS2.fasta",
+      "prot_len": 218,
+      "dim": 640
+    },
+    {
+      "family": "qnrS",
+      "header": "NG_048103.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/qnrS.fasta",
+      "prot_len": 312,
+      "dim": 640
+    },
+    {
+      "family": "armA",
+      "header": "NG_047955.1",
+      "path": "/home/oftalmousp/jv-teste/harvard_bacend/sequences/armA.fasta",
+      "prot_len": 19,
+      "dim": 640
+    }
+  ]
+}

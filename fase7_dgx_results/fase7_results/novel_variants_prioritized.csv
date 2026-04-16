@@ -1,0 +1,9 @@
+family,variant,title,accession,length,brazil_filter,recent_filter,is_novel,score
+blaCTX-M,RIO-2,"Citrobacter amalonaticus Rio-2 pRio-2 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-8, complete CDS",NG_049032.1,1011,True,False,True,2
+blaCTX-M,KPN52,"Klebsiella pneumoniae Kpn52 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-50, complete CDS",NG_049001.1,963,False,False,True,0
+blaCTX-M,KPN247,"Klebsiella pneumoniae Kpn247 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-49, complete CDS",NG_048999.1,962,False,False,True,0
+blaCTX-M,KPN9,"Klebsiella pneumoniae Kpn9 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-48, complete CDS",NG_048998.1,962,False,False,True,0
+blaCTX-M,ECO182,"Escherichia coli Eco182 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-47, complete CDS",NG_048997.1,963,False,False,True,0
+blaCTX-M,KPN301,"Klebsiella pneumoniae Kpn301 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-46, complete CDS",NG_048996.1,962,False,False,True,0
+blaIMP,CARB-026,"Serratia marcescens CIM-Carb-026 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-50, complete CDS",NG_242292.1,941,False,True,True,3
+blaOXA-48,TYPE-1,"Escherichia coli hypothetical protein, antitoxin YeeU (cbeA), L-fuculose phosphate aldolase (fucA), putative glucose uptake permease, Deoxyribonucleos",KT444704.1,90492,False,False,True,0

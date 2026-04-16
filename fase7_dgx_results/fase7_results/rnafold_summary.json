@@ -1,0 +1,18 @@
+{
+  "n_guides": 213,
+  "with_mfe": 213,
+  "class_counts": {
+    "linear_ok": 178,
+    "weak_hairpin": 34,
+    "moderate_hairpin": 1
+  },
+  "mfe_stats": {
+    "mean": -1.4568075117370893,
+    "min": -8.8,
+    "max": 0.0
+  },
+  "palindromes_stats": {
+    "mean": 0.45,
+    "max": 15
+  }
+}

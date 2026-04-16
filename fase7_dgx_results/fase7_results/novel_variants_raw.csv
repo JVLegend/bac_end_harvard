@@ -1,0 +1,1250 @@
+family,variant,title,accession,length,brazil_filter,recent_filter
+mecA,,"Listeria monocytogenes strain PNUSAL026199, whole genome shotgun sequencing project",ACCYWX000000000.1,38,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026200, whole genome shotgun sequencing project",ACCYWN000000000.1,13,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026201, whole genome shotgun sequencing project",ACCYWU000000000.1,13,False,False
+mecA,,"Listeria monocytogenes strain 01939291, whole genome shotgun sequencing project",ACCYVB000000000.1,33,False,False
+mecA,,"Listeria monocytogenes strain 01939142, whole genome shotgun sequencing project",ACCYVD000000000.1,36,False,False
+mecA,,"Listeria monocytogenes strain 01939143, whole genome shotgun sequencing project",ACCYUX000000000.1,43,False,False
+mecA,,"Listeria monocytogenes strain 01939141, whole genome shotgun sequencing project",ACCYUK000000000.1,27,False,False
+mecA,,"Bacillus subtilis strain LTH 7164 chromosome, complete genome",CP160208.1,4326831,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026198, whole genome shotgun sequencing project",ACCYQO000000000.1,23,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026197, whole genome shotgun sequencing project",ACCYQP000000000.1,14,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00094, whole genome shotgun sequencing project",ACCYOF000000000.1,13,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00097, whole genome shotgun sequencing project",ACCYOH000000000.1,20,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00095, whole genome shotgun sequencing project",ACCYOG000000000.1,20,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00086, whole genome shotgun sequencing project",ACCYNW000000000.1,23,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00084, whole genome shotgun sequencing project",ACCYNT000000000.1,23,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00091, whole genome shotgun sequencing project",ACCYOA000000000.1,19,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00090, whole genome shotgun sequencing project",ACCYNZ000000000.1,24,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00089, whole genome shotgun sequencing project",ACCYNY000000000.1,20,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00085, whole genome shotgun sequencing project",ACCYNV000000000.1,21,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00087, whole genome shotgun sequencing project",ACCYNX000000000.1,19,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00096, whole genome shotgun sequencing project",ACCYOD000000000.1,34,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00088, whole genome shotgun sequencing project",ACCYOE000000000.1,23,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00092, whole genome shotgun sequencing project",ACCYOC000000000.1,21,False,False
+mecA,,"Streptococcus pyogenes isolate 2026DU-00093, whole genome shotgun sequencing project",ACCYOB000000000.1,20,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026195, whole genome shotgun sequencing project",ACCYNK000000000.1,20,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026196, whole genome shotgun sequencing project",ACCYNI000000000.1,21,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026193, whole genome shotgun sequencing project",ACCYMC000000000.1,18,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026194, whole genome shotgun sequencing project",ACCYLK000000000.1,18,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026192, whole genome shotgun sequencing project",ACCYJP000000000.1,20,False,False
+mecA,,"TPA_asm: Streptococcus pneumoniae strain uvzsr-PT_26_00018-H12-AR_25_00001750, whole genome shotgun sequencing project",DBNFOP000000000.1,237,False,False
+mecA,,"Listeria monocytogenes strain 01936189, whole genome shotgun sequencing project",ACCYFH000000000.1,36,False,False
+mecA,,"Listeria monocytogenes strain 01935561, whole genome shotgun sequencing project",ACCYFJ000000000.1,35,False,False
+mecA,,"Listeria monocytogenes strain 01935563, whole genome shotgun sequencing project",ACCYFC000000000.1,39,False,False
+mecA,,"Listeria monocytogenes strain 01935562, whole genome shotgun sequencing project",ACCYFA000000000.1,21,False,False
+mecA,,"Listeria monocytogenes strain 01936190, whole genome shotgun sequencing project",ACCYEY000000000.1,33,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFND000000000.1,43,False,False
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFNC000000000.1,24,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNE000000000.1,24,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNB000000000.1,25,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMS000000000.1,21,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMZ000000000.1,36,False,False
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFMU000000000.1,23,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMY000000000.1,15,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNA000000000.1,13,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMT000000000.1,23,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMV000000000.1,21,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMW000000000.1,17,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMX000000000.1,38,False,False
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMN000000000.1,17,False,False
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFMK000000000.1,29,False,False
+mecA,,"Listeria monocytogenes strain PNUSAL026199, whole genome shotgun sequencing project",ACCYWX000000000.1,38,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026200, whole genome shotgun sequencing project",ACCYWN000000000.1,13,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026201, whole genome shotgun sequencing project",ACCYWU000000000.1,13,False,True
+mecA,,"Listeria monocytogenes strain 01939291, whole genome shotgun sequencing project",ACCYVB000000000.1,33,False,True
+mecA,,"Listeria monocytogenes strain 01939142, whole genome shotgun sequencing project",ACCYVD000000000.1,36,False,True
+mecA,,"Listeria monocytogenes strain 01939143, whole genome shotgun sequencing project",ACCYUX000000000.1,43,False,True
+mecA,,"Listeria monocytogenes strain 01939141, whole genome shotgun sequencing project",ACCYUK000000000.1,27,False,True
+mecA,,"Bacillus subtilis strain LTH 7164 chromosome, complete genome",CP160208.1,4326831,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026198, whole genome shotgun sequencing project",ACCYQO000000000.1,23,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026197, whole genome shotgun sequencing project",ACCYQP000000000.1,14,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00094, whole genome shotgun sequencing project",ACCYOF000000000.1,13,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00097, whole genome shotgun sequencing project",ACCYOH000000000.1,20,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00095, whole genome shotgun sequencing project",ACCYOG000000000.1,20,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00086, whole genome shotgun sequencing project",ACCYNW000000000.1,23,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00084, whole genome shotgun sequencing project",ACCYNT000000000.1,23,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00091, whole genome shotgun sequencing project",ACCYOA000000000.1,19,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00090, whole genome shotgun sequencing project",ACCYNZ000000000.1,24,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00089, whole genome shotgun sequencing project",ACCYNY000000000.1,20,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00085, whole genome shotgun sequencing project",ACCYNV000000000.1,21,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00087, whole genome shotgun sequencing project",ACCYNX000000000.1,19,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00096, whole genome shotgun sequencing project",ACCYOD000000000.1,34,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00088, whole genome shotgun sequencing project",ACCYOE000000000.1,23,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00092, whole genome shotgun sequencing project",ACCYOC000000000.1,21,False,True
+mecA,,"Streptococcus pyogenes isolate 2026DU-00093, whole genome shotgun sequencing project",ACCYOB000000000.1,20,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026195, whole genome shotgun sequencing project",ACCYNK000000000.1,20,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026196, whole genome shotgun sequencing project",ACCYNI000000000.1,21,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026193, whole genome shotgun sequencing project",ACCYMC000000000.1,18,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026194, whole genome shotgun sequencing project",ACCYLK000000000.1,18,False,True
+mecA,,"Listeria monocytogenes strain PNUSAL026192, whole genome shotgun sequencing project",ACCYJP000000000.1,20,False,True
+mecA,,"TPA_asm: Streptococcus pneumoniae strain uvzsr-PT_26_00018-H12-AR_25_00001750, whole genome shotgun sequencing project",DBNFOP000000000.1,237,False,True
+mecA,,"Listeria monocytogenes strain 01936189, whole genome shotgun sequencing project",ACCYFH000000000.1,36,False,True
+mecA,,"Listeria monocytogenes strain 01935561, whole genome shotgun sequencing project",ACCYFJ000000000.1,35,False,True
+mecA,,"Listeria monocytogenes strain 01935563, whole genome shotgun sequencing project",ACCYFC000000000.1,39,False,True
+mecA,,"Listeria monocytogenes strain 01935562, whole genome shotgun sequencing project",ACCYFA000000000.1,21,False,True
+mecA,,"Listeria monocytogenes strain 01936190, whole genome shotgun sequencing project",ACCYEY000000000.1,33,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFND000000000.1,43,False,True
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFNC000000000.1,24,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNE000000000.1,24,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNB000000000.1,25,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMS000000000.1,21,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMZ000000000.1,36,False,True
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFMU000000000.1,23,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMY000000000.1,15,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFNA000000000.1,13,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMT000000000.1,23,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMV000000000.1,21,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMW000000000.1,17,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMX000000000.1,38,False,True
+mecA,,"TPA_asm: Streptococcus pyogenes isolate GAS, whole genome shotgun sequencing project",DBNFMN000000000.1,17,False,True
+mecA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFMK000000000.1,29,False,True
+mecA,,"Staphylococcus caprae strain 26D chromosome, complete genome",NZ_CP031271.1,2662916,True,False
+mecA,,"Staphylococcus aureus strain MRSA_40_Hy 1, whole genome shotgun sequence",NZ_JBJJNN010000001.1,2182168,True,False
+mecA,,"Staphylococcus aureus strain MRSA_14_Hy 1, whole genome shotgun sequence",NZ_JBJJNO010000001.1,2757440,True,False
+mecA,,"TPA_asm: Bacillus paranthracis strain B0029.24, whole genome shotgun sequencing project",DBMWMA000000000.1,89,True,False
+mecA,,"Staphylococcus aureus strain 13 chromosome, complete genome",NZ_CP031265.1,2737143,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 700E24spy, whole genome shotgun sequencing project",DBMSNO000000000.1,39,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 3E24spy, whole genome shotgun sequencing project",DBMSKI000000000.1,29,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 54E24spy, whole genome shotgun sequencing project",DBMSIO000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 57E24spy, whole genome shotgun sequencing project",DBMSIN000000000.1,23,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 17E23spy, whole genome shotgun sequencing project",DBMSIP000000000.1,39,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 12E24spy, whole genome shotgun sequencing project",DBMSIG000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 4E24spy, whole genome shotgun sequencing project",DBMSIM000000000.1,43,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 09E24spy, whole genome shotgun sequencing project",DBMSIL000000000.1,35,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 84E24spy, whole genome shotgun sequencing project",DBMSIE000000000.1,28,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 08E24spy, whole genome shotgun sequencing project",DBMSIH000000000.1,36,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 35E24spy, whole genome shotgun sequencing project",DBMSII000000000.1,66,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 28E24spy, whole genome shotgun sequencing project",DBMSIJ000000000.1,49,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 90E23spy, whole genome shotgun sequencing project",DBMSIF000000000.1,43,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 36E24spy, whole genome shotgun sequencing project",DBMSIK000000000.1,31,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 750Mspy, whole genome shotgun sequencing project",DBMSHX000000000.1,24,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 77E24spy, whole genome shotgun sequencing project",DBMSHY000000000.1,41,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 806E24spy, whole genome shotgun sequencing project",DBMSIC000000000.1,24,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 128E24spy, whole genome shotgun sequencing project",DBMSIA000000000.1,15,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 9E25spy, whole genome shotgun sequencing project",DBMSID000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 747Mspy, whole genome shotgun sequencing project",DBMSHW000000000.1,32,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 68E24spy, whole genome shotgun sequencing project",DBMSIB000000000.1,28,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 100E23spy, whole genome shotgun sequencing project",DBMSHZ000000000.1,57,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 126E23spy, whole genome shotgun sequencing project",DBMSHU000000000.1,32,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 67Mspy, whole genome shotgun sequencing project",DBMSHV000000000.1,27,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 868E24spy, whole genome shotgun sequencing project",DBMSHQ000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 841E24spy, whole genome shotgun sequencing project",DBMSHO000000000.1,37,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 805E24spy, whole genome shotgun sequencing project",DBMSHM000000000.1,25,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 51E24spy, whole genome shotgun sequencing project",DBMSHS000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 85E24spy, whole genome shotgun sequencing project",DBMSHR000000000.1,33,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 800E24spy, whole genome shotgun sequencing project",DBMSHL000000000.1,34,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 814E24spy, whole genome shotgun sequencing project",DBMSHN000000000.1,28,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 871E24spy, whole genome shotgun sequencing project",DBMSHT000000000.1,45,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 867E24spy, whole genome shotgun sequencing project",DBMSHP000000000.1,26,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 804E24spy, whole genome shotgun sequencing project",DBMSHK000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 356E24spy, whole genome shotgun sequencing project",DBMSHJ000000000.1,28,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 56E23spy, whole genome shotgun sequencing project",DBMSHI000000000.1,29,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 266E24spy, whole genome shotgun sequencing project",DBMSHE000000000.1,54,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 281E24spy, whole genome shotgun sequencing project",DBMSHF000000000.1,29,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 219E24spy, whole genome shotgun sequencing project",DBMSHC000000000.1,30,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 268E24spy, whole genome shotgun sequencing project",DBMSHG000000000.1,34,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 282E24spy, whole genome shotgun sequencing project",DBMSHD000000000.1,29,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 280E24spy, whole genome shotgun sequencing project",DBMSHH000000000.1,27,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 185E24spy, whole genome shotgun sequencing project",DBMSHB000000000.1,23,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 137E24spy, whole genome shotgun sequencing project",DBMSGX000000000.1,26,True,False
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 126E24spy, whole genome shotgun sequencing project",DBMSGU000000000.1,27,True,False
+mecA,,"Staphylococcus aureus strain MRSA_40_Hy 1, whole genome shotgun sequence",NZ_JBJJNN010000001.1,2182168,True,True
+mecA,,"Staphylococcus aureus strain MRSA_14_Hy 1, whole genome shotgun sequence",NZ_JBJJNO010000001.1,2757440,True,True
+mecA,,"TPA_asm: Bacillus paranthracis strain B0029.24, whole genome shotgun sequencing project",DBMWMA000000000.1,89,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 700E24spy, whole genome shotgun sequencing project",DBMSNO000000000.1,39,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 3E24spy, whole genome shotgun sequencing project",DBMSKI000000000.1,29,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 54E24spy, whole genome shotgun sequencing project",DBMSIO000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 57E24spy, whole genome shotgun sequencing project",DBMSIN000000000.1,23,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 17E23spy, whole genome shotgun sequencing project",DBMSIP000000000.1,39,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 12E24spy, whole genome shotgun sequencing project",DBMSIG000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 4E24spy, whole genome shotgun sequencing project",DBMSIM000000000.1,43,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 09E24spy, whole genome shotgun sequencing project",DBMSIL000000000.1,35,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 84E24spy, whole genome shotgun sequencing project",DBMSIE000000000.1,28,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 08E24spy, whole genome shotgun sequencing project",DBMSIH000000000.1,36,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 35E24spy, whole genome shotgun sequencing project",DBMSII000000000.1,66,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 28E24spy, whole genome shotgun sequencing project",DBMSIJ000000000.1,49,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 90E23spy, whole genome shotgun sequencing project",DBMSIF000000000.1,43,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 36E24spy, whole genome shotgun sequencing project",DBMSIK000000000.1,31,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 750Mspy, whole genome shotgun sequencing project",DBMSHX000000000.1,24,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 77E24spy, whole genome shotgun sequencing project",DBMSHY000000000.1,41,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 806E24spy, whole genome shotgun sequencing project",DBMSIC000000000.1,24,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 128E24spy, whole genome shotgun sequencing project",DBMSIA000000000.1,15,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 9E25spy, whole genome shotgun sequencing project",DBMSID000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 747Mspy, whole genome shotgun sequencing project",DBMSHW000000000.1,32,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 68E24spy, whole genome shotgun sequencing project",DBMSIB000000000.1,28,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 100E23spy, whole genome shotgun sequencing project",DBMSHZ000000000.1,57,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 126E23spy, whole genome shotgun sequencing project",DBMSHU000000000.1,32,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 67Mspy, whole genome shotgun sequencing project",DBMSHV000000000.1,27,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 868E24spy, whole genome shotgun sequencing project",DBMSHQ000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 841E24spy, whole genome shotgun sequencing project",DBMSHO000000000.1,37,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 805E24spy, whole genome shotgun sequencing project",DBMSHM000000000.1,25,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 51E24spy, whole genome shotgun sequencing project",DBMSHS000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 85E24spy, whole genome shotgun sequencing project",DBMSHR000000000.1,33,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 800E24spy, whole genome shotgun sequencing project",DBMSHL000000000.1,34,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 814E24spy, whole genome shotgun sequencing project",DBMSHN000000000.1,28,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 871E24spy, whole genome shotgun sequencing project",DBMSHT000000000.1,45,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 867E24spy, whole genome shotgun sequencing project",DBMSHP000000000.1,26,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 804E24spy, whole genome shotgun sequencing project",DBMSHK000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 356E24spy, whole genome shotgun sequencing project",DBMSHJ000000000.1,28,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 56E23spy, whole genome shotgun sequencing project",DBMSHI000000000.1,29,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 266E24spy, whole genome shotgun sequencing project",DBMSHE000000000.1,54,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 281E24spy, whole genome shotgun sequencing project",DBMSHF000000000.1,29,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 219E24spy, whole genome shotgun sequencing project",DBMSHC000000000.1,30,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 268E24spy, whole genome shotgun sequencing project",DBMSHG000000000.1,34,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 282E24spy, whole genome shotgun sequencing project",DBMSHD000000000.1,29,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 280E24spy, whole genome shotgun sequencing project",DBMSHH000000000.1,27,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 185E24spy, whole genome shotgun sequencing project",DBMSHB000000000.1,23,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 137E24spy, whole genome shotgun sequencing project",DBMSGX000000000.1,26,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 126E24spy, whole genome shotgun sequencing project",DBMSGU000000000.1,27,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 135E24spy, whole genome shotgun sequencing project",DBMSGV000000000.1,39,True,True
+mecA,,"TPA_asm: Streptococcus pyogenes strain Spy isolate 119E24spy, whole genome shotgun sequencing project",DBMSGW000000000.1,26,True,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_304, whole genome shotgun sequencing project",DBNEVY000000000.1,115,False,False
+blaKPC,,"Proteus mirabilis isolate 2026CE-CRO_03_26_001, whole genome shotgun sequencing project",ACCQZM000000000.1,143,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate K58, whole genome shotgun sequencing project",DBMZVC000000000.1,70,False,False
+blaKPC,,"Klebsiella pneumoniae BCKpn9 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-296, complete CDS",NG_246046.1,1118,False,False
+blaKPC,,"Klebsiella pneumoniae 383Kp blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-295, complete CDS",NG_246045.1,1088,False,False
+blaKPC,,"Enterobacter cloacae M30019 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-294, complete CDS",NG_246044.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae BCKpn12 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-293, complete CDS",NG_246043.1,1082,False,False
+blaKPC,,"Klebsiella pneumoniae M28900 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-292, complete CDS",NG_246042.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae KP251 blaKPC gene for class A beta-lactamase KPC-291, complete CDS",NG_246041.1,1076,False,False
+blaKPC,,"Klebsiella pneumoniae KPN250380 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-290, complete CDS",NG_246040.1,882,False,False
+blaKPC,,"Pseudomonas aeruginosa PAXW27 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-289, complete CDS",NG_246039.1,912,False,False
+blaKPC,,"Pseudomonas aeruginosa SRMPA7089 blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-288, complete CDS",NG_246038.1,888,False,False
+blaKPC,,"Klebsiella pneumoniae ISTTKP0124 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-245, complete CDS",NG_244123.1,1109,False,False
+blaKPC,,"Klebsiella pneumoniae A123 unknown blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-150, complete CDS",NG_242294.1,873,False,False
+blaKPC,,"Klebsiella huaxiensis unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-157, complete CDS",NG_149662.1,1082,False,False
+blaKPC,,"Klebsiella pneumoniae RIVM_C048764 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-153, complete CDS",NG_148627.1,888,False,False
+blaKPC,,"Klebsiella pneumoniae R163S unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-99, complete CDS",NG_088405.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae N4103871 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-143, complete CDS",NG_088403.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae N3182918 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-142, complete CDS",NG_088402.1,903,False,False
+blaKPC,,"Klebsiella pneumoniae N2192196 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-141, complete CDS",NG_088401.1,885,False,False
+blaKPC,,"Klebsiella pneumoniae N0194414 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-140, complete CDS",NG_088400.1,927,False,False
+blaKPC,,"Klebsiella pneumoniae M7213934 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-139, complete CDS",NG_088399.1,900,False,False
+blaKPC,,"Klebsiella pneumoniae KH271 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-101, complete CDS",NG_088394.1,888,False,False
+blaKPC,,"Klebsiella pneumoniae unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-93, complete CDS",NG_080780.1,897,False,False
+blaKPC,,"Citrobacter koseri CK1008 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-123, complete CDS",NG_079898.1,909,False,False
+blaKPC,,"Klebsiella pneumoniae RIVM_C016661 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-85, complete CDS",NG_074721.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae 090305X2B1 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-77, complete CDS",NG_070897.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae HS453 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-76, complete CDS",NG_070896.1,1103,False,False
+blaKPC,,"Klebsiella pneumoniae K53 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-61, complete CDS",NG_070180.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae 1099927 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-59, complete CDS",NG_070178.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae 1106489 unknown blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-58, complete CDS",NG_070177.1,906,False,False
+blaKPC,,"Klebsiella pneumoniae N859 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-50, complete CDS",NG_068507.1,891,False,False
+blaKPC,,"Klebsiella pneumoniae SENTRY Antimicrobial Surveillance Program 941690 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-56, c",NG_068016.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae KPC-079 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-27, complete CDS",NG_052862.1,882,False,False
+blaKPC,,"Klebsiella pneumoniae JMI#21 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-25, complete CDS",NG_051167.1,888,False,False
+blaKPC,,"Klebsiella pneumoniae UC331 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-24, complete CDS",NG_049256.1,1082,False,False
+blaKPC,,"Klebsiella pneumoniae kp1241 unknown blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-15, complete CDS",NG_049248.1,882,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1861, whole genome shotgun sequencing project",DBMZQB000000000.1,150,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN0555, whole genome shotgun sequencing project",DBMZTD000000000.1,128,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1548, whole genome shotgun sequencing project",DBMZQQ000000000.1,106,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1704, whole genome shotgun sequencing project",DBMZOT000000000.1,112,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1515, whole genome shotgun sequencing project",DBMZMM000000000.1,93,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1189, whole genome shotgun sequencing project",DBMZLW000000000.1,103,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN0809, whole genome shotgun sequencing project",DBMZLS000000000.1,82,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1082, whole genome shotgun sequencing project",DBMYEA000000000.1,81,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_290, whole genome shotgun sequencing project",DBMYDI000000000.1,108,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1447, whole genome shotgun sequencing project",DBMYCQ000000000.1,169,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1043, whole genome shotgun sequencing project",DBMYCO000000000.1,118,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1111, whole genome shotgun sequencing project",DBMYCG000000000.1,86,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1030, whole genome shotgun sequencing project",DBMYAC000000000.1,100,False,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_304, whole genome shotgun sequencing project",DBNEVY000000000.1,115,False,True
+blaKPC,,"Proteus mirabilis isolate 2026CE-CRO_03_26_001, whole genome shotgun sequencing project",ACCQZM000000000.1,143,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate K58, whole genome shotgun sequencing project",DBMZVC000000000.1,70,False,True
+blaKPC,,"Klebsiella pneumoniae BCKpn9 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-296, complete CDS",NG_246046.1,1118,False,True
+blaKPC,,"Klebsiella pneumoniae 383Kp blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-295, complete CDS",NG_246045.1,1088,False,True
+blaKPC,,"Enterobacter cloacae M30019 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-294, complete CDS",NG_246044.1,882,False,True
+blaKPC,,"Klebsiella pneumoniae BCKpn12 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-293, complete CDS",NG_246043.1,1082,False,True
+blaKPC,,"Klebsiella pneumoniae M28900 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-292, complete CDS",NG_246042.1,882,False,True
+blaKPC,,"Klebsiella pneumoniae KP251 blaKPC gene for class A beta-lactamase KPC-291, complete CDS",NG_246041.1,1076,False,True
+blaKPC,,"Klebsiella pneumoniae KPN250380 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-290, complete CDS",NG_246040.1,882,False,True
+blaKPC,,"Pseudomonas aeruginosa PAXW27 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-289, complete CDS",NG_246039.1,912,False,True
+blaKPC,,"Pseudomonas aeruginosa SRMPA7089 blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-288, complete CDS",NG_246038.1,888,False,True
+blaKPC,,"Klebsiella pneumoniae ISTTKP0124 unknown blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-245, complete CDS",NG_244123.1,1109,False,True
+blaKPC,,"Klebsiella pneumoniae A123 unknown blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-150, complete CDS",NG_242294.1,873,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1861, whole genome shotgun sequencing project",DBMZQB000000000.1,150,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN0555, whole genome shotgun sequencing project",DBMZTD000000000.1,128,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1548, whole genome shotgun sequencing project",DBMZQQ000000000.1,106,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1704, whole genome shotgun sequencing project",DBMZOT000000000.1,112,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1515, whole genome shotgun sequencing project",DBMZMM000000000.1,93,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN1189, whole genome shotgun sequencing project",DBMZLW000000000.1,103,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae strain KLPN0809, whole genome shotgun sequencing project",DBMZLS000000000.1,82,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1082, whole genome shotgun sequencing project",DBMYEA000000000.1,81,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_290, whole genome shotgun sequencing project",DBMYDI000000000.1,108,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1447, whole genome shotgun sequencing project",DBMYCQ000000000.1,169,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1043, whole genome shotgun sequencing project",DBMYCO000000000.1,118,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1111, whole genome shotgun sequencing project",DBMYCG000000000.1,86,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1030, whole genome shotgun sequencing project",DBMYAC000000000.1,100,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_13, whole genome shotgun sequencing project",DBMYAA000000000.1,118,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1230, whole genome shotgun sequencing project",DBMXZF000000000.1,152,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1163, whole genome shotgun sequencing project",DBMXYK000000000.1,102,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_20, whole genome shotgun sequencing project",DBMXXB000000000.1,128,False,True
+blaKPC,,"TPA_asm: Escherichia coli isolate INT_CRE_1053, whole genome shotgun sequencing project",DBMXWE000000000.1,56,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1262, whole genome shotgun sequencing project",DBMXUE000000000.1,103,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1252, whole genome shotgun sequencing project",DBMXTY000000000.1,74,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_27, whole genome shotgun sequencing project",DBMXSV000000000.1,120,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_780, whole genome shotgun sequencing project",DBMXRX000000000.1,82,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_785, whole genome shotgun sequencing project",DBMXRZ000000000.1,123,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_600, whole genome shotgun sequencing project",DBMXQO000000000.1,149,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_604, whole genome shotgun sequencing project",DBMXQQ000000000.1,138,False,True
+blaKPC,,"TPA_asm: Enterobacter hormaechei isolate INT_CRE_602, whole genome shotgun sequencing project",DBMXQP000000000.1,91,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_760, whole genome shotgun sequencing project",DBMXOH000000000.1,122,False,True
+blaKPC,,"TPA_asm: Escherichia coli isolate INT_CRE_762, whole genome shotgun sequencing project",DBMXOI000000000.1,77,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_587, whole genome shotgun sequencing project",DBMXNK000000000.1,91,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_59, whole genome shotgun sequencing project",DBMXNM000000000.1,88,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_580, whole genome shotgun sequencing project",DBMXNH000000000.1,94,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_973, whole genome shotgun sequencing project",DBMXKS000000000.1,162,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_867, whole genome shotgun sequencing project",DBMXJI000000000.1,75,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_802, whole genome shotgun sequencing project",DBMXIU000000000.1,151,False,True
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_857, whole genome shotgun sequencing project",DBMXEG000000000.1,109,False,True
+blaKPC,,"TPA_asm: Escherichia coli isolate INT_CRE_858, whole genome shotgun sequencing project",DBMXEH000000000.1,125,False,True
+blaKPC,,"Klebsiella pneumoniae N4103871 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-143, complete CDS",NG_088403.1,882,True,False
+blaKPC,,"Klebsiella pneumoniae N3182918 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-142, complete CDS",NG_088402.1,903,True,False
+blaKPC,,"Klebsiella pneumoniae N2192196 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-141, complete CDS",NG_088401.1,885,True,False
+blaKPC,,"Klebsiella pneumoniae N0194414 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-140, complete CDS",NG_088400.1,927,True,False
+blaKPC,,"Klebsiella pneumoniae M7213934 unknown blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-139, complete CDS",NG_088399.1,900,True,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate 9i spring, whole genome shotgun sequencing project",DBHBTF000000000.1,151,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae N0244028 blaKPC gene for inhibitor-resistant class A beta-lactamase KPC-106, complete CDS",NG_078056.1,900,True,False
+blaKPC,,"Klebsiella pneumoniae BT_746 blaKPC gene for carbapenem-hydrolyzing class A beta-lactamase KPC-26, complete CDS",NG_051469.1,882,True,False
+blaKPC,,"Klebsiella pneumoniae 2006689 blaKPC gene for inhibitor-resistant extended-spectrum class A beta-lactamase KPC-73, complete CDS",NG_070741.1,894,True,False
+blaKPC,,"Klebsiella pneumoniae 331 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-114, complete CDS",NG_079889.1,888,True,False
+blaKPC,,"Klebsiella pneumoniae 330 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-113, complete CDS",NG_079888.1,885,True,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate KP42, whole genome shotgun sequencing project",DAGNFM000000000.1,192,True,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate KP30, whole genome shotgun sequencing project",DAGNFX000000000.1,115,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae M9171130 blaKPC gene for class A beta-lactamase KPC-108, complete CDS",NG_078055.1,957,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae M5282978 blaKPC gene for class A beta-lactamase KPC-105, complete CDS",NG_078054.1,927,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae M6284360 blaKPC gene for class A beta-lactamase KPC-107, complete CDS",NG_078053.1,966,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae M7173549 blaKPC gene for class A beta-lactamase KPC-104, complete CDS",NG_078052.1,906,True,False
+blaKPC,,"Klebsiella pneumoniae subsp. pneumoniae L2304797 blaKPC gene for class A beta-lactamase KPC-103, complete CDS",NG_078051.1,918,True,False
+blaKPC,,"Uncultured bacterium clone W05SP-PI KPC family beta-lactamase (blaKPC) gene, partial cds",MW478859.1,444,True,False
+blaKPC,,"TPA_asm: Escherichia coli strain 2128, whole genome shotgun sequencing project",DADGUW000000000.1,131,True,False
+blaKPC,,"Klebsiella pneumoniae 1472816 blaKPC gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-30, complete CDS",NG_054685.1,882,True,False
+blaKPC,,"TPA_asm: Klebsiella pneumoniae isolate 9i spring, whole genome shotgun sequencing project",DBHBTF000000000.1,151,True,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate B40, whole genome shotgun sequencing project",DBNFXN000000000.1,135,False,False
+blaNDM,,"Escherichia coli isolate 2026DM-00042, whole genome shotgun sequencing project",ACCWZW000000000.1,165,False,False
+blaNDM,,"TPA_asm: Klebsiella pneumoniae strain CRE085, whole genome shotgun sequencing project",DBNDSR000000000.1,201,False,False
+blaNDM,,"Klebsiella pneumoniae strain 2026EP-00072, whole genome shotgun sequencing project",ACCTRX000000000.1,62,False,False
+blaNDM,,"Escherichia coli isolate 2026ZN-00320, whole genome shotgun sequencing project",ACCTJX000000000.1,128,False,False
+blaNDM,,"Klebsiella pneumoniae strain 2026GO-00109, whole genome shotgun sequencing project",ACCRQA000000000.1,88,False,False
+blaNDM,,"Escherichia coli isolate 2026KU-00053, whole genome shotgun sequencing project",ACCRPP000000000.1,140,False,False
+blaNDM,,"Klebsiella pneumoniae KPN 5708 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-97, complete CDS",NG_246047.1,1013,False,False
+blaNDM,,"Klebsiella pneumoniae 140507 unknown blaNDM gene for subclass B1 metallo-beta-lactamase NDM-41, complete CDS",NG_078034.1,813,False,False
+blaNDM,,"Escherichia coli 1100101 unknown blaNDM gene for subclass B1 metallo-beta-lactamase NDM-6, complete CDS",NG_049338.1,813,False,False
+blaNDM,,"Klebsiella oxytoca isolate 2026DU-00050, whole genome shotgun sequencing project",ACCQPK000000000.1,108,False,False
+blaNDM,,"Acinetobacter baumannii isolate 2026DK-00042, whole genome shotgun sequencing project",ACCPPT000000000.1,70,False,False
+blaNDM,,"Acinetobacter baumannii isolate 2026DM-00032, whole genome shotgun sequencing project",ACCOVB000000000.1,155,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026LN-00013-2/2026, whole genome shotgun sequencing project",ACCNSE000000000.1,112,False,False
+blaNDM,,"Acinetobacter baumannii isolate 2026DK-00029, whole genome shotgun sequencing project",ACCMNG000000000.1,70,False,False
+blaNDM,,"Escherichia coli isolate 2026ZN-00245, whole genome shotgun sequencing project",ACCMJV000000000.1,94,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00247, whole genome shotgun sequencing project",ACCMJW000000000.1,75,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026KU-00046, whole genome shotgun sequencing project",ACCMCF000000000.1,93,False,False
+blaNDM,,"Acinetobacter baumannii isolate 2026QG-00027, whole genome shotgun sequencing project",ACCLTI000000000.1,104,False,False
+blaNDM,,"Escherichia coli isolate 2026IQ-00050, whole genome shotgun sequencing project",ACCKJG000000000.1,105,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii strain CR67-18, whole genome shotgun sequencing project",DBMRNP000000000.1,77,False,False
+blaNDM,,"Escherichia coli isolate 2026LY-00054, whole genome shotgun sequencing project",ACCGMJ000000000.1,82,False,False
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate CRE000000622-rtZF3INyL8HTXL/BfEjC/HSGhZtdyVX4IES9pqggwt4=, whole genome shotgun sequencing project",DBMFSK000000000.1,100,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVNW000000000.1,101,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVML000000000.1,106,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVMC000000000.1,108,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVLM000000000.1,99,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026LY-00004, whole genome shotgun sequencing project",ACCFGA000000000.1,65,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026IQ-00022, whole genome shotgun sequencing project",ACCFAZ000000000.1,105,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00122, whole genome shotgun sequencing project",ACCEBS000000000.1,102,False,False
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00121, whole genome shotgun sequencing project",ACCEBU000000000.1,145,False,False
+blaNDM,,"Escherichia coli isolate 2026ZN-00136, whole genome shotgun sequencing project",ACCEBQ000000000.1,136,False,False
+blaNDM,,"Escherichia coli strain ECO2 plasmid unnamed1, complete sequence",NZ_CP090338.1,117468,False,False
+blaNDM,,"Proteus mirabilis isolate 2026DU-00006, whole genome shotgun sequencing project",ACCDJX000000000.1,89,False,False
+blaNDM,,"Klebsiella pneumoniae HS370 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-96, complete CDS",NG_245928.1,970,False,False
+blaNDM,,"Escherichia coli NRZ-110534 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-95, complete CDS",NG_245927.1,813,False,False
+blaNDM,,"Klebsiella pneumoniae NRZ-104155b blaNDM gene for subclass B1 metallo-beta-lactamase NDM-94, complete CDS",NG_245926.1,813,False,False
+blaNDM,,"Pseudomonas aeruginosa isolate 2026ZN-00053, whole genome shotgun sequencing project",ACCAAP000000000.1,116,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii strain Acinetobacter_119 isolate Acinetobacter_Army_ASU_119, whole genome shotgun sequencing project",DBLKYP000000000.1,112,False,False
+blaNDM,,"Escherichia coli isolate 2025CR-00138, whole genome shotgun sequencing project",ACBWQW000000000.1,115,False,False
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate NG_0002, whole genome shotgun sequencing project",DBLFIH000000000.1,194,False,False
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate NG_0154, whole genome shotgun sequencing project",DBLFHG000000000.1,167,False,False
+blaNDM,,"Acinetobacter baumannii isolate 2025DK-00430, whole genome shotgun sequencing project",ACBTME000000000.1,73,False,False
+blaNDM,,"TPA_asm: Klebsiella pneumoniae strain 14878 isolate 14878, whole genome shotgun sequencing project",DBLECT000000000.1,172,False,False
+blaNDM,,"Escherichia coli isolate 2025DM-00105, whole genome shotgun sequencing project",ACBRFC000000000.1,210,False,False
+blaNDM,,"Escherichia coli isolate 2025DM-00102, whole genome shotgun sequencing project",ACBREY000000000.1,167,False,False
+blaNDM,,"Enterobacter hormaechei isolate 2025IQ-00472, whole genome shotgun sequencing project",ACBQKO000000000.1,43,False,False
+blaNDM,,"Escherichia coli strain 2025GO-00556, whole genome shotgun sequencing project",ACBPCZ000000000.1,85,False,False
+blaNDM,,"Klebsiella pneumoniae strain 2025EP-00459, whole genome shotgun sequencing project",ACBORP000000000.1,70,False,False
+blaNDM,,"Pseudomonas aeruginosa isolate 2025JQ-00249, whole genome shotgun sequencing project",ACBLPV000000000.1,83,False,False
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate B40, whole genome shotgun sequencing project",DBNFXN000000000.1,135,False,True
+blaNDM,,"Escherichia coli isolate 2026DM-00042, whole genome shotgun sequencing project",ACCWZW000000000.1,165,False,True
+blaNDM,,"TPA_asm: Klebsiella pneumoniae strain CRE085, whole genome shotgun sequencing project",DBNDSR000000000.1,201,False,True
+blaNDM,,"Klebsiella pneumoniae strain 2026EP-00072, whole genome shotgun sequencing project",ACCTRX000000000.1,62,False,True
+blaNDM,,"Escherichia coli isolate 2026ZN-00320, whole genome shotgun sequencing project",ACCTJX000000000.1,128,False,True
+blaNDM,,"Klebsiella pneumoniae strain 2026GO-00109, whole genome shotgun sequencing project",ACCRQA000000000.1,88,False,True
+blaNDM,,"Escherichia coli isolate 2026KU-00053, whole genome shotgun sequencing project",ACCRPP000000000.1,140,False,True
+blaNDM,,"Klebsiella pneumoniae KPN 5708 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-97, complete CDS",NG_246047.1,1013,False,True
+blaNDM,,"Klebsiella oxytoca isolate 2026DU-00050, whole genome shotgun sequencing project",ACCQPK000000000.1,108,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2026DK-00042, whole genome shotgun sequencing project",ACCPPT000000000.1,70,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2026DM-00032, whole genome shotgun sequencing project",ACCOVB000000000.1,155,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026LN-00013-2/2026, whole genome shotgun sequencing project",ACCNSE000000000.1,112,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2026DK-00029, whole genome shotgun sequencing project",ACCMNG000000000.1,70,False,True
+blaNDM,,"Escherichia coli isolate 2026ZN-00245, whole genome shotgun sequencing project",ACCMJV000000000.1,94,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00247, whole genome shotgun sequencing project",ACCMJW000000000.1,75,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026KU-00046, whole genome shotgun sequencing project",ACCMCF000000000.1,93,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2026QG-00027, whole genome shotgun sequencing project",ACCLTI000000000.1,104,False,True
+blaNDM,,"Escherichia coli isolate 2026IQ-00050, whole genome shotgun sequencing project",ACCKJG000000000.1,105,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii strain CR67-18, whole genome shotgun sequencing project",DBMRNP000000000.1,77,False,True
+blaNDM,,"Escherichia coli isolate 2026LY-00054, whole genome shotgun sequencing project",ACCGMJ000000000.1,82,False,True
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate CRE000000622-rtZF3INyL8HTXL/BfEjC/HSGhZtdyVX4IES9pqggwt4=, whole genome shotgun sequencing project",DBMFSK000000000.1,100,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVNW000000000.1,101,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVML000000000.1,106,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVMC000000000.1,108,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii isolate Acinetobacter baumannii, whole genome shotgun sequencing project",DBLVLM000000000.1,99,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026LY-00004, whole genome shotgun sequencing project",ACCFGA000000000.1,65,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026IQ-00022, whole genome shotgun sequencing project",ACCFAZ000000000.1,105,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00122, whole genome shotgun sequencing project",ACCEBS000000000.1,102,False,True
+blaNDM,,"Klebsiella pneumoniae isolate 2026ZN-00121, whole genome shotgun sequencing project",ACCEBU000000000.1,145,False,True
+blaNDM,,"Escherichia coli isolate 2026ZN-00136, whole genome shotgun sequencing project",ACCEBQ000000000.1,136,False,True
+blaNDM,,"Escherichia coli strain ECO2 plasmid unnamed1, complete sequence",NZ_CP090338.1,117468,False,True
+blaNDM,,"Proteus mirabilis isolate 2026DU-00006, whole genome shotgun sequencing project",ACCDJX000000000.1,89,False,True
+blaNDM,,"Klebsiella pneumoniae HS370 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-96, complete CDS",NG_245928.1,970,False,True
+blaNDM,,"Escherichia coli NRZ-110534 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-95, complete CDS",NG_245927.1,813,False,True
+blaNDM,,"Klebsiella pneumoniae NRZ-104155b blaNDM gene for subclass B1 metallo-beta-lactamase NDM-94, complete CDS",NG_245926.1,813,False,True
+blaNDM,,"Pseudomonas aeruginosa isolate 2026ZN-00053, whole genome shotgun sequencing project",ACCAAP000000000.1,116,False,True
+blaNDM,,"TPA_asm: Acinetobacter baumannii strain Acinetobacter_119 isolate Acinetobacter_Army_ASU_119, whole genome shotgun sequencing project",DBLKYP000000000.1,112,False,True
+blaNDM,,"Escherichia coli isolate 2025CR-00138, whole genome shotgun sequencing project",ACBWQW000000000.1,115,False,True
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate NG_0002, whole genome shotgun sequencing project",DBLFIH000000000.1,194,False,True
+blaNDM,,"TPA_asm: Klebsiella pneumoniae isolate NG_0154, whole genome shotgun sequencing project",DBLFHG000000000.1,167,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2025DK-00430, whole genome shotgun sequencing project",ACBTME000000000.1,73,False,True
+blaNDM,,"TPA_asm: Klebsiella pneumoniae strain 14878 isolate 14878, whole genome shotgun sequencing project",DBLECT000000000.1,172,False,True
+blaNDM,,"Escherichia coli isolate 2025DM-00105, whole genome shotgun sequencing project",ACBRFC000000000.1,210,False,True
+blaNDM,,"Escherichia coli isolate 2025DM-00102, whole genome shotgun sequencing project",ACBREY000000000.1,167,False,True
+blaNDM,,"Enterobacter hormaechei isolate 2025IQ-00472, whole genome shotgun sequencing project",ACBQKO000000000.1,43,False,True
+blaNDM,,"Escherichia coli strain 2025GO-00556, whole genome shotgun sequencing project",ACBPCZ000000000.1,85,False,True
+blaNDM,,"Klebsiella pneumoniae strain 2025EP-00459, whole genome shotgun sequencing project",ACBORP000000000.1,70,False,True
+blaNDM,,"Pseudomonas aeruginosa isolate 2025JQ-00249, whole genome shotgun sequencing project",ACBLPV000000000.1,83,False,True
+blaNDM,,"Acinetobacter baumannii isolate 2025JQ-00258, whole genome shotgun sequencing project",ACBLLQ000000000.1,106,False,True
+blaNDM,,"Escherichia coli JBDEABG-24-N009 blaNDM gene for subclass B1 metallo-beta-lactamase NDM-93, complete CDS",NG_245809.1,932,False,True
+vanA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFNC000000000.1,24,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate 26AR0282, whole genome shotgun sequencing project",DBNCYU000000000.1,216,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate 26AR0281, whole genome shotgun sequencing project",DBNCYT000000000.1,182,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3836, whole genome shotgun sequencing project",DBNCMB000000000.1,226,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain AG4, whole genome shotgun sequencing project",DBNCLX000000000.1,211,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3816, whole genome shotgun sequencing project",DBNCLZ000000000.1,241,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3815, whole genome shotgun sequencing project",DBNCIO000000000.1,234,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V1594, whole genome shotgun sequencing project",DBNBJA000000000.1,236,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V2277, whole genome shotgun sequencing project",DBNBIH000000000.1,207,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate VD417, whole genome shotgun sequencing project",DBNBIE000000000.1,226,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V5, whole genome shotgun sequencing project",DBNBID000000000.1,198,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3680, whole genome shotgun sequencing project",DBNBHS000000000.1,259,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V1318, whole genome shotgun sequencing project",DBNBHR000000000.1,195,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3300, whole genome shotgun sequencing project",DBNBHP000000000.1,221,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3693, whole genome shotgun sequencing project",DBNBHV000000000.1,208,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3762, whole genome shotgun sequencing project",DBNBIB000000000.1,190,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3597, whole genome shotgun sequencing project",DBNBHT000000000.1,214,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V3702, whole genome shotgun sequencing project",DBNBHU000000000.1,197,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate V101, whole genome shotgun sequencing project",DBNASG000000000.1,210,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate LACPHL-SPEC-2026-00156, whole genome shotgun sequencing project",DBMWEM000000000.1,197,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate LACPHL-SPEC-2026-00155, whole genome shotgun sequencing project",DBMWEF000000000.1,200,False,False
+vanA,,"TPA_asm: Enterococcus faecium isolate UMF_272, whole genome shotgun sequencing project",DBMONU000000000.1,169,False,False
+vanA,,"Acinetobacter pittii strain HX_S62 NODE_9_length_142919_cov_140.748715, whole genome shotgun sequence",NZ_JAVLRH010000009.1,142919,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_04 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYJ000000000.1,200,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_02 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYL000000000.1,212,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_03 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYK000000000.1,226,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_10 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYD000000000.1,205,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_15 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYC000000000.1,207,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_05 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYI000000000.1,219,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_06 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYH000000000.1,215,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_14 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYF000000000.1,211,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_16 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYB000000000.1,210,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_13 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYE000000000.1,213,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_07 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYG000000000.1,247,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_25 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXW000000000.1,219,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_22 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXX000000000.1,211,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_17 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYA000000000.1,246,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_18 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXZ000000000.1,257,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_20 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXY000000000.1,212,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_32 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXR000000000.1,244,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_30 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXU000000000.1,219,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_29 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXT000000000.1,213,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_37 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXO000000000.1,202,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_33 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXQ000000000.1,243,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_28 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXV000000000.1,217,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_31 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXS000000000.1,208,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_35 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXP000000000.1,201,False,False
+vanA,,"TPA_asm: Enterococcus faecium 1,230,933 isolate VRE-isolate from patient 11, whole genome shotgun sequencing project",DBLUXI000000000.1,211,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_39 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXN000000000.1,204,False,False
+vanA,,"TPA_asm: Enterococcus faecium strain EF_38 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXL000000000.1,215,False,False
+vanA,,"TPA_asm: Streptococcus pneumoniae isolate SPN, whole genome shotgun sequencing project",DBNFNC000000000.1,24,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate 26AR0282, whole genome shotgun sequencing project",DBNCYU000000000.1,216,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate 26AR0281, whole genome shotgun sequencing project",DBNCYT000000000.1,182,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3836, whole genome shotgun sequencing project",DBNCMB000000000.1,226,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain AG4, whole genome shotgun sequencing project",DBNCLX000000000.1,211,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3816, whole genome shotgun sequencing project",DBNCLZ000000000.1,241,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3815, whole genome shotgun sequencing project",DBNCIO000000000.1,234,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V1594, whole genome shotgun sequencing project",DBNBJA000000000.1,236,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V2277, whole genome shotgun sequencing project",DBNBIH000000000.1,207,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate VD417, whole genome shotgun sequencing project",DBNBIE000000000.1,226,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V5, whole genome shotgun sequencing project",DBNBID000000000.1,198,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3680, whole genome shotgun sequencing project",DBNBHS000000000.1,259,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V1318, whole genome shotgun sequencing project",DBNBHR000000000.1,195,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3300, whole genome shotgun sequencing project",DBNBHP000000000.1,221,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3693, whole genome shotgun sequencing project",DBNBHV000000000.1,208,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3762, whole genome shotgun sequencing project",DBNBIB000000000.1,190,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3597, whole genome shotgun sequencing project",DBNBHT000000000.1,214,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V3702, whole genome shotgun sequencing project",DBNBHU000000000.1,197,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate V101, whole genome shotgun sequencing project",DBNASG000000000.1,210,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate LACPHL-SPEC-2026-00156, whole genome shotgun sequencing project",DBMWEM000000000.1,197,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate LACPHL-SPEC-2026-00155, whole genome shotgun sequencing project",DBMWEF000000000.1,200,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate UMF_272, whole genome shotgun sequencing project",DBMONU000000000.1,169,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_04 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYJ000000000.1,200,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_02 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYL000000000.1,212,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_03 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYK000000000.1,226,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_10 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYD000000000.1,205,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_15 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYC000000000.1,207,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_05 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYI000000000.1,219,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_06 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYH000000000.1,215,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_14 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYF000000000.1,211,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_16 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYB000000000.1,210,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_13 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYE000000000.1,213,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_07 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYG000000000.1,247,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_25 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXW000000000.1,219,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_22 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXX000000000.1,211,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_17 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUYA000000000.1,246,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_18 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXZ000000000.1,257,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_20 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXY000000000.1,212,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_32 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXR000000000.1,244,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_30 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXU000000000.1,219,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_29 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXT000000000.1,213,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_37 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXO000000000.1,202,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_33 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXQ000000000.1,243,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_28 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXV000000000.1,217,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_31 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXS000000000.1,208,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_35 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXP000000000.1,201,False,True
+vanA,,"TPA_asm: Enterococcus faecium 1,230,933 isolate VRE-isolate from patient 11, whole genome shotgun sequencing project",DBLUXI000000000.1,211,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_39 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXN000000000.1,204,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_38 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXL000000000.1,215,False,True
+vanA,,"TPA_asm: Enterococcus faecium strain EF_41 isolate enterococcus faecium, whole genome shotgun sequencing project",DBLUXK000000000.1,210,False,True
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00092, whole genome shotgun sequencing project",DBKWJO000000000.1,84,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00093, whole genome shotgun sequencing project",DBKWJN000000000.1,74,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00094, whole genome shotgun sequencing project",DBKWIG000000000.1,83,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9772, whole genome shotgun sequencing project",DBGWGZ000000000.1,142,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9761, whole genome shotgun sequencing project",DBGWHA000000000.1,191,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9727, whole genome shotgun sequencing project",DBGJDO000000000.1,185,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9771, whole genome shotgun sequencing project",DBGJDK000000000.1,293,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918a, whole genome shotgun sequencing project",DBGJDI000000000.1,158,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL8191, whole genome shotgun sequencing project",DBGJDP000000000.1,85,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9741, whole genome shotgun sequencing project",DBGJDL000000000.1,132,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918c, whole genome shotgun sequencing project",DBGJDG000000000.1,141,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9780, whole genome shotgun sequencing project",DBGJDJ000000000.1,148,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9765, whole genome shotgun sequencing project",DBGJDM000000000.1,136,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918b, whole genome shotgun sequencing project",DBGJDH000000000.1,97,True,False
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9733, whole genome shotgun sequencing project",DBGJDN000000000.1,153,True,False
+vanA,,"Streptomyces sp. SID5470 SID5470.c1, whole genome shotgun sequence",NZ_WWIM01000001.1,9313494,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL9726, whole genome shotgun sequencing project",DAFBHF000000000.1,229,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL8917, whole genome shotgun sequencing project",DAFBHD000000000.1,242,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL9732, whole genome shotgun sequencing project",DAFBGY000000000.1,249,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL7880, whole genome shotgun sequencing project",DAFBHA000000000.1,221,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL8797, whole genome shotgun sequencing project",DAFBGZ000000000.1,206,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL9872, whole genome shotgun sequencing project",DAFBGX000000000.1,266,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate CL6802, whole genome shotgun sequencing project",DAFBGW000000000.1,118,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8592, whole genome shotgun sequencing project",DAETXZ000000000.1,133,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8584b, whole genome shotgun sequencing project",DAETXY000000000.1,129,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8540, whole genome shotgun sequencing project",DAETYD000000000.1,136,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8714, whole genome shotgun sequencing project",DAETYB000000000.1,124,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL9825, whole genome shotgun sequencing project",DAETXX000000000.1,110,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8593, whole genome shotgun sequencing project",DAETYA000000000.1,232,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL9745, whole genome shotgun sequencing project",DAETXW000000000.1,118,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8192, whole genome shotgun sequencing project",DAETXS000000000.1,156,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8187, whole genome shotgun sequencing project",DAETXR000000000.1,176,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL9752, whole genome shotgun sequencing project",DAETXU000000000.1,101,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8682, whole genome shotgun sequencing project",DAETXT000000000.1,114,True,False
+vanA,,"TPA_asm: Enterococcus faecalis isolate CL8539, whole genome shotgun sequencing project",DAETXP000000000.1,152,True,False
+vanA,,"TPA_asm: Enterococcus faecium strain E0082, whole genome shotgun sequencing project",DADNEW000000000.1,142,True,False
+vanA,,"TPA_asm: Enterococcus faecium strain E0049, whole genome shotgun sequencing project",DADNDZ000000000.1,190,True,False
+vanA,,"Herbaspirillum rubrisubalbicans M1, complete genome",CP013737.1,5611261,True,False
+vanA,,"Herbaspirillum seropedicae SmR1, complete genome",CP002039.1,5513887,True,False
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00092, whole genome shotgun sequencing project",DBKWJO000000000.1,84,True,True
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00093, whole genome shotgun sequencing project",DBKWJN000000000.1,74,True,True
+vanA,,"TPA_asm: Enterococcus faecium isolate JARB-FD00094, whole genome shotgun sequencing project",DBKWIG000000000.1,83,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9772, whole genome shotgun sequencing project",DBGWGZ000000000.1,142,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9761, whole genome shotgun sequencing project",DBGWHA000000000.1,191,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9727, whole genome shotgun sequencing project",DBGJDO000000000.1,185,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9771, whole genome shotgun sequencing project",DBGJDK000000000.1,293,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918a, whole genome shotgun sequencing project",DBGJDI000000000.1,158,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL8191, whole genome shotgun sequencing project",DBGJDP000000000.1,85,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9741, whole genome shotgun sequencing project",DBGJDL000000000.1,132,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918c, whole genome shotgun sequencing project",DBGJDG000000000.1,141,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9780, whole genome shotgun sequencing project",DBGJDJ000000000.1,148,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9765, whole genome shotgun sequencing project",DBGJDM000000000.1,136,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9918b, whole genome shotgun sequencing project",DBGJDH000000000.1,97,True,True
+vanA,,"TPA_asm: Enterococcus faecalis strain CL9733, whole genome shotgun sequencing project",DBGJDN000000000.1,153,True,True
+mcr-1,,"Escherichia coli HeN867 pHeN867 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.3, complete CDS",NG_052861.1,1826,False,False
+mcr-1,,"Klebsiella pneumoniae KP-6884 unknown mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.2, complete CDS",NG_051170.1,1826,False,False
+mcr-1,,"Escherichia coli mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.20, complete CDS",NG_065450.1,1626,False,False
+mcr-1,,"Uncultured bacterium clone A4 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833299.1,213,False,False
+mcr-1,,"Uncultured bacterium clone A3 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833298.1,210,False,False
+mcr-1,,"Uncultured bacterium clone A2 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833297.1,216,False,False
+mcr-1,,"Uncultured bacterium clone A1 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833296.1,201,False,False
+mcr-1,,"Escherichia coli 844_18 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.27, complete CDS",NG_068218.1,1826,False,False
+mcr-1,,"Escherichia coli 803_18 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.26, complete CDS",NG_068217.1,1823,False,False
+mcr-1,,"Escherichia coli NIG-EC49 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.22, complete CDS",NG_065944.1,1626,False,False
+mcr-1,,"Salmonella enterica subsp. enterica serovar Typhimurium CFSA629 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.19, complete CDS",NG_065449.1,1626,False,False
+mcr-1,,"Escherichia coli sc12-96 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.18, complete CDS",NG_064789.1,1826,False,False
+mcr-1,,"Moraxella sp. MSG13-C03 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.10, complete CDS",NG_055583.1,1626,False,False
+mcr-1,,"Escherichia coli IHIT23707 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.37, complete CDS",NG_242325.1,1626,False,False
+mcr-1,,"Escherichia coli IHIT44909 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.36, complete CDS",NG_231577.1,1626,False,False
+mcr-1,,"Escherichia coli 20ZX79 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.35, complete CDS",NG_203419.1,1626,False,False
+mcr-1,,"Escherichia coli strain K325 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",OQ297034.1,971,False,False
+mcr-1,,"Escherichia coli strain B907 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",OQ297033.1,971,False,False
+mcr-1,,"Escherichia coli EC3769 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.34, complete CDS",NG_079263.1,1626,False,False
+mcr-1,,"Escherichia coli mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.33, complete CDS",NG_079262.1,1626,False,False
+mcr-1,,"TPA_asm: Klebsiella pneumoniae isolate 12HK2, whole genome shotgun sequencing project",DAGSEH000000000.1,261,False,False
+mcr-1,,"TPA_asm: Klebsiella pneumoniae isolate SP300, whole genome shotgun sequencing project",DAGMIH000000000.1,100,False,False
+mcr-1,,"Escherichia coli N8114 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.32, complete CDS",NG_074756.1,1626,False,False
+mcr-1,,"Escherichia coli 2018-290904-002-01 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.31, complete CDS",NG_074755.1,1626,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain S3-2, whole genome shotgun sequencing project",DADUIB000000000.1,177,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain S4-4, whole genome shotgun sequencing project",DADUIC000000000.1,129,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain S3-1, whole genome shotgun sequencing project",DADUGL000000000.1,187,False,False
+mcr-1,,"TPA_asm: Escherichia coli isolate SJP127, whole genome shotgun sequencing project",DADPHL000000000.1,160,False,False
+mcr-1,,"TPA_asm: Escherichia coli isolate AM_LREC-109, whole genome shotgun sequencing project",DADNVT000000000.1,148,False,False
+mcr-1,,"Salmonella enterica subsp. enterica serovar Enteritidis strain 1070652, whole genome shotgun sequencing project",AAZHHD000000000.1,72,False,False
+mcr-1,,"TPA_asm: Escherichia coli isolate E217ESBLB1, whole genome shotgun sequencing project",DADIEF000000000.1,84,False,False
+mcr-1,,"Salmonella enterica SAUVM 9 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.23, complete CDS",NG_067235.1,1626,False,False
+mcr-1,,"TPA_asm: Escherichia coli isolate E.coli, whole genome shotgun sequencing project",DADEWI000000000.1,176,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain P/16/10003 isolate P/16/10003, whole genome shotgun sequencing project",DADEPU000000000.1,162,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U14_1000_3 isolate U14_1000_3, whole genome shotgun sequencing project",DADEOV000000000.1,109,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U14_0810 isolate U14_0810, whole genome shotgun sequencing project",DADEOP000000000.1,113,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U14_0857 isolate U14_0857, whole genome shotgun sequencing project",DADEOL000000000.1,117,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U16-0015X isolate U16-0015X, whole genome shotgun sequencing project",DADENS000000000.1,102,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U16-0081X isolate U16-0081X, whole genome shotgun sequencing project",DADEMW000000000.1,74,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U16-0251X isolate U16-0251X, whole genome shotgun sequencing project",DADEMI000000000.1,106,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U16-0313 isolate U16-0313, whole genome shotgun sequencing project",DADEMG000000000.1,136,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain U16-0272 isolate U16-0272, whole genome shotgun sequencing project",DADEMA000000000.1,153,False,False
+mcr-1,,"Salmonella enterica strain SAUVM 10 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds",MN873698.1,1626,False,False
+mcr-1,,"Salmonella enterica strain SAUVM 9 phosphoethanolamine--lipid A transferase MCR-1.23 (mcr-1) gene, mcr-1.23 allele, complete cds",MN873697.1,1626,False,False
+mcr-1,,"Salmonella enterica strain SAUVM 8 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds",MN873696.1,1626,False,False
+mcr-1,,"Salmonella enterica strain SAUVM 7 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, complete cds",MN873695.1,1626,False,False
+mcr-1,,"Salmonella enterica subsp. enterica serovar Enteritidis strain SAUVM 6 phosphoethanolamine--lipid A transferase MCR-1.1 (mcr-1) gene, mcr-1.1 allele, ",MN873694.1,1626,False,False
+mcr-1,,"Salmonella enterica subsp. enterica serovar Indiana strain S530 chromosome, complete genome",CP061118.1,5059260,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain F2, whole genome shotgun sequencing project",DACACR000000000.1,117,False,False
+mcr-1,,"TPA_asm: Escherichia coli strain F1, whole genome shotgun sequencing project",DACACQ000000000.1,155,False,False
+mcr-1,,"Uncultured bacterium clone A4 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833299.1,213,False,True
+mcr-1,,"Uncultured bacterium clone A3 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833298.1,210,False,True
+mcr-1,,"Uncultured bacterium clone A2 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833297.1,216,False,True
+mcr-1,,"Uncultured bacterium clone A1 MCR-1 family phosphoethanolamine--lipid A transferase (mcr-1) gene, partial cds",PV833296.1,201,False,True
+mcr-1,,"Escherichia coli IHIT23707 mcr-1 gene for phosphoethanolamine--lipid A transferase MCR-1.37, complete CDS",NG_242325.1,1626,False,True
+blaCTX-M,,"Escherichia coli isolate 2026DU-00101, whole genome shotgun sequencing project",ACCYPR000000000.1,158,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-C08-AR_26_00001606, whole genome shotgun sequencing project",DBNFKP000000000.1,230,False,False
+blaCTX-M,,"Escherichia coli isolate 2026BB-00076, whole genome shotgun sequencing project",ACCXUF000000000.1,104,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_305, whole genome shotgun sequencing project",DBNEVZ000000000.1,129,False,False
+blaCTX-M,,"Shigella sonnei strain 01916879, whole genome shotgun sequencing project",ACCXFB000000000.1,451,False,False
+blaCTX-M,,"Klebsiella pneumoniae strain 2026HL-01192 isolate IDR2600015825-01-00, whole genome shotgun sequencing project",ACCWWY000000000.1,201,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE091, whole genome shotgun sequencing project",DBNDST000000000.1,135,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE187, whole genome shotgun sequencing project",DBNDRP000000000.1,158,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE164, whole genome shotgun sequencing project",DBNDQQ000000000.1,111,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE130, whole genome shotgun sequencing project",DBNDQH000000000.1,176,False,False
+blaCTX-M,,"Salmonella enterica subsp. enterica serovar Infantis strain FSIS32614886, whole genome shotgun sequencing project",ACCVQR000000000.1,60,False,False
+blaCTX-M,,"Shigella flexneri strain 01663717, whole genome shotgun sequencing project",ACCUSH000000000.1,421,False,False
+blaCTX-M,,"Shigella flexneri strain PNUSAE223599, whole genome shotgun sequencing project",ACCTCL000000000.1,356,False,False
+blaCTX-M,,"Escherichia coli strain PNUSAE223373, whole genome shotgun sequencing project",ACCSSC000000000.1,399,False,False
+blaCTX-M,,"Escherichia coli isolate 2026GH-00011, whole genome shotgun sequencing project",ACCSJD000000000.1,111,False,False
+blaCTX-M,,"Shigella flexneri strain PNUSAE223338, whole genome shotgun sequencing project",ACCSJH000000000.1,374,False,False
+blaCTX-M,,"Klebsiella pneumoniae strain 2026GO-00109, whole genome shotgun sequencing project",ACCRQA000000000.1,88,False,False
+blaCTX-M,,"Klebsiella pneumoniae subsp. pneumoniae KP4 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-285, complete CDS",NG_246037.1,876,False,False
+blaCTX-M,,"Salmonella enterica subsp. enterica serovar 1,4,[5],12:i:- 3018683606 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-261, co",NG_203384.1,876,False,False
+blaCTX-M,,"Klebsiella oxytoca NMI2990_17 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-251, complete CDS",NG_078045.1,876,False,False
+blaCTX-M,,"Escherichia coli HZ715 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-234, complete CDS",NG_068168.1,876,False,False
+blaCTX-M,,"Escherichia coli HZ4510 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-153, complete CDS",NG_068167.1,876,False,False
+blaCTX-M,,"Escherichia coli 275 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-225, complete CDS",NG_064720.1,1048,False,False
+blaCTX-M,,"Escherichia coli ESBL 23.02 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-222, complete CDS",NG_061609.1,876,False,False
+blaCTX-M,,"Escherichia coli ZZEC22 unknown blaCTX-M gene for inhibitor-resistant class A beta-lactamase CTX-M-178, complete CDS",NG_056408.1,876,False,False
+blaCTX-M,,"Escherichia coli eco2865 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-67, complete CDS",NG_049018.1,876,False,False
+blaCTX-M,,"Klebsiella pneumoniae unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-52, complete CDS",NG_049003.1,909,False,False
+blaCTX-M,KPN52,"Klebsiella pneumoniae Kpn52 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-50, complete CDS",NG_049001.1,963,False,False
+blaCTX-M,KPN247,"Klebsiella pneumoniae Kpn247 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-49, complete CDS",NG_048999.1,962,False,False
+blaCTX-M,KPN9,"Klebsiella pneumoniae Kpn9 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-48, complete CDS",NG_048998.1,962,False,False
+blaCTX-M,ECO182,"Escherichia coli Eco182 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-47, complete CDS",NG_048997.1,963,False,False
+blaCTX-M,KPN301,"Klebsiella pneumoniae Kpn301 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-46, complete CDS",NG_048996.1,962,False,False
+blaCTX-M,,"Escherichia coli 1126619 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-170, complete CDS",NG_048956.1,876,False,False
+blaCTX-M,,"Proteus mirabilis K-28 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-136, complete CDS",NG_048926.1,1033,False,False
+blaCTX-M,,"Escherichia coli RD142 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-117, complete CDS",NG_048912.1,1076,False,False
+blaCTX-M,,"Escherichia coli strain PNUSAE223156, whole genome shotgun sequencing project",ACCQEI000000000.1,345,False,False
+blaCTX-M,,"Escherichia coli strain GDS21D223 GDS21D223_1.clean_(paired)_contig_3, whole genome shotgun sequence",NZ_JAOTIH010000003.1,191547,False,False
+blaCTX-M,,"Klebsiella pneumoniae isolate 2026LN-00041/2026, whole genome shotgun sequencing project",ACCPOI000000000.1,79,False,False
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC546, whole genome shotgun sequencing project",DBMYWI000000000.1,105,False,False
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC508, whole genome shotgun sequencing project",DBMYVS000000000.1,161,False,False
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC053-P, whole genome shotgun sequencing project",DBMYUY000000000.1,140,False,False
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC361, whole genome shotgun sequencing project",DBMYQF000000000.1,119,False,False
+blaCTX-M,,"TPA_asm: Escherichia coli isolate INT_CRE_1503, whole genome shotgun sequencing project",DBMYER000000000.1,142,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_360, whole genome shotgun sequencing project",DBMXSA000000000.1,101,False,False
+blaCTX-M,,"TPA_asm: Klebsiella michiganensis isolate INT_CRE_675, whole genome shotgun sequencing project",DBMXNZ000000000.1,127,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_425, whole genome shotgun sequencing project",DBMXMG000000000.1,145,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_418, whole genome shotgun sequencing project",DBMXMA000000000.1,106,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_963, whole genome shotgun sequencing project",DBMXKJ000000000.1,92,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_888, whole genome shotgun sequencing project",DBMXKA000000000.1,123,False,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_939, whole genome shotgun sequencing project",DBMXEP000000000.1,114,False,False
+blaCTX-M,,"Escherichia coli isolate 2026DU-00101, whole genome shotgun sequencing project",ACCYPR000000000.1,158,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-C08-AR_26_00001606, whole genome shotgun sequencing project",DBNFKP000000000.1,230,False,True
+blaCTX-M,,"Escherichia coli isolate 2026BB-00076, whole genome shotgun sequencing project",ACCXUF000000000.1,104,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_305, whole genome shotgun sequencing project",DBNEVZ000000000.1,129,False,True
+blaCTX-M,,"Shigella sonnei strain 01916879, whole genome shotgun sequencing project",ACCXFB000000000.1,451,False,True
+blaCTX-M,,"Klebsiella pneumoniae strain 2026HL-01192 isolate IDR2600015825-01-00, whole genome shotgun sequencing project",ACCWWY000000000.1,201,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE091, whole genome shotgun sequencing project",DBNDST000000000.1,135,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE187, whole genome shotgun sequencing project",DBNDRP000000000.1,158,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE164, whole genome shotgun sequencing project",DBNDQQ000000000.1,111,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain CRE130, whole genome shotgun sequencing project",DBNDQH000000000.1,176,False,True
+blaCTX-M,,"Salmonella enterica subsp. enterica serovar Infantis strain FSIS32614886, whole genome shotgun sequencing project",ACCVQR000000000.1,60,False,True
+blaCTX-M,,"Shigella flexneri strain 01663717, whole genome shotgun sequencing project",ACCUSH000000000.1,421,False,True
+blaCTX-M,,"Shigella flexneri strain PNUSAE223599, whole genome shotgun sequencing project",ACCTCL000000000.1,356,False,True
+blaCTX-M,,"Escherichia coli strain PNUSAE223373, whole genome shotgun sequencing project",ACCSSC000000000.1,399,False,True
+blaCTX-M,,"Escherichia coli isolate 2026GH-00011, whole genome shotgun sequencing project",ACCSJD000000000.1,111,False,True
+blaCTX-M,,"Shigella flexneri strain PNUSAE223338, whole genome shotgun sequencing project",ACCSJH000000000.1,374,False,True
+blaCTX-M,,"Klebsiella pneumoniae strain 2026GO-00109, whole genome shotgun sequencing project",ACCRQA000000000.1,88,False,True
+blaCTX-M,,"Klebsiella pneumoniae subsp. pneumoniae KP4 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-285, complete CDS",NG_246037.1,876,False,True
+blaCTX-M,,"Escherichia coli strain PNUSAE223156, whole genome shotgun sequencing project",ACCQEI000000000.1,345,False,True
+blaCTX-M,,"Escherichia coli strain GDS21D223 GDS21D223_1.clean_(paired)_contig_3, whole genome shotgun sequence",NZ_JAOTIH010000003.1,191547,False,True
+blaCTX-M,,"Klebsiella pneumoniae isolate 2026LN-00041/2026, whole genome shotgun sequencing project",ACCPOI000000000.1,79,False,True
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC546, whole genome shotgun sequencing project",DBMYWI000000000.1,105,False,True
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC508, whole genome shotgun sequencing project",DBMYVS000000000.1,161,False,True
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC053-P, whole genome shotgun sequencing project",DBMYUY000000000.1,140,False,True
+blaCTX-M,,"TPA_asm: Escherichia coli isolate ESBLEC361, whole genome shotgun sequencing project",DBMYQF000000000.1,119,False,True
+blaCTX-M,,"TPA_asm: Escherichia coli isolate INT_CRE_1503, whole genome shotgun sequencing project",DBMYER000000000.1,142,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_360, whole genome shotgun sequencing project",DBMXSA000000000.1,101,False,True
+blaCTX-M,,"TPA_asm: Klebsiella michiganensis isolate INT_CRE_675, whole genome shotgun sequencing project",DBMXNZ000000000.1,127,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_425, whole genome shotgun sequencing project",DBMXMG000000000.1,145,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_418, whole genome shotgun sequencing project",DBMXMA000000000.1,106,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_963, whole genome shotgun sequencing project",DBMXKJ000000000.1,92,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_888, whole genome shotgun sequencing project",DBMXKA000000000.1,123,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_939, whole genome shotgun sequencing project",DBMXEP000000000.1,114,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_924, whole genome shotgun sequencing project",DBMXDT000000000.1,95,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_649, whole genome shotgun sequencing project",DBMXAJ000000000.1,144,False,True
+blaCTX-M,,"Citrobacter freundii strain 23-M-JX-74 NODE_30_length_69103_cov_198.326746, whole genome shotgun sequence",NZ_JAWICE010000030.1,69103,False,True
+blaCTX-M,,"Salmonella enterica subsp. enterica serovar Infantis strain FSIS32614749, whole genome shotgun sequencing project",ACCOUA000000000.1,74,False,True
+blaCTX-M,,"Shigella flexneri strain PNUSAE222924, whole genome shotgun sequencing project",ACCOPM000000000.1,346,False,True
+blaCTX-M,,"Shigella sonnei strain PNUSAE222774, whole genome shotgun sequencing project",ACCMYF000000000.1,416,False,True
+blaCTX-M,,"Klebsiella pneumoniae isolate 2026ZN-00247, whole genome shotgun sequencing project",ACCMJW000000000.1,75,False,True
+blaCTX-M,,"Shigella flexneri strain PNUSAE222571, whole genome shotgun sequencing project",ACCLTM000000000.1,355,False,True
+blaCTX-M,,"Shigella flexneri strain PNUSAE210975, whole genome shotgun sequencing project",ABZGSM000000000.2,354,False,True
+blaCTX-M,,"Escherichia coli 23CRST002 DNA, sequence2, whole genome shotgun sequence",BAAJNV010000002.1,122943,False,True
+blaCTX-M,,"Escherichia coli 23CRST051 plasmid pCRST051 DNA, complete sequence",AP045827.1,127637,False,True
+blaCTX-M,,"Escherichia coli 23CRST042 plasmid pCRST042 DNA, complete sequence",AP045813.1,174130,False,True
+blaCTX-M,,"Escherichia coli 23CRST021 plasmid pCRST021_1 DNA, complete sequence",AP045778.1,122974,False,True
+blaCTX-M,,"Escherichia coli 23CRST013 plasmid pCRST013 DNA, complete sequence",AP045774.1,129748,False,True
+blaCTX-M,,"Escherichia coli 23CRST009 plasmid pCRST009 DNA, complete sequence",AP045767.1,125463,False,True
+blaCTX-M,,"Escherichia coli 23CRST004 plasmid pCRST004 DNA, complete sequence",AP045763.1,122900,False,True
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae strain Enterobacteriaceae isolate Case, whole genome shotgun sequencing project",DBMTLV000000000.1,95,False,True
+blaCTX-M,,"Escherichia coli strain 220510152873 IFMNIOFM_72, whole genome shotgun sequence",NZ_JAQFKW010000072.1,21681,True,False
+blaCTX-M,,"Escherichia coli strain 220510152903 map unlocalized plasmid pAA327 BPGHJLDJ_105_220510152919, whole genome shotgun sequence",NZ_JAQFLG010000157.1,2299,True,False
+blaCTX-M,,"Escherichia coli 23-053228-01 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-278, complete CDS",NG_243584.1,876,True,False
+blaCTX-M,,"Pseudomonas aeruginosa 1876156 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-229, complete CDS",NG_065867.1,873,True,False
+blaCTX-M,,"Enterobacter kobei ICBEaBL-III-03(2) blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-224, complete CDS",NG_062241.1,1076,True,False
+blaCTX-M,,"Providencia stuartii 1700431 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-217, complete CDS",NG_057610.1,876,True,False
+blaCTX-M,,"Providencia stuartii JF29 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-75, complete CDS",NG_049027.1,876,True,False
+blaCTX-M,,"Enterobacter cloacae JF216 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-74, complete CDS",NG_049026.1,876,True,False
+blaCTX-M,RIO-2,"Citrobacter amalonaticus Rio-2 pRio-2 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-8, complete CDS",NG_049032.1,1011,True,False
+blaCTX-M,,"Klebsiella pneumoniae blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-59, complete CDS",NG_049009.1,876,True,False
+blaCTX-M,,"Klebsiella pneumoniae 360356 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-141, complete CDS",NG_048930.1,884,True,False
+blaCTX-M,,"Providencia rettgeri 309/05 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-131, complete CDS",NG_048923.1,1076,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate KP32, whole genome shotgun sequencing project",DAGNFW000000000.1,102,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate KP37, whole genome shotgun sequencing project",DAGNFR000000000.1,136,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate KP38_1, whole genome shotgun sequencing project",DAGNFO000000000.1,379,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate KP08, whole genome shotgun sequencing project",DAGNGH000000000.1,256,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGMRL000000000.1,141,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGMRG000000000.1,139,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGMQZ000000000.1,139,True,False
+blaCTX-M,,"TPA_asm: Klebsiella pneumoniae subsp. pneumoniae strain P83 isolate P83, whole genome shotgun sequencing project",DAGCIB000000000.1,110,True,False
+blaCTX-M,,"Escherichia coli strain EW126 CTX-M family beta-lactamase (blaCTX-M) gene, partial cds",OK001310.1,318,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 3828, whole genome shotgun sequencing project",DAEUHP000000000.1,146,True,False
+blaCTX-M,,"Escherichia coli strain S782 CTX-M family beta-lactamase (blaCTX-M) gene, partial cds",MZ359771.1,339,True,False
+blaCTX-M,,"Escherichia coli strain S739 CTX-M family class A extended-spectrum beta-lactamase (blaCTX-M) gene, partial cds",MZ359770.1,612,True,False
+blaCTX-M,,"Uncultured bacterium clone W01RJ-BO CTX-M family beta-lactamase (blaCTX-M) gene, partial cds",MW478861.1,501,True,False
+blaCTX-M,,"Uncultured bacterium clone W01SP-BQ CTX-M family beta-lactamase (blaCTX-M) gene, partial cds",MW478860.1,474,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 6276, whole genome shotgun sequencing project",DADWON000000000.1,227,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain F26.1, whole genome shotgun sequencing project",DADWOI000000000.1,136,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 7172, whole genome shotgun sequencing project",DADGVH000000000.1,179,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 6142, whole genome shotgun sequencing project",DADGUY000000000.1,185,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain F34.3, whole genome shotgun sequencing project",DADGUX000000000.1,131,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 98-19, whole genome shotgun sequencing project",DADGUO000000000.1,181,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 119.2-18, whole genome shotgun sequencing project",DADGUG000000000.1,180,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain 1829, whole genome shotgun sequencing project",DADGTC000000000.1,177,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain P38.1, whole genome shotgun sequencing project",DADGTA000000000.1,246,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain F23.5, whole genome shotgun sequencing project",DADGSR000000000.1,190,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain F40.1, whole genome shotgun sequencing project",DADGSJ000000000.1,245,True,False
+blaCTX-M,,"TPA_asm: Escherichia coli strain F35.1, whole genome shotgun sequencing project",DADGSE000000000.1,170,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF211.1, whole genome shotgun sequencing project",AATQZA000000000.1,180,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF231, whole genome shotgun sequencing project",AATQYZ000000000.1,230,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF82, whole genome shotgun sequencing project",AATQYX000000000.1,215,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF221.2, whole genome shotgun sequencing project",AATQYV000000000.1,234,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF181, whole genome shotgun sequencing project",AATQYU000000000.1,182,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF61.2, whole genome shotgun sequencing project",AATQYT000000000.1,253,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF361, whole genome shotgun sequencing project",AATQYS000000000.1,190,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF211.2, whole genome shotgun sequencing project",AATQYQ000000000.1,178,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF221.1, whole genome shotgun sequencing project",AATQYP000000000.1,196,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF191, whole genome shotgun sequencing project",AATQYO000000000.1,126,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF83, whole genome shotgun sequencing project",AATQYN000000000.1,226,True,False
+blaCTX-M,,"Escherichia coli strain NC_CF72.2, whole genome shotgun sequencing project",AATQYM000000000.1,196,True,False
+blaCTX-M,,"Escherichia coli strain 220510152873 IFMNIOFM_72, whole genome shotgun sequence",NZ_JAQFKW010000072.1,21681,True,True
+blaCTX-M,,"Escherichia coli strain 220510152903 map unlocalized plasmid pAA327 BPGHJLDJ_105_220510152919, whole genome shotgun sequence",NZ_JAQFLG010000157.1,2299,True,True
+blaCTX-M,,"Escherichia coli 23-053228-01 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-278, complete CDS",NG_243584.1,876,True,True
+blaOXA-48,,"Escherichia coli FUJ80155 DNA, complete genome",AP024694.1,5225914,False,False
+blaOXA-48,,"Escherichia coli putative phosphoethanolamine transferase YhbX (yhbX), hypothetical protein, and GTPase Era (era) genes, complete cds; membrane protei",KT444705.1,42316,False,False
+blaOXA-48,TYPE-1,"Escherichia coli hypothetical protein, antitoxin YeeU (cbeA), L-fuculose phosphate aldolase (fucA), putative glucose uptake permease, Deoxyribonucleos",KT444704.1,90492,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2026KU-00076, whole genome shotgun sequencing project",ACCTLK000000000.1,150,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01150 isolate IDR2600012893-01-02, whole genome shotgun sequencing project",ACCRUN000000000.1,449,False,False
+blaVIM,,"Klebsiella oxytoca NMI1536_13 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-79, complete CDS",NG_078044.1,801,False,False
+blaVIM,,"Escherichia coli 957 unknown blaVIM gene for subclass B1 metallo-beta-lactamase VIM-29, complete CDS",NG_050355.1,801,False,False
+blaVIM,,"Proteus mirabilis P13 unknown blaVIM gene for subclass B1 metallo-beta-lactamase VIM-25, complete CDS",NG_050351.1,991,False,False
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa strain P.aruginosa_PF034 isolate PF034_pae, whole genome shotgun sequencing project",DBMSPD000000000.1,187,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01074 isolate IDR2000007496-01-02, whole genome shotgun sequencing project",ACCKHY000000000.1,304,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01073 isolate IDR2000007491-01-08, whole genome shotgun sequencing project",ACCKHU000000000.1,198,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01072 isolate IDR2000007484-01-02, whole genome shotgun sequencing project",ACCKHN000000000.1,309,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01071 isolate IDR2000007293-01-00, whole genome shotgun sequencing project",ACCKHH000000000.1,305,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01070 isolate IDR1900063360-01-00, whole genome shotgun sequencing project",ACCKHG000000000.1,257,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01023 isolate IDR2500092137-01-00, whole genome shotgun sequencing project",ACCBPS000000000.1,296,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025GO-00584, whole genome shotgun sequencing project",ACBPDR000000000.1,132,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2025DK-00408, whole genome shotgun sequencing project",ACBOLH000000000.1,132,False,False
+blaVIM,,"Klebsiella variicola subsp. variicola O117D2 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-96, complete CDS",NG_245843.1,801,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00820 isolate IDR2500076192-01-00, whole genome shotgun sequencing project",ACBIDD000000000.1,248,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025GO-00473, whole genome shotgun sequencing project",ACBHIZ000000000.1,124,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2025ZN-02206, whole genome shotgun sequencing project",ACAZMR000000000.1,152,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00698 isolate IDR2500063409-01-00, whole genome shotgun sequencing project",ACAWIQ000000000.1,220,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00709 isolate IDR2500064863-01-00, whole genome shotgun sequencing project",ACAWIT000000000.1,211,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2025SY-00271, whole genome shotgun sequencing project",ACAUJX000000000.1,87,False,False
+blaVIM,,"Enterobacter hormaechei isolate 2025ZN-01960, whole genome shotgun sequencing project",ACATXE000000000.1,142,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2021SY-00035, whole genome shotgun sequencing project",ABEVDB000000000.4,122,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022JQ-00627, whole genome shotgun sequencing project",ABKNRD000000000.4,79,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00629 isolate IDR2500057353-01-00, whole genome shotgun sequencing project",ACAJZL000000000.1,225,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00590 isolate IDR2500053150-01-00, whole genome shotgun sequencing project",ACAFKV000000000.1,339,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2020HL-00723, whole genome shotgun sequencing project",ABEURN000000000.4,192,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2023HL-00177, whole genome shotgun sequencing project",ABKYBS000000000.4,202,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022BM-00163, whole genome shotgun sequencing project",ABILJA000000000.4,95,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022CK-00609, whole genome shotgun sequencing project",ABJKQS000000000.4,110,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2022HL-01965, whole genome shotgun sequencing project",ABJYTZ000000000.4,257,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2023GN-00142, whole genome shotgun sequencing project",ABKSEL000000000.4,97,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023KU-00033, whole genome shotgun sequencing project",ABLGHG000000000.4,125,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2022HL-01775, whole genome shotgun sequencing project",ABIIPY000000000.4,246,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022KU-00414, whole genome shotgun sequencing project",ABKASQ000000000.4,166,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023BM-00037, whole genome shotgun sequencing project",ABLINN000000000.4,105,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023BM-00001, whole genome shotgun sequencing project",ABKLRT000000000.4,104,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022BM-00167, whole genome shotgun sequencing project",ABLMTT000000000.4,100,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022CK-00463, whole genome shotgun sequencing project",ABHWBF000000000.4,116,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2023HL-00247, whole genome shotgun sequencing project",ABLDVW000000000.4,302,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2022HL-01738, whole genome shotgun sequencing project",ABIHSC000000000.4,287,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023KU-00032, whole genome shotgun sequencing project",ABLFXD000000000.4,149,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022BM-00165, whole genome shotgun sequencing project",ABILIY000000000.4,86,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022CK-00517, whole genome shotgun sequencing project",ABIQHR000000000.4,125,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023GO-0058, whole genome shotgun sequencing project",ABLNIQ000000000.4,137,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023BM-00026, whole genome shotgun sequencing project",ABKWJG000000000.4,88,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023KU-00008, whole genome shotgun sequencing project",ABLCKG000000000.4,138,False,False
+blaVIM,,"Pseudomonas aeruginosa strain 2023HL-00185, whole genome shotgun sequencing project",ABKYGI000000000.4,201,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2022CK-00836, whole genome shotgun sequencing project",ABKENB000000000.4,138,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2023BM-00010, whole genome shotgun sequencing project",ABKNJB000000000.4,90,False,False
+blaVIM,,"Pseudomonas aeruginosa isolate 2026KU-00076, whole genome shotgun sequencing project",ACCTLK000000000.1,150,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01150 isolate IDR2600012893-01-02, whole genome shotgun sequencing project",ACCRUN000000000.1,449,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa strain P.aruginosa_PF034 isolate PF034_pae, whole genome shotgun sequencing project",DBMSPD000000000.1,187,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01074 isolate IDR2000007496-01-02, whole genome shotgun sequencing project",ACCKHY000000000.1,304,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01073 isolate IDR2000007491-01-08, whole genome shotgun sequencing project",ACCKHU000000000.1,198,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01072 isolate IDR2000007484-01-02, whole genome shotgun sequencing project",ACCKHN000000000.1,309,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01071 isolate IDR2000007293-01-00, whole genome shotgun sequencing project",ACCKHH000000000.1,305,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01070 isolate IDR1900063360-01-00, whole genome shotgun sequencing project",ACCKHG000000000.1,257,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2026HL-01023 isolate IDR2500092137-01-00, whole genome shotgun sequencing project",ACCBPS000000000.1,296,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025GO-00584, whole genome shotgun sequencing project",ACBPDR000000000.1,132,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2025DK-00408, whole genome shotgun sequencing project",ACBOLH000000000.1,132,False,True
+blaVIM,,"Klebsiella variicola subsp. variicola O117D2 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-96, complete CDS",NG_245843.1,801,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00820 isolate IDR2500076192-01-00, whole genome shotgun sequencing project",ACBIDD000000000.1,248,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025GO-00473, whole genome shotgun sequencing project",ACBHIZ000000000.1,124,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2025ZN-02206, whole genome shotgun sequencing project",ACAZMR000000000.1,152,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00698 isolate IDR2500063409-01-00, whole genome shotgun sequencing project",ACAWIQ000000000.1,220,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00709 isolate IDR2500064863-01-00, whole genome shotgun sequencing project",ACAWIT000000000.1,211,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2025SY-00271, whole genome shotgun sequencing project",ACAUJX000000000.1,87,False,True
+blaVIM,,"Enterobacter hormaechei isolate 2025ZN-01960, whole genome shotgun sequencing project",ACATXE000000000.1,142,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00629 isolate IDR2500057353-01-00, whole genome shotgun sequencing project",ACAJZL000000000.1,225,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00590 isolate IDR2500053150-01-00, whole genome shotgun sequencing project",ACAFKV000000000.1,339,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00570 isolate IDR2500050857-02-00, whole genome shotgun sequencing project",ACAETD000000000.1,268,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2025BB-00218, whole genome shotgun sequencing project",ACAAYB000000000.1,102,False,True
+blaVIM,,"Serratia marcescens isolate 2020QG-00117, whole genome shotgun sequencing project",ABQICT000000000.2,123,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00451 isolate IDR2500038311-01-00, whole genome shotgun sequencing project",ABZHZM000000000.1,374,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR03338, whole genome shotgun sequencing project",DBIRWL000000000.1,100,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR02930-PPP, whole genome shotgun sequencing project",DBIRUY000000000.1,105,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00398 isolate IDR2500032195-01-00, whole genome shotgun sequencing project",ABYZGA000000000.1,441,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa strain PA_ 79 isolate Bacterium, whole genome shotgun sequencing project",DBIHLH000000000.1,355,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa strain PJK40, whole genome shotgun sequencing project",DBIGZV000000000.1,98,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate B21-15_S147, whole genome shotgun sequencing project",DBICHX000000000.1,206,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00289 isolate IDR2500027667-01-00, whole genome shotgun sequencing project",ABYRPE000000000.1,446,False,True
+blaVIM,,"TPA_asm: Escherichia coli isolate 13772, whole genome shotgun sequencing project",DBHNQQ000000000.1,190,False,True
+blaVIM,,"Pseudomonas aeruginosa NRZ-99524 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-95, complete CDS",NG_244659.1,801,False,True
+blaVIM,,"Pseudomonas aeruginosa 23-127396-01 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-94, complete CDS",NG_244658.1,801,False,True
+blaVIM,,"Enterobacter cloacae complex sp. RIVM_C089126 blaVIM gene for subclass B1 metallo-beta-lactamase VIM-93, complete CDS",NG_244657.1,801,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2023KU-00388, whole genome shotgun sequencing project",ABYGMT000000000.1,238,False,True
+blaVIM,,"Pseudomonas aeruginosa isolate 2024KU-00019, whole genome shotgun sequencing project",ABYGMK000000000.1,95,False,True
+blaVIM,,"TPA_asm: Escherichia coli isolate AMR02447, whole genome shotgun sequencing project",DBGGIP000000000.1,190,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR02933, whole genome shotgun sequencing project",DBGGHS000000000.1,127,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR02866, whole genome shotgun sequencing project",DBGGGQ000000000.1,113,False,True
+blaVIM,,"TPA_asm: Citrobacter freundii isolate AMR02512, whole genome shotgun sequencing project",DBGGDD000000000.1,87,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR02684, whole genome shotgun sequencing project",DBGFQQ000000000.1,98,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR03141, whole genome shotgun sequencing project",DBGFGJ000000000.1,116,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR03142, whole genome shotgun sequencing project",DBGFGI000000000.1,125,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR03138, whole genome shotgun sequencing project",DBGFGE000000000.1,122,False,True
+blaVIM,,"TPA_asm: Pseudomonas aeruginosa isolate AMR02939, whole genome shotgun sequencing project",DBGFEM000000000.1,131,False,True
+blaVIM,,"TPA_asm: Citrobacter freundii isolate AMR02490-P, whole genome shotgun sequencing project",DBGEUL000000000.1,103,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00088 isolate IDR2500005390-01-03, whole genome shotgun sequencing project",ABYBNX000000000.1,321,False,True
+blaVIM,,"Pseudomonas aeruginosa strain 2025HL-00104 isolate IDR2500007438-01-00, whole genome shotgun sequencing project",ABYBNW000000000.1,444,False,True
+blaVIM,,"Uncultured bacterium clone SoRC2 VIM family beta-lactamase (blaVIM) gene, partial cds",MN997082.1,309,True,False
+blaVIM,,"Mixed culture bacterium isolate S2 VIM family beta-lactamase (blaVIM) gene, partial cds",MN182584.1,324,True,False
+blaVIM,,"Mixed culture bacterium isolate S1 VIM family beta-lactamase (blaVIM) gene, partial cds",MN182565.1,330,True,False
+blaIMP,,"Pseudomonas aeruginosa 1207312 unknown blaIMP gene for subclass B1 metallo-beta-lactamase IMP-56, complete CDS",NG_049218.1,741,False,False
+blaIMP,,"Acinetobacter baumannii 56 unknown blaIMP gene for subclass B1 metallo-beta-lactamase IMP-55, complete CDS",NG_049217.1,741,False,False
+blaIMP,,"Pseudomonas aeruginosa DR26420/08 blaIMP gene for subclass B1 high level metallo-beta-lactamase IMP-26, complete CDS",NG_049190.1,861,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2026CB-00001, whole genome shotgun sequencing project",ACCPCJ000000000.1,200,False,False
+blaIMP,,"Klebsiella grimontii strain INSA57166 Ko57166_S15p_257, whole genome shotgun sequence",NZ_JAWDFR010000257.1,875,False,False
+blaIMP,,"Pseudomonas aeruginosa TH002-371 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-36, complete CDS",NG_245871.1,741,False,False
+blaIMP,,"TPA_asm: Escherichia coli strain GR101 isolate FUJ03003, whole genome shotgun sequencing project",DBLBTN000000000.1,117,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2025BB-00332, whole genome shotgun sequencing project",ACBHGX000000000.1,138,False,False
+blaIMP,,"Providencia stuartii isolate 2025ZN-02207, whole genome shotgun sequencing project",ACAZLM000000000.1,118,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa strain GR030, whole genome shotgun sequencing project",DBKKZS000000000.1,219,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CPO154, whole genome shotgun sequencing project",DBKFIW000000000.1,245,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CPO523, whole genome shotgun sequencing project",DBKFFY000000000.1,143,False,False
+blaIMP,,"Proteus mirabilis isolate 2020LN-00047, whole genome shotgun sequencing project",AAXSIL000000000.4,36,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2020CK-00142, whole genome shotgun sequencing project",ABEUTT000000000.4,168,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00256, whole genome shotgun sequencing project",ACAEBY000000000.1,100,False,False
+blaIMP,,"Pseudomonas aeruginosa strain AR_0103 scaffold00002, whole genome shotgun sequence",NZ_MPBP01000002.1,614652,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00248, whole genome shotgun sequencing project",ACADST000000000.1,98,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2022QG-00022, whole genome shotgun sequencing project",ABOHKK000000000.3,119,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2020QG-00093, whole genome shotgun sequencing project",ABODAT000000000.3,114,False,False
+blaIMP,,"Proteus mirabilis isolate 2020LN-00052, whole genome shotgun sequencing project",AAXSIQ000000000.4,34,False,False
+blaIMP,,"TPA_asm: Enterobacter roggenkampii isolate TU-2733, whole genome shotgun sequencing project",DBJLEK000000000.1,92,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00187, whole genome shotgun sequencing project",ABZUCM000000000.1,99,False,False
+blaIMP,,"Proteus mirabilis isolate 2019KU-00051, whole genome shotgun sequencing project",ABDOHU000000000.4,424,False,False
+blaIMP,,"TPA_asm: Enterobacter hormaechei subsp. steigerwaltii strain ECC_Tokyo22, whole genome shotgun sequencing project",DBJJOG000000000.1,145,False,False
+blaIMP,,"TPA_asm: Enterobacter hormaechei subsp. hoffmannii strain ECC_66, whole genome shotgun sequencing project",DBJJNK000000000.1,91,False,False
+blaIMP,,"Enterobacter asburiae 23-004-0085 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-109, complete CDS",NG_245169.1,741,False,False
+blaIMP,,"Citrobacter amalonaticus 23-004-0028 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-108, complete CDS",NG_245168.1,741,False,False
+blaIMP,,"Enterobacter hormaechei 20-004-0158 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-107, complete CDS",NG_245167.1,741,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CRPAZU007, whole genome shotgun sequencing project",DBINAF000000000.1,136,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWRZ000000000.1,102,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWRM000000000.1,103,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWQE000000000.1,104,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Urine, whole genome shotgun sequencing project",DBHPDM000000000.1,218,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Urine, whole genome shotgun sequencing project",DBHOXD000000000.1,208,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Diverse, whole genome shotgun sequencing project",DBHOXH000000000.1,128,False,False
+blaIMP,,"Pseudomonas aeruginosa PA_Bol125 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-111, complete CDS",NG_244515.1,741,False,False
+blaIMP,,"Pseudomonas aeruginosa ST179 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-110, complete CDS",NG_244514.1,747,False,False
+blaIMP,,"Pseudomonas aeruginosa strain PALA20 chromosome, complete genome",NZ_CP107064.1,7003703,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2025DK-00021, whole genome shotgun sequencing project",ABXLUJ000000000.1,146,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2024BB-00191, whole genome shotgun sequencing project",ABWXXT000000000.1,200,False,False
+blaIMP,,"Pseudomonas aeruginosa ND blaIMP gene for subclass B1 metallo-beta-lactamase IMP-106, complete CDS",NG_244120.1,741,False,False
+blaIMP,,"TPA_asm: Klebsiella planticola strain KLO00142, whole genome shotgun sequencing project",DBDCTA000000000.1,116,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate AZPAE14702, whole genome shotgun sequencing project",DBBQFH000000000.1,225,False,False
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa strain ARGA00310, whole genome shotgun sequencing project",DAZYYW000000000.1,151,False,False
+blaIMP,,"Pseudomonas aeruginosa 22-111894-01 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-105, complete CDS",NG_243588.1,732,False,False
+blaIMP,,"Pseudomonas alloputida 2411950 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-104, complete CDS",NG_243468.1,741,False,False
+blaIMP,,"TPA_asm: Escherichia coli isolate THUN81, whole genome shotgun sequencing project",DAXQAM000000000.1,141,False,False
+blaIMP,,"TPA_asm: Escherichia coli isolate THUN185, whole genome shotgun sequencing project",DAXQAK000000000.1,94,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00262, whole genome shotgun sequencing project",ABVUIS000000000.1,106,False,False
+blaIMP,,"Providencia rettgeri isolate 2024QG-00224, whole genome shotgun sequencing project",ABULQW000000000.1,64,False,False
+blaIMP,,"Pseudomonas aeruginosa isolate 2026CB-00001, whole genome shotgun sequencing project",ACCPCJ000000000.1,200,False,True
+blaIMP,,"Pseudomonas aeruginosa TH002-371 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-36, complete CDS",NG_245871.1,741,False,True
+blaIMP,,"TPA_asm: Escherichia coli strain GR101 isolate FUJ03003, whole genome shotgun sequencing project",DBLBTN000000000.1,117,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2025BB-00332, whole genome shotgun sequencing project",ACBHGX000000000.1,138,False,True
+blaIMP,,"Providencia stuartii isolate 2025ZN-02207, whole genome shotgun sequencing project",ACAZLM000000000.1,118,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa strain GR030, whole genome shotgun sequencing project",DBKKZS000000000.1,219,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CPO154, whole genome shotgun sequencing project",DBKFIW000000000.1,245,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CPO523, whole genome shotgun sequencing project",DBKFFY000000000.1,143,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00256, whole genome shotgun sequencing project",ACAEBY000000000.1,100,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00248, whole genome shotgun sequencing project",ACADST000000000.1,98,False,True
+blaIMP,,"TPA_asm: Enterobacter roggenkampii isolate TU-2733, whole genome shotgun sequencing project",DBJLEK000000000.1,92,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2025QG-00187, whole genome shotgun sequencing project",ABZUCM000000000.1,99,False,True
+blaIMP,,"TPA_asm: Enterobacter hormaechei subsp. steigerwaltii strain ECC_Tokyo22, whole genome shotgun sequencing project",DBJJOG000000000.1,145,False,True
+blaIMP,,"TPA_asm: Enterobacter hormaechei subsp. hoffmannii strain ECC_66, whole genome shotgun sequencing project",DBJJNK000000000.1,91,False,True
+blaIMP,,"Enterobacter asburiae 23-004-0085 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-109, complete CDS",NG_245169.1,741,False,True
+blaIMP,,"Citrobacter amalonaticus 23-004-0028 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-108, complete CDS",NG_245168.1,741,False,True
+blaIMP,,"Enterobacter hormaechei 20-004-0158 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-107, complete CDS",NG_245167.1,741,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate CRPAZU007, whole genome shotgun sequencing project",DBINAF000000000.1,136,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWRZ000000000.1,102,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWRM000000000.1,103,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate P. aeruginosa, whole genome shotgun sequencing project",DBHWQE000000000.1,104,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Urine, whole genome shotgun sequencing project",DBHPDM000000000.1,218,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Urine, whole genome shotgun sequencing project",DBHOXD000000000.1,208,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate Diverse, whole genome shotgun sequencing project",DBHOXH000000000.1,128,False,True
+blaIMP,,"Pseudomonas aeruginosa PA_Bol125 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-111, complete CDS",NG_244515.1,741,False,True
+blaIMP,,"Pseudomonas aeruginosa ST179 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-110, complete CDS",NG_244514.1,747,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2025DK-00021, whole genome shotgun sequencing project",ABXLUJ000000000.1,146,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024BB-00191, whole genome shotgun sequencing project",ABWXXT000000000.1,200,False,True
+blaIMP,,"Pseudomonas aeruginosa ND blaIMP gene for subclass B1 metallo-beta-lactamase IMP-106, complete CDS",NG_244120.1,741,False,True
+blaIMP,,"TPA_asm: Klebsiella planticola strain KLO00142, whole genome shotgun sequencing project",DBDCTA000000000.1,116,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa isolate AZPAE14702, whole genome shotgun sequencing project",DBBQFH000000000.1,225,False,True
+blaIMP,,"TPA_asm: Pseudomonas aeruginosa strain ARGA00310, whole genome shotgun sequencing project",DAZYYW000000000.1,151,False,True
+blaIMP,,"Pseudomonas aeruginosa 22-111894-01 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-105, complete CDS",NG_243588.1,732,False,True
+blaIMP,,"Pseudomonas alloputida 2411950 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-104, complete CDS",NG_243468.1,741,False,True
+blaIMP,,"TPA_asm: Escherichia coli isolate THUN81, whole genome shotgun sequencing project",DAXQAM000000000.1,141,False,True
+blaIMP,,"TPA_asm: Escherichia coli isolate THUN185, whole genome shotgun sequencing project",DAXQAK000000000.1,94,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00262, whole genome shotgun sequencing project",ABVUIS000000000.1,106,False,True
+blaIMP,,"Providencia rettgeri isolate 2024QG-00224, whole genome shotgun sequencing project",ABULQW000000000.1,64,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate BWH_84_P_aer, whole genome shotgun sequencing project",ABTLPF000000000.1,128,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00140, whole genome shotgun sequencing project",ABTAHS000000000.1,86,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00138, whole genome shotgun sequencing project",ABSWXG000000000.1,114,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024CW-00007, whole genome shotgun sequencing project",ABSFCV000000000.1,173,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00071, whole genome shotgun sequencing project",ABRNEI000000000.1,138,False,True
+blaIMP,,"Pseudomonas aeruginosa strain 2024GN-00080, whole genome shotgun sequencing project",ABQWRA000000000.1,156,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024CB-00152, whole genome shotgun sequencing project",ABQOCI000000000.1,235,False,True
+blaIMP,,"Pseudomonas aeruginosa isolate 2024QG-00058, whole genome shotgun sequencing project",ABQLKD000000000.1,95,False,True
+blaIMP,CARB-026,"Serratia marcescens CIM-Carb-026 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-50, complete CDS",NG_242292.1,941,False,True
+blaIMP,,"Pseudomonas alcaligenes HD11716 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-101, complete CDS",NG_242291.1,741,False,True
+blaIMP,,"Pseudomonas aeruginosa 1714568 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-74, complete CDS",NG_057606.1,741,True,False
+blaIMP,,"Pseudomonas aeruginosa 1128657 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-49, complete CDS",NG_049211.1,741,True,False
+blaIMP,,"Pseudomonas aeruginosa blaIMP gene for subclass B1 metallo-beta-lactamase IMP-16, complete CDS",NG_049179.1,941,True,False
+blaGES,,"Pseudomonas aeruginosa YTSY4 unknown blaGES gene for extended-spectrum class A beta-lactamase GES-44, complete CDS",NG_070735.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa E215 unknown blaGES gene for extended-spectrum class A beta-lactamase GES-23, complete CDS",NG_049126.1,864,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-3, whole genome shotgun sequencing project",DBMYGP000000000.1,233,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-1, whole genome shotgun sequencing project",DBMYGM000000000.1,301,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-2, whole genome shotgun sequencing project",DBMYGO000000000.1,144,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-4, whole genome shotgun sequencing project",DBMYGI000000000.1,257,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2026CK-00153, whole genome shotgun sequencing project",ACCKKV000000000.1,166,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2026CK-00099, whole genome shotgun sequencing project",ACCGKR000000000.1,102,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2025CJ-00205, whole genome shotgun sequencing project",ACCDJE000000000.1,138,False,False
+blaGES,,"Pseudomonas aeruginosa 2513247 blaGES gene for class A beta-lactamase GES-70, complete CDS",NG_245870.1,864,False,False
+blaGES,,"TPA_asm: Enterobacter asburiae isolate TU4007, whole genome shotgun sequencing project",DBLKYB000000000.1,124,False,False
+blaGES,,"Acinetobacter baumannii isolate 2025JQ-00288, whole genome shotgun sequencing project",ACBOVH000000000.1,87,False,False
+blaGES,,"TPA_asm: Morganella morganii isolate 827, whole genome shotgun sequencing project",DBKRSI000000000.1,66,False,False
+blaGES,,"Pseudomonas aeruginosa SRMPA2956 blaGES gene for class A beta-lactamase GES-69, complete CDS",NG_245795.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa HS250536 blaGES gene for class A beta-lactamase GES-68, complete CDS",NG_245794.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2025CJ-00130, whole genome shotgun sequencing project",ACAWJC000000000.1,180,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2022GO-0147, whole genome shotgun sequencing project",ABLOOO000000000.4,211,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2022BV-00051, whole genome shotgun sequencing project",ABJAUE000000000.3,233,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2023CK-00308, whole genome shotgun sequencing project",ABLFTB000000000.4,144,False,False
+blaGES,,"Pseudomonas aeruginosa strain 2022HL-02047, whole genome shotgun sequencing project",ABKGUQ000000000.4,224,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa strain NCGM 1890, whole genome shotgun sequencing project",DBJLOA000000000.1,180,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 20, whole genome shotgun sequencing project",DBJCYO000000000.1,326,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 42, whole genome shotgun sequencing project",DBJCYS000000000.1,391,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 2, whole genome shotgun sequencing project",DBJCYL000000000.1,386,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 37, whole genome shotgun sequencing project",DBJCUJ000000000.1,354,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 79, whole genome shotgun sequencing project",DBJCUB000000000.1,370,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 88, whole genome shotgun sequencing project",DBJCUD000000000.1,484,False,False
+blaGES,,"TPA_asm: Acinetobacter baumannii strain AB38 isolate 14MC190004543, whole genome shotgun sequencing project",DBJBAZ000000000.1,125,False,False
+blaGES,,"Pseudomonas aeruginosa strain 20200317_MGL-49_B2 226, whole genome shotgun sequence",NZ_JARCYR010000219.1,1021,False,False
+blaGES,,"Pseudomonas aeruginosa strain MGL_141_B9 136, whole genome shotgun sequence",NZ_JARCVY010000129.1,1021,False,False
+blaGES,,"Pseudomonas aeruginosa strain MGL_146_B9 136, whole genome shotgun sequence",NZ_JARCVU010000130.1,1021,False,False
+blaGES,,"Pseudomonas aeruginosa strain MGL_95_B5 304, whole genome shotgun sequence",NZ_JARCXH010000297.1,1021,False,False
+blaGES,,"Pseudomonas aeruginosa strain MGL_142_B9 176, whole genome shotgun sequence",NZ_JARCVX010000168.1,1021,False,False
+blaGES,,"TPA_asm: Escherichia coli isolate RIVM_C036119, whole genome shotgun sequencing project",DBHUXV000000000.1,241,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHPCQ000000000.1,156,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHPBO000000000.1,126,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHOXA000000000.1,157,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHOUX000000000.1,167,False,False
+blaGES,,"Pseudomonas aeruginosa NRZ-103175 blaGES gene for class A beta-lactamase GES-67, complete CDS",NG_244510.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa strain 2019CK-00034 chromosome, complete genome",NZ_CP107257.1,7020963,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2024QG-00333, whole genome shotgun sequencing project",ABWXBA000000000.1,69,False,False
+blaGES,,"Klebsiella pneumoniae M19016 pJH_KpnM19016 blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-66, complete CDS",NG_243587.1,1064,False,False
+blaGES,,"Aeromonas caviae 65i blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-61, complete CDS",NG_242722.1,1028,False,False
+blaGES,,"Klebsiella pneumoniae blaGES gene for inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase GES-4, complete CDS",NG_049136.1,1064,False,False
+blaGES,,"Pseudomonas aeruginosa 2374627 blaGES gene for class A beta-lactamase GES-65, complete CDS",NG_243586.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa NRZ-97947 blaGES gene for class A beta-lactamase GES-62, complete CDS",NG_243467.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2024BB-00147, whole genome shotgun sequencing project",ABVVGS000000000.1,95,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2024QG-00230, whole genome shotgun sequencing project",ABUWZY000000000.1,83,False,False
+blaGES,,"Pseudomonas aeruginosa PAER blaGES gene for extended-spectrum class A beta-lactamase GES-60, complete CDS",NG_242721.1,864,False,False
+blaGES,,"Pseudomonas aeruginosa isolate 2023GO-0183, whole genome shotgun sequencing project",ABOCZH000000000.2,124,False,False
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-3, whole genome shotgun sequencing project",DBMYGP000000000.1,233,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-1, whole genome shotgun sequencing project",DBMYGM000000000.1,301,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-2, whole genome shotgun sequencing project",DBMYGO000000000.1,144,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate CVICU 6-4, whole genome shotgun sequencing project",DBMYGI000000000.1,257,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2026CK-00153, whole genome shotgun sequencing project",ACCKKV000000000.1,166,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2026CK-00099, whole genome shotgun sequencing project",ACCGKR000000000.1,102,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2025CJ-00205, whole genome shotgun sequencing project",ACCDJE000000000.1,138,False,True
+blaGES,,"Pseudomonas aeruginosa 2513247 blaGES gene for class A beta-lactamase GES-70, complete CDS",NG_245870.1,864,False,True
+blaGES,,"TPA_asm: Enterobacter asburiae isolate TU4007, whole genome shotgun sequencing project",DBLKYB000000000.1,124,False,True
+blaGES,,"Acinetobacter baumannii isolate 2025JQ-00288, whole genome shotgun sequencing project",ACBOVH000000000.1,87,False,True
+blaGES,,"TPA_asm: Morganella morganii isolate 827, whole genome shotgun sequencing project",DBKRSI000000000.1,66,False,True
+blaGES,,"Pseudomonas aeruginosa SRMPA2956 blaGES gene for class A beta-lactamase GES-69, complete CDS",NG_245795.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa HS250536 blaGES gene for class A beta-lactamase GES-68, complete CDS",NG_245794.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2025CJ-00130, whole genome shotgun sequencing project",ACAWJC000000000.1,180,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa strain NCGM 1890, whole genome shotgun sequencing project",DBJLOA000000000.1,180,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 20, whole genome shotgun sequencing project",DBJCYO000000000.1,326,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 42, whole genome shotgun sequencing project",DBJCYS000000000.1,391,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 2, whole genome shotgun sequencing project",DBJCYL000000000.1,386,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 37, whole genome shotgun sequencing project",DBJCUJ000000000.1,354,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 79, whole genome shotgun sequencing project",DBJCUB000000000.1,370,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate isolate 88, whole genome shotgun sequencing project",DBJCUD000000000.1,484,False,True
+blaGES,,"TPA_asm: Acinetobacter baumannii strain AB38 isolate 14MC190004543, whole genome shotgun sequencing project",DBJBAZ000000000.1,125,False,True
+blaGES,,"Pseudomonas aeruginosa strain 20200317_MGL-49_B2 226, whole genome shotgun sequence",NZ_JARCYR010000219.1,1021,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_141_B9 136, whole genome shotgun sequence",NZ_JARCVY010000129.1,1021,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_146_B9 136, whole genome shotgun sequence",NZ_JARCVU010000130.1,1021,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_95_B5 304, whole genome shotgun sequence",NZ_JARCXH010000297.1,1021,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_142_B9 176, whole genome shotgun sequence",NZ_JARCVX010000168.1,1021,False,True
+blaGES,,"TPA_asm: Escherichia coli isolate RIVM_C036119, whole genome shotgun sequencing project",DBHUXV000000000.1,241,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHPCQ000000000.1,156,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHPBO000000000.1,126,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHOXA000000000.1,157,False,True
+blaGES,,"TPA_asm: Pseudomonas aeruginosa isolate Blood, whole genome shotgun sequencing project",DBHOUX000000000.1,167,False,True
+blaGES,,"Pseudomonas aeruginosa NRZ-103175 blaGES gene for class A beta-lactamase GES-67, complete CDS",NG_244510.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2024QG-00333, whole genome shotgun sequencing project",ABWXBA000000000.1,69,False,True
+blaGES,,"Klebsiella pneumoniae M19016 pJH_KpnM19016 blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-66, complete CDS",NG_243587.1,1064,False,True
+blaGES,,"Aeromonas caviae 65i blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-61, complete CDS",NG_242722.1,1028,False,True
+blaGES,,"Pseudomonas aeruginosa 2374627 blaGES gene for class A beta-lactamase GES-65, complete CDS",NG_243586.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa NRZ-97947 blaGES gene for class A beta-lactamase GES-62, complete CDS",NG_243467.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2024BB-00147, whole genome shotgun sequencing project",ABVVGS000000000.1,95,False,True
+blaGES,,"Pseudomonas aeruginosa isolate 2024QG-00230, whole genome shotgun sequencing project",ABUWZY000000000.1,83,False,True
+blaGES,,"Pseudomonas aeruginosa PAER blaGES gene for extended-spectrum class A beta-lactamase GES-60, complete CDS",NG_242721.1,864,False,True
+blaGES,,"Pseudomonas aeruginosa strain 20200317_MGL-49_B2, whole genome shotgun sequencing project",JARCYR000000000.1,284,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_95_B5, whole genome shotgun sequencing project",JARCXH000000000.1,367,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_146_B9, whole genome shotgun sequencing project",JARCVU000000000.1,191,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_141_B9, whole genome shotgun sequencing project",JARCVY000000000.1,191,False,True
+blaGES,,"Pseudomonas aeruginosa strain MGL_142_B9, whole genome shotgun sequencing project",JARCVX000000000.1,233,False,True
+blaGES,,"Aeromonas caviae 65i blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-61, complete CDS",NG_242722.1,1028,True,False
+blaGES,,"Aeromonas caviae CR888 blaGES gene for extended-spectrum class A beta-lactamase GES-31, complete CDS",NG_049135.1,864,True,False
+blaGES,,"Aeromonas caviae 65i blaGES gene for carbapenem-hydrolyzing class A beta-lactamase GES-61, complete CDS",NG_242722.1,1028,True,True
+qnrS,,"Escherichia coli strain PSU-0833, whole genome shotgun sequencing project",AATQIS000000000.1,137,False,False
+qnrS,,"Escherichia coli isolate VMC RIVER QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",PQ604704.1,427,False,False
+qnrS,,"Photobacterium damselae strain CMFRI/PhD-20 QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",OR902827.1,333,False,False
+qnrS,,"Aeromonas veronii strain CMFRI/AV-08 QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",OR902826.1,342,False,False
+qnrS,,"Aeromonas veronii strain CMFRI/AV-06 QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",OR902825.1,342,False,False
+qnrS,,"Aeromonas veronii strain CMFRI/AV-05 QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",OR902824.1,342,False,False
+qnrS,,"Escherichia coli strain 06k746 QnrS (qnrS) gene, partial cds",OR047674.1,507,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate BA3081, whole genome shotgun sequencing project",DAGNLE000000000.1,421,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate BA7971, whole genome shotgun sequencing project",DAGNKB000000000.1,236,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain EuSCAPE_UK054, whole genome shotgun sequencing project",DAGRNA000000000.1,497,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain 949, whole genome shotgun sequencing project",DAGQNH000000000.1,361,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGOBF000000000.1,92,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGOAJ000000000.1,381,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate Klebsiella pneumoniae, whole genome shotgun sequencing project",DAGNZZ000000000.1,343,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain MyNCGM546, whole genome shotgun sequencing project",DAGMOG000000000.1,117,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae isolate 105H, whole genome shotgun sequencing project",DAGLAG000000000.1,181,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain N17-02233, whole genome shotgun sequencing project",DAGKGC000000000.1,101,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain Klebsiella pneumoniae ARLG-4293, whole genome shotgun sequencing project",DAGJXU000000000.1,316,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain ST15, whole genome shotgun sequencing project",DAGHUM000000000.1,157,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain 2014CRE_1, whole genome shotgun sequencing project",DAGCPY000000000.1,134,False,False
+qnrS,,"TPA_asm: Klebsiella pneumoniae strain 2014CRE_34, whole genome shotgun sequencing project",DAGCMO000000000.1,147,False,False
+qnrS,,"Uncultured bacterium clone S02RJ-LE QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",MW478865.1,276,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate rac486, whole genome shotgun sequencing project",DADUPZ000000000.1,248,False,False
+qnrS,,"Salmonella enterica strain AUSMDU00033749, whole genome shotgun sequencing project",AAZUVA000000000.1,49,False,False
+qnrS,,"Salmonella enterica strain AUSMDU00009662, whole genome shotgun sequencing project",AAZUUE000000000.1,117,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate 14S04120-2, whole genome shotgun sequencing project",DADSJC000000000.1,206,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate 14S03803-2, whole genome shotgun sequencing project",DADSIZ000000000.1,263,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate 14S03815-3, whole genome shotgun sequencing project",DADSIT000000000.1,249,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate 14S03815-1, whole genome shotgun sequencing project",DADSIP000000000.1,246,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate 14S04220-2, whole genome shotgun sequencing project",DADSIJ000000000.1,220,False,False
+qnrS,,"TPA_asm: Escherichia coli strain isol040 isolate isol040, whole genome shotgun sequencing project",DADSEB000000000.1,260,False,False
+qnrS,,"TPA_asm: Escherichia coli strain isol215 isolate isol215, whole genome shotgun sequencing project",DADSAL000000000.1,249,False,False
+qnrS,,"TPA_asm: Escherichia coli strain isol213 isolate isol213, whole genome shotgun sequencing project",DADSAH000000000.1,219,False,False
+qnrS,,"Escherichia coli strain PNUSAE027534, whole genome shotgun sequencing project",AAZSVH000000000.1,351,False,False
+qnrS,,"Salmonella enterica subsp. enterica serovar Enteritidis strain PNCS004043, whole genome shotgun sequencing project",AAZOEM000000000.1,56,False,False
+qnrS,,"Enterobacter hormaechei isolate BWHC11, whole genome shotgun sequencing project",AAZLBY000000000.1,83,False,False
+qnrS,,"Enterobacter hormaechei isolate BWHC17, whole genome shotgun sequencing project",AAZLBO000000000.1,426,False,False
+qnrS,,"Escherichia coli strain FSIS12035588, whole genome shotgun sequencing project",AAZCOV000000000.1,232,False,False
+qnrS,,"TPA_asm: Escherichia coli isolate E575ESBLPP, whole genome shotgun sequencing project",DADIAL000000000.1,161,False,False
+qnrS,,"TPA_asm: Salmonella enterica subsp. enterica serovar Infantis isolate SI1/1, whole genome shotgun sequencing project",DADFOZ000000000.1,175,False,False
+qnrS,,"TPA_asm: Escherichia coli strain U14_0022 isolate U14_0022, whole genome shotgun sequencing project",DADEOQ000000000.1,287,False,False
+qnrS,,"TPA_asm: Escherichia coli strain EIEC, whole genome shotgun sequencing project",DADBYP000000000.1,67,False,False
+qnrS,,"TPA_asm: Escherichia coli strain pig15_18, whole genome shotgun sequencing project",DACZZL000000000.1,202,False,False
+qnrS,,"TPA_asm: Vibrio parahaemolyticus strain DHO39, whole genome shotgun sequencing project",DACZQR000000000.1,53,False,False
+qnrS,,"TPA_asm: Citrobacter freundii isolate AMA528, whole genome shotgun sequencing project",DACYAX000000000.1,295,False,False
+qnrS,,"Vibrio parahaemolyticus strain PNUSAV000544, whole genome shotgun sequencing project",AAXNKQ000000000.1,61,False,False
+qnrS,,"Vibrio parahaemolyticus strain PNUSAV000587, whole genome shotgun sequencing project",AAXNIH000000000.1,71,False,False
+qnrS,,"Vibrio parahaemolyticus strain PNUSAV000812, whole genome shotgun sequencing project",AAXNAJ000000000.1,70,False,False
+qnrS,,"Vibrio parahaemolyticus strain PNUSAV000905, whole genome shotgun sequencing project",AAXMXX000000000.1,110,False,False
+qnrS,,"Vibrio parahaemolyticus strain PNUSAV001083, whole genome shotgun sequencing project",AAXMWK000000000.1,100,False,False
+qnrS,,"Escherichia coli isolate VMC RIVER QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",PQ604704.1,427,False,True
+qnrS,,"Uncultured bacterium clone S02RJ-LE QnrS family quinolone resistance pentapeptide repeat protein (qnrS) gene, partial cds",MW478865.1,276,True,False
+qnrS,,"Uncultured bacterium clone WaRC4 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN997089.1,321,True,False
+qnrS,,"Mixed culture bacterium isolate S3 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN182604.1,321,True,False
+qnrS,,"Mixed culture bacterium isolate S2 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN182586.1,330,True,False
+qnrS,,"Mixed culture bacterium isolate S1 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN182567.1,333,True,False
+qnrS,,"Mixed culture bacterium isolate ZS10 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN174681.1,336,True,False
+qnrS,,"Mixed culture bacterium isolate DCo9 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN151313.1,336,True,False
+qnrS,,"Escherichia coli strain SJA91 QnrS family quinolone resistance protein (qnrS) gene, partial cds",MN148177.1,336,True,False
+armA,,"Acinetobacter baumannii isolate 2026BM-00062, whole genome shotgun sequencing project",ACCYWY000000000.1,65,False,False
+armA,,"Acinetobacter baumannii isolate 2026DG-00041, whole genome shotgun sequencing project",ACCYWH000000000.1,79,False,False
+armA,,"Citrobacter werkmanii isolate BB1490, whole genome shotgun sequence",NZ_CAHPRY010000090.1,8466,False,False
+armA,,"Citrobacter werkmanii isolate BB1473, whole genome shotgun sequence",NZ_CAIITP010000004.1,161908,False,False
+armA,,"Citrobacter werkmanii isolate BB1490, whole genome shotgun sequence",NZ_CAIIUI010000004.1,161908,False,False
+armA,,"Citrobacter werkmanii isolate BB1459, whole genome shotgun sequence",NZ_CAHPQX010000065.1,8466,False,False
+armA,,"Citrobacter werkmanii isolate BB1478, whole genome shotgun sequence",NZ_CAIITW010000004.1,161908,False,False
+armA,,"Citrobacter werkmanii isolate BB1491, whole genome shotgun sequence",NZ_CAIIUS010000004.1,152607,False,False
+armA,,"Citrobacter werkmanii isolate BB1466, whole genome shotgun sequence",NZ_CAIITF010000004.1,151291,False,False
+armA,,"Acinetobacter baumannii isolate 2026BB-00106, whole genome shotgun sequencing project",ACCYPU000000000.1,83,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae isolate B12, whole genome shotgun sequencing project",DBNGBC000000000.1,352,False,False
+armA,,"Acinetobacter baumannii isolate 2026DG-00039, whole genome shotgun sequencing project",ACCYKJ000000000.1,89,False,False
+armA,,"TPA_asm: Acinetobacter baumannii isolate B40, whole genome shotgun sequencing project",DBNFXN000000000.1,135,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-D10-AR_26_00002207, whole genome shotgun sequencing project",DBNFOO000000000.1,186,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-E10-AR_26_00002209, whole genome shotgun sequencing project",DBNFOH000000000.1,165,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-B08-AR_26_00001578, whole genome shotgun sequencing project",DBNFOK000000000.1,223,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-C08-AR_26_00001606, whole genome shotgun sequencing project",DBNFKP000000000.1,230,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-E09-AR_26_00002007, whole genome shotgun sequencing project",DBNFKK000000000.1,226,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-B10-AR_26_00002151, whole genome shotgun sequencing project",DBNFKB000000000.1,171,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1144 NODE_35_length_3543_cov_132.018754, whole genome shotgun sequence",NZ_JAMNHH010000035.1,3543,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1161 NODE_48_length_15023_cov_122.881239, whole genome shotgun sequence",NZ_JAMNGQ010000048.1,15023,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1155 NODE_48_length_15025_cov_106.167313, whole genome shotgun sequence",NZ_JAMNGX010000048.1,15025,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1032 NODE_52_length_4841_cov_183.506927, whole genome shotgun sequence",NZ_JAMNLI010000052.1,4841,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1034 NODE_51_length_4841_cov_170.149454, whole genome shotgun sequence",NZ_JAMNLG010000051.1,4841,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1070 NODE_27_length_5697_cov_165.838612, whole genome shotgun sequence",NZ_JAMNJU010000027.1,5697,False,False
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1106 NODE_35_length_3543_cov_130.606751, whole genome shotgun sequence",NZ_JAMNIQ010000035.1,3543,False,False
+armA,,"Klebsiella pneumoniae strain 2026GO-00120, whole genome shotgun sequencing project",ACCYAY000000000.1,105,False,False
+armA,,"Acinetobacter baumannii strain 2026GO-00121, whole genome shotgun sequencing project",ACCYAC000000000.1,73,False,False
+armA,,"Acinetobacter baumannii isolate 2026IQ-00147, whole genome shotgun sequencing project",ACCXZW000000000.1,97,False,False
+armA,,"Acinetobacter baumannii isolate 2026IQ-00140, whole genome shotgun sequencing project",ACCXZU000000000.1,80,False,False
+armA,,"Acinetobacter baumannii isolate 2026QG-00079, whole genome shotgun sequencing project",ACCXXH000000000.1,103,False,False
+armA,,"Acinetobacter baumannii isolate 2026DU-00068, whole genome shotgun sequencing project",ACCXUC000000000.1,74,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1207, whole genome shotgun sequencing project",DBNEZU000000000.1,96,False,False
+armA,,"TPA_asm: Klebsiella pneumoniae strain Enterobacteriaceae isolate Case, whole genome shotgun sequencing project",DBNERX000000000.1,100,False,False
+armA,,"Acinetobacter baumannii isolate 2026ZN-00326, whole genome shotgun sequencing project",ACCXAC000000000.1,69,False,False
+armA,,"Acinetobacter baumannii isolate 2026ZN-00327, whole genome shotgun sequencing project",ACCXAE000000000.1,63,False,False
+armA,,"Acinetobacter baumannii isolate 2026DM-00043, whole genome shotgun sequencing project",ACCWZU000000000.1,98,False,False
+armA,,"Klebsiella pneumoniae strain 2026HL-01198 isolate IDR2600017932-01-00, whole genome shotgun sequencing project",ACCWWT000000000.1,242,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00275, whole genome shotgun sequencing project",ACCWQS000000000.1,72,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00277, whole genome shotgun sequencing project",ACCWQT000000000.1,77,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00273, whole genome shotgun sequencing project",ACCWQH000000000.1,66,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00259, whole genome shotgun sequencing project",ACCWPV000000000.1,97,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00264, whole genome shotgun sequencing project",ACCWPT000000000.1,101,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00261, whole genome shotgun sequencing project",ACCWPU000000000.1,84,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00255, whole genome shotgun sequencing project",ACCWPR000000000.1,77,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00257, whole genome shotgun sequencing project",ACCWPQ000000000.1,89,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00256, whole genome shotgun sequencing project",ACCWPS000000000.1,83,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00262, whole genome shotgun sequencing project",ACCWPP000000000.1,92,False,False
+armA,,"Acinetobacter baumannii isolate 2026CB-00263, whole genome shotgun sequencing project",ACCWPN000000000.1,96,False,False
+armA,,"TPA_asm: Acinetobacter baumannii strain 2026GS-00043 isolate CRE000000717-5jHHAg9DTnrI2hsUMJvbDCbwurgB8YCPoNVCwUipXak=, whole genome shotgun sequencin",DBNEDU000000000.1,87,False,False
+armA,,"Acinetobacter baumannii isolate 2026BM-00062, whole genome shotgun sequencing project",ACCYWY000000000.1,65,False,True
+armA,,"Acinetobacter baumannii isolate 2026DG-00041, whole genome shotgun sequencing project",ACCYWH000000000.1,79,False,True
+armA,,"Acinetobacter baumannii isolate 2026BB-00106, whole genome shotgun sequencing project",ACCYPU000000000.1,83,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae isolate B12, whole genome shotgun sequencing project",DBNGBC000000000.1,352,False,True
+armA,,"Acinetobacter baumannii isolate 2026DG-00039, whole genome shotgun sequencing project",ACCYKJ000000000.1,89,False,True
+armA,,"TPA_asm: Acinetobacter baumannii isolate B40, whole genome shotgun sequencing project",DBNFXN000000000.1,135,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-D10-AR_26_00002207, whole genome shotgun sequencing project",DBNFOO000000000.1,186,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-E10-AR_26_00002209, whole genome shotgun sequencing project",DBNFOH000000000.1,165,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-B08-AR_26_00001578, whole genome shotgun sequencing project",DBNFOK000000000.1,223,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-C08-AR_26_00001606, whole genome shotgun sequencing project",DBNFKP000000000.1,230,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-E09-AR_26_00002007, whole genome shotgun sequencing project",DBNFKK000000000.1,226,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain uvzsr-PT_26_00018-B10-AR_26_00002151, whole genome shotgun sequencing project",DBNFKB000000000.1,171,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1144 NODE_35_length_3543_cov_132.018754, whole genome shotgun sequence",NZ_JAMNHH010000035.1,3543,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1161 NODE_48_length_15023_cov_122.881239, whole genome shotgun sequence",NZ_JAMNGQ010000048.1,15023,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1155 NODE_48_length_15025_cov_106.167313, whole genome shotgun sequence",NZ_JAMNGX010000048.1,15025,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1032 NODE_52_length_4841_cov_183.506927, whole genome shotgun sequence",NZ_JAMNLI010000052.1,4841,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1034 NODE_51_length_4841_cov_170.149454, whole genome shotgun sequence",NZ_JAMNLG010000051.1,4841,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1070 NODE_27_length_5697_cov_165.838612, whole genome shotgun sequence",NZ_JAMNJU010000027.1,5697,False,True
+armA,,"UNVERIFIED_CONTAM: Salmonella sp. NW1106 NODE_35_length_3543_cov_130.606751, whole genome shotgun sequence",NZ_JAMNIQ010000035.1,3543,False,True
+armA,,"Klebsiella pneumoniae strain 2026GO-00120, whole genome shotgun sequencing project",ACCYAY000000000.1,105,False,True
+armA,,"Acinetobacter baumannii strain 2026GO-00121, whole genome shotgun sequencing project",ACCYAC000000000.1,73,False,True
+armA,,"Acinetobacter baumannii isolate 2026IQ-00147, whole genome shotgun sequencing project",ACCXZW000000000.1,97,False,True
+armA,,"Acinetobacter baumannii isolate 2026IQ-00140, whole genome shotgun sequencing project",ACCXZU000000000.1,80,False,True
+armA,,"Acinetobacter baumannii isolate 2026QG-00079, whole genome shotgun sequencing project",ACCXXH000000000.1,103,False,True
+armA,,"Acinetobacter baumannii isolate 2026DU-00068, whole genome shotgun sequencing project",ACCXUC000000000.1,74,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae isolate INT_CRE_1207, whole genome shotgun sequencing project",DBNEZU000000000.1,96,False,True
+armA,,"TPA_asm: Klebsiella pneumoniae strain Enterobacteriaceae isolate Case, whole genome shotgun sequencing project",DBNERX000000000.1,100,False,True
+armA,,"Acinetobacter baumannii isolate 2026ZN-00326, whole genome shotgun sequencing project",ACCXAC000000000.1,69,False,True
+armA,,"Acinetobacter baumannii isolate 2026ZN-00327, whole genome shotgun sequencing project",ACCXAE000000000.1,63,False,True
+armA,,"Acinetobacter baumannii isolate 2026DM-00043, whole genome shotgun sequencing project",ACCWZU000000000.1,98,False,True
+armA,,"Klebsiella pneumoniae strain 2026HL-01198 isolate IDR2600017932-01-00, whole genome shotgun sequencing project",ACCWWT000000000.1,242,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00275, whole genome shotgun sequencing project",ACCWQS000000000.1,72,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00277, whole genome shotgun sequencing project",ACCWQT000000000.1,77,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00273, whole genome shotgun sequencing project",ACCWQH000000000.1,66,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00259, whole genome shotgun sequencing project",ACCWPV000000000.1,97,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00264, whole genome shotgun sequencing project",ACCWPT000000000.1,101,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00261, whole genome shotgun sequencing project",ACCWPU000000000.1,84,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00255, whole genome shotgun sequencing project",ACCWPR000000000.1,77,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00257, whole genome shotgun sequencing project",ACCWPQ000000000.1,89,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00256, whole genome shotgun sequencing project",ACCWPS000000000.1,83,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00262, whole genome shotgun sequencing project",ACCWPP000000000.1,92,False,True
+armA,,"Acinetobacter baumannii isolate 2026CB-00263, whole genome shotgun sequencing project",ACCWPN000000000.1,96,False,True
+armA,,"TPA_asm: Acinetobacter baumannii strain 2026GS-00043 isolate CRE000000717-5jHHAg9DTnrI2hsUMJvbDCbwurgB8YCPoNVCwUipXak=, whole genome shotgun sequencin",DBNEDU000000000.1,87,False,True
+armA,,"TPA_asm: Acinetobacter baumannii strain 2026GS-00040 isolate CRE000000713-5jHHAg9DTnrI2hsUMJvbDCbwurgB8YCPoNVCwUipXak=, whole genome shotgun sequencin",DBNEDW000000000.1,90,False,True
+armA,,"TPA_asm: Acinetobacter baumannii strain 2026GS-00039 isolate CRE000000711-5jHHAg9DTnrI2hsUMJvbDCbwurgB8YCPoNVCwUipXak=, whole genome shotgun sequencin",DBNEDR000000000.1,80,False,True
+armA,,"Acinetobacter baumannii isolate 2023DG-00042, whole genome shotgun sequencing project",ACCWIM000000000.1,172,False,True
+armA,,"Acinetobacter baumannii isolate 2023DG-00040, whole genome shotgun sequencing project",ACCWHM000000000.1,105,False,True
+armA,,"Klebsiella pneumoniae strain 2026EP-00080, whole genome shotgun sequencing project",ACCWEQ000000000.1,90,False,True
+armA,,"Acinetobacter baumannii strain 2026GN-00066, whole genome shotgun sequencing project",ACCVUW000000000.1,133,False,True
+armA,,"TPA_asm: Acinetobacter baumannii strain 2026GS-00033 isolate CRE000000709-bioD6xtZAMw4acmQM9uU78fZnKrl704rlYbObW1dKs0=, whole genome shotgun sequencin",DBNDUK000000000.1,102,False,True

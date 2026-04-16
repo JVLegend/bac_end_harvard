@@ -1,0 +1,5 @@
+task,status,seconds,result_line
+f7_02_rnafold,ok,0,"RESULT: n_guides=213;RESULT: mean_palindromes=0.45;RESULT: strong_hairpin_count=0;"
+f7_03_phylo_tajima,ok,1,"RESULT: families_analyzed=8;RESULT: families_with_tree=8;RESULT: non_neutral_families=4;"
+f7_01_esm2,ok,3,"RESULT: use_esm=False;RESULT: embedding_dim=640;RESULT: n_sequences=39;"
+f7_04_novel_variants,fail,59,

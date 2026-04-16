@@ -1,0 +1,99 @@
+{
+  "n_candidates_total": 1249,
+  "n_novel": 8,
+  "novel_by_family": {
+    "blaCTX-M": 6,
+    "blaIMP": 1,
+    "blaOXA-48": 1
+  },
+  "top10_priority": [
+    {
+      "family": "blaCTX-M",
+      "variant": "RIO-2",
+      "title": "Citrobacter amalonaticus Rio-2 pRio-2 blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-8, complete CDS",
+      "accession": "NG_049032.1",
+      "length": 1011,
+      "brazil_filter": true,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 2
+    },
+    {
+      "family": "blaCTX-M",
+      "variant": "KPN52",
+      "title": "Klebsiella pneumoniae Kpn52 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-50, complete CDS",
+      "accession": "NG_049001.1",
+      "length": 963,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    },
+    {
+      "family": "blaCTX-M",
+      "variant": "KPN247",
+      "title": "Klebsiella pneumoniae Kpn247 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-49, complete CDS",
+      "accession": "NG_048999.1",
+      "length": 962,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    },
+    {
+      "family": "blaCTX-M",
+      "variant": "KPN9",
+      "title": "Klebsiella pneumoniae Kpn9 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-48, complete CDS",
+      "accession": "NG_048998.1",
+      "length": 962,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    },
+    {
+      "family": "blaCTX-M",
+      "variant": "ECO182",
+      "title": "Escherichia coli Eco182 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-47, complete CDS",
+      "accession": "NG_048997.1",
+      "length": 963,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    },
+    {
+      "family": "blaCTX-M",
+      "variant": "KPN301",
+      "title": "Klebsiella pneumoniae Kpn301 unknown blaCTX-M gene for extended-spectrum class A beta-lactamase CTX-M-46, complete CDS",
+      "accession": "NG_048996.1",
+      "length": 962,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    },
+    {
+      "family": "blaIMP",
+      "variant": "CARB-026",
+      "title": "Serratia marcescens CIM-Carb-026 blaIMP gene for subclass B1 metallo-beta-lactamase IMP-50, complete CDS",
+      "accession": "NG_242292.1",
+      "length": 941,
+      "brazil_filter": false,
+      "recent_filter": true,
+      "is_novel": true,
+      "score": 3
+    },
+    {
+      "family": "blaOXA-48",
+      "variant": "TYPE-1",
+      "title": "Escherichia coli hypothetical protein, antitoxin YeeU (cbeA), L-fuculose phosphate aldolase (fucA), putative glucose uptake permease, Deoxyribonucleos",
+      "accession": "KT444704.1",
+      "length": 90492,
+      "brazil_filter": false,
+      "recent_filter": false,
+      "is_novel": true,
+      "score": 0
+    }
+  ]
+}
