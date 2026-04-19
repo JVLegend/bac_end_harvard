@@ -258,6 +258,39 @@
         .faq-q { font-family: 'EB Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.5rem; }
         .faq-a { font-size: 0.93rem; color: var(--text-secondary); line-height: 1.65; }
 
+        /* MILESTONES */
+        .milestones-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-top: 1rem; }
+        .milestone-card {
+            position: relative; border: 1px solid var(--border); padding: 2rem 1.6rem;
+            display: flex; flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+        .milestone-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+        .milestone-card.m1 { border-top: 3px solid var(--success); }
+        .milestone-card.m2 { border-top: 3px solid var(--accent); background: #fffdf5; }
+        .milestone-card.m2::before {
+            content: 'COMEÇO IDEAL'; position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+            background: var(--accent); color: var(--secondary); font-size: 0.64rem; font-weight: 800; letter-spacing: 0.15em;
+            padding: 0.22rem 0.85rem;
+        }
+        .milestone-card.m3 { border-top: 3px solid var(--primary); }
+        .m-phase { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 0.6rem; }
+        .m-name { font-family: 'EB Garamond', serif; font-size: 1.4rem; font-weight: 600; color: var(--secondary); margin-bottom: 0.1rem; }
+        .m-tagline { font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; }
+        .m-amount { font-family: 'EB Garamond', serif; font-size: 2.6rem; font-weight: 700; line-height: 1; margin-bottom: 0.3rem; }
+        .m1 .m-amount { color: var(--success); }
+        .m2 .m-amount { color: #b8860b; }
+        .m3 .m-amount { color: var(--primary); }
+        .m-amount small { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); font-family: 'Inter', sans-serif; }
+        .m-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 1.2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+        .m-deliv-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.6rem; }
+        .m-deliv { list-style: none; padding: 0; margin: 0; flex: 1; }
+        .m-deliv li { font-size: 0.88rem; color: var(--text-secondary); padding: 0.35rem 0; display: flex; gap: 0.5rem; align-items: flex-start; line-height: 1.5; }
+        .m-deliv li::before { content: '✓'; color: var(--success); font-weight: 700; flex-shrink: 0; font-size: 0.95rem; margin-top: 0.05rem; }
+        .m-duration { margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between; }
+        .m-duration strong { color: var(--text); font-weight: 700; }
+        @media (max-width: 900px) { .milestones-grid { grid-template-columns: 1fr; } }
+
         /* SHOPPING LIST */
         .shop-group { background: var(--bg-card); border: 1px solid var(--border); margin-bottom: 1.5rem; }
         .shop-header { display: flex; justify-content: space-between; align-items: baseline; padding: 1.4rem 1.8rem; border-bottom: 1px solid var(--border); background: #fafafa; }
@@ -322,6 +355,7 @@
         <a href="#problema">O Problema</a>
         <a href="#solucao">Solução</a>
         <a href="#pipeline">Pipeline</a>
+        <a href="#milestones">Marcos</a>
         <a href="#shopping">Compras</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#tiers" class="nav-cta">Contribuir Agora</a>
@@ -899,6 +933,75 @@
         </div>
     </div>
 </div>
+
+<!-- MARCOS DE FINANCIAMENTO -->
+<section id="milestones">
+    <div class="badge badge-gold">Marcos de Financiamento</div>
+    <h2 class="stitle">Não é tudo ou nada —<br>começamos em fases</h2>
+    <p class="ssub">Você não precisa esperar R$ 500.000 acumulados para ver ciência acontecer. Cada marco abaixo é <strong>autocontido</strong>: entrega resultados reais, publicáveis e auditáveis. Começamos no primeiro real arrecadado.</p>
+
+    <div class="milestones-grid">
+        <!-- M1 — Ignição -->
+        <div class="milestone-card m1">
+            <div class="m-phase">Marco 1 — Ignição</div>
+            <div class="m-name">Lab Agêntico Mínimo</div>
+            <div class="m-tagline">Comece hoje, sem comprar hardware</div>
+            <div class="m-amount">R$ 50.000<small> /500k</small></div>
+            <div class="m-desc">Plataforma de agentes 100% operacional rodando em nuvem, usando laboratório parceiro para a validação física inicial dos oligos já projetados.</div>
+            <div class="m-deliv-label">O que entregamos</div>
+            <ul class="m-deliv">
+                <li>Orquestrador de agentes IA no ar (Fase A + B do código)</li>
+                <li>Síntese dos 42 oligos CRISPR + primers RPA já projetados</li>
+                <li>Validação in vitro em laboratório parceiro (terceirizada)</li>
+                <li>Créditos Claude API + cloud GPU por 6 meses</li>
+                <li>Dashboard público com resultados em tempo real</li>
+            </ul>
+            <div class="m-duration"><span>Duração</span><strong>3–4 meses</strong></div>
+        </div>
+
+        <!-- M2 — Bancada Própria -->
+        <div class="milestone-card m2">
+            <div class="m-phase">Marco 2 — Bancada Própria</div>
+            <div class="m-name">Primeira Bancada Robótica</div>
+            <div class="m-tagline">Opentrons OT-2 executando sob comando de agentes</div>
+            <div class="m-amount">R$ 150.000<small> /500k</small></div>
+            <div class="m-desc">Tudo do Marco 1 + aquisição do robô liquid handler OT-2 integrado à camada de agentes. Primeiro loop fechado real (agente → robô → sensor → agente) no Brasil.</div>
+            <div class="m-deliv-label">O que adicionamos</div>
+            <ul class="m-deliv">
+                <li>Opentrons OT-2 instalado e rodando protocolos gerados por IA</li>
+                <li>Conjunto de micropipetas + instrumentação básica</li>
+                <li>Reagentes Cas12a + RPA para 3 meses de experimentos</li>
+                <li>Técnico de laboratório parcial (3-4 meses)</li>
+                <li>Drivers open-source para OT-2 publicados</li>
+            </ul>
+            <div class="m-duration"><span>Duração</span><strong>+ 3 meses</strong></div>
+        </div>
+
+        <!-- M3 — Smart Wet Lab Completo -->
+        <div class="milestone-card m3">
+            <div class="m-phase">Marco 3 — Completo</div>
+            <div class="m-name">Smart Wet Lab Completo</div>
+            <div class="m-tagline">Plataforma end-to-end, pronta para ANVISA</div>
+            <div class="m-amount">R$ 500.000<small> /500k</small></div>
+            <div class="m-desc">A visão integral: leitor de placas, termociclador, equipe completa por 12 meses e preparação regulatória. Laboratório agêntico de referência nacional.</div>
+            <div class="m-deliv-label">O que adicionamos</div>
+            <ul class="m-deliv">
+                <li>Leitor de placas (absorbância + fluorescência)</li>
+                <li>Termociclador qPCR integrado</li>
+                <li>Equipe técnica completa por 12 meses</li>
+                <li>Consultoria ANVISA + pré-submissão regulatória</li>
+                <li>Reagentes e consumíveis para 12 meses contínuos</li>
+                <li>Plataforma aberta para laboratórios parceiros</li>
+            </ul>
+            <div class="m-duration"><span>Duração</span><strong>+ 6 meses</strong></div>
+        </div>
+    </div>
+
+    <div class="callout callout-green" style="margin-top: 2.5rem">
+        <div class="callout-label">Por que em fases?</div>
+        <p>Projetos de ciência real raramente morrem por falta de ambição — morrem por falta de <strong>primeiros resultados</strong>. O Marco 1 garante que, mesmo no pior cenário de captação, você verá oligos sintetizados, ensaios rodando e dados publicados em menos de 4 meses. Cada marco destrava o próximo com evidência, não promessa.</p>
+    </div>
+</section>
 
 <!-- LISTA DE COMPRAS -->
 <section id="shopping">
