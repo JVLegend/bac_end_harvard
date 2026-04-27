@@ -63,6 +63,9 @@
         .nav-right a:hover { color: rgba(255,255,255,0.85); }
         .nav-cta { background: var(--primary) !important; color: #fff !important; padding: 0.42rem 1rem; border-radius: 2px; }
         .nav-cta:hover { background: var(--primary-light) !important; }
+        .nav-right a { white-space: nowrap; }
+        @media (max-width: 1380px) { .nav-right a:not(.nav-cta) { display: none; } .nav-tab { padding: 0 0.85rem; font-size: 0.72rem; } }
+        @media (max-width: 820px) { .nav-brand { font-size: 0.95rem; } .nav-sep { display: none; } .nav-tab { padding: 0 0.5rem; font-size: 0.62rem; letter-spacing: 0.04em; } .nav-cta { font-size: 0.65rem !important; padding: 0.32rem 0.7rem !important; } }
 
         /* HERO */
         .hero {
@@ -355,11 +358,10 @@
     <div class="nav-right">
         <a href="#problema">A Dor Clínica</a>
         <a href="#solucao">A Tecnologia</a>
-        <a href="#pipeline">Como Funciona</a>
         <a href="#milestones">Marcos</a>
-        <a href="#shopping">Onde Vai o Dinheiro</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#tiers" class="nav-cta">Apoiar como Médico</a>
+        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="structure.html" class="nav-cta" style="background: var(--accent) !important;">3D</a>
+        <a href="#tiers" class="nav-cta">Apoiar</a>
     </div>
 </nav>
 

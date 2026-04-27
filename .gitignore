@@ -32,3 +32,9 @@ Thumbs.db
 .claude/
 .vercel
 *.png
+data/amrfinderplus/AMRProt.fa
+data/amrfinderplus/AMR_CDS.fa
+data/amrfinderplus/ReferenceGeneCatalog.txt
+reports/protein_scoring/embeddings/
+reports/amrfinderplus/embeddings*.npz
+reports/protein_structure/pdbs/

@@ -53,9 +53,15 @@
         .nav-tab { display: flex; align-items: center; padding: 0 1.1rem; font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; text-decoration: none; font-family: 'Inter', sans-serif; color: rgba(255,255,255,0.45); border-bottom: 2px solid transparent; transition: color 0.2s, border-color 0.2s; }
         .nav-tab:hover { color: rgba(255,255,255,0.8); }
         .nav-tab.active { color: #fff; border-bottom-color: var(--accent); }
-        nav .nav-links { display: flex; gap: 1.4rem; align-items: center; }
-        nav .nav-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; font-family: 'Inter', sans-serif; transition: color 0.2s; }
+        nav .nav-links { display: flex; gap: 1.1rem; align-items: center; }
+        nav .nav-links a { color: rgba(255,255,255,0.65); text-decoration: none; font-size: 0.72rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; font-family: 'Inter', sans-serif; transition: color 0.2s; white-space: nowrap; }
         nav .nav-links a:hover { color: var(--accent); }
+        nav .nav-links a.nav-cta { background: var(--primary); color: #fff !important; padding: 0.42rem 0.9rem; border-radius: 2px; font-weight: 600; }
+        nav .nav-links a.nav-cta:hover { background: var(--secondary); color: #fff !important; }
+        nav .nav-links a.nav-cta-alt { background: var(--accent); color: #1a1a1a !important; }
+        nav .nav-links a.nav-cta-alt:hover { background: #e0c279; color: #1a1a1a !important; }
+        @media (max-width: 1180px) { nav .nav-links a:not(.nav-cta) { display: none; } .nav-tab { padding: 0 0.8rem; font-size: 0.72rem; } }
+        @media (max-width: 820px) { .nav-brand { font-size: 0.95rem; } .nav-sep { display: none; } .nav-tab { padding: 0 0.5rem; font-size: 0.62rem; letter-spacing: 0.04em; } nav .nav-links a.nav-cta { padding: 0.32rem 0.6rem; font-size: 0.65rem; } }
         .hero {
             min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; padding: 7rem 2rem 4rem; background: var(--bg);
@@ -148,19 +154,16 @@
         <span class="nav-sep">|</span>
         <div class="nav-tabs">
             <a href="index.html" class="nav-tab active">SmartSepsis</a>
-            <a href="smartwetlab.html" class="nav-tab">Crowdfunding Médico</a>
+            <a href="smartwetlab.html" class="nav-tab">Crowdfunding</a>
             <a href="sequenciar-em-casa.html" class="nav-tab">Sequenciar em Casa</a>
         </div>
     </div>
     <div class="nav-links">
         <a href="#dor">Dor Clínica</a>
-        <a href="#diferencial">Diferencial</a>
-        <a href="#docuseries">Docusérie</a>
-        <a href="#dashboard">Painel AMR</a>
-        <a href="#interpretacao">IA Clínica</a>
         <a href="#tecnologia">Pipeline</a>
-        <a href="#validação">Validação</a>
         <a href="#team">Time</a>
+        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="structure.html" class="nav-cta nav-cta-alt">3D</a>
     </div>
 </nav>
 <!-- HERO -->

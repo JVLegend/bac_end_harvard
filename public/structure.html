@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSepsis — Estrutura 3D das Variantes AMR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
+    <style>
+        :root {
+            --bg: #0a0a0a; --panel: #141414; --border: #2a2a2a;
+            --text: #e7e7e7; --text-muted: #888;
+            --accent: #c9a961; --primary: #1f5c8a; --secondary: #2d6a4f;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+        h1 { font-family: 'EB Garamond', serif; font-weight: 600; letter-spacing: -0.01em; }
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(10,10,10,0.96); backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            padding: 0 1.5rem; height: 56px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+        nav a:hover { color: var(--accent); }
+        nav .brand { color: var(--text); font-weight: 700; font-family: 'EB Garamond', serif; font-size: 1.1rem; }
+        nav .brand span { color: var(--accent); font-style: italic; }
+        .layout { display: grid; grid-template-columns: 280px 1fr 280px; height: 100vh; padding-top: 56px; }
+        .sidebar { background: var(--panel); border-right: 1px solid var(--border); overflow-y: auto; padding: 1rem; }
+        .sidebar.right { border-right: none; border-left: 1px solid var(--border); }
+        .sidebar h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.8rem; font-weight: 600; }
+        .variant-list { display: flex; flex-direction: column; gap: 0.2rem; }
+        .variant-list button {
+            background: transparent; border: 1px solid transparent; color: var(--text);
+            font-family: inherit; font-size: 0.82rem; padding: 0.5rem 0.7rem;
+            text-align: left; cursor: pointer; border-radius: 4px; transition: 0.15s;
+        }
+        .variant-list button:hover { background: rgba(255,255,255,0.05); border-color: var(--border); }
+        .variant-list button.active { background: rgba(201,169,97,0.15); border-color: var(--accent); color: var(--accent); }
+        .family-group { margin-bottom: 0.8rem; }
+        .family-name { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; padding-left: 0.7rem; }
+        #viewport { width: 100%; height: 100%; position: relative; background: #0d0d10; }
+        #viewport-info {
+            position: absolute; top: 1rem; left: 1rem; z-index: 10;
+            background: rgba(0,0,0,0.6); padding: 0.6rem 0.9rem; border-radius: 4px;
+            font-size: 0.78rem; color: var(--text); border: 1px solid var(--border);
+        }
+        .controls { position: absolute; top: 1rem; right: 1rem; z-index: 10; display: flex; gap: 0.4rem; }
+        .controls button {
+            background: rgba(0,0,0,0.6); border: 1px solid var(--border); color: var(--text);
+            padding: 0.4rem 0.7rem; font-size: 0.72rem; font-family: inherit; cursor: pointer; border-radius: 4px;
+        }
+        .controls button:hover { background: var(--accent); color: var(--bg); }
+        .info-card { background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: 0.9rem; margin-bottom: 0.7rem; }
+        .info-card h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 0.5rem; font-weight: 600; }
+        .info-card p, .info-card li { font-size: 0.8rem; line-height: 1.55; color: var(--text-muted); }
+        .info-card ul { list-style: none; }
+        .info-card li { padding: 0.15rem 0; }
+        .info-card strong { color: var(--text); }
+        .empty-state { text-align: center; padding: 3rem 2rem; color: var(--text-muted); }
+        .empty-state h2 { font-family: 'EB Garamond', serif; color: var(--text); margin-bottom: 1rem; }
+        .empty-state code { background: var(--panel); padding: 0.2rem 0.5rem; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--accent); }
+        .pill { display: inline-block; padding: 0.15rem 0.5rem; font-size: 0.65rem; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+        .pill-conserved { background: rgba(45,106,79,0.2); color: #6ee7a4; }
+        .pill-missense { background: rgba(201,169,97,0.2); color: var(--accent); }
+        .pill-disrupted { background: rgba(140,21,21,0.3); color: #ff8a8a; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="brand">SmartSepsis <span>3D</span></a>
+    <div style="display:flex; gap:1.5rem;">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="structure.html" style="color: var(--accent);">Estrutura 3D</a>
+    </div>
+</nav>
+
+<div class="layout">
+    <aside class="sidebar">
+        <h3>Variantes AMR</h3>
+        <div id="variantList" class="variant-list">
+            <p style="color: var(--text-muted); font-size: 0.8rem;">Carregando...</p>
+        </div>
+    </aside>
+
+    <main style="position: relative;">
+        <div id="viewport-info">
+            <div id="currentVariant" style="font-weight: 600;">Selecione uma variante</div>
+            <div id="currentMeta" style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;"></div>
+        </div>
+        <div class="controls">
+            <button onclick="setRep('cartoon')">Cartoon</button>
+            <button onclick="setRep('surface')">Superficie</button>
+            <button onclick="setRep('ball+stick')">Ball+Stick</button>
+            <button onclick="setColor('bfactor')">pLDDT</button>
+            <button onclick="setColor('chainid')">Domain</button>
+            <button onclick="resetView()">Reset</button>
+        </div>
+        <div id="viewport"></div>
+    </main>
+
+    <aside class="sidebar right">
+        <h3>Detalhes da Variante</h3>
+        <div id="detailPanel">
+            <p style="color: var(--text-muted); font-size: 0.8rem;">Selecione uma variante para ver score ESM-2, phenotype probe e estatisticas estruturais.</p>
+        </div>
+    </aside>
+</div>
+
+<script>
+let stage, currentComponent, currentRep = 'cartoon', currentColor = 'chainid';
+let PROTEIN_SCORES = {}, PHENOTYPE_PREDS = [], AVAILABLE_PDBS = [];
+
+function initViewer() {
+    stage = new NGL.Stage('viewport', { backgroundColor: '#0d0d10' });
+    stage.handleResize();
+    window.addEventListener('resize', () => stage.handleResize());
+}
+
+async function listAvailablePDBs() {
+    // Sem listagem de diretorio no Vercel; tentar fetch HEAD em cada nome conhecido
+    if (!Object.keys(PROTEIN_SCORES).length) return [];
+    const names = Object.keys(PROTEIN_SCORES);
+    const probes = await Promise.all(names.map(async n => {
+        try {
+            const r = await fetch(`pdbs/${n}.pdb`, { method: 'HEAD' });
+            return r.ok ? n : null;
+        } catch { return null; }
+    }));
+    return probes.filter(Boolean);
+}
+
+async function loadData() {
+    try {
+        const [scores, preds] = await Promise.all([
+            fetch('data/protein_scores.json').then(r => r.json()),
+            fetch('data/phenotype_predictions.json').then(r => r.json()),
+        ]);
+        PROTEIN_SCORES = scores;
+        PHENOTYPE_PREDS = preds;
+        AVAILABLE_PDBS = await listAvailablePDBs();
+        renderVariantList();
+    } catch (e) {
+        console.error(e);
+        document.getElementById('variantList').innerHTML =
+            '<p style="color: #ff8a8a; font-size: 0.78rem;">Erro carregando dados. Rode protein_scoring.py e protein_structure.py.</p>';
+    }
+}
+
+function renderVariantList() {
+    const list = document.getElementById('variantList');
+    const byFamily = {};
+    Object.values(PROTEIN_SCORES).forEach(s => {
+        const fam = s.family;
+        if (!byFamily[fam]) byFamily[fam] = [];
+        byFamily[fam].push(s);
+    });
+
+    let html = '';
+    if (!AVAILABLE_PDBS.length) {
+        html += `<div class="empty-state" style="padding:1rem 0;">
+            <p style="font-size:0.78rem; color: var(--text-muted);">
+                Nenhum PDB encontrado em <code>public/pdbs/</code>.<br><br>
+                Rode: <code>python protein_structure.py</code> e copie<br>
+                <code>cp reports/protein_structure/pdbs/*.pdb public/pdbs/</code>
+            </p>
+        </div>`;
+    }
+    Object.keys(byFamily).sort().forEach(fam => {
+        html += `<div class="family-group"><div class="family-name">${fam}</div>`;
+        byFamily[fam].forEach(s => {
+            const has = AVAILABLE_PDBS.includes(s.variant);
+            const disabled = has ? '' : 'style="opacity:0.4; cursor:not-allowed;" disabled';
+            const tag = s.impact_type === 'IDENTICAL' || s.impact_type === 'CONSERVED' ? 'pill-conserved' :
+                        s.impact_type === 'NON_FUNCTIONAL' ? 'pill-disrupted' : 'pill-missense';
+            html += `<button onclick="loadVariant('${s.variant}')" ${disabled} id="btn-${s.variant}">
+                ${s.variant} <span class="pill ${tag}" style="float:right; margin-top:2px;">${s.impact_type.replace('_', ' ').toLowerCase()}</span>
+            </button>`;
+        });
+        html += '</div>';
+    });
+    list.innerHTML = html;
+}
+
+async function loadVariant(name) {
+    document.querySelectorAll('#variantList button').forEach(b => b.classList.remove('active'));
+    document.getElementById(`btn-${name}`)?.classList.add('active');
+
+    if (currentComponent) stage.removeAllComponents();
+    document.getElementById('currentVariant').textContent = name;
+    document.getElementById('currentMeta').textContent = 'Carregando estrutura...';
+
+    try {
+        const comp = await stage.loadFile(`pdbs/${name}.pdb`, { defaultRepresentation: false });
+        currentComponent = comp;
+        comp.addRepresentation(currentRep, { colorScheme: currentColor });
+        comp.autoView();
+
+        const score = PROTEIN_SCORES[name];
+        const phen = PHENOTYPE_PREDS.find(p => p.variant === name);
+        document.getElementById('currentMeta').textContent =
+            `${score?.protein_length || '?'} aa  |  cosine dist=${(score?.protein_distance_cosine || 0).toFixed(4)}  |  ${score?.impact_type || ''}`;
+        renderDetails(name, score, phen);
+    } catch (e) {
+        document.getElementById('currentMeta').textContent = 'Erro carregando PDB';
+        console.error(e);
+    }
+}
+
+function renderDetails(name, score, phen) {
+    const panel = document.getElementById('detailPanel');
+    let html = `<div class="info-card">
+        <h4>ESM-2 Score</h4>
+        <ul>
+            <li><strong>Variante:</strong> ${name}</li>
+            <li><strong>Familia:</strong> ${score?.family || '-'}</li>
+            <li><strong>Tamanho:</strong> ${score?.protein_length || '-'} aa</li>
+            <li><strong>Cosine dist:</strong> ${(score?.protein_distance_cosine || 0).toFixed(6)}</li>
+            <li><strong>Impacto:</strong> ${score?.label || '-'}</li>
+            <li><strong>Modelo:</strong> ${score?.model || '-'}</li>
+        </ul>
+    </div>`;
+
+    if (phen) html += `<div class="info-card">
+        <h4>Phenotype Probe</h4>
+        <ul>
+            <li><strong>Drug class:</strong> ${phen.predicted_drug_class}</li>
+            <li><strong>Confianca:</strong> ${phen.drug_confidence_max}</li>
+            <li><strong>Mecanismo:</strong> ${phen.predicted_mechanism}</li>
+            <li><strong>Conf mech:</strong> ${phen.mechanism_confidence}</li>
+        </ul>
+    </div>`;
+
+    html += `<div class="info-card">
+        <h4>Como interpretar</h4>
+        <p><strong>pLDDT</strong> (color B-factor) e a confianca da predicao ESMFold por residuo. >70 = bom, 50-70 = baixo, <50 = desordenado.</p>
+        <p style="margin-top:0.4rem;">A <strong>distancia coseno</strong> contra a referencia da familia indica impacto funcional sem precisar de fenotipo experimental.</p>
+    </div>`;
+    panel.innerHTML = html;
+}
+
+function setRep(type) {
+    if (!currentComponent) return;
+    currentRep = type;
+    currentComponent.removeAllRepresentations();
+    currentComponent.addRepresentation(type, { colorScheme: currentColor });
+}
+
+function setColor(scheme) {
+    if (!currentComponent) return;
+    currentColor = scheme;
+    currentComponent.removeAllRepresentations();
+    currentComponent.addRepresentation(currentRep, { colorScheme: scheme });
+}
+
+function resetView() {
+    if (currentComponent) currentComponent.autoView();
+}
+
+initViewer();
+loadData();
+</script>
+
+</body>
+</html>
