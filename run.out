@@ -1,0 +1,32 @@
+[SKIP] FASE 4 — ESMFold (3D structures, ate 400aa)  (ja concluido em .run_state/fase4_esmfold.done)
+[SKIP] FASE 5a — AMRFinderPlus catalogo COMPLETO (~10k, 30-40min)  (ja concluido em .run_state/fase5a_amrfinder_full.done)
+[SKIP] FASE 5b — ProtT5 ensemble  (ja concluido em .run_state/fase5b_prott5.done)
+[SKIP] Fase 6 — guides/*.tsv nao encontrados (rode design_guides.py antes)
+
+============================================================
+ FASE 7 — Pangenome (download + prodigal + panaroo)  [21:13:47]
+============================================================
+[OK] FASE 7 — Pangenome (download + prodigal + panaroo)
+
+============================================================
+ Deploy Vercel  [10:54:51]
+============================================================
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+
+============================================================
+ FEITO — checkpoints em .run_state/  [10:57:13]
+============================================================
+Resultados:
+  - reports/protein_structure/pdbs/*.pdb     (Fase 4 — 3D)
+  - reports/amrfinderplus/                    (Fase 5a — classificador)
+  - reports/prott5_ensemble/metrics.json      (Fase 5b — ensemble)
+  - reports/crrna_structure/                  (Fase 6 — RNA fold)
+  - reports/pangenome/                        (Fase 7 — HGT/core)
+
+Site: https://smartsepsis.vercel.app/structure.html
+
+Para rerodar uma fase especifica: rm .run_state/<fase>.done

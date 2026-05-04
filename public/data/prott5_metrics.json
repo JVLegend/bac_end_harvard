@@ -1,0 +1,20 @@
+{
+  "ensemble": "ESM-2 + ProtT5 (concat)",
+  "esm_model": "esm2_t30_150M_UR50D",
+  "prott5_model": "Rostlab/prot_t5_xl_uniref50",
+  "n": 43,
+  "dim": 1664,
+  "drug_hamming_acc_loo": 0.9406,
+  "drug_exact_match_loo": 0.6279,
+  "drug_per_class_f1_loo": {
+    "aminoglycoside": 0,
+    "carbapenem": 0.867,
+    "cephalosporin": 0.986,
+    "fluoroquinolone": 0.8,
+    "glycopeptide": 0,
+    "methicillin": 0,
+    "penam": 0.955,
+    "peptide": 0,
+    "polymyxin": 0
+  }
+}

@@ -86,7 +86,7 @@ def parse_amrprot(path: str) -> list[tuple[str, str]]:
 
 
 def load_drug_class_map(catalog_path: str) -> dict[str, list[str]]:
-    """allele -> lista drug_class. Catalogo TSV tem coluna 'class' / 'subclass'."""
+    """Mapeia MULTIPLAS chaves -> drug_class (allele, gene_family, accessions)."""
     if not os.path.exists(catalog_path):
         print(f"[WARN] catalogo nao encontrado: {catalog_path}")
         return {}
@@ -94,7 +94,6 @@ def load_drug_class_map(catalog_path: str) -> dict[str, list[str]]:
     with open(catalog_path) as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
-            allele = row.get("allele") or row.get("gene_family") or ""
             klass = (row.get("class") or "").strip().lower()
             subklass = (row.get("subclass") or "").strip().lower()
             labels = []
@@ -102,17 +101,32 @@ def load_drug_class_map(catalog_path: str) -> dict[str, list[str]]:
                 labels.extend([s.strip() for s in klass.split("/") if s.strip()])
             if subklass and subklass != klass:
                 labels.extend([s.strip() for s in subklass.split("/") if s.strip()])
-            if allele and labels:
-                out[allele] = list(dict.fromkeys(labels))
+            if not labels:
+                continue
+            labels = list(dict.fromkeys(labels))
+            # registra MULTIPLAS chaves possiveis (todas apontando pra mesmos labels)
+            for col in ("allele", "gene_family", "refseq_protein_accession",
+                        "genbank_protein_accession"):
+                v = (row.get(col) or "").strip()
+                if v:
+                    out.setdefault(v, labels)
     return out
 
 
-def header_to_allele(hdr: str) -> str:
-    """Tenta extrair o allele do cabecalho FASTA (formato variavel do AMRFinderPlus)."""
+def header_candidates(hdr: str) -> list[str]:
+    """Retorna varios identificadores candidatos do header FASTA AMRFinderPlus."""
     parts = hdr.split("|")
-    if len(parts) >= 8:
-        return parts[5] or parts[7]
-    return parts[0]
+    cands = []
+    for i in (0, 3, 4, 5, 7):
+        if i < len(parts) and parts[i].strip():
+            cands.append(parts[i].strip())
+    return cands
+
+
+def clean_seq(seq: str) -> str:
+    """Remove stop codon `*` e qualquer caractere fora do alfabeto ESM-2."""
+    valid = set("ACDEFGHIKLMNPQRSTVWYX")
+    return "".join(c for c in seq.upper() if c in valid)
 
 
 def load_esm():
@@ -156,14 +170,24 @@ def main():
     fasta_entries = parse_amrprot(PROT_FASTA)
     print(f"FASTA: {len(fasta_entries)} proteinas")
 
-    # Parear com labels
+    # Parear com labels — testa multiplos candidatos de chave por header
     paired = []
+    unmatched = 0
     for hdr, seq in fasta_entries:
-        allele = header_to_allele(hdr)
-        labels = drug_map.get(allele)
-        if labels and 30 <= len(seq) <= 1022:
-            paired.append((allele, seq, labels))
-    print(f"Pareadas com label e dentro do range de tamanho: {len(paired)}")
+        labels = None
+        chosen_key = None
+        for cand in header_candidates(hdr):
+            if cand in drug_map:
+                labels = drug_map[cand]
+                chosen_key = cand
+                break
+        if not labels:
+            unmatched += 1
+            continue
+        cleaned = clean_seq(seq)
+        if 30 <= len(cleaned) <= 1022:
+            paired.append((chosen_key, cleaned, labels))
+    print(f"Pareadas: {len(paired)} | sem label: {unmatched}")
 
     if LIMIT > 0:
         rng = np.random.RandomState(42)

@@ -1,0 +1,62 @@
+======================================================================
+ESMFold (HuggingFace transformers) — 3D para variantes AMR
+======================================================================
+[ESMFold] carregando facebook/esmfold_v1 (download ~2.5GB na 1a vez)...
+Loading weights:   0%|          | 0/4498 [00:00<?, ?it/s]Loading weights:   0%|          | 18/4498 [00:09<41:20,  1.81it/s]Loading weights:  13%|█▎        | 566/4498 [00:10<00:50, 77.67it/s]Loading weights:  16%|█▌        | 699/4498 [00:10<00:38, 98.46it/s]Loading weights: 100%|██████████| 4498/4498 [00:10<00:00, 426.56it/s]
+[transformers] [1mEsmForProteinFolding LOAD REPORT[0m from: facebook/esmfold_v1
+Key                                | Status  | 
+-----------------------------------+---------+-
+esm.contact_head.regression.bias   | MISSING | 
+esm.contact_head.regression.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[ESMFold] pronto. device=cpu, chunk=64
+
+Processando 43 variantes (MAX_LEN=400aa)
+
+  [armA] L=271aa  predicting... 212.6s  pLDDT=0.8
+  [blaCTX-M-14] L=291aa  predicting... 214.5s  pLDDT=0.9
+  [blaCTX-M-2] L=291aa  predicting... 217.1s  pLDDT=0.9
+  [blaCTX-M-27] L=291aa  predicting... 215.1s  pLDDT=0.9
+  [blaCTX-M-8] L=291aa  predicting... 224.7s  pLDDT=0.9
+  [blaCTX-M-9] L=291aa  predicting... 213.3s  pLDDT=0.9
+  [blaCTX-M] L=291aa  predicting... 211.5s  pLDDT=0.9
+  [blaGES-1] L=287aa  predicting... 207.0s  pLDDT=0.9
+  [blaGES-5] L=287aa  predicting... 212.5s  pLDDT=0.9
+  [blaGES] L=295aa  predicting... 216.6s  pLDDT=0.9
+  [blaIMP-1] L=246aa  predicting... 170.7s  pLDDT=0.8
+  [blaIMP-6] L=246aa  predicting... 155.2s  pLDDT=0.8
+  [blaIMP] L=292aa  predicting... 199.9s  pLDDT=0.9
+  [blaKPC-11] L=293aa  predicting... 198.8s  pLDDT=0.9
+  [blaKPC-2] L=293aa  predicting... 206.0s  pLDDT=0.9
+  [SKIP] blaKPC-3 ja tem PDB
+  [blaKPC-30] L=293aa  predicting... 207.4s  pLDDT=0.9
+  [blaKPC-31] L=293aa  predicting... 241.5s  pLDDT=0.9
+  [blaKPC-4] L=293aa  predicting... 196.6s  pLDDT=0.9
+  [blaKPC-5] L=308aa  predicting... 228.8s  pLDDT=0.8
+  [blaKPC] L=293aa  predicting... 206.4s  pLDDT=0.9
+  [SKIP] blaNDM-1 ja tem PDB
+  [blaNDM-2] L=270aa  predicting... 185.6s  pLDDT=0.7
+  [blaNDM-5] L=270aa  predicting... 192.8s  pLDDT=0.7
+  [blaNDM-7] L=270aa  predicting... 184.6s  pLDDT=0.7
+  [blaNDM] L=243aa  predicting... 147.2s  pLDDT=0.7
+  [blaOXA-181] L=265aa  predicting... 181.0s  pLDDT=0.9
+  [blaOXA-232] L=265aa  predicting... 165.9s  pLDDT=0.9
+  [blaOXA-48] L=265aa  predicting... 183.2s  pLDDT=0.9
+  [blaOXA] L=265aa  predicting... 178.1s  pLDDT=0.9
+  [blaVIM-1] L=294aa  predicting... 193.8s  pLDDT=0.7
+  [blaVIM-2] L=294aa  predicting... 207.6s  pLDDT=0.7
+  [blaVIM-4] L=266aa  predicting... 186.4s  pLDDT=0.7
+  [blaVIM] L=287aa  predicting... 223.3s  pLDDT=0.9
+  [SKIP] mcr-1.1 L=541 > MAX_LEN=400
+  [SKIP] mcr-1 L=541 > MAX_LEN=400
+  [SKIP] mcr-5 L=547 > MAX_LEN=400
+  [SKIP] mecA1 L=665 > MAX_LEN=400
+  [SKIP] mecA2 L=668 > MAX_LEN=400
+  [qnrS] L=279aa  predicting... 185.3s  pLDDT=0.8
+  [qnrS1] L=218aa  predicting... 129.7s  pLDDT=0.8
+  [qnrS2] L=218aa  predicting... 147.2s  pLDDT=0.8
+  [vanA] L=343aa  predicting... 248.5s  pLDDT=0.8
+
+[Saved] 36 PDBs em /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/protein_structure/pdbs

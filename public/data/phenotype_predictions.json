@@ -4,33 +4,33 @@
     "family": "mecA1",
     "true_drug_class": "penam;cephalosporin;methicillin",
     "predicted_drug_class": "cephalosporin;methicillin;penam",
-    "drug_confidence_max": 0.871,
+    "drug_confidence_max": 0.874,
     "true_mechanism": "antibiotic target replacement",
     "predicted_mechanism": "antibiotic target replacement",
-    "mechanism_confidence": 0.708,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.691,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "mecA2",
     "family": "mecA2",
     "true_drug_class": "penam;cephalosporin;methicillin",
     "predicted_drug_class": "cephalosporin;methicillin;penam",
-    "drug_confidence_max": 0.871,
+    "drug_confidence_max": 0.881,
     "true_mechanism": "antibiotic target replacement",
     "predicted_mechanism": "antibiotic target replacement",
-    "mechanism_confidence": 0.71,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.692,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-2",
     "family": "blaKPC",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.956,
+    "drug_confidence_max": 0.958,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.969,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.966,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-3",
@@ -40,52 +40,52 @@
     "drug_confidence_max": 0.957,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.969,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.965,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-4",
     "family": "blaKPC",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.956,
+    "drug_confidence_max": 0.958,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.969,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.966,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-5",
     "family": "blaKPC",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.956,
+    "drug_confidence_max": 0.952,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.971,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.962,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-11",
     "family": "blaKPC",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.955,
+    "drug_confidence_max": 0.958,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.969,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.966,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-30",
     "family": "blaKPC",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.961,
+    "drug_confidence_max": 0.965,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.973,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.972,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaKPC-31",
@@ -95,293 +95,293 @@
     "drug_confidence_max": 0.958,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.97,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.966,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaNDM-1",
     "family": "blaNDM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.934,
+    "drug_confidence_max": 0.899,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.948,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.918,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaNDM-2",
     "family": "blaNDM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.937,
+    "drug_confidence_max": 0.901,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.951,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.919,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaNDM-5",
     "family": "blaNDM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.933,
+    "drug_confidence_max": 0.898,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.948,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.918,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaNDM-7",
     "family": "blaNDM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.932,
+    "drug_confidence_max": 0.9,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.948,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.92,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "vanA",
     "family": "vanA",
     "true_drug_class": "glycopeptide",
     "predicted_drug_class": "(none)",
-    "drug_confidence_max": 0.352,
+    "drug_confidence_max": 0.341,
     "true_mechanism": "antibiotic target alteration",
     "predicted_mechanism": "antibiotic target alteration",
-    "mechanism_confidence": 0.77,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.705,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "mcr-1",
     "family": "mcr-1",
     "true_drug_class": "polymyxin;peptide",
     "predicted_drug_class": "peptide;polymyxin",
-    "drug_confidence_max": 0.52,
+    "drug_confidence_max": 0.537,
     "true_mechanism": "antibiotic target alteration",
     "predicted_mechanism": "antibiotic target alteration",
-    "mechanism_confidence": 0.739,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.735,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "mcr-1.1",
     "family": "mcr-1",
     "true_drug_class": "polymyxin;peptide",
     "predicted_drug_class": "peptide;polymyxin",
-    "drug_confidence_max": 0.52,
+    "drug_confidence_max": 0.537,
     "true_mechanism": "antibiotic target alteration",
     "predicted_mechanism": "antibiotic target alteration",
-    "mechanism_confidence": 0.739,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.735,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "mcr-5",
     "family": "mcr-5",
     "true_drug_class": "polymyxin;peptide",
     "predicted_drug_class": "(none)",
-    "drug_confidence_max": 0.44,
+    "drug_confidence_max": 0.477,
     "true_mechanism": "antibiotic target alteration",
     "predicted_mechanism": "antibiotic target alteration",
-    "mechanism_confidence": 0.615,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.664,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaOXA-48",
     "family": "blaOXA",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.883,
+    "drug_confidence_max": 0.898,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.858,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.887,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaOXA-181",
     "family": "blaOXA",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.879,
+    "drug_confidence_max": 0.901,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.858,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.894,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaOXA-232",
     "family": "blaOXA",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.879,
+    "drug_confidence_max": 0.901,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.856,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.893,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaVIM-1",
     "family": "blaVIM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.905,
+    "drug_confidence_max": 0.897,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.925,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.917,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaVIM-2",
     "family": "blaVIM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.886,
+    "drug_confidence_max": 0.891,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.918,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.924,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaVIM-4",
     "family": "blaVIM",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.897,
+    "drug_confidence_max": 0.906,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.91,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.925,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaIMP-1",
     "family": "blaIMP",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.9,
+    "drug_confidence_max": 0.885,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.906,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.885,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaIMP-6",
     "family": "blaIMP",
     "true_drug_class": "carbapenem;cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.903,
+    "drug_confidence_max": 0.886,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.908,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.886,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaGES-1",
     "family": "blaGES",
     "true_drug_class": "carbapenem;cephalosporin",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.937,
+    "drug_confidence_max": 0.931,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.942,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.935,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaGES-5",
     "family": "blaGES",
     "true_drug_class": "carbapenem;cephalosporin",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.936,
+    "drug_confidence_max": 0.931,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.941,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.935,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaCTX-M-2",
+    "family": "blaCTX-M",
+    "true_drug_class": "cephalosporin;penam",
+    "predicted_drug_class": "cephalosporin;penam",
+    "drug_confidence_max": 0.959,
+    "true_mechanism": "antibiotic inactivation",
+    "predicted_mechanism": "antibiotic inactivation",
+    "mechanism_confidence": 0.962,
+    "model": "esm2_t33_650M_UR50D"
+  },
+  {
+    "variant": "blaCTX-M-8",
     "family": "blaCTX-M",
     "true_drug_class": "cephalosporin;penam",
     "predicted_drug_class": "carbapenem;cephalosporin;penam",
     "drug_confidence_max": 0.96,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.962,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.961,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
-    "variant": "blaCTX-M-8",
+    "variant": "blaCTX-M-9",
+    "family": "blaCTX-M",
+    "true_drug_class": "cephalosporin;penam",
+    "predicted_drug_class": "cephalosporin;penam",
+    "drug_confidence_max": 0.966,
+    "true_mechanism": "antibiotic inactivation",
+    "predicted_mechanism": "antibiotic inactivation",
+    "mechanism_confidence": 0.97,
+    "model": "esm2_t33_650M_UR50D"
+  },
+  {
+    "variant": "blaCTX-M-14",
     "family": "blaCTX-M",
     "true_drug_class": "cephalosporin;penam",
     "predicted_drug_class": "cephalosporin;penam",
     "drug_confidence_max": 0.967,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.961,
-    "model": "esm2_t30_150M_UR50D"
-  },
-  {
-    "variant": "blaCTX-M-9",
-    "family": "blaCTX-M",
-    "true_drug_class": "cephalosporin;penam",
-    "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.973,
-    "true_mechanism": "antibiotic inactivation",
-    "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.975,
-    "model": "esm2_t30_150M_UR50D"
-  },
-  {
-    "variant": "blaCTX-M-14",
-    "family": "blaCTX-M",
-    "true_drug_class": "cephalosporin;penam",
-    "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.972,
-    "true_mechanism": "antibiotic inactivation",
-    "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.975,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.971,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "blaCTX-M-27",
     "family": "blaCTX-M",
     "true_drug_class": "cephalosporin;penam",
-    "predicted_drug_class": "carbapenem;cephalosporin;penam",
-    "drug_confidence_max": 0.972,
+    "predicted_drug_class": "cephalosporin;penam",
+    "drug_confidence_max": 0.968,
     "true_mechanism": "antibiotic inactivation",
     "predicted_mechanism": "antibiotic inactivation",
-    "mechanism_confidence": 0.975,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.971,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "qnrS1",
     "family": "qnrS",
     "true_drug_class": "fluoroquinolone",
     "predicted_drug_class": "fluoroquinolone",
-    "drug_confidence_max": 0.686,
+    "drug_confidence_max": 0.66,
     "true_mechanism": "antibiotic target protection",
     "predicted_mechanism": "antibiotic target protection",
-    "mechanism_confidence": 0.767,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.747,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "qnrS2",
     "family": "qnrS",
     "true_drug_class": "fluoroquinolone",
     "predicted_drug_class": "fluoroquinolone",
-    "drug_confidence_max": 0.699,
+    "drug_confidence_max": 0.67,
     "true_mechanism": "antibiotic target protection",
     "predicted_mechanism": "antibiotic target protection",
-    "mechanism_confidence": 0.777,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.755,
+    "model": "esm2_t33_650M_UR50D"
   },
   {
     "variant": "armA",
     "family": "armA",
     "true_drug_class": "aminoglycoside",
     "predicted_drug_class": "(none)",
-    "drug_confidence_max": 0.331,
+    "drug_confidence_max": 0.409,
     "true_mechanism": "antibiotic target alteration",
     "predicted_mechanism": "antibiotic target alteration",
-    "mechanism_confidence": 0.71,
-    "model": "esm2_t30_150M_UR50D"
+    "mechanism_confidence": 0.68,
+    "model": "esm2_t33_650M_UR50D"
   }
 ]

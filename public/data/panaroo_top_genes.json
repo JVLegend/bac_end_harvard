@@ -1,0 +1,186 @@
+{
+  "n_strains": 21,
+  "total_genes": 60718,
+  "top30": [
+    {
+      "gene": "group_23833",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_23832",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_23782",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_23764",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_22522",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_22361",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_22052",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21901",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21695",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21528",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21482",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21419",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21362",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21274",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_21103",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20939",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20931",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20879",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20554",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20438",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20172",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_20109",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19724",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19664",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19607",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19565",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19457",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19384",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_19074",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    },
+    {
+      "gene": "group_18955",
+      "present_in": 11,
+      "total": 21,
+      "fraction": 0.524
+    }
+  ]
+}
