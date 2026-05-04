@@ -173,12 +173,18 @@ function renderVariantList() {
         html += `<div class="family-group"><div class="family-name">${fam}</div>`;
         byFamily[fam].forEach(s => {
             const has = AVAILABLE_PDBS.includes(s.variant);
-            const disabled = has ? '' : 'style="opacity:0.4; cursor:not-allowed;" disabled';
             const tag = s.impact_type === 'IDENTICAL' || s.impact_type === 'CONSERVED' ? 'pill-conserved' :
                         s.impact_type === 'NON_FUNCTIONAL' ? 'pill-disrupted' : 'pill-missense';
-            html += `<button onclick="loadVariant('${s.variant}')" ${disabled} id="btn-${s.variant}">
-                ${s.variant} <span class="pill ${tag}" style="float:right; margin-top:2px;">${s.impact_type.replace('_', ' ').toLowerCase()}</span>
-            </button>`;
+            if (has) {
+                html += `<button onclick="loadVariant('${s.variant}')" id="btn-${s.variant}">
+                    ${s.variant} <span class="pill ${tag}" style="float:right; margin-top:2px;">${s.impact_type.replace('_', ' ').toLowerCase()}</span>
+                </button>`;
+            } else {
+                // Sequencia >540aa precisa GPU dedicada (mecA, mcr) — link AlphaFold Server
+                html += `<button onclick="showLongSeq('${s.variant}', ${s.protein_length || 0})" id="btn-${s.variant}" style="opacity:0.6;" title="Sequencia longa (>540aa) — predizer via AlphaFold Server">
+                    ${s.variant} <span class="pill" style="float:right; margin-top:2px; background:rgba(140,21,21,0.2); color:#ff8a8a;">${s.protein_length || '?'}aa · GPU</span>
+                </button>`;
+            }
         });
         html += '</div>';
     });
@@ -240,6 +246,32 @@ function renderDetails(name, score, phen) {
         <p style="margin-top:0.4rem;">A <strong>distancia coseno</strong> contra a referencia da familia indica impacto funcional sem precisar de fenotipo experimental.</p>
     </div>`;
     panel.innerHTML = html;
+}
+
+function showLongSeq(name, length) {
+    const score = PROTEIN_SCORES[name] || {};
+    document.getElementById('currentVariant').textContent = name + ' (sequencia longa)';
+    document.getElementById('currentMeta').textContent = `${length}aa — requer GPU dedicada (M2 16GB nao suporta).`;
+    if (currentComponent) stage.removeAllComponents();
+    document.getElementById('detailPanel').innerHTML = `
+        <div class="info-card">
+            <h4>Estrutura nao disponivel localmente</h4>
+            <p><strong>${name}</strong> tem ${length}aa, acima do limite de 540aa que cabe no M2 16GB.</p>
+            <p style="margin-top:0.5rem;">Para gerar PDB, use:</p>
+            <ul style="margin-top:0.5rem;">
+                <li>1. <a href="https://alphafoldserver.com/" target="_blank" style="color:var(--accent);">AlphaFold Server</a> (Google DeepMind, AF3, 30 jobs/dia gratis)</li>
+                <li>2. Cole a sequencia, baixe o PDB</li>
+                <li>3. Adicione em <code>public/pdbs/${name}.pdb</code> e redeploy</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h4>Score ESM-2 (sequencia)</h4>
+            <ul>
+                <li><strong>Familia:</strong> ${score.family || '-'}</li>
+                <li><strong>Cosine dist:</strong> ${(score.protein_distance_cosine || 0).toFixed(6)}</li>
+                <li><strong>Impacto:</strong> ${score.label || '-'}</li>
+            </ul>
+        </div>`;
 }
 
 function setRep(type) {
