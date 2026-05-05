@@ -1,0 +1,22 @@
+======================================================================
+ITEM #5 — Calibracao estrutural via NanoFold val
+======================================================================
+
+Carregando NanoFold val + computando descritores...
+  [200/1000]
+  [400/1000]
+  [600/1000]
+  [800/1000]
+  [1000/1000]
+NanoFold val: 1000 cadeias com descritores
+Bins NanoFold construidos: ['40-80', '80-120', '120-180', '180-256']
+Panel: 41 variantes
+Panel raw: 43 variantes (lengths 218-668)
+
+=== Resultados v5 ===
+Painel: 43 variantes
+Extrapolated (>256aa): 38 (mecA1/2, mcr-1/5)
+Outliers (>=3 atypical descritores): 0
+
+[Saved] /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/nanofold_calibration/per_variant_zscores.csv
+[Saved] /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/nanofold_calibration/metrics.json

@@ -1,0 +1,34 @@
+======================================================================
+TIER 2 — PubMed mining (sem Claude ainda, so coleta)
+======================================================================
+
+[("endophthalmitis"[Title/Abstract] OR "endophthalmitis"[MeSH]) AND ("antibiotic ...]
+  30 PMIDs, 30 novos
+
+[("keratitis"[Title/Abstract]) AND ("antibiotic resistance" OR "Pseudomonas aerug...]
+  30 PMIDs, 27 novos
+
+[("microbial keratitis") AND ("multidrug resistant" OR "fluoroquinolone resistanc...]
+  27 PMIDs, 25 novos
+
+[("post-cataract endophthalmitis" OR "postoperative endophthalmitis") AND ("Staph...]
+  30 PMIDs, 28 novos
+
+[("ocular infection" OR "intraocular infection") AND ("mecA" OR "blaKPC" OR "blaN...]
+  5 PMIDs, 5 novos
+
+[("conjunctivitis" OR "neonatal ophthalmia") AND ("ESBL" OR "MRSA" OR "carbapenem...]
+  30 PMIDs, 30 novos
+
+[("pediatric endophthalmitis") AND ("antibiotic resistance")...]
+  1 PMIDs, 1 novos
+
+[Saved] /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/tier2_pubmed/hits_raw.json: 136 abstracts unicos
+[Saved] /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/tier2_pubmed/extractions.json: 82 papers com gene+patogeno
+
+Top genes em context oftalmologico:
+  ermA             7 papers
+  armA             6 papers
+  mecA             2 papers
+
+[Saved] /Users/iaparamedicos/Documents/GitHub/smartsepsis/reports/tier2_pubmed/summary.csv

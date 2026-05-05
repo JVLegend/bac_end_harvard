@@ -1,0 +1,12 @@
+{
+  "dataset": "smartsepsis-oph",
+  "version": "1.1.0",
+  "generated_at": "2026-05-05T02:44:40.917893+00:00",
+  "n_rows": 45,
+  "files": {
+    "smartsepsis_oph.parquet": "e800cc68ea7681c307fd2a2a15279913b60d8b729af536969a4f44e967e6b071",
+    "smartsepsis_oph_extended.parquet": "b98ce319eba11b93c4a40d706bb4afdc70b439562550b2064aa895d9814958f3"
+  },
+  "n_rows_panel": 45,
+  "n_rows_extended": 9034
+}
