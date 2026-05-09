@@ -342,7 +342,7 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-title="wetlab.title">
 
 <!-- NAV -->
 <nav>
@@ -350,16 +350,16 @@
         <a href="https://www.iaparamedicos.com.br/" target="_blank" class="nav-brand">IA para <span>Médicos</span></a>
         <span class="nav-sep">|</span>
         <div class="nav-tabs">
-            <a href="index.html" class="nav-tab">SmartSepsis</a>
-            <a href="smartwetlab.html" class="nav-tab active">Crowdfunding Médico</a>
-            <a href="sequenciar-em-casa.html" class="nav-tab">Sequenciar em Casa</a>
+            <a href="index.html" class="nav-tab" data-i18n="nav.tab.smartsepsis">SmartSepsis</a>
+            <a href="smartwetlab.html" class="nav-tab active" data-i18n="nav.tab.crowdfunding">Crowdfunding Médico</a>
+            <a href="sequenciar-em-casa.html" class="nav-tab" data-i18n="nav.tab.sequence">Sequenciar em Casa</a>
         </div>
     </div>
     <div class="nav-right">
-        <a href="#problema">A Dor Clínica</a>
+        <a href="#problema" data-i18n="nav.link.clinical">A Dor Clínica</a>
         <a href="#solucao">A Tecnologia</a>
         <a href="#milestones">Marcos</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="dashboard.html" class="nav-cta" data-i18n="nav.link.dashboard">Dashboard</a>
         <a href="structure.html" class="nav-cta" style="background: var(--accent) !important;">3D</a>
         <a href="#tiers" class="nav-cta">Apoiar</a>
     </div>
@@ -373,13 +373,13 @@
     <div class="hero-content">
         <div class="hero-eyebrow">
             <div class="hero-eyebrow-dot"></div>
-            <span>Crowdfunding entre Oftalmologistas — 2026</span>
+            <span data-i18n="wetlab.hero.eyebrow">Crowdfunding entre Oftalmologistas — 2026</span>
         </div>
-        <h1>
+        <h1 data-i18n-html="wetlab.hero.h1">
             <em>SmartSepsis-Oph</em>: o laboratório<br>
             molecular que cabe <span class="hl">no centro cirúrgico</span>
         </h1>
-        <p class="hero-sub">
+        <p class="hero-sub" data-i18n-html="wetlab.hero.sub">
             Diagnóstico de patógenos oculares em <strong style="color:#fefefe">30 minutos à beira do leito cirúrgico</strong>. Endoftalmite, queratite, profilaxia perioperatória. CRISPR-Cas12a em papel, sem termociclador, custo ~R$25 por teste. <strong style="color:#fefefe">Oftalmologistas financiando a próxima geração de microbiologia ocular</strong> — desenvolvido com Dr. Sakuno (Mass Eye and Ear / Harvard) e equipe HC-FMUSP.
         </p>
 
@@ -1303,5 +1303,6 @@
     });
 </script>
 
+<script src="lang.js"></script>
 </body>
 </html>

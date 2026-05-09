@@ -147,44 +147,44 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-title="index.title">
 <nav>
     <div class="nav-left">
         <a href="https://www.iaparamedicos.com.br/" target="_blank" class="nav-brand">IA para <span>Médicos</span></a>
         <span class="nav-sep">|</span>
         <div class="nav-tabs">
-            <a href="index.html" class="nav-tab active">SmartSepsis</a>
-            <a href="smartwetlab.html" class="nav-tab">Crowdfunding</a>
-            <a href="sequenciar-em-casa.html" class="nav-tab">Sequenciar em Casa</a>
+            <a href="index.html" class="nav-tab active" data-i18n="nav.tab.smartsepsis">SmartSepsis</a>
+            <a href="smartwetlab.html" class="nav-tab" data-i18n="nav.tab.crowdfunding">Crowdfunding Médico</a>
+            <a href="sequenciar-em-casa.html" class="nav-tab" data-i18n="nav.tab.sequence">Sequenciar em Casa</a>
         </div>
     </div>
     <div class="nav-links">
-        <a href="#dor">Dor Clínica</a>
-        <a href="#tecnologia">Pipeline</a>
-        <a href="#team">Time</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="#dor" data-i18n="nav.link.clinical">Dor Clínica</a>
+        <a href="#tecnologia" data-i18n="nav.link.pipeline">Pipeline</a>
+        <a href="#team" data-i18n="nav.link.team">Time</a>
+        <a href="dashboard.html" class="nav-cta" data-i18n="nav.link.dashboard">Dashboard</a>
         <a href="structure.html" class="nav-cta nav-cta-alt">3D</a>
-        <a href="pangenome.html" class="nav-cta" style="background: var(--secondary);">Pangenoma</a>
+        <a href="pangenome.html" class="nav-cta" style="background: var(--secondary);" data-i18n="nav.link.pangenome">Pangenoma</a>
     </div>
 </nav>
 <!-- HERO -->
-<section class="hero">
-    <div class="badge badge-blue">SmartSepsis-Oph &mdash; Microbiologia Inteligente em Oftalmologia</div>
-    <h1>Endoftalmite p&oacute;s-cirurgia. Queratite com h&iacute;drogel.<br>Voc&ecirc; prescreve vanco+ceftaz emp&iacute;rico e espera 48h.<br><span class="hl-green">E se voc&ecirc; soubesse em 30 minutos?</span></h1>
-    <p style="font-size:1.25rem; font-weight:600; color:var(--secondary); margin-bottom:1rem; font-style:italic; font-family:'EB Garamond', serif;">&ldquo;O laborat&oacute;rio molecular que cabe no centro cir&uacute;rgico oftalmol&oacute;gico.&rdquo;</p>
-    <p>Diagn&oacute;stico point-of-care de pat&oacute;genos oculares com CRISPR-Cas12a em papel. Endoftalmite, queratite, conjuntivite refrat&aacute;ria, profilaxia perioperat&oacute;ria. Em vez de esperar a cultura de 48-72h ap&oacute;s tap v&iacute;treo ou raspado de c&oacute;rnea, voc&ecirc; sabe em 30 minutos se o pat&oacute;geno carrega gene de resist&ecirc;ncia &mdash; mecA (MRSA p&oacute;s-LASIK), blaKPC/blaNDM (Klebsiella endoftalmite), vanA, mcr, blaCTX-M (ESBL) e mais 6 fam&iacute;lias relevantes a infec&ccedil;&otilde;es oculares. Sem termociclador. Custo: ~R$25 por teste. Desenhado com Dr. Sakuno (Mass Eye and Ear / Harvard) e equipe HC-FMUSP.</p>
+<section class="hero" data-i18n-title="index.title">
+    <div class="badge badge-blue" data-i18n="index.hero.badge">SmartSepsis-Oph &mdash; Microbiologia Inteligente em Oftalmologia</div>
+    <h1 data-i18n-html="index.hero.h1">Endoftalmite p&oacute;s-cirurgia. Queratite com h&iacute;drogel.<br>Voc&ecirc; prescreve vanco+ceftaz emp&iacute;rico e espera 48h.<br><span class="hl-green">E se voc&ecirc; soubesse em 30 minutos?</span></h1>
+    <p style="font-size:1.25rem; font-weight:600; color:var(--secondary); margin-bottom:1rem; font-style:italic; font-family:'EB Garamond', serif;" data-i18n-html="index.hero.quote">&ldquo;O laborat&oacute;rio molecular que cabe no centro cir&uacute;rgico oftalmol&oacute;gico.&rdquo;</p>
+    <p data-i18n="index.hero.desc">Diagn&oacute;stico point-of-care de pat&oacute;genos oculares com CRISPR-Cas12a em papel. Endoftalmite, queratite, conjuntivite refrat&aacute;ria, profilaxia perioperat&oacute;ria. Em vez de esperar a cultura de 48-72h ap&oacute;s tap v&iacute;treo ou raspado de c&oacute;rnea, voc&ecirc; sabe em 30 minutos se o pat&oacute;geno carrega gene de resist&ecirc;ncia &mdash; mecA (MRSA p&oacute;s-LASIK), blaKPC/blaNDM (Klebsiella endoftalmite), vanA, mcr, blaCTX-M (ESBL) e mais 6 fam&iacute;lias relevantes a infec&ccedil;&otilde;es oculares. Sem termociclador. Custo: ~R$25 por teste. Desenhado com Dr. Sakuno (Mass Eye and Ear / Harvard) e equipe HC-FMUSP.</p>
     <div class="stats">
-        <div class="stat"><div class="stat-value">30 min</div><div class="stat-label">Resultado &agrave; beira do leito</div></div>
-        <div class="stat"><div class="stat-value">~R$25</div><div class="stat-label">Custo por teste (vs R$200+ PCR)</div></div>
-        <div class="stat"><div class="stat-value">42</div><div class="stat-label">Alvos AMR cl&iacute;nicos cobertos</div></div>
-        <div class="stat"><div class="stat-value">48h&rarr;30min</div><div class="stat-label">Antibiograma vs SmartSepsis</div></div>
-        <div class="stat"><div class="stat-value">12</div><div class="stat-label">Fam&iacute;lias g&ecirc;nicas validadas</div></div>
+        <div class="stat"><div class="stat-value">30 min</div><div class="stat-label" data-i18n="index.stat1.label">Resultado &agrave; beira do leito</div></div>
+        <div class="stat"><div class="stat-value">~R$25</div><div class="stat-label" data-i18n="index.stat2.label">Custo por teste (vs R$200+ PCR)</div></div>
+        <div class="stat"><div class="stat-value">42</div><div class="stat-label" data-i18n="index.stat3.label">Alvos AMR cl&iacute;nicos cobertos</div></div>
+        <div class="stat"><div class="stat-value">48h&rarr;30min</div><div class="stat-label" data-i18n="index.stat4.label">Antibiograma vs SmartSepsis</div></div>
+        <div class="stat"><div class="stat-value">12</div><div class="stat-label" data-i18n="index.stat5.label">Fam&iacute;lias g&ecirc;nicas validadas</div></div>
     </div>
     <div style="margin-top: 2rem; display:flex; gap:0.8rem; flex-wrap:wrap; justify-content:center;">
-        <a href="smartwetlab.html" style="display:inline-block; padding: 0.85rem 2.2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 2px; font-weight: 700; font-size: 0.95rem; box-shadow: var(--shadow-md); letter-spacing:0.04em;">
+        <a href="smartwetlab.html" style="display:inline-block; padding: 0.85rem 2.2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 2px; font-weight: 700; font-size: 0.95rem; box-shadow: var(--shadow-md); letter-spacing:0.04em;" data-i18n="index.cta.support">
             Apoiar como m&eacute;dico fundador
         </a>
-        <a href="dashboard.html" style="display:inline-block; padding: 0.85rem 2.2rem; background: transparent; color: var(--secondary); text-decoration: none; border: 1px solid var(--border-dark); border-radius: 2px; font-weight: 600; font-size: 0.95rem; letter-spacing:0.04em;">
+        <a href="dashboard.html" style="display:inline-block; padding: 0.85rem 2.2rem; background: transparent; color: var(--secondary); text-decoration: none; border: 1px solid var(--border-dark); border-radius: 2px; font-weight: 600; font-size: 0.95rem; letter-spacing:0.04em;" data-i18n="index.cta.dashboard">
             Ver dashboard t&eacute;cnico
         </a>
     </div>
@@ -193,23 +193,23 @@
 <!-- DOR DO MEDICO -->
 <div class="section-alt" id="dor">
     <div class="inner">
-        <h2 class="stitle">A dor cl&iacute;nica que nos move</h2>
-        <p class="ssub">N&atilde;o &eacute; um problema de bancada. &Eacute; uma decis&atilde;o que voc&ecirc; toma plant&atilde;o ap&oacute;s plant&atilde;o.</p>
+        <h2 class="stitle" data-i18n="index.dor.title">A dor cl&iacute;nica que nos move</h2>
+        <p class="ssub" data-i18n="index.dor.sub">N&atilde;o &eacute; um problema de bancada. &Eacute; uma decis&atilde;o que voc&ecirc; toma plant&atilde;o ap&oacute;s plant&atilde;o.</p>
         <div class="grid-2">
-            <div class="callout callout-red">
+            <div class="callout callout-red" data-i18n-html="index.dor.s1">
                 <strong>Cen&aacute;rio 1 &mdash; Endoftalmite p&oacute;s-facoemulsifica&ccedil;&atilde;o:</strong> POI 3 dias. Hipopio, hialite, queda BCVA. Voc&ecirc; faz tap v&iacute;treo + injeta vanco+ceftaz emp&iacute;rico. Cultura volta em 72h: <em>S. aureus</em> mecA-positivo. Vanco cobria, mas se fosse <em>P. aeruginosa</em> com blaVIM voc&ecirc; teria perdido o olho. Cada hora de espera = mais inflama&ccedil;&atilde;o, mais perda visual permanente.
             </div>
-            <div class="callout callout-red">
+            <div class="callout callout-red" data-i18n-html="index.dor.s2">
                 <strong>Cen&aacute;rio 2 &mdash; Queratite por lente de contato:</strong> Paciente jovem, &uacute;lcera centro-perif&eacute;rica, dor 8/10. Suspeita <em>Pseudomonas</em> vs <em>Acanthamoeba</em>. Raspado pra cultura, fluoroquinolona t&oacute;pica empirica. 48h depois, sem melhora. Era <em>Pseudomonas</em> com qnrS &mdash; resistente. Tempo perdido = perfura&ccedil;&atilde;o corneana iminente.
             </div>
-            <div class="callout callout-red">
+            <div class="callout callout-red" data-i18n-html="index.dor.s3">
                 <strong>Cen&aacute;rio 3 &mdash; CCIH oftalmol&oacute;gica:</strong> Surto de endoftalmite p&oacute;s-injec&ccedil;&atilde;o intraocular numa cl&iacute;nica de retina. 4 casos em 2 semanas. Vigil&acirc;ncia ativa de profilaxia exige cultura semanal de superf&iacute;cie ocular &mdash; resultado em 5 dias. Antes disso, voc&ecirc; j&aacute; agendou 30 novas inje&ccedil;&otilde;es. Risco invisivel.
             </div>
-            <div class="callout callout-green">
+            <div class="callout callout-green" data-i18n-html="index.dor.solution">
                 <strong>SmartSepsis-Oph muda isso:</strong> Em 30 minutos, no centro cir&uacute;rgico ou no consult&oacute;rio, sem termociclador, voc&ecirc; sabe se o pat&oacute;geno ocular carrega gene de resist&ecirc;ncia. N&atilde;o substitui cultura &mdash; mas <strong>antecipa a decis&atilde;o em 47h30min</strong>. Antibi&oacute;tico intraocular mais preciso. Profilaxia perioperat&oacute;ria racional. Vigil&acirc;ncia ativa em centros de retina.
         </div>
         </div>
-        <div class="callout callout-blue" style="margin-top:1.5rem;">
+        <div class="callout callout-blue" style="margin-top:1.5rem;" data-i18n-html="index.dor.why">
             <strong>Por que oftalmologistas brasileiros + Mass Eye and Ear?</strong> Painel desenhado para a microbiologia ocular do contexto brasileiro: <em>S. epidermidis</em> e <em>S. aureus</em> mecA dominantes em endoftalmite p&oacute;s-catarata, <em>Pseudomonas</em> em queratite por LC, ESBL emergente em &uacute;lcera neonatal, <em>Klebsiella</em> com KPC em endoftalmite end&oacute;gena. Liderado pelo Dr. Sakuno (Mass Eye and Ear / Harvard, postdoc em <em>oculomica e biomarcadores</em>) e equipe HC-FMUSP.
         </div>
     </div>
@@ -217,47 +217,47 @@
 
 <!-- DOCUSERIE -->
 <section id="docuseries">
-    <h2 class="stitle">Docus&eacute;rie: &ldquo;O Laborat&oacute;rio que Cabe no PS&rdquo;</h2>
-    <p class="ssub">Em paralelo &agrave; valida&ccedil;&atilde;o cl&iacute;nica, estamos filmando uma docus&eacute;rie m&eacute;dica em 5 epis&oacute;dios documentando a constru&ccedil;&atilde;o do SmartSepsis &mdash; do problema cl&iacute;nico real ao MVP no leito.</p>
+    <h2 class="stitle" data-i18n-html="index.docu.title">Docus&eacute;rie: &ldquo;O Laborat&oacute;rio que Cabe no PS&rdquo;</h2>
+    <p class="ssub" data-i18n="index.docu.sub">Em paralelo &agrave; valida&ccedil;&atilde;o cl&iacute;nica, estamos filmando uma docus&eacute;rie m&eacute;dica em 5 epis&oacute;dios documentando a constru&ccedil;&atilde;o do SmartSepsis &mdash; do problema cl&iacute;nico real ao MVP no leito.</p>
     <div class="grid-3" style="margin-top:1rem;">
         <div class="card" style="border-top: 3px solid var(--primary);">
             <span class="pill pill-progress">EP 01</span>
-            <h3 style="margin-top:0.6rem;">A noite no PS oftalmol&oacute;gico</h3>
-            <p>Plant&atilde;o real em emerg&ecirc;ncia ocular. Tap v&iacute;treo, raspado de c&oacute;rnea, decis&atilde;o de injec&ccedil;&atilde;o intraocular sem dado microbiol&oacute;gico. A dor concreta de prescrever sem saber o pat&oacute;geno.</p>
+            <h3 style="margin-top:0.6rem;" data-i18n="index.docu.ep1.title">A noite no PS oftalmol&oacute;gico</h3>
+            <p data-i18n="index.docu.ep1.desc">Plant&atilde;o real em emerg&ecirc;ncia ocular. Tap v&iacute;treo, raspado de c&oacute;rnea, decis&atilde;o de injec&ccedil;&atilde;o intraocular sem dado microbiol&oacute;gico. A dor concreta de prescrever sem saber o pat&oacute;geno.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--primary);">
             <span class="pill pill-progress">EP 02</span>
-            <h3 style="margin-top:0.6rem;">Bancada do HC-FMUSP</h3>
-            <p>Karine no wet lab. CRISPR-Cas12a clivando DNA em fluoresc&ecirc;ncia visualiz&aacute;vel. A bioqu&iacute;mica que vira diagn&oacute;stico.</p>
+            <h3 style="margin-top:0.6rem;" data-i18n="index.docu.ep2.title">Bancada do HC-FMUSP</h3>
+            <p data-i18n="index.docu.ep2.desc">Karine no wet lab. CRISPR-Cas12a clivando DNA em fluoresc&ecirc;ncia visualiz&aacute;vel. A bioqu&iacute;mica que vira diagn&oacute;stico.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--primary);">
             <span class="pill pill-progress">EP 03</span>
-            <h3 style="margin-top:0.6rem;">Pipeline de IA</h3>
-            <p>5 agentes de IA desenhando guides CRISPR em 5 minutos. O que antes levava semanas de bioinform&aacute;tica.</p>
+            <h3 style="margin-top:0.6rem;" data-i18n="index.docu.ep3.title">Pipeline de IA</h3>
+            <p data-i18n="index.docu.ep3.desc">5 agentes de IA desenhando guides CRISPR em 5 minutos. O que antes levava semanas de bioinform&aacute;tica.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--primary);">
             <span class="pill pill-progress">EP 04</span>
-            <h3 style="margin-top:0.6rem;">MVP no centro cir&uacute;rgico</h3>
-            <p>Primeiro teste em tap v&iacute;treo real. Dr. Sakuno conduz. 30 min cronometrados, durante a inje&ccedil;&atilde;o intraocular. Resultado fluorescente antes do paciente sair da maca.</p>
+            <h3 style="margin-top:0.6rem;" data-i18n="index.docu.ep4.title">MVP no centro cir&uacute;rgico</h3>
+            <p data-i18n="index.docu.ep4.desc">Primeiro teste em tap v&iacute;treo real. Dr. Sakuno conduz. 30 min cronometrados, durante a inje&ccedil;&atilde;o intraocular. Resultado fluorescente antes do paciente sair da maca.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--accent);">
             <span class="pill pill-progress">EP 05</span>
-            <h3 style="margin-top:0.6rem;">ROI cl&iacute;nico</h3>
-            <p>Custo de um olho perdido por endoftalmite mal-tratada vs custo do teste. BCVA preservada. Re-injec&ccedil;&otilde;es evitadas. O n&uacute;mero que importa em oftalmologia.</p>
+            <h3 style="margin-top:0.6rem;" data-i18n="index.docu.ep5.title">ROI cl&iacute;nico</h3>
+            <p data-i18n="index.docu.ep5.desc">Custo de um olho perdido por endoftalmite mal-tratada vs custo do teste. BCVA preservada. Re-injec&ccedil;&otilde;es evitadas. O n&uacute;mero que importa em oftalmologia.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--secondary);">
             <h3>Para m&eacute;dicos fundadores</h3>
-            <p>Apoiadores do crowdfunding recebem acesso antecipado aos epis&oacute;dios + behind-the-scenes da bancada e do PS.</p>
+            <p data-i18n="index.docu.founders">Apoiadores do crowdfunding recebem acesso antecipado aos epis&oacute;dios + behind-the-scenes da bancada e do PS.</p>
         </div>
     </div>
-    <div class="callout callout-amber" style="margin-top:1.5rem;">
+    <div class="callout callout-amber" style="margin-top:1.5rem;" data-i18n-html="index.docu.why">
         <strong>Por que docus&eacute;rie?</strong> Porque ci&ecirc;ncia que fica em paper n&atilde;o muda pr&aacute;tica cl&iacute;nica. Queremos que infectologista, intensivista e CCIH de qualquer hospital brasileiro <em>vejam</em> como o SmartSepsis foi constru&iacute;do &mdash; e cobrem a tecnologia de seus diretores t&eacute;cnicos. Distribui&ccedil;&atilde;o: YouTube + IA para M&eacute;dicos + recortes Instagram/LinkedIn.
     </div>
 </section>
 <!-- DIFERENCIAL -->
 <section id="diferencial">
-    <h2 class="stitle">Por que SmartSepsis &eacute; diferente</h2>
-    <p class="ssub">CRISPR em papel existe desde 2017 (SHERLOCK/DETECTR). Nosso diferencial n&atilde;o &eacute; a biologia &mdash; &eacute; combinar IA cl&iacute;nica + epidemiologia brasileira + custo de PS.</p>
+    <h2 class="stitle" data-i18n="index.diff.title">Por que SmartSepsis &eacute; diferente</h2>
+    <p class="ssub" data-i18n="index.diff.sub">CRISPR em papel existe desde 2017 (SHERLOCK/DETECTR). Nosso diferencial n&atilde;o &eacute; a biologia &mdash; &eacute; combinar IA cl&iacute;nica + epidemiologia brasileira + custo de PS.</p>
     <div class="callout callout-amber">
         <strong>O que nos fazemos diferente:</strong> Redesenhar guides CRISPR para uma nova cepa leva semanas de bioinform&aacute;tica manual. Nosso pipeline ag&ecirc;ntico faz em 5 minutos. Quando surge uma cepa resistente nova no HC-FMUSP, n&atilde;o precisamos esperar o Broad Institute &mdash; o pr&oacute;prio infectologista pode ter o teste atualizado em dias.
     </div>
@@ -312,8 +312,8 @@
 <!-- DASHBOARD -->
 <div class="section-alt" id="dashboard">
     <div class="inner">
-        <h2 class="stitle">Cobertura do Pipeline</h2>
-        <p class="ssub">42 alvos AMR processados computacionalmente: 12 fam&iacute;lias g&ecirc;nicas de refer&ecirc;ncia + 30 variantes cl&iacute;nicas prevalentes em UTIs brasileiras. Cada alvo passou por design de guide CRISPR-Cas12a, primers RPA e valida&ccedil;&atilde;o BLAST contra 124 milh&otilde;es de genomas.</p>
+        <h2 class="stitle" data-i18n="index.dash.title">Cobertura do Pipeline</h2>
+        <p class="ssub" data-i18n="index.dash.sub">42 alvos AMR processados computacionalmente: 12 fam&iacute;lias g&ecirc;nicas de refer&ecirc;ncia + 30 variantes cl&iacute;nicas prevalentes em UTIs brasileiras. Cada alvo passou por design de guide CRISPR-Cas12a, primers RPA e valida&ccedil;&atilde;o BLAST contra 124 milh&otilde;es de genomas.</p>
         <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap;">
             <div class="card" style="flex:1; min-width:150px; text-align:center; border-top: 3px solid var(--success);">
                 <div style="font-size:2rem; font-weight:800; color:var(--success);">42</div>
@@ -577,8 +577,8 @@
 </div>
 <!-- TECNOLOGIA -->
 <section id="tecnologia">
-    <h2 class="stitle">Como Funciona</h2>
-    <p class="ssub">Pipeline computacional de 7 etapas, incluindo scoring avancado e interpretacao por IA.</p>
+    <h2 class="stitle" data-i18n="index.tech.title">Como Funciona</h2>
+    <p class="ssub" data-i18n="index.tech.sub">Pipeline computacional de 7 etapas, incluindo scoring avancado e interpretacao por IA.</p>
     <div class="pipe-step"><div class="pipe-num">1</div><div class="pipe-content"><h4>Busca de genomas</h4><p>Agente busca sequencias DNA dos genes AMR via NCBI Entrez API. Catalogo base: AMRFinderPlus (12+ genes priorizados). <code>fetch_sequences.py</code></p></div></div>
     <div class="pipe-step"><div class="pipe-num">2</div><div class="pipe-content"><h4>Design de crRNA guides</h4><p>Scan de sites PAM TTTV em ambas as fitas, scoring por GC%, homopolimeros, posicao e estabilidade. Top 5 guides por gene. <code>design_guides.py</code></p></div></div>
     <div class="pipe-step"><div class="pipe-num">3</div><div class="pipe-content"><h4>Covariance Probes</h4><p>Re-scoring com 18 features biofisicas + covariancia: seed region, termodinamica, acessibilidade estrutural. <code>covariance_probes.py</code></p></div></div>
@@ -593,8 +593,8 @@
 <!-- VALIDAÇÃO -->
 <div class="section-alt" id="validação">
     <div class="inner">
-        <h2 class="stitle">Validação e Posicionamento</h2>
-        <p class="ssub">Transparência sobre o que ja validamos e o que ainda não.</p>
+        <h2 class="stitle" data-i18n="index.valid.title">Validação e Posicionamento</h2>
+        <p class="ssub" data-i18n="index.valid.sub">Transparência sobre o que ja validamos e o que ainda não.</p>
         <div class="grid-2">
             <div class="callout callout-green">
                 <strong>O QUE SOMOS</strong><br>
@@ -612,8 +612,8 @@
 </div>
 <!-- TEAM -->
 <section id="team">
-    <h2 class="stitle">Time</h2>
-    <p class="ssub">Expertise combinada em IA, medicina e engenharia.</p>
+    <h2 class="stitle" data-i18n="index.team.title">Time</h2>
+    <p class="ssub" data-i18n="index.team.sub">Expertise combinada em IA, medicina e engenharia.</p>
     <div class="grid-3">
         <div class="card team-card">
             <div class="avatar">J</div>
@@ -655,13 +655,14 @@
 </section>
 <!-- FOOTER -->
 <footer>
-    <p><strong><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--primary); text-decoration: none;">IA para Médicos</a></strong> | SmartSepsis-Oph &mdash; <em>O laboratório molecular que cabe no centro cirúrgico oftalmológico</em></p>
-    <p style="margin-top:0.4rem;">Diagnóstico point-of-care de patógenos oculares com CRISPR-Cas12a + foundation models de proteína (ESM-2 + ProtT5) + pipeline agêntico</p>
+    <p><strong><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--primary); text-decoration: none;">IA para Médicos</a></strong> | SmartSepsis-Oph &mdash; <em data-i18n="index.footer.tagline">O laboratório molecular que cabe no centro cirúrgico oftalmológico</em></p>
+    <p style="margin-top:0.4rem;" data-i18n="index.footer.desc">Diagnóstico point-of-care de patógenos oculares com CRISPR-Cas12a + foundation models de proteína (ESM-2 + ProtT5) + pipeline agêntico</p>
     <p style="margin-top:0.4rem;"><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">www.iaparamédicos.com.br</a></p>
-    <p style="margin-top:0.4rem; font-size:0.75rem;">São Paulo, Brasil | HC-FMUSP × Mass Eye and Ear (Harvard) | 43 variantes AMR &middot; 12 famílias gênicas oculares</p>
+    <p style="margin-top:0.4rem; font-size:0.75rem;" data-i18n="index.footer.location">São Paulo, Brasil | HC-FMUSP × Mass Eye and Ear (Harvard) | 43 variantes AMR &middot; 12 famílias gênicas oculares</p>
     <p style="margin-top:0.6rem; font-size:0.7rem; color: rgba(255,255,255,0.35);">
         <a href="paper.html" style="color: rgba(255,255,255,0.4); text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.25);">interna · papers</a>
     </p>
 </footer>
+<script src="lang.js"></script>
 </body>
 </html>

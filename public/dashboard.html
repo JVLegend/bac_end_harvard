@@ -125,12 +125,12 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-title="dash.title">
 
 <nav>
     <a href="index.html" class="logo">SmartLab <span>BacEnd</span></a>
     <div class="nav-links">
-        <a href="index.html" class="back-link">&#x2190; Voltar ao site</a>
+        <a href="index.html" class="back-link" data-i18n="dash.nav.back">&#x2190; Voltar ao site</a>
         <a href="#" onclick="exportCSV()">Exportar CSV</a>
     </div>
 </nav>
@@ -754,5 +754,6 @@ renderTable(TARGETS);
 loadRealData();
 </script>
 
+<script src="lang.js"></script>
 </body>
 </html>

@@ -114,29 +114,29 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-title="seq.title">
 
 <nav>
     <div class="nav-left">
         <a href="https://www.iaparamedicos.com.br/" target="_blank" class="nav-brand">IA para <span>Médicos</span></a>
         <span class="nav-sep">|</span>
         <div class="nav-tabs">
-            <a href="index.html" class="nav-tab">SmartSepsis</a>
-            <a href="smartwetlab.html" class="nav-tab">Crowdfunding</a>
-            <a href="sequenciar-em-casa.html" class="nav-tab active">Sequenciar em Casa</a>
+            <a href="index.html" class="nav-tab" data-i18n="nav.tab.smartsepsis">SmartSepsis</a>
+            <a href="smartwetlab.html" class="nav-tab" data-i18n="nav.tab.crowdfunding">Crowdfunding</a>
+            <a href="sequenciar-em-casa.html" class="nav-tab active" data-i18n="nav.tab.sequence">Sequenciar em Casa</a>
         </div>
     </div>
     <div class="nav-right">
         <a href="#hardware">Equipamento</a>
         <a href="#custo">Custo</a>
-        <a href="dashboard.html" class="nav-cta">Dashboard</a>
+        <a href="dashboard.html" class="nav-cta" data-i18n="nav.link.dashboard">Dashboard</a>
         <a href="structure.html" class="nav-cta" style="background: var(--accent) !important; color: #1a1a1a !important;">3D</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-    <div class="kicker">Guia Prático · Versão Brasileira</div>
+    <div class="kicker" data-i18n="seq.hero.kicker">Guia Prático · Versão Brasileira</div>
     <h1>Quero sequenciar meu <em>genoma inteiro</em> na cozinha de casa.</h1>
     <p class="lede">
         Sim, é possível. Sim, no Brasil. Sim, com imposto. Este é o passo-a-passo honesto — equipamento, reagentes, preços em real, armadilhas de importação, e como conectar tudo isso à visão do SmartLab. Adaptado livremente do <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">post original de Seth Showes</a>.
@@ -494,5 +494,6 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
     });
 </script>
 
+<script src="lang.js"></script>
 </body>
 </html>

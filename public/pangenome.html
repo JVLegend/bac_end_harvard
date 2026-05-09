@@ -46,15 +46,15 @@ tr:hover td { background:rgba(255,255,255,0.03); }
 @media (max-width:760px) { .kpi-grid { grid-template-columns:repeat(2,1fr); } .container { padding:5rem 1rem 2rem; } }
 </style>
 </head>
-<body>
+<body data-i18n-title="pangen.title">
 
 <nav>
     <a href="index.html" class="brand">SmartSepsis <span>Pangenome</span></a>
     <div style="display:flex; gap:1.4rem;">
         <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="structure.html">Estrutura 3D</a>
-        <a href="pangenome.html" style="color:var(--accent);">Pangenoma</a>
+        <a href="dashboard.html" data-i18n="nav.link.dashboard">Dashboard</a>
+        <a href="structure.html">3D</a>
+        <a href="pangenome.html" style="color:var(--accent);" data-i18n="nav.link.pangenome">Pangenoma</a>
     </div>
 </nav>
 
@@ -186,5 +186,6 @@ async function load() {
 load();
 </script>
 
+<script src="lang.js"></script>
 </body>
 </html>

@@ -67,14 +67,14 @@
         .pill-disrupted { background: rgba(140,21,21,0.3); color: #ff8a8a; }
     </style>
 </head>
-<body>
+<body data-i18n-title="struct.title">
 
 <nav>
     <a href="index.html" class="brand">SmartSepsis <span>3D</span></a>
     <div style="display:flex; gap:1.5rem;">
         <a href="index.html">Home</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="structure.html" style="color: var(--accent);">Estrutura 3D</a>
+        <a href="dashboard.html" data-i18n="nav.link.dashboard">Dashboard</a>
+        <a href="structure.html" style="color: var(--accent);" data-i18n="struct.hero.title">Estrutura 3D</a>
     </div>
 </nav>
 
@@ -296,5 +296,6 @@ initViewer();
 loadData();
 </script>
 
+<script src="lang.js"></script>
 </body>
 </html>
