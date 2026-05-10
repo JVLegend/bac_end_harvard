@@ -137,14 +137,14 @@
 <!-- HERO -->
 <div class="hero">
     <div class="kicker" data-i18n="seq.hero.kicker">Guia Prático · Versão Brasileira</div>
-    <h1>Quero sequenciar meu <em>genoma inteiro</em> na cozinha de casa.</h1>
-    <p class="lede">
+    <h1 data-i18n-html="seq.hero.h1">Quero sequenciar meu <em>genoma inteiro</em> na cozinha de casa.</h1>
+    <p class="lede" data-i18n-html="seq.hero.lede">
         Sim, é possível. Sim, no Brasil. Sim, com imposto. Este é o passo-a-passo honesto — equipamento, reagentes, preços em real, armadilhas de importação, e como conectar tudo isso à visão do SmartLab. Adaptado livremente do <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">post original de Seth Showes</a>.
     </p>
     <div class="meta">
-        <span><strong>Dificuldade:</strong> Médio-alto (requer paciência de pipetagem)</span>
-        <span><strong>Tempo total:</strong> 3 dias úteis</span>
-        <span><strong>Custo:</strong> ~R$ 15k por run + R$ 40k de setup</span>
+        <span data-i18n-html="seq.meta.difficulty"><strong>Dificuldade:</strong> Médio-alto (requer paciência de pipetagem)</span>
+        <span data-i18n-html="seq.meta.time"><strong>Tempo total:</strong> 3 dias úteis</span>
+        <span data-i18n-html="seq.meta.cost"><strong>Custo:</strong> ~R$ 15k por run + R$ 40k de setup</span>
     </div>
 </div>
 
@@ -152,7 +152,7 @@
 
 <!-- POR QUE -->
 <section id="por-que">
-    <h2>Por que sequenciar o próprio genoma?</h2>
+    <h2 data-i18n="seq.s1.title">Por que sequenciar o próprio genoma?</h2>
     <p>
         Tem duas razões que se misturam. A primeira é <strong>curiosidade de fuçador</strong>: quem passou a adolescência desmontando computador quer desmontar biologia também. A segunda é mais pessoal — história familiar. Se sua linhagem carrega um padrão que ninguém sabe explicar (doença autoimune, câncer precoce, resposta estranha a remédio), você eventualmente vai querer olhar o código-fonte.
     </p>
@@ -161,14 +161,14 @@
     </p>
 
     <div class="callout note">
-        <div class="callout-label">Aviso importante</div>
+        <div class="callout-label" data-i18n="seq.s1.callout.label">Aviso importante</div>
         <p>Isto <strong>não é diagnóstico médico</strong>. Você está fazendo ciência caseira por curiosidade intelectual. Resultados devem ser validados por laboratório clínico certificado antes de qualquer decisão de saúde. A LGPD também se aplica: seus dados genéticos são dado pessoal sensível. Guarde com cuidado, não publique em repositório aberto, pense antes de compartilhar com familiares.</p>
     </div>
 </section>
 
 <!-- COMO FUNCIONA -->
 <section id="como-funciona">
-    <h2>Como a mágica acontece: MinION em 90 segundos</h2>
+    <h2 data-i18n="seq.s2.title">Como a mágica acontece: MinION em 90 segundos</h2>
     <p>
         O equipamento central é o <a href="https://nanoporetech.com/products/sequence/minion" target="_blank" rel="noopener">MinION Mk1D da Oxford Nanopore</a> — um sequenciador do tamanho de um grampeador. Dentro dele, uma <strong>flow cell</strong> (cartucho descartável) tem cerca de 2.000 nanoporos de proteína alinhados em uma membrana. Você aplica voltagem, o DNA é puxado através desses poros, e cada base (A, C, G, T) altera a corrente de um jeito único. Um software lê esses sinais elétricos e reconstrói a sequência.
     </p>
@@ -182,14 +182,14 @@
 
 <!-- HARDWARE -->
 <section id="hardware">
-    <h2>Equipamento: o que comprar, onde, e por quanto</h2>
+    <h2 data-i18n="seq.s3.title">Equipamento: o que comprar, onde, e por quanto</h2>
     <p>
         A realidade brasileira é dura em uma parte e macia em outra. Dura: MinION e reagentes importados chegam com 40–60% de imposto + frete caro. Macia: equipamento de bancada genérico (heat block, vórtex, centrífuga) tem mercado usado robusto em universidades e ONGs — e Aliexpress/OLX funciona para o que não é crítico.
     </p>
 
     <table class="cost-table">
         <thead>
-            <tr><th>Item</th><th>Onde comprar</th><th>Preço (R$)</th></tr>
+            <tr><th data-i18n="seq.table.item">Item</th><th data-i18n="seq.table.where">Onde comprar</th><th data-i18n="seq.table.price">Preço (R$)</th></tr>
         </thead>
         <tbody>
             <tr>
@@ -240,21 +240,21 @@
     </table>
 
     <div class="callout tip">
-        <div class="callout-label">Dica brasileira</div>
+        <div class="callout-label" data-i18n="seq.s3.callout.label">Dica brasileira</div>
         <p>Universidades públicas descartam equipamento toda hora. Vórtex dos anos 80 funciona idêntico a modelo novo. Entre em contato com o departamento de biologia molecular mais próximo e pergunte se tem material de baixa. A UFMG, USP, UFRJ e UFRGS têm programas de reaproveitamento. Se você tiver um CNPJ de pesquisa, compra cai no lucro presumido e o imposto some.</p>
     </div>
 </section>
 
 <!-- REAGENTES -->
 <section id="reagentes">
-    <h2>Reagentes: kits, onde achar, e como driblar o "pacote de 24"</h2>
+    <h2 data-i18n="seq.s4.title">Reagentes: kits, onde achar, e como driblar o "pacote de 24"</h2>
     <p>
         Aqui mora a parte cruel: kits de sequenciamento são vendidos em formato high-throughput. O SQK-LSK114 vem com 6 reações mínimas, o NEBNext Companion com 24. Se você vai fazer <strong>uma run</strong>, está pagando pelo lote inteiro — ou divide com amigos, ou tenta revender as alíquotas.
     </p>
 
     <table class="cost-table">
         <thead>
-            <tr><th>Reagente</th><th>Tamanho / Fornecedor</th><th>Preço (R$)</th></tr>
+            <tr><th data-i18n="seq.table.reagent">Reagente</th><th data-i18n="seq.table.size">Tamanho / Fornecedor</th><th data-i18n="seq.table.price">Preço (R$)</th></tr>
         </thead>
         <tbody>
             <tr>
@@ -299,14 +299,14 @@
     </table>
 
     <div class="callout warn">
-        <div class="callout-label">Realidade da importação</div>
+        <div class="callout-label" data-i18n="seq.s4.callout.label">Realidade da importação</div>
         <p>Reagentes da ONT saem do Reino Unido. Prazo médio: 10–20 dias úteis. Alguns ficam retidos na Receita por causa de documentação (pedir ao vendedor para emitir commercial invoice detalhada + ficha técnica em inglês). O <strong>cold chain</strong> é crítico: os kits precisam chegar congelados (-20 °C). Peça <strong>entrega expressa com gelo seco</strong> e tenha alguém em casa para receber. Já aconteceu de kit chegar descongelado e virar R$ 6.000 no lixo.</p>
     </div>
 </section>
 
 <!-- PASSO A PASSO -->
 <section id="passo-a-passo">
-    <h2>O workflow de 3 dias</h2>
+    <h2 data-i18n="seq.s5.title">O workflow de 3 dias</h2>
     <p>Dia 1: prepara. Dia 2–3: sequencia e basecalling. Dia 4 em diante: análise. Abaixo o resumo executável — os detalhes completos estão nos PDFs da ONT e NEB linkados em cada passo.</p>
 
     <div class="phase-card">
@@ -377,14 +377,14 @@ samtools flagstat aligned.bam  # esperar >95% mapeado
 mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
 
     <div class="callout tip">
-        <div class="callout-label">Dica: adaptive sampling é seu amigo</div>
+        <div class="callout-label" data-i18n="seq.s5.callout.label">Dica: adaptive sampling é seu amigo</div>
         <p>Em vez de sequenciar o genoma todo (que vai exigir 3 runs para 30× de cobertura), defina um <strong>painel de 30–50 genes clinicamente relevantes</strong> — farmacogenômica (CYP2D6, CYP2C19), BRCA1/2, APOE, MC4R etc. Em ~1% do genoma, você consegue 30–50× de cobertura em uma única flow cell. Custa o mesmo e entrega dados bem mais úteis do que 5× WGS raso. Use o Claude para converter lista de genes em arquivo BED rapidamente.</p>
     </div>
 </section>
 
 <!-- CUSTO -->
 <section id="custo">
-    <h2>O custo total em reais</h2>
+    <h2 data-i18n="seq.s6.title">O custo total em reais</h2>
     <p>
         Dois cenários: o barato (uma run, painel focado) e o razoável (três runs de WGS 30× ao longo do ano).
     </p>
@@ -425,7 +425,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
 
 <!-- RISCOS -->
 <section id="riscos">
-    <h2>O que pode dar errado (e provavelmente vai)</h2>
+    <h2 data-i18n="seq.s7.title">O que pode dar errado (e provavelmente vai)</h2>
     <ul>
         <li><strong>Bolha na flow cell:</strong> R$ 9.000 em 5 segundos. Assista ao tutorial. Pratique com flow cell morta se conseguir uma.</li>
         <li><strong>Kit descongelado na alfândega:</strong> pagar frete expresso com gelo seco. Tem segurado?</li>
@@ -436,14 +436,14 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
     </ul>
 
     <div class="callout warn">
-        <div class="callout-label">Não é consultoria médica</div>
+        <div class="callout-label" data-i18n="seq.s7.callout.label">Não é consultoria médica</div>
         <p>Achar uma variante em BRCA1 não significa que você tem câncer. Achar APOE4 não significa que você vai ter Alzheimer. Variantes raras exigem validação clínica em laboratório certificado com painel multidisciplinar. Se aparecer algo que assusta, procure geneticista antes de tomar qualquer decisão de saúde. O que você tem aqui é um brinquedo científico poderoso, não um substituto de medicina.</p>
     </div>
 </section>
 
 <!-- LIGAÇÃO COM SMARTLAB -->
 <section id="smartlab">
-    <h2>Por que esse post está no site do SmartLab?</h2>
+    <h2 data-i18n="seq.s8.title">Por que esse post está no site do SmartLab?</h2>
     <p>
         Porque <strong>a filosofia é a mesma</strong>. O SmartLab é um projeto que parte do pressuposto de que ciência de ponta não precisa mais ficar trancada em laboratório de R$ 20 milhões com 30 PhDs. Um MinION na sua mesa, agentes de IA rodando no seu notebook, reagentes acessíveis. Isso é o caminho.
     </p>
@@ -457,7 +457,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
 
 <!-- PRÓXIMOS PASSOS -->
 <section id="proximos">
-    <h2>Quero começar. Por onde?</h2>
+    <h2 data-i18n="seq.s9.title">Quero começar. Por onde?</h2>
     <ol>
         <li><strong>Encontre uma comunidade.</strong> Grupos no Telegram de biohacker brasileiro existem. Biofábrica ETFMG em Belo Horizonte, Biohacking.Rio, Bioclub Brasil. Não faça isso sozinho no primeiro run — o custo de errar é alto.</li>
         <li><strong>Crie conta na ONT Store</strong> e peça orçamento formal. Eles emitem commercial invoice necessária para o Siscomex.</li>
@@ -468,7 +468,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
     </ol>
 
     <div class="callout note">
-        <div class="callout-label">Precisa de ajuda?</div>
+        <div class="callout-label" data-i18n="seq.s9.callout.label">Precisa de ajuda?</div>
         <p>Estamos montando uma rede de fuçadores de DNA no Brasil. Se quiser dividir um pedido de kits, compartilhar equipamento, ou só trocar ideia antes de pagar R$ 9.000 em flow cell, <a href="mailto:contato@iaparamedicos.com.br?subject=Sequenciamento DIY">manda e-mail</a>. Não temos resposta pra tudo, mas temos cicatrizes.</p>
     </div>
 </section>

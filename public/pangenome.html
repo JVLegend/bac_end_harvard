@@ -60,28 +60,28 @@ tr:hover td { background:rgba(255,255,255,0.03); }
 
 <main class="container">
 <div class="header">
-    <h1>Pangenoma de patógenos AMR brasileiros</h1>
-    <p class="subtitle">21 genomas (K. pneumoniae + E. coli) RefSeq · panaroo 1.6.1 · clean-mode sensitive</p>
+    <h1 data-i18n="pangen.header.title">Pangenoma de patógenos AMR brasileiros</h1>
+    <p class="subtitle" data-i18n="pangen.header.sub">21 genomas (K. pneumoniae + E. coli) RefSeq · panaroo 1.6.1 · clean-mode sensitive</p>
 </div>
 
 <div class="kpi-grid">
     <div class="kpi">
-        <div class="kpi-label">Genomas</div>
+        <div class="kpi-label" data-i18n="pangen.kpi.genomes">Genomas</div>
         <div class="kpi-value" id="kpi-strains">—</div>
         <div class="kpi-sub">RefSeq, 2 espécies</div>
     </div>
     <div class="kpi">
-        <div class="kpi-label">Genes (todos)</div>
+        <div class="kpi-label" data-i18n="pangen.kpi.genes">Genes (todos)</div>
         <div class="kpi-value" id="kpi-total">—</div>
         <div class="kpi-sub">após clustering panaroo</div>
     </div>
     <div class="kpi">
-        <div class="kpi-label">Shell genes</div>
+        <div class="kpi-label" data-i18n="pangen.kpi.shell">Shell genes</div>
         <div class="kpi-value" id="kpi-shell">—</div>
         <div class="kpi-sub">15-95% das cepas</div>
     </div>
     <div class="kpi">
-        <div class="kpi-label">Cloud genes</div>
+        <div class="kpi-label" data-i18n="pangen.kpi.cloud">Cloud genes</div>
         <div class="kpi-value" id="kpi-cloud">—</div>
         <div class="kpi-sub">&lt;15% — raros / HGT</div>
     </div>
@@ -92,22 +92,22 @@ tr:hover td { background:rgba(255,255,255,0.03); }
 </div>
 
 <div class="section">
-    <h2>Distribuição de genes por número de cepas</h2>
-    <p class="desc">Histograma: quantos genes estão presentes em N das 21 cepas. Picos em valores baixos = cloud (raros); picos altos = conservados.</p>
+    <h2 data-i18n="pangen.s1.title">Distribuição de genes por número de cepas</h2>
+    <p class="desc" data-i18n="pangen.s1.desc">Histograma: quantos genes estão presentes em N das 21 cepas. Picos em valores baixos = cloud (raros); picos altos = conservados.</p>
     <div class="chart-wrap"><canvas id="histChart"></canvas></div>
 </div>
 
 <div class="section">
-    <h2>Top 30 genes mais conservados</h2>
-    <p class="desc">Genes presentes na maior fração de cepas. Genes "group_*" são clusters sem nome funcional anotado (prodigal não anotou função).</p>
+    <h2 data-i18n="pangen.s2.title">Top 30 genes mais conservados</h2>
+    <p class="desc" data-i18n="pangen.s2.desc">Genes presentes na maior fração de cepas. Genes "group_*" são clusters sem nome funcional anotado (prodigal não anotou função).</p>
     <table id="topTable">
-        <thead><tr><th>#</th><th>Gene</th><th>Presente em</th><th>Fração</th><th></th></tr></thead>
+        <thead><tr><th data-i18n="pangen.table.rank">#</th><th data-i18n="pangen.table.gene">Gene</th><th data-i18n="pangen.table.present">Presente em</th><th data-i18n="pangen.table.frac">Fração</th><th></th></tr></thead>
         <tbody></tbody>
     </table>
 </div>
 
 <div class="section">
-    <h2>Resumo metodológico</h2>
+    <h2 data-i18n="pangen.s3.title">Resumo metodológico</h2>
     <p class="desc" style="line-height:1.6;">
         <strong style="color:var(--text);">Pipeline:</strong>
         50 acessões RefSeq tentadas → 21 baixadas com sucesso →

@@ -80,20 +80,20 @@
 
 <div class="layout">
     <aside class="sidebar">
-        <h3>Variantes AMR</h3>
+        <h3 data-i18n="struct.sidebar.variants">Variantes AMR</h3>
         <div id="variantList" class="variant-list">
-            <p style="color: var(--text-muted); font-size: 0.8rem;">Carregando...</p>
+            <p style="color: var(--text-muted); font-size: 0.8rem;" data-i18n="struct.loading">Carregando...</p>
         </div>
     </aside>
 
     <main style="position: relative;">
         <div id="viewport-info">
-            <div id="currentVariant" style="font-weight: 600;">Selecione uma variante</div>
+            <div id="currentVariant" style="font-weight: 600;" data-i18n="struct.select.hint">Selecione uma variante</div>
             <div id="currentMeta" style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem;"></div>
         </div>
         <div class="controls">
             <button onclick="setRep('cartoon')">Cartoon</button>
-            <button onclick="setRep('surface')">Superficie</button>
+            <button onclick="setRep('surface')" data-i18n="struct.btn.surface">Superficie</button>
             <button onclick="setRep('ball+stick')">Ball+Stick</button>
             <button onclick="setColor('bfactor')">pLDDT</button>
             <button onclick="setColor('chainid')">Domain</button>
@@ -103,9 +103,9 @@
     </main>
 
     <aside class="sidebar right">
-        <h3>Detalhes da Variante</h3>
+        <h3 data-i18n="struct.sidebar.details">Detalhes da Variante</h3>
         <div id="detailPanel">
-            <p style="color: var(--text-muted); font-size: 0.8rem;">Selecione uma variante para ver score ESM-2, phenotype probe e estatisticas estruturais.</p>
+            <p style="color: var(--text-muted); font-size: 0.8rem;" data-i18n="struct.details.hint">Selecione uma variante para ver score ESM-2, phenotype probe e estatisticas estruturais.</p>
         </div>
     </aside>
 </div>
