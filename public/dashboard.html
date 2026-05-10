@@ -155,61 +155,61 @@
     <!-- ESM-2 / PHENOTYPE PROBE PANEL (Fase 7/9/10 reais) -->
     <div class="filters" id="esmPanel" style="background: #ecfeff; border-color: #a5f3fc; margin-bottom: 1rem; flex-direction: column; align-items: stretch; gap: 0.6rem;">
         <div style="display:flex; justify-content:space-between; align-items:center;">
-            <label style="color:#0e7490; font-size: 0.85rem;">&#x1F9EC; Inferencia ESM-2 (Fase 7) + Phenotype Probe (Fase 9)</label>
-            <span class="pill" style="background:#06b6d4; color:white; font-size:0.6rem;" id="esmModelTag">aguardando dados...</span>
+            <label style="color:#0e7490; font-size: 0.85rem;" data-i18n="dash.esm.label">&#x1F9EC; Inferencia ESM-2 (Fase 7) + Phenotype Probe (Fase 9)</label>
+            <span class="pill" style="background:#06b6d4; color:white; font-size:0.6rem;" id="esmModelTag" data-i18n="dash.esm.waiting">aguardando dados...</span>
         </div>
         <div style="display:flex; gap:1.2rem; flex-wrap:wrap; font-size:0.78rem; color:#155e75;" id="esmStats">
-            <span>Carregando metricas...</span>
+            <span data-i18n="dash.esm.loading">Carregando metricas...</span>
         </div>
     </div>
 
     <!-- MULTI-OBJECTIVE SLIDERS (Fase 8) -->
     <div class="filters" style="background: #fdf2f2; border-color: #fee2e2; margin-bottom: 1rem;">
         <div style="width: 100%; margin-bottom: 0.5rem; display: flex; justify-content: space-between; align-items: center;">
-            <label style="color: #991b1b; font-size: 0.85rem;">🎚️ Multi-Objective Design Slider (Fase 8)</label>
+            <label style="color: #991b1b; font-size: 0.85rem;" data-i18n="dash.slider.label">🎚️ Multi-Objective Design Slider (Fase 8)</label>
             <span class="pill pill-p1" style="font-size: 0.6rem;">Pareto Frontier Mode</span>
         </div>
         <div class="filter-group" style="flex: 1; min-width: 120px;">
-            <label style="font-size: 0.65rem;">Eficácia (Cov)</label>
+            <label style="font-size: 0.65rem;" data-i18n="dash.slider.efficacy">Eficácia (Cov)</label>
             <input type="range" id="weightEfficacy" min="0" max="100" value="50" oninput="applyWeights()">
         </div>
         <div class="filter-group" style="flex: 1; min-width: 120px;">
-            <label style="font-size: 0.65rem;">Especificidade</label>
+            <label style="font-size: 0.65rem;" data-i18n="dash.slider.specificity">Especificidade</label>
             <input type="range" id="weightSpec" min="0" max="100" value="50" oninput="applyWeights()">
         </div>
         <div class="filter-group" style="flex: 1; min-width: 120px;">
-            <label style="font-size: 0.65rem;">Cobertura</label>
+            <label style="font-size: 0.65rem;" data-i18n="dash.slider.coverage">Cobertura</label>
             <input type="range" id="weightCoverage" min="0" max="100" value="50" oninput="applyWeights()">
         </div>
         <div class="filter-group" style="flex: 1; min-width: 120px;">
-            <label style="font-size: 0.65rem;">RPA (Tm/GC)</label>
+            <label style="font-size: 0.65rem;" data-i18n="dash.slider.rpa">RPA (Tm/GC)</label>
             <input type="range" id="weightRPA" min="0" max="100" value="50" oninput="applyWeights()">
         </div>
         <div class="filter-group" style="flex: 1; min-width: 120px;">
-            <label style="font-size: 0.65rem;">Custo (Oligo)</label>
+            <label style="font-size: 0.65rem;" data-i18n="dash.slider.cost">Custo (Oligo)</label>
             <input type="range" id="weightCost" min="0" max="100" value="50" oninput="applyWeights()">
         </div>
         <div style="margin-left: auto; display: flex; gap: 0.5rem;">
-            <button onclick="resetWeights()" style="font-size: 0.7rem; padding: 0.3rem 0.5rem; border: 1px solid #dc2626; background: white; color: #dc2626; border-radius: 4px; cursor: pointer;">Reset</button>
-            <button onclick="saveProfile()" style="font-size: 0.7rem; padding: 0.3rem 0.5rem; border: none; background: #dc2626; color: white; border-radius: 4px; cursor: pointer;">Salvar</button>
+            <button onclick="resetWeights()" style="font-size: 0.7rem; padding: 0.3rem 0.5rem; border: 1px solid #dc2626; background: white; color: #dc2626; border-radius: 4px; cursor: pointer;" data-i18n="dash.btn.reset">Reset</button>
+            <button onclick="saveProfile()" style="font-size: 0.7rem; padding: 0.3rem 0.5rem; border: none; background: #dc2626; color: white; border-radius: 4px; cursor: pointer;" data-i18n="dash.btn.save">Salvar</button>
         </div>
     </div>
 
     <!-- FILTERS -->
     <div class="filters">
         <div class="filter-group">
-            <label>Prioridade</label>
+            <label data-i18n="dash.filter.priority">Prioridade</label>
             <select id="filterPriority" onchange="applyFilters()">
-                <option value="all">Todas</option>
-                <option value="P1">P1 - Critica</option>
-                <option value="P2">P2 - Alta</option>
-                <option value="P3">P3 - Moderada</option>
+                <option value="all" data-i18n="dash.filter.all">Todas</option>
+                <option value="P1" data-i18n="dash.filter.p1">P1 - Critica</option>
+                <option value="P2" data-i18n="dash.filter.p2">P2 - Alta</option>
+                <option value="P3" data-i18n="dash.filter.p3">P3 - Moderada</option>
             </select>
         </div>
         <div class="filter-group">
-            <label>Classe de resistencia</label>
+            <label data-i18n="dash.filter.class">Classe de resistencia</label>
             <select id="filterClass" onchange="applyFilters()">
-                <option value="all">Todas</option>
+                <option value="all" data-i18n="dash.filter.all">Todas</option>
                 <option value="carbapenem">Carbapenems</option>
                 <option value="meticilina">Meticilina</option>
                 <option value="vancomicina">Vancomicina</option>
@@ -220,13 +220,13 @@
             </select>
         </div>
         <div class="filter-group">
-            <label>Buscar gene</label>
+            <label data-i18n="dash.filter.search">Buscar gene</label>
             <input type="text" id="filterSearch" placeholder="ex: KPC, mecA..." oninput="applyFilters()" style="width: 160px;">
         </div>
         <div class="stats-bar">
-            <div class="stat-mini"><div class="val" id="statTotal">42</div><div class="lbl">Alvos</div></div>
-            <div class="stat-mini"><div class="val" id="statVisible">42</div><div class="lbl">Visivel</div></div>
-            <div class="stat-mini"><div class="val" id="statBlast">12</div><div class="lbl">BLAST 100%</div></div>
+            <div class="stat-mini"><div class="val" id="statTotal">42</div><div class="lbl" data-i18n="dash.stat.targets">Alvos</div></div>
+            <div class="stat-mini"><div class="val" id="statVisible">42</div><div class="lbl" data-i18n="dash.stat.visible">Visivel</div></div>
+            <div class="stat-mini"><div class="val" id="statBlast">12</div><div class="lbl" data-i18n="dash.stat.blast">BLAST 100%</div></div>
         </div>
     </div>
 
@@ -235,15 +235,15 @@
         <table id="dashTable">
             <thead>
                 <tr>
-                    <th onclick="sortTable(0)">Gene <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(1)">Classe <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(2)">Prioridade <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(3)">Organismo <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(4)">Variantes <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(0)" data-i18n-html="dash.th.gene">Gene <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(1)" data-i18n-html="dash.th.class">Classe <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(2)" data-i18n-html="dash.th.priority">Prioridade <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(3)" data-i18n-html="dash.th.organism">Organismo <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(4)" data-i18n-html="dash.th.variants">Variantes <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
                     <th onclick="sortTable(5)">BLAST <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(6)">Impacto DNA (Evo2) <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th onclick="sortTable(7)">Impacto Prot (ESM2) <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
-                    <th>Acao</th>
+                    <th onclick="sortTable(6)" data-i18n-html="dash.th.dnaimp">Impacto DNA (Evo2) <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th onclick="sortTable(7)" data-i18n-html="dash.th.protimp">Impacto Prot (ESM2) <span class="sort-icon">&#x25B4;&#x25BE;</span></th>
+                    <th data-i18n-html="dash.th.action">Acao</th>
                 </tr>
             </thead>
             <tbody id="dashBody"></tbody>
