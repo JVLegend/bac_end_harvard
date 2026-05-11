@@ -78,7 +78,7 @@ wet-lab partner.
 - Clinical partners with endophthalmitis case volume
 - Seed-stage funders
 
-Contact: **contato@iaparamedicos.com.br**
+Contact: **iaparamedicos@gmail.com**
 
 Co-authorship on the forthcoming framework preprint is offered to early
 collaborators.
@@ -148,7 +148,7 @@ If you are a researcher, clinician, or funder who can move this from Phase
 0 to Phase 1:
 
 - See [CONTRIBUTING.md](CONTRIBUTING.md).
-- Write to **contato@iaparamedicos.com.br**.
+- Write to **iaparamedicos@gmail.com**.
 - Open an issue with the `partnership` or `advisor` label.
 
 If you are using ideas from this work in your own research, see

@@ -50,7 +50,7 @@ investment.
 
 ## How to start a conversation
 
-1. **Email:** contato@iaparamedicos.com.br with a brief note about your
+1. **Email:** iaparamedicos@gmail.com with a brief note about your
    interest and what you can bring.
 2. **Issue:** open an issue with the `partnership`, `advisor`, or `funding`
    label.
