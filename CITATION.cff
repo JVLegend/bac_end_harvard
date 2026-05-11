@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "SmartSepsis-Oph: AI-first molecular diagnostics design for ophthalmic infections"
+message: "If you use this software or its design outputs, please cite as below."
+type: software
+authors:
+  - given-names: João Victor
+    family-names: Pacheco Dias
+    affiliation: "IA para Médicos / HC-FMUSP (doctoral candidate)"
+    orcid: ""
+  - given-names: Gustavo
+    family-names: Sakuno
+    affiliation: "Mass Eye and Ear / Harvard Medical School (postdoctoral fellow)"
+    orcid: ""
+repository-code: "https://github.com/JVLegend/smartsepsis"
+url: "https://smartsepsis.vercel.app/"
+abstract: >
+  SmartSepsis-Oph is an AI-first computational design program for CRISPR-based
+  point-of-care diagnostics targeting ophthalmic infections — endophthalmitis,
+  microbial keratitis, and ocular surface infections. The pipeline produces
+  CRISPR-Cas12a guide-RNA libraries, isothermal RPA primer designs, in silico
+  specificity analyses, and functional variant scoring for resistance-gene
+  families relevant to ocular microbiology. As of this release the program is
+  in Phase 0 (computational design); experimental validation is pending.
+keywords:
+  - CRISPR-Cas12a
+  - point-of-care diagnostics
+  - antimicrobial resistance
+  - ophthalmology
+  - endophthalmitis
+  - AI-first design
+  - guide-RNA design
+license: MIT
+version: "0.1.0-phase0"
+date-released: "2026-05-11"

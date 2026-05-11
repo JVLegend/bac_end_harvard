@@ -1,190 +1,172 @@
-# SmartSepsis-Oph - Microbiologia Inteligente para Oftalmologia
+# SmartSepsis-Oph
 
-Pipeline computacional de IA agentica + foundation models de proteina (ESM-2 + ProtT5) + CRISPR-Cas12a em papel para diagnostico point-of-care de patogenos oculares — endoftalmite, queratite, profilaxia perioperatoria.
+**AI-first molecular diagnostics design for ophthalmic infections.**
 
-**Linha de pesquisa**: Plataforma de microbiologia inteligente para oftalmologia, com lente em oculomica e biomarcadores.
-**Projeto**: IA para Medicos / SmartSepsis-Oph (rebranded de "SmartLab BacEnd")
-**Instituicoes**: HC-FMUSP × Mass Eye and Ear (Harvard Medical School)
-**Lider clinico-cientifico**: Dr. Gustavo Sakuno (postdoc Harvard, oculomica + biomarcadores)
-**Status**: Pesquisa ativa - validacao clinica em isolados oculares pendente
+[![Status](https://img.shields.io/badge/status-Phase%200%3A%20computational%20design-orange)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Stage](https://img.shields.io/badge/stage-seeking%20wet--lab%20partners-red)]()
 
-> Audiencia primaria: oftalmologistas clinicos e cirurgioes; oculomistas; pesquisadores em multi-omica ocular.
+> **Important — read this first.** SmartSepsis-Oph is a research program in
+> computational design phase. This repository contains an AI-driven pipeline
+> for designing CRISPR-Cas12a guide-RNA libraries, RPA primers, and a
+> paper-strip assay architecture targeted at ophthalmic infections. **No
+> claims of clinical performance are made.** All results in this repository
+> are *in silico*. Experimental validation is pending and is what we are
+> actively seeking collaborators for.
 
 ---
 
-## O que faz
+## What this project is
 
-O cirurgiao oftalmologista coleta tap vitreo (endoftalmite), raspado de cornea (queratite) ou swab de superficie ocular (profilaxia), aplica em dispositivo de papel, e obtem resultado fluorescente em **~30 minutos**. O dispositivo detecta genes de resistencia antimicrobiana relevantes a infeccoes oculares (mecA p/ MRSA pos-LASIK, blaKPC/blaNDM p/ Klebsiella endoftalmite, etc.) sem necessidade de termociclador. Substitui — para decisao terapeutica imediata — o tempo de 48-72h da cultura tradicional.
+Bacterial endophthalmitis can blind an eye in 24–48 hours. Cultures take
+48–72. Existing molecular diagnostics are built for sample volumes orders of
+magnitude larger than what ophthalmology yields (sub-microliter vitreous tap,
+corneal scrape, ocular swab).
+
+SmartSepsis-Oph attacks this gap with an AI-first design pipeline:
+
+- **Guide-RNA library design** (CRISPR-Cas12a) for 12 resistance-gene
+  families relevant to ocular infection, prioritized for the Brazilian
+  epidemiological context.
+- **In silico specificity modeling** against public reference repositories.
+- **Isothermal RPA primer design** compatible with thermocycler-free,
+  point-of-care workflows.
+- **Functional impact scoring** of variants (inspired by Evo 2 / EVEE).
+- **Paper-strip assay architecture** under design.
+
+First declared target: ***Staphylococcus aureus* / mecA** — the most common
+and best-validated combination in the CRISPR-Dx literature.
+
+## What this project is *not*
+
+- Not a medical device.
+- Not validated experimentally.
+- Not a substitute for culture, antibiogram, or clonal surveillance.
+- Not approved for any clinical use under ANVISA, FDA, or any regulatory
+  body.
+
+Performance metrics (sensitivity, specificity, limit of detection,
+time-to-result) will only be reported after experimental validation with a
+wet-lab partner.
+
+---
+
+## Phased roadmap
+
+| Phase | Scope | Status |
+|---|---|---|
+| **0 — Computational design** | Guide and primer libraries, in silico specificity, scoring, structural analysis. | **Current** |
+| **1 — Wet-lab feasibility** | Single-organism, single-gene validation (S. aureus / mecA) in cultured isolates. | Seeking wet-lab partner |
+| **2 — Panel expansion** | Multiplex of priority resistance markers, real-amplicon validation. | Planned |
+| **3 — Clinical validation** | Prospective sampling under IRB, performance against culture and PCR. | Planned |
+| **4 — Regulatory submission** | IVD (RDC 830/2023) pathway and equivalent. | Planned |
+
+---
+
+## Team
+
+- **João Victor Pacheco Dias** — Founder & AI lead. Doctoral candidate
+  HC-FMUSP (Medical AI). CTO WingsAI. ITU/WHO member, AI for Health.
+  Technical advisor CBO.
+- **Dr. Gustavo Sakuno** — Clinical advisor. Postdoc, Mass Eye and Ear /
+  Harvard Medical School. PhD USP, Ophthalmology & Oculomics.
+
+**We are actively seeking:**
+- Senior scientific advisors in CRISPR-Dx, ocular microbiology, and
+  molecular pathology
+- Wet-lab collaborators with CRISPR-Dx or isothermal amplification capability
+- Clinical partners with endophthalmitis case volume
+- Seed-stage funders
+
+Contact: **contato@iaparamedicos.com.br**
+
+Co-authorship on the forthcoming framework preprint is offered to early
+collaborators.
+
+---
+
+## Repository layout
 
 ```
-Amostra -> Lise (fibra de vidro) -> Extracao (fluxo lateral em papel)
--> Amplificacao RPA (37C, 20 min) -> Trans-clivagem Cas12a -> Leitura fluorescente
+.
+├── README.md                  # this file
+├── LICENSE                    # MIT
+├── CONTRIBUTING.md            # how to engage with the project
+├── CITATION.cff               # academic citation metadata
+├── public/                    # project website (PT-BR / EN)
+├── src/                       # pipeline modules (work in progress)
+├── data/                      # output artifacts (json, csv)
+├── card_data/                 # CARD database integration cache
+├── *.py                       # design pipeline scripts (see below)
+└── docs/                      # design notes and rationale
 ```
 
-### Numeros do projeto
+### Pipeline scripts at root
 
-| Metrica | Valor |
-|---------|-------|
-| Alvos AMR processados | 42 (12 familias + 30 variantes) |
-| BLAST identity (referencias) | 100% em todas as 12 familias |
-| Custo por teste | ~R$25 (vs R$200+ GeneXpert) |
-| Tempo de resultado | ~30 minutos |
-| Bases de dados | NCBI RefSeq, AMRFinderPlus, BLAST nt |
+These scripts implement the design pipeline. Stable entry points:
 
----
+- `fetch_sequences.py` — pulls reference sequences from NCBI
+- `design_guides.py` — CRISPR-Cas12a guide RNA design
+- `covariance_probes.py` — re-scoring with 18 biophysical features
+- `design_primers.py` — RPA primer design (isothermal, 37 °C)
+- `specificity_check.py` — BLAST-based specificity analysis
+- `evo2_scoring.py` — functional variant impact scoring
+- `card_integration.py` — CARD database enrichment
+- `clinical_interpreter.py` — natural-language interpretation
+- `multiplex_panel.py` — multiplex panel optimization
+- `run_batch.py` — batch orchestration
 
-## Painel de Alvos
-
-| Familia genica | Classe de resistencia | Variantes cobertas | Relevancia clinica |
-|----------------|-----------------------|---------------------|--------------------|
-| **mecA** | Meticilina (beta-lactamicos) | mecA, mecA1, mecA2 | MRSA - principal HAI em UTIs |
-| **blaKPC** | Carbapenems | KPC-2, KPC-3, KPC-4, KPC-5, KPC-11, KPC-30, KPC-31 | CRE - prioridade critica OMS |
-| **blaNDM** | Carbapenems (MBL) | NDM-1, NDM-2, NDM-5, NDM-7 | Crescente no Brasil desde 2012 |
-| **vanA** | Vancomicina | vanA (2 seq. ref.) | VRE - surtos recorrentes |
-| **mcr** | Colistina | mcr-1, mcr-1.1, mcr-5 | Ultimo recurso terapeutico |
-| **blaCTX-M** | Cefalosporinas (ESBL) | CTX-M-2, 8, 9, 14, 15, 27 | ESBL mais comum no Brasil |
-| **blaOXA-48** | Carbapenems (classe D) | OXA-48, OXA-181, OXA-232 | Casos importados crescentes |
-| **blaVIM** | Carbapenems (MBL) | VIM-1, VIM-2, VIM-4 | P. aeruginosa resistente |
-| **blaIMP** | Carbapenems (MBL) | IMP-1, IMP-6 | Esporadico em P. aeruginosa |
-| **blaGES** | Carbapenems (classe A) | GES-1, GES-5 | Emergente |
-| **qnrS** | Fluoroquinolonas | qnrS1, qnrS2 | Resistencia por plasmideo |
-| **armA** | Aminoglicosideos | armA (2 seq. ref.) | Co-localizado com NDM |
+> Note: this layout reflects the project's research-prototype origin. We
+> intend to migrate everything under `src/` and provide a stable
+> `pyproject.toml` ahead of the framework preprint. Until then, expect rough
+> edges.
 
 ---
 
-## Como usar
+## Reproducing the design pipeline
 
-### Pre-requisitos
+> *To be expanded.* We are preparing reproducibility documentation alongside
+> the framework preprint. If you want to reproduce a specific result now,
+> open an issue or write to us.
+
+A minimal flow looks like:
 
 ```bash
-pip install -r requirements.txt
-```
-
-Dependencias: `biopython >= 1.83`, `requests >= 2.31.0`
-
-### Execucao sequencial
-
-```bash
-# 1. Buscar sequencias DNA dos genes AMR no NCBI
 python fetch_sequences.py
-
-# 2. Projetar crRNA guides Cas12a (scan PAM TTTV + scoring)
 python design_guides.py
-
-# 3. Projetar primers RPA (30-35nt, amplicon 100-200bp)
+python covariance_probes.py
 python design_primers.py
-
-# 4. Validar especificidade via BLAST (requer internet)
 python specificity_check.py
-
-# 5. Montar painel final + folha de encomenda de oligos
-python multiplex_panel.py
-```
-
-### Execucao em batch
-
-```bash
-# Processar 4 genes de uma vez
 python run_batch.py 4
-
-# Pular BLAST (mais rapido, para iteracao)
-python run_batch.py 4 --skip-blast
-```
-
-### Analise de conservacao de variantes
-
-```bash
-python conservation_analysis.py
 ```
 
 ---
 
-## Arquitetura do Pipeline
+## How to engage
 
-```
-config.py (parametros centrais: alvos, Cas12a, RPA)
-    |
-utils.py (funcoes compartilhadas: rev_comp, GC%, Tm, PAM scan)
-    |
-    v
-fetch_sequences.py --> design_guides.py --> design_primers.py
-                                                    |
-                                                    v
-                                        specificity_check.py --> multiplex_panel.py
-                                                    |
-                                        conservation_analysis.py
-```
+If you are a researcher, clinician, or funder who can move this from Phase
+0 to Phase 1:
 
-### Estrutura de diretorios
+- See [CONTRIBUTING.md](CONTRIBUTING.md).
+- Write to **contato@iaparamedicos.com.br**.
+- Open an issue with the `partnership` or `advisor` label.
 
-```
-bac_end_harvard/
-|-- config.py                    # Definicoes de alvos, parametros Cas12a/RPA
-|-- utils.py                     # Funcoes bioinformaticas compartilhadas
-|-- fetch_sequences.py           # Download de sequencias NCBI Entrez
-|-- design_guides.py             # Design de crRNA (scan PAM + scoring)
-|-- design_primers.py            # Design de primers RPA
-|-- specificity_check.py         # Validacao BLAST
-|-- multiplex_panel.py           # Montagem do painel + folha de oligos
-|-- conservation_analysis.py     # Analise de cobertura de variantes
-|-- tracking.py                  # Sistema de tracking do pipeline
-|-- run_batch.py                 # Orquestrador batch
-|-- targets_brazil.csv           # 12 alvos de referencia
-|-- targets_brazil_variants.csv  # 47 variantes clinicas
-|-- requirements.txt             # Dependencias Python
-|-- public/index.html            # Frontend/vitrine do projeto
-|-- TODO.md                      # Tarefas pendentes
-|-- MELHORIAS.md                 # Roadmap de melhorias futuras
-|-- sequences/                   # Sequencias FASTA baixadas
-|-- guides/                      # crRNA guides projetados (.tsv)
-|-- primers/                     # Primers RPA projetados (.tsv)
-|-- reports/                     # Relatorios finais e folhas de oligos
-```
+If you are using ideas from this work in your own research, see
+[CITATION.cff](CITATION.cff).
 
 ---
 
-## Tecnologia CRISPR-Cas12a
+## License
 
-- **Enzima**: LbCas12a / AsCas12a
-- **PAM**: TTTV (T-T-T-[A/C/G]) na fita nao-alvo, 5' do spacer
-- **Spacer**: 20-24 nt (otimo: 20 nt)
-- **GC ideal**: 40-60%
-- **Amplificacao**: RPA isotermica a 37C, 20 min, amplicon 100-200bp
-- **Reporter**: ssDNA-FQ (5'-6-FAM / 3'-BHQ-1), trans-clivagem
-- **Leitura**: Fluorescencia UV ou camera de smartphone
+MIT — see [LICENSE](LICENSE). We chose a permissive license because we
+believe open science accelerates this field. Derivative works that lead to
+clinical products should comply with all applicable regulatory frameworks.
 
 ---
 
-## Fontes de Dados
+## Disclaimer
 
-- **NCBI Entrez API** - Sequencias RefSeq de genes AMR
-- **NCBI BLAST** - Validacao contra 124M genomas (banco nt)
-- **AMRFinderPlus** - Catalogo de referencia (11.251 entradas)
-- **ANVISA/BR-GLASS** - Dados epidemiologicos brasileiros para priorizacao
-
----
-
-## Time
-
-| Nome | Papel | Afiliacao |
-|------|-------|-----------|
-| **Joao Victor Pacheco Dias** | CTO & AI Architect | PhD candidate HC-FMUSP, CTO WingsAI, ITU/WHO AI for Health |
-| **Dr. Gustavo Sakuno** | Clinical & Scientific Lead | Postdoc Harvard Medical School, Broad Institute, PhD USP |
-| **Raul Primo** | Software Engineer | Engenheiro de Software, Pipeline development |
-
----
-
-## Roadmap
-
-Veja [MELHORIAS.md](MELHORIAS.md) para o roadmap completo de evolucao do projeto, incluindo integracoes com modelos genomicos fundacionais (Evo 2), CARD database, e explicacoes por IA.
-
-Veja [TODO.md](TODO.md) para tarefas pendentes e em andamento.
-
----
-
-## Licenca e Uso
-
-Projeto de pesquisa - uso nao-diagnostico. Validacao clinica pendente.
-Estrategia regulatoria: Fase 1 (pesquisa) -> Fase 2 (submissao IVD ANVISA, RDC 830/2023).
-
-**Contato**: [IA para Medicos](https://www.iaparamedicos.com.br/)
+SmartSepsis-Oph is a research program by **IA para Médicos**. The code and
+designs in this repository are for research use only. No claim of clinical
+performance is made. No medical device approval has been sought or granted.
+Do not use any output of this pipeline to make clinical decisions.

@@ -113,22 +113,22 @@ footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border
 
 <!-- PAPER 1 -->
 <section class="paper" id="paper1">
-<span class="pid">Paper 01</span> <span class="priority-tag p-high">P0 — clínico</span>
-<h2>SmartEndoph: AI-driven 30-min CRISPR-Cas12a diagnostic for bacterial endophthalmitis</h2>
+<span class="pid">Paper 01</span> <span class="priority-tag p-high">P0 — clínico (planejado)</span>
+<h2>SmartEndoph: AI-driven CRISPR-Cas12a diagnostic framework for bacterial endophthalmitis</h2>
 <div class="meta">
-    <span>tipo: original article</span>
+    <span>tipo: original article (planejado, pendente validação experimental)</span>
     <span>target: <em>Ophthalmology</em>, <em>Br J Ophthalmol</em>, <em>JAMA Ophthalmol</em></span>
-    <span>colab: HC-FMUSP + Mass Eye and Ear</span>
+    <span>colab: João Victor Pacheco Dias (IA para Médicos / HC-FMUSP) + Dr. Gustavo Sakuno (Mass Eye and Ear / Harvard)</span>
 </div>
-<p><strong>Hipótese:</strong> Pipeline CRISPR-Cas12a + RPA isotermal entrega resultado de painel AMR (12 famílias gênicas, 43 variantes) em 30 min a partir de tap vítreo, sem termociclador, com sensibilidade clínica comparável a PCR + cultura.</p>
-<p><strong>Por que oftalmologia:</strong> Endoftalmite pós-cirúrgica é emergência médica &mdash; perda visual permanente em horas. Prática atual: vancomicina + ceftazidima empíricos &gt; cultura 48-72h &gt; ajuste tardio. Patógenos prevalentes (<em>S. epidermidis</em>, <em>S. aureus</em>, <em>P. aeruginosa</em>, <em>Klebsiella</em>) já estão no nosso painel.</p>
-<p><strong>Dados:</strong></p>
+<p><strong>Hipótese a testar:</strong> um pipeline CRISPR-Cas12a + RPA isotermal pode entregar resultado de painel AMR (12 famílias gênicas) em tempo significativamente menor que cultura, a partir de amostra ocular sub-microlitro, com sensibilidade clínica comparável a PCR + cultura. Performance específica (tempo, LoD, sensibilidade, especificidade) só será reportada após validação experimental.</p>
+<p><strong>Por que oftalmologia:</strong> Endoftalmite pós-cirúrgica é emergência médica &mdash; perda visual permanente em horas. Prática atual: vancomicina + ceftazidima empíricos &gt; cultura 48-72h &gt; ajuste tardio. Patógenos prevalentes (<em>S. epidermidis</em>, <em>S. aureus</em>, <em>P. aeruginosa</em>, <em>Klebsiella</em>) já estão no nosso painel computacional.</p>
+<p><strong>Status dos dados:</strong></p>
 <ul>
-    <li>43 variantes AMR validadas <em>in silico</em> (BLAST 100% identity)</li>
-    <li>Validação experimental em isolados oculares HC-FMUSP (planejada)</li>
-    <li>Cohort retrospectivo de endoftalmite Mass Eye and Ear (Dr. Sakuno)</li>
+    <li>Biblioteca computacional de design para 12 famílias / 43 variantes AMR (BLAST in silico contra repositórios públicos)</li>
+    <li>Validação experimental em isolados oculares — planejada, pendente parceria wet-lab</li>
+    <li>Cohort retrospectivo de endoftalmite — planejado com Dr. Sakuno (Mass Eye and Ear), pendente IRB</li>
 </ul>
-<div class="target"><strong>Novelty:</strong> Primeiro dispositivo POC oftalmológico de painel AMR molecular. Custo R$25/teste vs R$200+ PCR atual.</div>
+<div class="target"><strong>Novelty proposto:</strong> Primeiro framework AI-first de design de painel POC molecular específico para infecção ocular. Custo unitário do teste final reportado apenas após prototipagem.</div>
 </section>
 
 <!-- PAPER 2 -->
