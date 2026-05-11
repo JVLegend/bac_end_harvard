@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartSepsis — Estrutura 3D das Variantes AMR</title>
+    <title>SmartSepsis - Estrutura 3D das Variantes AMR</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
     <style>
@@ -189,8 +189,8 @@ function renderVariantList() {
                     ${s.variant} <span class="pill ${tag}" style="float:right; margin-top:2px;">${s.impact_type.replace('_', ' ').toLowerCase()}</span>
                 </button>`;
             } else {
-                // Sequencia >540aa precisa GPU dedicada (mecA, mcr) — link AlphaFold Server
-                html += `<button onclick="showLongSeq('${s.variant}', ${s.protein_length || 0})" id="btn-${s.variant}" style="opacity:0.6;" title="Sequencia longa (>540aa) — predizer via AlphaFold Server">
+                // Sequencia >540aa precisa GPU dedicada (mecA, mcr) - link AlphaFold Server
+                html += `<button onclick="showLongSeq('${s.variant}', ${s.protein_length || 0})" id="btn-${s.variant}" style="opacity:0.6;" title="Sequencia longa (>540aa) - predizer via AlphaFold Server">
                     ${s.variant} <span class="pill" style="float:right; margin-top:2px; background:rgba(140,21,21,0.2); color:#ff8a8a;">${s.protein_length || '?'}aa · GPU</span>
                 </button>`;
             }
@@ -260,7 +260,7 @@ function renderDetails(name, score, phen) {
 function showLongSeq(name, length) {
     const score = PROTEIN_SCORES[name] || {};
     document.getElementById('currentVariant').textContent = name + ' (sequencia longa)';
-    document.getElementById('currentMeta').textContent = `${length}aa — requer GPU dedicada (M2 16GB nao suporta).`;
+    document.getElementById('currentMeta').textContent = `${length}aa - requer GPU dedicada (M2 16GB nao suporta).`;
     if (currentComponent) stage.removeAllComponents();
     document.getElementById('detailPanel').innerHTML = `
         <div class="info-card">

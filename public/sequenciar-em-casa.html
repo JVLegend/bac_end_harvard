@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sequenciar o Próprio Genoma em Casa — Versão Brasileira | SmartLab</title>
+    <title>Sequenciar o Próprio Genoma em Casa - Versão Brasileira | SmartLab</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -139,7 +139,7 @@
     <div class="kicker" data-i18n="seq.hero.kicker">Guia Prático · Versão Brasileira</div>
     <h1 data-i18n-html="seq.hero.h1">Quero sequenciar meu <em>genoma inteiro</em> na cozinha de casa.</h1>
     <p class="lede" data-i18n-html="seq.hero.lede">
-        Sim, é possível. Sim, no Brasil. Sim, com imposto. Este é o passo-a-passo honesto — equipamento, reagentes, preços em real, armadilhas de importação, e como conectar tudo isso à visão do SmartLab. Adaptado livremente do <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">post original de Seth Showes</a>.
+        Sim, é possível. Sim, no Brasil. Sim, com imposto. Este é o passo-a-passo honesto - equipamento, reagentes, preços em real, armadilhas de importação, e como conectar tudo isso à visão do SmartLab. Adaptado livremente do <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">post original de Seth Showes</a>.
     </p>
     <div class="meta">
         <span data-i18n-html="seq.meta.difficulty"><strong>Dificuldade:</strong> Médio-alto (requer paciência de pipetagem)</span>
@@ -154,7 +154,7 @@
 <section id="por-que">
     <h2 data-i18n="seq.s1.title">Por que sequenciar o próprio genoma?</h2>
     <p>
-        Tem duas razões que se misturam. A primeira é <strong>curiosidade de fuçador</strong>: quem passou a adolescência desmontando computador quer desmontar biologia também. A segunda é mais pessoal — história familiar. Se sua linhagem carrega um padrão que ninguém sabe explicar (doença autoimune, câncer precoce, resposta estranha a remédio), você eventualmente vai querer olhar o código-fonte.
+        Tem duas razões que se misturam. A primeira é <strong>curiosidade de fuçador</strong>: quem passou a adolescência desmontando computador quer desmontar biologia também. A segunda é mais pessoal - história familiar. Se sua linhagem carrega um padrão que ninguém sabe explicar (doença autoimune, câncer precoce, resposta estranha a remédio), você eventualmente vai querer olhar o código-fonte.
     </p>
     <p>
         Nos EUA, o Seth Showes fez isso na mesa da cozinha dele por cerca de US$ 5.000 no total. A pergunta deste guia é: <strong>dá para replicar no Brasil?</strong> Resposta curta: dá, mas tem que negociar com a Receita Federal, aceitar que o frete vai dobrar o preço de alguns reagentes, e ter estômago para errar uma flow cell de R$ 9.000 porque entrou bolha. Resposta longa: continua lendo.
@@ -170,13 +170,13 @@
 <section id="como-funciona">
     <h2 data-i18n="seq.s2.title">Como a mágica acontece: MinION em 90 segundos</h2>
     <p>
-        O equipamento central é o <a href="https://nanoporetech.com/products/sequence/minion" target="_blank" rel="noopener">MinION Mk1D da Oxford Nanopore</a> — um sequenciador do tamanho de um grampeador. Dentro dele, uma <strong>flow cell</strong> (cartucho descartável) tem cerca de 2.000 nanoporos de proteína alinhados em uma membrana. Você aplica voltagem, o DNA é puxado através desses poros, e cada base (A, C, G, T) altera a corrente de um jeito único. Um software lê esses sinais elétricos e reconstrói a sequência.
+        O equipamento central é o <a href="https://nanoporetech.com/products/sequence/minion" target="_blank" rel="noopener">MinION Mk1D da Oxford Nanopore</a> - um sequenciador do tamanho de um grampeador. Dentro dele, uma <strong>flow cell</strong> (cartucho descartável) tem cerca de 2.000 nanoporos de proteína alinhados em uma membrana. Você aplica voltagem, o DNA é puxado através desses poros, e cada base (A, C, G, T) altera a corrente de um jeito único. Um software lê esses sinais elétricos e reconstrói a sequência.
     </p>
     <p>
         Diferente do sequenciamento de cadeia curta (tipo o que a 23andMe usa, com leituras de 150 bases), o nanoporo produz leituras de <strong>10.000 a 50.000+ bases</strong> por vez. Isso muda o jogo para detectar variantes estruturais, regiões repetitivas, e genes difíceis. Também dá para ler metilação (epigenética) na mesma run, sem reagente extra.
     </p>
     <p>
-        Um recurso matador é o <strong>adaptive sampling</strong>: o software lê as primeiras 500 bases de cada molécula, compara com o genoma de referência, e decide em tempo real se vale a pena continuar lendo ou ejetar. Na prática, isso é enriquecimento de target "de graça" — sem PCR, sem sondas, sem nada. Você dá uma lista BED de regiões de interesse e o aparelho foca nelas.
+        Um recurso matador é o <strong>adaptive sampling</strong>: o software lê as primeiras 500 bases de cada molécula, compara com o genoma de referência, e decide em tempo real se vale a pena continuar lendo ou ejetar. Na prática, isso é enriquecimento de target "de graça" - sem PCR, sem sondas, sem nada. Você dá uma lista BED de regiões de interesse e o aparelho foca nelas.
     </p>
 </section>
 
@@ -184,7 +184,7 @@
 <section id="hardware">
     <h2 data-i18n="seq.s3.title">Equipamento: o que comprar, onde, e por quanto</h2>
     <p>
-        A realidade brasileira é dura em uma parte e macia em outra. Dura: MinION e reagentes importados chegam com 40–60% de imposto + frete caro. Macia: equipamento de bancada genérico (heat block, vórtex, centrífuga) tem mercado usado robusto em universidades e ONGs — e Aliexpress/OLX funciona para o que não é crítico.
+        A realidade brasileira é dura em uma parte e macia em outra. Dura: MinION e reagentes importados chegam com 40–60% de imposto + frete caro. Macia: equipamento de bancada genérico (heat block, vórtex, centrífuga) tem mercado usado robusto em universidades e ONGs - e Aliexpress/OLX funciona para o que não é crítico.
     </p>
 
     <table class="cost-table">
@@ -194,7 +194,7 @@
         <tbody>
             <tr>
                 <td><strong>MinION Mk1D</strong><small>Sequenciador principal, reutilizável</small></td>
-                <td>Oxford Nanopore direto (store.nanoporetech.com) — envio UK/EU, declarar no Siscomex</td>
+                <td>Oxford Nanopore direto (store.nanoporetech.com) - envio UK/EU, declarar no Siscomex</td>
                 <td>~R$ 32.000</td>
             </tr>
             <tr>
@@ -249,7 +249,7 @@
 <section id="reagentes">
     <h2 data-i18n="seq.s4.title">Reagentes: kits, onde achar, e como driblar o "pacote de 24"</h2>
     <p>
-        Aqui mora a parte cruel: kits de sequenciamento são vendidos em formato high-throughput. O SQK-LSK114 vem com 6 reações mínimas, o NEBNext Companion com 24. Se você vai fazer <strong>uma run</strong>, está pagando pelo lote inteiro — ou divide com amigos, ou tenta revender as alíquotas.
+        Aqui mora a parte cruel: kits de sequenciamento são vendidos em formato high-throughput. O SQK-LSK114 vem com 6 reações mínimas, o NEBNext Companion com 24. Se você vai fazer <strong>uma run</strong>, está pagando pelo lote inteiro - ou divide com amigos, ou tenta revender as alíquotas.
     </p>
 
     <table class="cost-table">
@@ -259,17 +259,17 @@
         <tbody>
             <tr>
                 <td><strong>SQK-LSK114</strong><small>Kit de ligação Oxford Nanopore</small></td>
-                <td>6 reações — Oxford Nanopore direto</td>
+                <td>6 reações - Oxford Nanopore direto</td>
                 <td>~R$ 6.000<small>~R$ 1.000/rxn</small></td>
             </tr>
             <tr>
                 <td><strong>NEBNext Companion v2 (E7672S)</strong><small>Enzimas de reparo + ligação</small></td>
-                <td>24 reações — NEB via Uniscience ou Sinapse Biotech</td>
+                <td>24 reações - NEB via Uniscience ou Sinapse Biotech</td>
                 <td>~R$ 12.500<small>~R$ 520/rxn</small></td>
             </tr>
             <tr>
                 <td><strong>Monarch T3010</strong><small>Extração de DNA (swab bucal)</small></td>
-                <td>50 preps — NEB via distribuidor BR</td>
+                <td>50 preps - NEB via distribuidor BR</td>
                 <td>~R$ 1.500<small>~R$ 30/prep</small></td>
             </tr>
             <tr>
@@ -307,13 +307,13 @@
 <!-- PASSO A PASSO -->
 <section id="passo-a-passo">
     <h2 data-i18n="seq.s5.title">O workflow de 3 dias</h2>
-    <p>Dia 1: prepara. Dia 2–3: sequencia e basecalling. Dia 4 em diante: análise. Abaixo o resumo executável — os detalhes completos estão nos PDFs da ONT e NEB linkados em cada passo.</p>
+    <p>Dia 1: prepara. Dia 2–3: sequencia e basecalling. Dia 4 em diante: análise. Abaixo o resumo executável - os detalhes completos estão nos PDFs da ONT e NEB linkados em cada passo.</p>
 
     <div class="phase-card">
         <div class="phase-num">01</div>
         <div class="phase-body">
             <strong>Setup do MinION & validação da flow cell</strong>
-            <p>Instalar MinKNOW (Mac/Win/Linux), aquecer 20 min, rodar pore check. Precisa de <strong>≥800 poros ativos</strong> para valer a pena. Se estiver abaixo disso, contatar a ONT — às vezes dão reposição.</p>
+            <p>Instalar MinKNOW (Mac/Win/Linux), aquecer 20 min, rodar pore check. Precisa de <strong>≥800 poros ativos</strong> para valer a pena. Se estiver abaixo disso, contatar a ONT - às vezes dão reposição.</p>
         </div>
         <div class="phase-time">~30 min</div>
     </div>
@@ -321,7 +321,7 @@
     <div class="phase-card">
         <div class="phase-num">02</div>
         <div class="phase-body">
-            <strong>Extração de DNA — swab bucal</strong>
+            <strong>Extração de DNA - swab bucal</strong>
             <p>Raspa a bochecha por 60s de cada lado com swab <strong>flocado</strong> (não use cotonete comum). Ressuspende em PBS, segue protocolo NEB Monarch T3010. <strong>Aquecer o elution buffer a 60 °C antes da eluição final</strong> (faz diferença enorme no yield).</p>
         </div>
         <div class="phase-time">~30 min</div>
@@ -330,8 +330,8 @@
     <div class="phase-card">
         <div class="phase-num">03</div>
         <div class="phase-body">
-            <strong>Library prep — reparo, ligação, limpeza</strong>
-            <p>Reparo FFPE + end-prep → ligação de adapters → 2× limpeza AMPure. <strong>Nunca dar vórtex em mix de enzima</strong> (glicerol espuma e a enzima perde atividade — só dar flicks no tubo). Na segunda limpeza, usar <strong>LFB em vez de etanol</strong> (etanol arranca a proteína motora do adapter).</p>
+            <strong>Library prep - reparo, ligação, limpeza</strong>
+            <p>Reparo FFPE + end-prep → ligação de adapters → 2× limpeza AMPure. <strong>Nunca dar vórtex em mix de enzima</strong> (glicerol espuma e a enzima perde atividade - só dar flicks no tubo). Na segunda limpeza, usar <strong>LFB em vez de etanol</strong> (etanol arranca a proteína motora do adapter).</p>
         </div>
         <div class="phase-time">~70 min</div>
     </div>
@@ -339,7 +339,7 @@
     <div class="phase-card">
         <div class="phase-num">04</div>
         <div class="phase-body">
-            <strong>Carregar a flow cell — o passo mais perigoso</strong>
+            <strong>Carregar a flow cell - o passo mais perigoso</strong>
             <p>Uma única bolha de ar mata poros <strong>permanentemente</strong>. Assistir ao vídeo oficial da ONT antes de começar. Usar P1000 e controlar volume pelo dial (não pelo pistão) para aspirar o buffer de priming. R$ 9.000 podem virar pó em 5 segundos de distração.</p>
         </div>
         <div class="phase-time">~15 min</div>
@@ -348,7 +348,7 @@
     <div class="phase-card">
         <div class="phase-num">05</div>
         <div class="phase-body">
-            <strong>Sequenciar — 48h no canto do escritório</strong>
+            <strong>Sequenciar - 48h no canto do escritório</strong>
             <p>MinKNOW faz basecalling em tempo real (modelo HAC). Monitorar pore occupancy: se cair abaixo de 30% no meio da run, rodar o Wash Kit e recarregar com a reserva da library. Throughput esperado: 20–40 Gb totais.</p>
         </div>
         <div class="phase-time">48h</div>
@@ -378,7 +378,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
 
     <div class="callout tip">
         <div class="callout-label" data-i18n="seq.s5.callout.label">Dica: adaptive sampling é seu amigo</div>
-        <p>Em vez de sequenciar o genoma todo (que vai exigir 3 runs para 30× de cobertura), defina um <strong>painel de 30–50 genes clinicamente relevantes</strong> — farmacogenômica (CYP2D6, CYP2C19), BRCA1/2, APOE, MC4R etc. Em ~1% do genoma, você consegue 30–50× de cobertura em uma única flow cell. Custa o mesmo e entrega dados bem mais úteis do que 5× WGS raso. Use o Claude para converter lista de genes em arquivo BED rapidamente.</p>
+        <p>Em vez de sequenciar o genoma todo (que vai exigir 3 runs para 30× de cobertura), defina um <strong>painel de 30–50 genes clinicamente relevantes</strong> - farmacogenômica (CYP2D6, CYP2C19), BRCA1/2, APOE, MC4R etc. Em ~1% do genoma, você consegue 30–50× de cobertura em uma única flow cell. Custa o mesmo e entrega dados bem mais úteis do que 5× WGS raso. Use o Claude para converter lista de genes em arquivo BED rapidamente.</p>
     </div>
 </section>
 
@@ -395,17 +395,17 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
         </thead>
         <tbody>
             <tr>
-                <td><strong>Barato — uma run</strong><small>Painel de 50 genes, 30× cobertura</small></td>
+                <td><strong>Barato - uma run</strong><small>Painel de 50 genes, 30× cobertura</small></td>
                 <td>Equipamento (R$ 40k) + consumíveis de 1 run (R$ 11k)</td>
                 <td>~R$ 51.000</td>
             </tr>
             <tr>
-                <td><strong>Razoável — 3 runs</strong><small>WGS 30× ao longo de um ano</small></td>
+                <td><strong>Razoável - 3 runs</strong><small>WGS 30× ao longo de um ano</small></td>
                 <td>Equipamento (R$ 40k) + 3 flow cells + reagentes parcialmente divididos</td>
                 <td>~R$ 65.000</td>
             </tr>
             <tr>
-                <td><strong>Coletivo — grupo de 6</strong><small>Dividindo kits e equipamento</small></td>
+                <td><strong>Coletivo - grupo de 6</strong><small>Dividindo kits e equipamento</small></td>
                 <td>Equipamento compartilhado + kits divididos entre 6 pessoas</td>
                 <td>~R$ 15.000/pessoa</td>
             </tr>
@@ -419,7 +419,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
     </table>
 
     <p>
-        Então por que não pagar o lab comercial e pronto? Porque o ponto aqui não é economia — é <strong>agência</strong>. Com o MinION em casa, você pode rodar painéis específicos quando quiser, acessar dados brutos (pod5) — que laboratório nenhum entrega — e fazer parte da revolução da biotecnologia acessível. É a diferença entre alugar um servidor e ter seu próprio homelab.
+        Então por que não pagar o lab comercial e pronto? Porque o ponto aqui não é economia - é <strong>agência</strong>. Com o MinION em casa, você pode rodar painéis específicos quando quiser, acessar dados brutos (pod5) - que laboratório nenhum entrega - e fazer parte da revolução da biotecnologia acessível. É a diferença entre alugar um servidor e ter seu próprio homelab.
     </p>
 </section>
 
@@ -459,7 +459,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
 <section id="proximos">
     <h2 data-i18n="seq.s9.title">Quero começar. Por onde?</h2>
     <ol>
-        <li><strong>Encontre uma comunidade.</strong> Grupos no Telegram de biohacker brasileiro existem. Biofábrica ETFMG em Belo Horizonte, Biohacking.Rio, Bioclub Brasil. Não faça isso sozinho no primeiro run — o custo de errar é alto.</li>
+        <li><strong>Encontre uma comunidade.</strong> Grupos no Telegram de biohacker brasileiro existem. Biofábrica ETFMG em Belo Horizonte, Biohacking.Rio, Bioclub Brasil. Não faça isso sozinho no primeiro run - o custo de errar é alto.</li>
         <li><strong>Crie conta na ONT Store</strong> e peça orçamento formal. Eles emitem commercial invoice necessária para o Siscomex.</li>
         <li><strong>Calibre pipetas</strong> em lab certificado antes de gastar o primeiro reagente.</li>
         <li><strong>Pratique com DNA barato primeiro.</strong> Compre DNA de E. coli ou lambda (R$ 50), extraia, faça library prep sem flow cell. Se errar, só perde R$ 500 em reagente. Só quando acertar 3 vezes seguidas, compre a flow cell.</li>
@@ -480,7 +480,7 @@ mosdepth --by panels/farmacogenes.bed cov aligned.bam</code></pre>
         <strong>SmartLab BacEnd</strong> · <a href="index.html">Projeto principal</a> · <a href="smartwetlab.html">Smart Wet Lab</a> · <a href="https://www.iaparamedicos.com.br/" target="_blank">IA para Médicos</a>
     </p>
     <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 1rem">
-        Adaptado de <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">iwantosequencemygenomeathome.com</a> por Seth Showes. Versão brasileira livre, sem afiliação. Preços são estimativas baseadas em cotações informais de 2026 — confirme antes de comprar.
+        Adaptado de <a href="https://iwantosequencemygenomeathome.com/" target="_blank" rel="noopener">iwantosequencemygenomeathome.com</a> por Seth Showes. Versão brasileira livre, sem afiliação. Preços são estimativas baseadas em cotações informais de 2026 - confirme antes de comprar.
     </p>
     <p style="font-size: 0.78rem; opacity: 0.4; margin-top: 0.5rem">© 2026 IA para Médicos.</p>
 </footer>
