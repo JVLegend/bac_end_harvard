@@ -1,0 +1,36 @@
+name,gene_family,gene_accession,organism,pathogen,clinical_relevance,priority
+mecA1,mecA1,NG_047950.1,Multiple,METHICILLIN,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA1,P1-var
+mecA2,mecA2,NG_047952.1,Multiple,METHICILLIN,PBP2a family beta-lactam-resistant peptidoglycan transpeptidase MecA2,P1-var
+blaKPC-2,blaKPC,NG_049253.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase KPC-2,P1-var
+blaKPC-3,blaKPC,NG_049257.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase KPC-3,P1-var
+blaKPC-4,blaKPC,NG_049258.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase KPC-4,P2-var
+blaKPC-5,blaKPC,NG_049259.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase KPC-5,P2-var
+blaKPC-11,blaKPC,NG_049244.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase KPC-11,P2-var
+blaKPC-30,blaKPC,NG_054685.1,Multiple,CARBAPENEM,inhibitor-resistant carbapenem-hydrolyzing class A beta-lactamase KPC-30,P1-var
+blaKPC-31,blaKPC,NG_055494.1,Multiple,CEFIDEROCOL/CEPHALOSPORIN,inhibitor-resistant extended-spectrum class A beta-lactamase KPC-31,P1-var
+blaNDM-1,blaNDM,NG_049326.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase NDM-1,P1-var
+blaNDM-2,blaNDM,NG_049334.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase NDM-2,P2-var
+blaNDM-5,blaNDM,NG_049337.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase NDM-5,P2-var
+blaNDM-7,blaNDM,NG_049339.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase NDM-7,P2-var
+vanA,vanA,NG_048325.1,Multiple,VANCOMYCIN,D-alanine--(R)-lactate ligase VanA,P2-var
+mcr-1,mcr-1,NG_050417.1,Multiple,COLISTIN,phosphoethanolamine--lipid A transferase MCR-1.1,P2-var
+mcr-1.1,mcr-1,NG_050417.1,Multiple,COLISTIN,phosphoethanolamine--lipid A transferase MCR-1.1,P2-var
+mcr-5,mcr-5,NG_055658.1,Multiple,COLISTIN,phosphoethanolamine--lipid A transferase MCR-5.1,P2-var
+blaOXA-48,blaOXA,NG_049762.1,Multiple,CARBAPENEM,OXA-48 family carbapenem-hydrolyzing class D beta-lactamase OXA-48,P2-var
+blaOXA-181,blaOXA,NG_049482.1,Multiple,CARBAPENEM,OXA-48 family carbapenem-hydrolyzing class D beta-lactamase OXA-181,P2-var
+blaOXA-232,blaOXA,NG_049528.1,Multiple,CARBAPENEM,OXA-48 family carbapenem-hydrolyzing class D beta-lactamase OXA-232,P2-var
+blaVIM-1,blaVIM,NG_050336.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase VIM-1,P2-var
+blaVIM-2,blaVIM,NG_050347.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase VIM-2,P2-var
+blaVIM-4,blaVIM,NG_050367.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase VIM-4,P2-var
+blaIMP-1,blaIMP,NG_049172.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase IMP-1,P2-var
+blaIMP-6,blaIMP,NG_049220.1,Multiple,CARBAPENEM,subclass B1 metallo-beta-lactamase IMP-6,P2-var
+blaGES-1,blaGES,NG_049111.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase GES-1,P2-var
+blaGES-5,blaGES,NG_049137.1,Multiple,CARBAPENEM,carbapenem-hydrolyzing class A beta-lactamase GES-5,P2-var
+blaCTX-M-2,blaCTX-M,NG_048968.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase CTX-M-2,P1-var
+blaCTX-M-8,blaCTX-M,NG_049032.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase CTX-M-8,P2-var
+blaCTX-M-9,blaCTX-M,NG_049043.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase CTX-M-9,P2-var
+blaCTX-M-14,blaCTX-M,NG_048929.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase CTX-M-14,P2-var
+blaCTX-M-27,blaCTX-M,NG_048976.1,Multiple,CEPHALOSPORIN,extended-spectrum class A beta-lactamase CTX-M-27,P1-var
+qnrS1,qnrS,NG_050543.1,Multiple,QUINOLONE,quinolone resistance pentapeptide repeat protein QnrS1,P2-var
+qnrS2,qnrS,NG_050544.1,Multiple,QUINOLONE,quinolone resistance pentapeptide repeat protein QnrS2,P2-var
+armA,armA,NG_047476.1,Multiple,GENTAMICIN,16S rRNA (guanine(1405)-N(7))-methyltransferase ArmA,P2-var
