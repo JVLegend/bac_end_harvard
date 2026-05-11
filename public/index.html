@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartSepsis-Oph - AI-First Molecular Diagnostics for Ophthalmic Infections</title>
+    <title>SmartSepsis-Oph - AI-Augmented Multimodal Diagnostics for Ophthalmic Infection</title>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -167,16 +167,16 @@
 </nav>
 <!-- HERO -->
 <section class="hero" data-i18n-title="index.title">
-    <div class="badge badge-blue" data-i18n="index.hero.badge">SmartSepsis-Oph - Programa AI-First de Diagn&oacute;stico Molecular Ocular</div>
-    <h1 data-i18n-html="index.hero.h1">Endoftalmite bacteriana pode cegar um olho em 48 horas.<br>Cultura demora 48 a 72.<br><span class="hl-green">Estamos projetando o teste molecular que cabe em uma amostra de nanolitros.</span></h1>
-    <p style="font-size:1.25rem; font-weight:600; color:var(--secondary); margin-bottom:1rem; font-style:italic; font-family:'EB Garamond', serif;" data-i18n-html="index.hero.quote">&ldquo;O laborat&oacute;rio molecular que cabe na sala cir&uacute;rgica oftalmol&oacute;gica.&rdquo;</p>
-    <p data-i18n-html="index.hero.desc">SmartSepsis-Oph &eacute; um programa de design AI-first para diagn&oacute;stico molecular point-of-care em infec&ccedil;&otilde;es oftalmol&oacute;gicas - a amostra mais dif&iacute;cil da medicina molecular: volumes sub-microlitro, baixa carga bacteriana, decis&atilde;o em minutos. Estamos atualmente em <strong>fase de design computacional (Fase 0)</strong>, construindo bibliotecas de guias-RNA, modelos de especificidade e arquitetura de ensaio em tira de papel para o primeiro alvo declarado (<em>S. aureus</em> / mecA). <strong>Buscamos abertamente parceiros de wet-lab, colaboradores cl&iacute;nicos e financiadores</strong> para avan&ccedil;ar &agrave; valida&ccedil;&atilde;o experimental.</p>
+    <div class="badge badge-blue" data-i18n="index.hero.badge">SmartSepsis-Oph - Diagn&oacute;stico Multimodal AI-Augmented para Infec&ccedil;&atilde;o Ocular</div>
+    <h1 data-i18n-html="index.hero.h1">Endoftalmite bacteriana pode cegar um olho em 48 horas.<br>Cultura falha em 30% dos casos.<br><span class="hl-green">Estamos construindo a camada de IA que interpreta a amostra mais dif&iacute;cil da medicina molecular.</span></h1>
+    <p style="font-size:1.25rem; font-weight:600; color:var(--secondary); margin-bottom:1rem; font-style:italic; font-family:'EB Garamond', serif;" data-i18n-html="index.hero.quote">&ldquo;Sequenciamento metagen&ocirc;mico nanopore + foundation models + CRISPR como triagem adjunta.&rdquo;</p>
+    <p data-i18n-html="index.hero.desc">SmartSepsis-Oph &eacute; um programa de scaffolding AI-augmented para diagn&oacute;stico molecular de infec&ccedil;&otilde;es oftalmol&oacute;gicas. Em v&iacute;treo, a pergunta cl&iacute;nica n&atilde;o &eacute; "esta bact&eacute;ria &eacute; resistente?" - &eacute; "qual organismo est&aacute; aqui?". Atacamos esse gargalo com duas trilhas complementares: <strong>(A) Trilha prim&aacute;ria</strong> - pipeline IA para identifica&ccedil;&atilde;o taxon&ocirc;mica e interpreta&ccedil;&atilde;o de AMR a partir de reads metagen&ocirc;micos Nanopore, usando embeddings de foundation models (ESM-2, ProtT5) e features estruturais AlphaFold; <strong>(B) Trilha adjunta</strong> - painel CRISPR-Cas12a em tira de papel para triagem r&aacute;pida de genes de resist&ecirc;ncia. Estamos em <strong>Fase 0 (scaffolding computacional)</strong> com parceria de wet-lab em forma&ccedil;&atilde;o com laborat&oacute;rio renomado em Mass Eye and Ear / Harvard.</p>
     <div class="stats">
-        <div class="stat"><div class="stat-value">213</div><div class="stat-label" data-i18n="index.stat1.label">Guias candidatos desenhados in silico</div></div>
-        <div class="stat"><div class="stat-value">42</div><div class="stat-label" data-i18n="index.stat2.label">Alvos AMR (12 fam&iacute;lias g&ecirc;nicas)</div></div>
-        <div class="stat"><div class="stat-value">124M</div><div class="stat-label" data-i18n="index.stat3.label">Genomas comparados (BLAST)</div></div>
+        <div class="stat"><div class="stat-value">9,034</div><div class="stat-label" data-i18n="index.stat1.label">Variantes AMR no dataset multimodal (HF)</div></div>
+        <div class="stat"><div class="stat-value">12</div><div class="stat-label" data-i18n="index.stat2.label">Fam&iacute;lias g&ecirc;nicas modeladas</div></div>
+        <div class="stat"><div class="stat-value">213</div><div class="stat-label" data-i18n="index.stat3.label">Guias CRISPR candidatos (Trilha B)</div></div>
         <div class="stat"><div class="stat-value">Fase 0</div><div class="stat-label" data-i18n="index.stat4.label">Est&aacute;gio atual</div></div>
-        <div class="stat"><div class="stat-value">mecA</div><div class="stat-label" data-i18n="index.stat5.label">Primeiro alvo declarado</div></div>
+        <div class="stat"><div class="stat-value">ESM-2 + ProtT5 + AlphaFold</div><div class="stat-label" data-i18n="index.stat5.label">Foundation models integrados</div></div>
     </div>
     <div style="margin-top: 2rem; display:flex; gap:0.8rem; flex-wrap:wrap; justify-content:center;">
         <a href="#partners" style="display:inline-block; padding: 0.85rem 2.2rem; background: var(--primary); color: white; text-decoration: none; border-radius: 2px; font-weight: 700; font-size: 0.95rem; box-shadow: var(--shadow-md); letter-spacing:0.04em;" data-i18n="index.cta.support">
@@ -204,11 +204,11 @@
                 <strong>Cen&aacute;rio 3 - CCIH oftalmol&oacute;gica:</strong> Surto de endoftalmite p&oacute;s-injec&ccedil;&atilde;o intraocular numa cl&iacute;nica de retina. 4 casos em 2 semanas. Vigil&acirc;ncia ativa de profilaxia exige cultura semanal de superf&iacute;cie ocular - resultado em 5 dias. Antes disso, voc&ecirc; j&aacute; agendou 30 novas inje&ccedil;&otilde;es. Risco invisivel.
             </div>
             <div class="callout callout-green" data-i18n-html="index.dor.solution">
-                <strong>Objetivo de design do SmartSepsis-Oph:</strong> um teste point-of-care em tira de papel que devolva informa&ccedil;&atilde;o molecular sobre genes de resist&ecirc;ncia conhecidos em fra&ccedil;&atilde;o do tempo da cultura, a partir de amostra ocular sub-microlitro. Em fase de design computacional. <em>M&eacute;tricas de performance s&oacute; ser&atilde;o reportadas ap&oacute;s valida&ccedil;&atilde;o experimental com parceiro wet-lab.</em>
+                <strong>Dire&ccedil;&atilde;o do SmartSepsis-Oph:</strong> <strong>Trilha A</strong> - pipeline AI-augmented que toma reads metagen&ocirc;micos Nanopore de amostras oculares sub-microlitro e devolve identifica&ccedil;&atilde;o taxon&ocirc;mica + cat&aacute;logo de genes AMR + predi&ccedil;&atilde;o de classe de antibi&oacute;tico, usando embeddings de foundation models e features estruturais. <strong>Trilha B</strong> - painel adjunto CRISPR-Cas12a em tira para triagem r&aacute;pida de resist&ecirc;ncia em cen&aacute;rios de tempo cr&iacute;tico ou baixa infraestrutura. Em Fase 0 (scaffolding). <em>M&eacute;tricas de performance s&oacute; ser&atilde;o reportadas ap&oacute;s valida&ccedil;&atilde;o experimental com o laborat&oacute;rio parceiro.</em>
         </div>
         </div>
         <div class="callout callout-blue" style="margin-top:1.5rem;" data-i18n-html="index.dor.why">
-            <strong>Por que microbiologia ocular brasileira?</strong> O perfil epidemiol&oacute;gico ocular brasileiro difere de pain&eacute;is comerciais europeus: <em>S. epidermidis</em> e <em>S. aureus</em> mecA dominantes em endoftalmite p&oacute;s-catarata, <em>Pseudomonas</em> em queratite por lente de contato, ESBL emergente em &uacute;lcera neonatal, <em>Klebsiella</em> com KPC em endoftalmite end&oacute;gena. Projeto liderado por Jo&atilde;o Victor Pacheco Dias (IA para M&eacute;dicos / doutorando HC-FMUSP) com valida&ccedil;&atilde;o cl&iacute;nica do Dr. Gustavo Sakuno (postdoc Mass Eye and Ear / Harvard).
+            <strong>Por que esta abordagem?</strong> O v&iacute;treo &eacute; um santu&aacute;rio imunol&oacute;gico - normalmente est&eacute;ril - e a pergunta cl&iacute;nica relevante &eacute; "qual organismo est&aacute; aqui?", n&atilde;o "esta bact&eacute;ria &eacute; resistente?". Pain&eacute;is CRISPR puros enfrentam o problema do <em>kitome</em> (DNA bacteriano residual em reagentes) que domina o sinal em amostras de baixa biomassa. Metagen&ocirc;mica Nanopore lida com biomassa baixa de forma diferente: l&ecirc; tudo e filtra computacionalmente - exatamente onde foundation models de prote&iacute;na e estruturas AlphaFold agregam mais valor. Projeto liderado por Jo&atilde;o Victor Pacheco Dias (IA para M&eacute;dicos / doutorando HC-FMUSP) em colabora&ccedil;&atilde;o com Dr. Gustavo Sakuno (postdoc Mass Eye and Ear / Harvard) e Senior Scientific Advisor (a anunciar).
         </div>
     </div>
 </div>
@@ -254,10 +254,10 @@
 </section>
 <!-- DIFERENCIAL -->
 <section id="diferencial">
-    <h2 class="stitle" data-i18n="index.diff.title">Por que esta abordagem</h2>
-    <p class="ssub" data-i18n="index.diff.sub">CRISPR-Dx em papel existe desde 2017 (SHERLOCK/DETECTR). Nossa diferencia&ccedil;&atilde;o n&atilde;o est&aacute; na bioqu&iacute;mica - est&aacute; em atacar o pior caso de amostra (volumes oculares sub-microlitro) com pipeline AI-first de design de guias, modelagem de especificidade in silico contra o microbioma ocular, e itera&ccedil;&atilde;o r&aacute;pida sobre alvos epidemiologicamente relevantes para o contexto brasileiro.</p>
+    <h2 class="stitle" data-i18n="index.diff.title">A camada de IA do programa</h2>
+    <p class="ssub" data-i18n="index.diff.sub">Metagen&ocirc;mica Nanopore em infec&ccedil;&atilde;o ocular j&aacute; foi demonstrada em laborat&oacute;rios de refer&ecirc;ncia. O que falta - e onde SmartSepsis-Oph atua - &eacute; a <strong>camada de IA que transforma reads ruidosos de baixa cobertura em interpreta&ccedil;&atilde;o cl&iacute;nica acion&aacute;vel</strong>: identifica&ccedil;&atilde;o taxon&ocirc;mica, predi&ccedil;&atilde;o de classe de antibi&oacute;tico para genes AMR fragmentados, anota&ccedil;&atilde;o estrutural de variantes novas, e filtragem de contamina&ccedil;&atilde;o residual.</p>
     <div class="callout callout-amber">
-        <strong>Iter&aacute;vel:</strong> redesenhar guias CRISPR para uma cepa nova exige tipicamente semanas de bioinform&aacute;tica manual. Nosso pipeline ag&ecirc;ntico produz uma biblioteca priorizada em minutos. Quando surge uma cepa resistente nova, novos guias candidatos podem ser desenhados em dias - sujeitos &agrave; valida&ccedil;&atilde;o experimental subsequente.
+        <strong>Stack de IA do programa:</strong> embeddings de prote&iacute;na com <code>ESM-2</code> e <code>ProtT5</code> para classifica&ccedil;&atilde;o de classe de antibi&oacute;tico, estruturas <code>AlphaFold</code> e descritores estruturais para variantes AMR, e o m&oacute;dulo experimental <code>Evo 2</code> para impacto funcional. Todos j&aacute; integrados no dataset multimodal publicado no HuggingFace.
     </div>
     <div style="background: var(--bg-section); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin: 1.5rem 0;">
         <h3 style="text-align:center; margin-bottom: 1.2rem; color: var(--primary); font-weight: 800; font-size: 0.95rem;">ORQUESTRAÇÃO DE 5 AGENTES DE IA</h3>
@@ -629,33 +629,53 @@
         <div class="card team-card">
             <div class="avatar">G</div>
             <h3>Dr. Gustavo Sakuno</h3>
-            <div class="role">Clinical Advisor</div>
+            <div class="role">Co-author &middot; Clinical &amp; Translational Lead</div>
             <div class="creds">
                 <strong>Postdoc Harvard Medical School</strong><br>
                 Mass Eye and Ear / Broad Institute<br>
                 PhD USP - Ophthalmology &amp; Oculomics<br>
                 Chief Resident USP<br>
-                Validador da viabilidade cl&iacute;nica do programa
+                Bridges clinical context, sample logistics, and the wet-lab partnership
             </div>
         </div>
+        <div class="card team-card" style="border:2px solid var(--accent);">
+            <div class="avatar" style="background:var(--accent); color:var(--secondary);">★</div>
+            <h3>Senior Scientific Advisor</h3>
+            <div class="role">Renowned &middot; Mass Eye and Ear / Harvard</div>
+            <div class="creds">
+                Investigadora s&ecirc;nior em <strong>metagen&ocirc;mica Nanopore</strong> aplicada a infec&ccedil;&atilde;o ocular. Mentora cient&iacute;fica do programa e anfitri&atilde; do laborat&oacute;rio parceiro de wet-lab.
+                <br><br>
+                <em>Nome a ser anunciado publicamente ap&oacute;s confirma&ccedil;&atilde;o formal.</em>
+            </div>
+        </div>
+    </div>
+    <div class="grid-2" style="margin-top:1.5rem;">
         <div class="card team-card" id="partners" style="border:2px dashed var(--primary);">
             <div class="avatar" style="background:var(--bg); color:var(--primary); border-color:var(--primary);">?</div>
-            <h3>Buscando parceiros</h3>
-            <div class="role">Wet-lab &middot; Advisors &middot; Funders</div>
+            <h3>Continuamos buscando</h3>
+            <div class="role">Colaboradores adicionais</div>
             <div class="creds">
-                Buscamos: <strong>laborat&oacute;rio parceiro</strong> com capacidade CRISPR-Dx / amplifica&ccedil;&atilde;o isot&eacute;rmica; <strong>conselheiros seniores</strong> em CRISPR-Dx, microbiologia ocular e diagn&oacute;stico molecular; <strong>parceiros cl&iacute;nicos</strong> com volume de casos de endoftalmite; <strong>financiadores</strong> seed.
+                <strong>Bioinformatas</strong> com experi&ecirc;ncia em Nanopore / metagen&ocirc;mica cl&iacute;nica; <strong>cl&iacute;nicos</strong> de oftalmologia com volume de casos de endoftalmite e queratite; <strong>financiadores</strong> com interesse em diagn&oacute;stico molecular AI-augmented.
                 <br><br>
-                Coautoria no preprint de framework oferecida a colaboradores iniciais.
+                Coautoria oferecida a contribuidores iniciais.
                 <br><br>
                 <a href="mailto:iaparamedicos@gmail.com" style="color:var(--primary); font-weight:700;">iaparamedicos@gmail.com</a>
+            </div>
+        </div>
+        <div class="card team-card" style="border:1px solid var(--border);">
+            <div class="avatar" style="background:var(--bg-section); color:var(--secondary);">L</div>
+            <h3>Laborat&oacute;rio Parceiro</h3>
+            <div class="role">Wet-lab &middot; Mass Eye and Ear</div>
+            <div class="creds">
+                Parceria em forma&ccedil;&atilde;o com o laborat&oacute;rio da Senior Advisor. Capacidade de sequenciamento Nanopore, manejo de amostras oculares e pipeline microbiol&oacute;gico cl&iacute;nico. Atuar&aacute; como s&iacute;tio prim&aacute;rio de valida&ccedil;&atilde;o experimental nas Fases 2 e 3.
             </div>
         </div>
     </div>
 </section>
 <!-- FOOTER -->
 <footer>
-    <p><strong><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--primary); text-decoration: none;">IA para Médicos</a></strong> | SmartSepsis-Oph - <em data-i18n="index.footer.tagline">Programa AI-first de diagnóstico molecular para infecções oftalmológicas</em></p>
-    <p style="margin-top:0.4rem;" data-i18n="index.footer.desc">Fase de design computacional. Pipeline agêntico de desenho de guias CRISPR-Cas12a + modelagem de especificidade + análise estrutural. Não é dispositivo médico. Não é para uso clínico.</p>
+    <p><strong><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--primary); text-decoration: none;">IA para Médicos</a></strong> | SmartSepsis-Oph - <em data-i18n="index.footer.tagline">Diagnóstico multimodal AI-augmented para infecção oftalmológica</em></p>
+    <p style="margin-top:0.4rem;" data-i18n="index.footer.desc">Fase 0 - scaffolding computacional. Trilha A: pipeline IA para metagenômica Nanopore. Trilha B: painel adjunto CRISPR-Cas12a. Não é dispositivo médico. Não é para uso clínico.</p>
     <p style="margin-top:0.4rem;" data-i18n="index.footer.location">São Paulo, Brasil · Programa de pesquisa por IA para Médicos · Aberto a colaborações</p>
     <p style="margin-top:0.4rem;"><a href="https://www.iaparamédicos.com.br/" target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 600;">www.iaparamédicos.com.br</a></p>
     <p style="margin-top:0.4rem; font-size:0.75rem;" data-i18n="index.footer.location">São Paulo, Brasil | HC-FMUSP × Mass Eye and Ear (Harvard) | 43 variantes AMR &middot; 12 famílias gênicas oculares</p>

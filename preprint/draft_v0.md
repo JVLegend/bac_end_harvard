@@ -1,4 +1,28 @@
 <!--
+==============================================================================
+PIVOT NOTICE - 2026-05-11
+
+This draft was written under the program's original framing as a paper-strip
+CRISPR-Cas12a diagnostic. The program has since pivoted (see /PIVOT.md):
+
+  Track A (primary)  : AI-augmented Nanopore metagenomic interpretation,
+                       collaboration with a senior advisor and host lab at
+                       Mass Eye and Ear / Harvard.
+  Track B (adjunct)  : the CRISPR-Cas12a design library described here,
+                       repositioned as resistance-triage adjunct module.
+
+Action items before submission:
+  1. Hold this draft. The first publication output of the program is now the
+     SCOPING REVIEW (preprint/scoping_review_*.md).
+  2. After the scoping review lands, this draft will be rewritten as a
+     two-track framework paper covering both Track A and Track B.
+  3. Author list will be updated to include the Senior Scientific Advisor
+     (name pending public announcement).
+
+Keep the current text only as material to mine for Track B sections of the
+eventual two-track paper.
+==============================================================================
+
 Title alternatives (pick one before submission):
   A. SmartSepsis-Oph: an AI-first framework for designing CRISPR-Cas12a point-of-care
      diagnostics for ophthalmic infections — a computational proof-of-concept
@@ -10,7 +34,7 @@ Title alternatives (pick one before submission):
 Style: US English. No experimental results. All findings stated as in silico.
 -->
 
-# SmartSepsis-Oph: an AI-first framework for designing CRISPR-Cas12a point-of-care diagnostics for ophthalmic infections — a computational proof-of-concept
+# [DEFERRED - PIVOT NOTICE ABOVE] SmartSepsis-Oph: an AI-first framework for designing CRISPR-Cas12a point-of-care diagnostics for ophthalmic infections — a computational proof-of-concept
 
 **João Victor Pacheco Dias¹\*, Gustavo Sakuno²**
 

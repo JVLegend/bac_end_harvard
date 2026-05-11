@@ -6,17 +6,24 @@ Below is the honest map of how to engage.
 
 ## What we are looking for
 
-### 1. Wet-lab partners (highest priority)
+### 1. Wet-lab partners (Track A primary wet-lab partnership is in formation)
 
-We need a laboratory with capability in:
-- CRISPR-Dx (Cas12a / Cas13 collateral cleavage assays)
-- Isothermal amplification (RPA, LAMP)
+A senior investigator at Mass Eye and Ear / Harvard Medical School has
+agreed to serve as senior scientific advisor and to host the Track A
+(Nanopore metagenomics) experimental work in her laboratory. Name and
+formal announcement are pending.
+
+We continue to seek additional collaborators in:
+- Nanopore sequencing applied to clinical samples
+- Bioinformatic pipelines for low-coverage metagenomic AMR interpretation
+- CRISPR-Cas12a / Cas13 collateral cleavage assays for Track B
+- Isothermal amplification chemistry (RPA, LAMP)
 - Bacterial culture and DNA extraction at standard biosafety levels
-- Optional: paper-strip / lateral flow prototyping
+- Optional: paper-strip / lateral flow prototyping for Track B
 
 In exchange we offer:
-- Joint design of the experimental plan, starting with *S. aureus* / mecA
-- Co-authorship on the framework preprint and on subsequent papers
+- Joint design of the experimental plan
+- Co-authorship on the scoping review (Paper 01) and on subsequent papers
 - Open data sharing and reproducible analysis
 - Visibility in the project's public communication
 

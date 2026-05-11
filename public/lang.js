@@ -14,16 +14,16 @@
       'nav.link.paper': 'Papers',
 
       /* ── INDEX.HTML ── */
-      'index.title': 'SmartSepsis-Oph - AI-First Molecular Diagnostics for Ophthalmic Infections',
-      'index.hero.badge': 'SmartSepsis-Oph - Programa AI-First de Diagnóstico Molecular Ocular',
-      'index.hero.h1': 'Endoftalmite bacteriana pode cegar um olho em 48 horas.<br>Cultura demora 48 a 72.<br><span class="hl-green">Estamos projetando o teste molecular que cabe em uma amostra de nanolitros.</span>',
-      'index.hero.quote': '&ldquo;O laboratório molecular que cabe na sala cirúrgica oftalmológica.&rdquo;',
-      'index.hero.desc': 'SmartSepsis-Oph é um programa de design AI-first para diagnóstico molecular point-of-care em infecções oftalmológicas - a amostra mais difícil da medicina molecular: volumes sub-microlitro, baixa carga bacteriana, decisão em minutos. Estamos atualmente em <strong>fase de design computacional (Fase 0)</strong>, construindo bibliotecas de guias-RNA, modelos de especificidade e arquitetura de ensaio em tira de papel para o primeiro alvo declarado (<em>S. aureus</em> / mecA). <strong>Buscamos abertamente parceiros de wet-lab, colaboradores clínicos e financiadores</strong> para avançar à validação experimental.',
-      'index.stat1.label': 'Guias candidatos desenhados in silico',
-      'index.stat2.label': 'Alvos AMR (12 famílias gênicas)',
-      'index.stat3.label': 'Genomas comparados (BLAST)',
+      'index.title': 'SmartSepsis-Oph - AI-Augmented Multimodal Diagnostics for Ophthalmic Infection',
+      'index.hero.badge': 'SmartSepsis-Oph - Diagnóstico Multimodal AI-Augmented para Infecção Ocular',
+      'index.hero.h1': 'Endoftalmite bacteriana pode cegar um olho em 48 horas.<br>Cultura falha em 30% dos casos.<br><span class="hl-green">Estamos construindo a camada de IA que interpreta a amostra mais difícil da medicina molecular.</span>',
+      'index.hero.quote': '&ldquo;Sequenciamento metagenômico nanopore + foundation models + CRISPR como triagem adjunta.&rdquo;',
+      'index.hero.desc': 'SmartSepsis-Oph é um programa de scaffolding AI-augmented para diagnóstico molecular de infecções oftalmológicas. Em vítreo, a pergunta clínica não é "esta bactéria é resistente?" - é "qual organismo está aqui?". Atacamos esse gargalo com duas trilhas complementares: <strong>(A) Trilha primária</strong> - pipeline AI para identificação taxonômica e interpretação de AMR a partir de reads metagenômicos Nanopore, usando embeddings de foundation models (ESM-2, ProtT5) e features estruturais AlphaFold; <strong>(B) Trilha adjunta</strong> - painel CRISPR-Cas12a em tira de papel para triagem rápida de genes de resistência. Estamos em <strong>Fase 0 (scaffolding computacional)</strong> com parceria de wet-lab em formação com laboratório renomado em Mass Eye and Ear / Harvard.',
+      'index.stat1.label': 'Variantes AMR no dataset multimodal (HF)',
+      'index.stat2.label': 'Famílias gênicas modeladas',
+      'index.stat3.label': 'Guias CRISPR candidatos (Trilha B)',
       'index.stat4.label': 'Estágio atual',
-      'index.stat5.label': 'Primeiro alvo declarado',
+      'index.stat5.label': 'Foundation models integrados',
       'index.cta.support': 'Seja nosso parceiro',
       'index.cta.dashboard': 'Ver biblioteca de design',
 
@@ -32,8 +32,8 @@
       'index.dor.s1': '<strong>Cenário 1 - Endoftalmite pós-facoemulsificação:</strong> POI 3 dias. Hipopio, hialite, queda BCVA. Você faz tap vítreo + injeta vanco+ceftaz empírico. Cultura volta em 72h: <em>S. aureus</em> mecA-positivo. Vanco cobria, mas se fosse <em>P. aeruginosa</em> com blaVIM você teria perdido o olho. Cada hora de espera = mais inflamação, mais perda visual permanente.',
       'index.dor.s2': '<strong>Cenário 2 - Queratite por lente de contato:</strong> Paciente jovem, úlcera centro-periférica, dor 8/10. Suspeita <em>Pseudomonas</em> vs <em>Acanthamoeba</em>. Raspado pra cultura, fluoroquinolona tópica empirica. 48h depois, sem melhora. Era <em>Pseudomonas</em> com qnrS - resistente. Tempo perdido = perfuração corneana iminente.',
       'index.dor.s3': '<strong>Cenário 3 - CCIH oftalmológica:</strong> Surto de endoftalmite pós-injeção intraocular numa clínica de retina. 4 casos em 2 semanas. Vigilância ativa de profilaxia exige cultura semanal de superfície ocular - resultado em 5 dias. Antes disso, você já agendou 30 novas injeções. Risco invisivel.',
-      'index.dor.solution': '<strong>Objetivo de design do SmartSepsis-Oph:</strong> um teste point-of-care em tira de papel que devolva informação molecular sobre genes de resistência conhecidos em fração do tempo da cultura, a partir de amostra ocular sub-microlitro. Em fase de design computacional. <em>Métricas de performance só serão reportadas após validação experimental com parceiro wet-lab.</em>',
-      'index.dor.why': '<strong>Por que microbiologia ocular brasileira?</strong> O perfil epidemiológico ocular brasileiro difere de painéis comerciais europeus: <em>S. epidermidis</em> e <em>S. aureus</em> mecA dominantes em endoftalmite pós-catarata, <em>Pseudomonas</em> em queratite por lente de contato, ESBL emergente em úlcera neonatal, <em>Klebsiella</em> com KPC em endoftalmite endógena. Projeto liderado por João Victor Pacheco Dias (IA para Médicos / doutorando HC-FMUSP) com validação clínica do Dr. Gustavo Sakuno (postdoc Mass Eye and Ear / Harvard).',
+      'index.dor.solution': '<strong>Direção do SmartSepsis-Oph:</strong> <strong>Trilha A</strong> - pipeline AI-augmented que toma reads metagenômicos Nanopore de amostras oculares sub-microlitro e devolve identificação taxonômica + catálogo de genes AMR + predição de classe de antibiótico, usando embeddings de foundation models e features estruturais. <strong>Trilha B</strong> - painel adjunto CRISPR-Cas12a em tira para triagem rápida de resistência em cenários de tempo crítico ou baixa infraestrutura. Em Fase 0 (scaffolding). <em>Métricas de performance só serão reportadas após validação experimental com o laboratório parceiro.</em>',
+      'index.dor.why': '<strong>Por que esta abordagem?</strong> O vítreo é um santuário imunológico - normalmente estéril - e a pergunta clínica relevante é "qual organismo está aqui?", não "esta bactéria é resistente?". Painéis CRISPR puros enfrentam o problema do <em>kitome</em> (DNA bacteriano residual em reagentes) que domina o sinal em amostras de baixa biomassa. Metagenômica Nanopore lida com biomassa baixa de forma diferente: lê tudo e filtra computacionalmente - exatamente onde foundation models de proteína e estruturas AlphaFold agregam mais valor. Projeto liderado por João Victor Pacheco Dias (IA para Médicos / doutorando HC-FMUSP) em colaboração com Dr. Gustavo Sakuno (postdoc Mass Eye and Ear / Harvard) e Senior Scientific Advisor (a anunciar).',
 
       'index.docu.title': 'Docusérie (em planejamento): &ldquo;O Laboratório que Cabe na Sala Cirúrgica&rdquo;',
       'index.docu.sub': '<strong>Em planejamento - ainda não gravada.</strong> Pretendemos documentar publicamente cada fase do programa, do problema clínico ao design computacional e (uma vez firmada parceria) à validação experimental. Estrutura prevista de 5 episódios:',
@@ -50,8 +50,8 @@
       'index.docu.founders': 'Cronograma de gravação será divulgado após confirmação de parceria experimental.',
       'index.docu.why': '<strong>Por que documentar?</strong> Porque ciência AI-first em estágio inicial costuma se vender com efeitos visuais sem substância. Queremos fazer o oposto: documentar o que existe (design computacional), o que falta (validação experimental) e o caminho honesto entre os dois. Distribuição prevista: YouTube + IA para Médicos.',
 
-      'index.diff.title': 'Por que esta abordagem',
-      'index.diff.sub': 'CRISPR-Dx em papel existe desde 2017 (SHERLOCK/DETECTR). Nossa diferenciação não está na bioquímica - está em atacar o pior caso de amostra (volumes oculares sub-microlitro) com pipeline AI-first de design de guias, modelagem de especificidade in silico contra o microbioma ocular, e iteração rápida sobre alvos epidemiologicamente relevantes para o contexto brasileiro.',
+      'index.diff.title': 'A camada de IA do programa',
+      'index.diff.sub': 'Metagenômica Nanopore em infecção ocular já foi demonstrada em laboratórios de referência. O que falta - e onde SmartSepsis-Oph atua - é a <strong>camada de IA que transforma reads ruidosos de baixa cobertura em interpretação clínica acionável</strong>: identificação taxonômica, predição de classe de antibiótico para genes AMR fragmentados, anotação estrutural de variantes novas, e filtragem de contaminação residual.',
 
       'index.dash.title': 'Biblioteca Computacional de Design (Fase 0)',
       'index.dash.sub': 'Bibliotecas de guias e primers desenhados in silico para 12 famílias gênicas de resistência relevantes em infecção ocular. Cada alvo passou por design CRISPR-Cas12a, primers RPA isotérmicos e comparação BLAST contra repositórios públicos. <strong>Resultados computacionais, ainda não validados experimentalmente.</strong>',
@@ -65,8 +65,8 @@
       'index.team.title': 'Equipe e Conselheiros',
       'index.team.sub': 'Time enxuto em fase de design. Buscando ativamente conselheiros seniores e parceiros de bancada.',
 
-      'index.footer.tagline': 'Programa AI-first de diagnóstico molecular para infecções oftalmológicas',
-      'index.footer.desc': 'Fase de design computacional. Pipeline agêntico de desenho de guias CRISPR-Cas12a + modelagem de especificidade + análise estrutural. Não é dispositivo médico. Não é para uso clínico.',
+      'index.footer.tagline': 'Diagnóstico multimodal AI-augmented para infecção oftalmológica',
+      'index.footer.desc': 'Fase 0 - scaffolding computacional. Trilha A: pipeline IA para metagenômica Nanopore. Trilha B: painel adjunto CRISPR-Cas12a. Não é dispositivo médico. Não é para uso clínico.',
       'index.footer.location': 'São Paulo, Brasil · Programa de pesquisa por IA para Médicos · Aberto a colaborações',
 
       /* ── SMARTWETLAB.HTML ── */
@@ -197,16 +197,16 @@
       'nav.link.paper': 'Papers',
 
       /* ── INDEX.HTML ── */
-      'index.title': 'SmartSepsis-Oph - AI-First Molecular Diagnostics for Ophthalmic Infections',
-      'index.hero.badge': 'SmartSepsis-Oph - AI-First Molecular Diagnostics for Ophthalmic Infections',
-      'index.hero.h1': 'Bacterial endophthalmitis can blind an eye in 48 hours.<br>Cultures take 48 to 72.<br><span class="hl-green">We are designing the molecular test that fits in a nanoliter sample.</span>',
-      'index.hero.quote': '&ldquo;The molecular lab that fits inside the operating room.&rdquo;',
-      'index.hero.desc': 'SmartSepsis-Oph is an AI-first design program for CRISPR-based point-of-care diagnostics in ophthalmic infections - the hardest sample in molecular medicine: sub-microliter volumes, low bacterial load, minutes to act. We are currently in <strong>computational design phase (Phase 0)</strong>, building guide-RNA libraries, specificity models, and a paper-strip assay architecture for our first declared target (<em>S. aureus</em> / mecA). <strong>We are openly seeking wet-lab partners, clinical collaborators, and funders</strong> to advance to experimental validation.',
-      'index.stat1.label': 'Computationally designed guides',
-      'index.stat2.label': 'AMR targets (12 gene families)',
-      'index.stat3.label': 'Genomes BLAST-compared',
+      'index.title': 'SmartSepsis-Oph - AI-Augmented Multimodal Diagnostics for Ophthalmic Infection',
+      'index.hero.badge': 'SmartSepsis-Oph - AI-Augmented Multimodal Diagnostics for Ophthalmic Infection',
+      'index.hero.h1': 'Bacterial endophthalmitis can blind an eye in 48 hours.<br>Cultures fail in 30% of cases.<br><span class="hl-green">We are building the AI layer that interprets the hardest sample in molecular medicine.</span>',
+      'index.hero.quote': '&ldquo;Nanopore metagenomics + foundation models + CRISPR as adjunct triage.&rdquo;',
+      'index.hero.desc': 'SmartSepsis-Oph is an AI-augmented scaffolding program for molecular diagnostics of ophthalmic infection. In vitreous, the clinical question is not "is this bacterium resistant?" - it is "which organism is here?". We attack this bottleneck with two complementary tracks: <strong>(A) Primary track</strong> - AI pipeline for taxonomic identification and AMR interpretation from Nanopore metagenomic reads, using foundation-model embeddings (ESM-2, ProtT5) and AlphaFold-derived structural features; <strong>(B) Adjunct track</strong> - CRISPR-Cas12a paper-strip panel for rapid resistance-gene triage. We are in <strong>Phase 0 (computational scaffolding)</strong> with a wet-lab partnership in formation at Mass Eye and Ear / Harvard.',
+      'index.stat1.label': 'AMR variants in multimodal dataset (HF)',
+      'index.stat2.label': 'Gene families modeled',
+      'index.stat3.label': 'CRISPR candidate guides (Track B)',
       'index.stat4.label': 'Current stage',
-      'index.stat5.label': 'First declared target',
+      'index.stat5.label': 'Integrated foundation models',
       'index.cta.support': 'Partner with us',
       'index.cta.dashboard': 'View design library',
 
@@ -215,8 +215,8 @@
       'index.dor.s1': '<strong>Scenario 1 - Post-phacoemulsification endophthalmitis:</strong> POD 3. Hypopyon, vitritis, BCVA drop. You perform vitreous tap + inject empirical vanco+ceftaz. Culture returns at 72h: <em>S. aureus</em> mecA-positive. Vanco covered it, but if it were <em>P. aeruginosa</em> with blaVIM, the patient would have lost the eye. Every hour of waiting = more inflammation, more permanent visual loss.',
       'index.dor.s2': '<strong>Scenario 2 - Contact lens keratitis:</strong> Young patient, central-peripheral ulcer, pain 8/10. Suspicion of <em>Pseudomonas</em> vs <em>Acanthamoeba</em>. Scraping for culture, empirical topical fluoroquinolone. 48h later, no improvement. It was <em>Pseudomonas</em> with qnrS - resistant. Time lost = imminent corneal perforation.',
       'index.dor.s3': '<strong>Scenario 3 - Ophthalmic infection control:</strong> Outbreak of endophthalmitis post-intravitreal injection at a retina clinic. 4 cases in 2 weeks. Active prophylaxis surveillance requires weekly ocular surface culture - results in 5 days. By then, 30 new injections have already been scheduled. Invisible risk.',
-      'index.dor.solution': '<strong>SmartSepsis-Oph design objective:</strong> a paper-strip point-of-care test that returns molecular information about known resistance genes in a fraction of culture time, from sub-microliter ocular samples. In computational design phase. <em>Performance metrics will only be reported after experimental validation with a wet-lab partner.</em>',
-      'index.dor.why': '<strong>Why Brazilian ocular microbiology?</strong> The Brazilian ocular epidemiologic profile differs from European commercial panels: <em>S. epidermidis</em> and <em>S. aureus</em> mecA dominant in post-cataract endophthalmitis, <em>Pseudomonas</em> in contact-lens keratitis, emerging ESBL in neonatal ulcers, <em>Klebsiella</em> KPC in endogenous endophthalmitis. Project led by João Victor Pacheco Dias (AI for Physicians / HC-FMUSP doctoral candidate) with clinical validation from Dr. Gustavo Sakuno (postdoc, Mass Eye and Ear / Harvard).',
+      'index.dor.solution': '<strong>SmartSepsis-Oph direction:</strong> <strong>Track A</strong> - an AI-augmented pipeline that takes Nanopore metagenomic reads from sub-microliter ocular samples and returns taxonomic identification + AMR gene catalog + predicted drug-class susceptibility, using foundation-model embeddings and AlphaFold structural features. <strong>Track B</strong> - adjunct paper-strip CRISPR-Cas12a panel for rapid resistance triage in time-critical or low-infrastructure settings. Phase 0 (scaffolding). <em>Performance metrics will only be reported after experimental validation with the partner laboratory.</em>',
+      'index.dor.why': '<strong>Why this approach?</strong> The vitreous is an immune sanctuary - normally sterile - and the relevant clinical question is "which organism is here?", not "is this bacterium resistant?". Pure CRISPR panels run into the <em>kitome</em> problem (residual bacterial DNA in reagents) which dominates the signal in low-biomass samples. Nanopore metagenomics handles low biomass differently: it reads everything and filters computationally - precisely where protein foundation models and AlphaFold structures add the most value. Project led by João Victor Pacheco Dias (AI for Physicians / HC-FMUSP doctoral candidate) in collaboration with Dr. Gustavo Sakuno (postdoc, Mass Eye and Ear / Harvard) and a Senior Scientific Advisor (to be announced).',
 
       'index.docu.title': 'Documentary Series (Planned): &ldquo;The Lab that Fits in the OR&rdquo;',
       'index.docu.sub': '<strong>In planning - not yet filmed.</strong> We intend to publicly document every phase of the program: the clinical problem, the computational design, and (once a partnership is in place) experimental validation. Planned 5-episode structure:',
@@ -233,8 +233,8 @@
       'index.docu.founders': 'Filming schedule will be announced after experimental partnership is confirmed.',
       'index.docu.why': '<strong>Why document?</strong> Because early-stage AI-first science is too often sold with visuals that outrun substance. We want the opposite: document what exists (computational design), what is missing (experimental validation), and the honest path between them. Planned distribution: YouTube + AI for Physicians.',
 
-      'index.diff.title': 'Why this approach',
-      'index.diff.sub': 'Paper-based CRISPR-Dx has existed since 2017 (SHERLOCK/DETECTR). Our differentiation is not the biochemistry - it is attacking the worst-case sample (sub-microliter ocular volumes) with an AI-first guide-design pipeline, in silico specificity modeling against the ocular microbiome, and fast iteration on targets epidemiologically relevant to the Brazilian context.',
+      'index.diff.title': 'The program\'s AI layer',
+      'index.diff.sub': 'Nanopore metagenomics for ocular infection has been demonstrated in reference laboratories. What is missing - and what SmartSepsis-Oph contributes - is the <strong>AI layer that turns noisy, low-coverage reads into actionable clinical interpretation</strong>: taxonomic identification, drug-class prediction for fragmented AMR genes, structural annotation of novel variants, and residual-contamination filtering.',
 
       'index.dash.title': 'Computational Design Library (Phase 0)',
       'index.dash.sub': 'Guide and primer libraries computationally designed for 12 resistance-gene families relevant to ocular infection. Each target underwent CRISPR-Cas12a guide design, isothermal RPA primer design, and BLAST comparison against public repositories. <strong>Computational results - not yet experimentally validated.</strong>',
@@ -248,8 +248,8 @@
       'index.team.title': 'Team and Advisors',
       'index.team.sub': 'Lean team in design phase. Actively seeking senior scientific advisors and wet-lab partners.',
 
-      'index.footer.tagline': 'AI-first molecular diagnostics program for ophthalmic infections',
-      'index.footer.desc': 'Computational design phase. Agentic pipeline for CRISPR-Cas12a guide design + specificity modeling + structural analysis. Not a medical device. Not for clinical use.',
+      'index.footer.tagline': 'AI-augmented multimodal diagnostics for ophthalmic infection',
+      'index.footer.desc': 'Phase 0 - computational scaffolding. Track A: AI pipeline for Nanopore metagenomics. Track B: adjunct CRISPR-Cas12a panel. Not a medical device. Not for clinical use.',
       'index.footer.location': 'São Paulo, Brazil · A research program by AI for Physicians · Open to collaboration',
 
       /* ── SMARTWETLAB.HTML ── */

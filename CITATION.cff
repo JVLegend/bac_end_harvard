@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-title: "SmartSepsis-Oph: AI-first molecular diagnostics design for ophthalmic infections"
-message: "If you use this software or its design outputs, please cite as below."
+title: "SmartSepsis-Oph: AI-augmented multimodal diagnostics for ophthalmic infection"
+message: "If you use this software or its outputs, please cite as below."
 type: software
 authors:
   - given-names: João Victor
@@ -11,24 +11,35 @@ authors:
     family-names: Sakuno
     affiliation: "Mass Eye and Ear / Harvard Medical School (postdoctoral fellow)"
     orcid: ""
+# Additional senior advisor and host laboratory at Mass Eye and Ear /
+# Harvard Medical School to be added in the next release, pending formal
+# confirmation and public announcement.
 repository-code: "https://github.com/JVLegend/smartsepsis"
 url: "https://smartsepsis.vercel.app/"
 abstract: >
-  SmartSepsis-Oph is an AI-first computational design program for CRISPR-based
-  point-of-care diagnostics targeting ophthalmic infections — endophthalmitis,
-  microbial keratitis, and ocular surface infections. The pipeline produces
-  CRISPR-Cas12a guide-RNA libraries, isothermal RPA primer designs, in silico
-  specificity analyses, and functional variant scoring for resistance-gene
-  families relevant to ocular microbiology. As of this release the program is
-  in Phase 0 (computational design); experimental validation is pending.
+  SmartSepsis-Oph is an AI-augmented multimodal diagnostics scaffolding
+  program for ophthalmic infection (endophthalmitis, microbial keratitis,
+  ocular surface infections). The repository builds two complementary
+  tracks: a primary track applying foundation-model embeddings (ESM-2,
+  ProtT5) and AlphaFold structural features to Nanopore metagenomic
+  reads for taxonomic and AMR interpretation, and an adjunct track of
+  CRISPR-Cas12a guide RNA libraries for resistance-gene triage. As of
+  this release the program is in Phase 0 (computational scaffolding);
+  wet-lab validation is being organized with a partner laboratory at
+  Mass Eye and Ear / Harvard Medical School.
 keywords:
-  - CRISPR-Cas12a
-  - point-of-care diagnostics
-  - antimicrobial resistance
-  - ophthalmology
+  - ophthalmic infection
   - endophthalmitis
-  - AI-first design
-  - guide-RNA design
+  - antimicrobial resistance
+  - metagenomics
+  - Nanopore sequencing
+  - CRISPR-Cas12a
+  - foundation models
+  - protein language models
+  - ESM-2
+  - ProtT5
+  - AlphaFold
+  - AI-augmented diagnostics
 license: MIT
-version: "0.1.0-phase0"
+version: "0.2.0-phase0"
 date-released: "2026-05-11"

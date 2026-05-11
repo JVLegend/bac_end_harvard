@@ -96,7 +96,7 @@ footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border
 <div class="toc">
 <h3>Índice</h3>
 <ol>
-    <li><a href="#paper1">SmartEndoph - CRISPR-Cas12a 30-min para endoftalmite</a> <span class="priority-tag p-high">P0</span></li>
+    <li><a href="#paper1">Scoping review - AI-augmented molecular diagnostics para infecção ocular</a> <span class="priority-tag p-high">P0</span></li>
     <li><a href="#paper2">Ensemble PLM (ESM-2 + ProtT5) para predição de classe de antibiótico em patógenos oculares</a> <span class="priority-tag p-high">P0</span></li>
     <li><a href="#paper3">Validação out-of-distribution em NanoFold - calibração de classificador AMR</a> <span class="priority-tag p-med">P1</span></li>
     <li><a href="#paper4">Pan-resistoma de patógenos da profilaxia em cirurgia ocular</a> <span class="priority-tag p-med">P1</span></li>
@@ -112,22 +112,22 @@ footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border
 
 <!-- PAPER 1 -->
 <section class="paper" id="paper1">
-<span class="pid">Paper 01</span> <span class="priority-tag p-high">P0 - clínico (planejado)</span>
-<h2>SmartEndoph: AI-driven CRISPR-Cas12a diagnostic framework for bacterial endophthalmitis</h2>
+<span class="pid">Paper 01</span> <span class="priority-tag p-high">P0 - scoping review (em redação)</span>
+<h2>Scoping review: AI-augmented molecular diagnostics for ophthalmic infection - CRISPR-Cas, Nanopore metagenomics, and the open methodologic gaps</h2>
 <div class="meta">
-    <span>tipo: original article (planejado, pendente validação experimental)</span>
-    <span>target: <em>Ophthalmology</em>, <em>Br J Ophthalmol</em>, <em>JAMA Ophthalmol</em></span>
-    <span>colab: João Victor Pacheco Dias (IA para Médicos / HC-FMUSP) + Dr. Gustavo Sakuno (Mass Eye and Ear / Harvard)</span>
+    <span>tipo: scoping review PRISMA-ScR</span>
+    <span>target: <em>Survey of Ophthalmology</em>, <em>BMJ Open Ophthalmology</em>, <em>Frontiers in Cellular &amp; Infection Microbiology</em></span>
+    <span>colab: João Victor Pacheco Dias (IA para Médicos / HC-FMUSP) + Dr. Gustavo Sakuno (Mass Eye and Ear / Harvard) + Senior Scientific Advisor (a anunciar)</span>
 </div>
-<p><strong>Hipótese a testar:</strong> um pipeline CRISPR-Cas12a + RPA isotermal pode entregar resultado de painel AMR (12 famílias gênicas) em tempo significativamente menor que cultura, a partir de amostra ocular sub-microlitro, com sensibilidade clínica comparável a PCR + cultura. Performance específica (tempo, LoD, sensibilidade, especificidade) só será reportada após validação experimental.</p>
-<p><strong>Por que oftalmologia:</strong> Endoftalmite pós-cirúrgica é emergência médica - perda visual permanente em horas. Prática atual: vancomicina + ceftazidima empíricos &gt; cultura 48-72h &gt; ajuste tardio. Patógenos prevalentes (<em>S. epidermidis</em>, <em>S. aureus</em>, <em>P. aeruginosa</em>, <em>Klebsiella</em>) já estão no nosso painel computacional.</p>
-<p><strong>Status dos dados:</strong></p>
+<p><strong>Pergunta:</strong> Qual o estado atual de diagnóstico molecular CRISPR-baseado e metagenômico Nanopore para infecção ocular bacteriana, e quais lacunas metodológicas informam a viabilidade de uma plataforma AI-augmented combinada (Trilha A Nanopore + Trilha B CRISPR adjunto)?</p>
+<p><strong>Por que esta é a primeira saída:</strong> Antes de comprometer recursos experimentais com uma arquitetura específica, é necessário mapear rigorosamente o que já foi tentado, o que falhou, e onde IA realmente agrega valor - particularmente em torno do problema de <em>kitome</em> em amostras estéreis de baixa biomassa.</p>
+<p><strong>Recursos prontos:</strong></p>
 <ul>
-    <li>Biblioteca computacional de design para 12 famílias / 43 variantes AMR (BLAST in silico contra repositórios públicos)</li>
-    <li>Validação experimental em isolados oculares - planejada, pendente parceria wet-lab</li>
-    <li>Cohort retrospectivo de endoftalmite - planejado com Dr. Sakuno (Mass Eye and Ear), pendente IRB</li>
+    <li>Protocolo PRISMA-ScR completo: <code>preprint/scoping_review_protocol.md</code></li>
+    <li>Estratégia de busca executável: <code>preprint/scoping_review_search_strategy.md</code></li>
+    <li>Esqueleto do manuscrito com tabelas pré-especificadas: <code>preprint/scoping_review_skeleton.md</code></li>
 </ul>
-<div class="target"><strong>Novelty proposto:</strong> Primeiro framework AI-first de design de painel POC molecular específico para infecção ocular. Custo unitário do teste final reportado apenas após prototipagem.</div>
+<div class="target"><strong>Novelty:</strong> Primeira scoping review focada especificamente em infecção ocular bacteriana cruzando ambas as tecnologias (CRISPR-Dx + Nanopore metagenomics), com análise crítica explícita das limitações de paper-strip CRISPR em matriz ocular de baixa biomassa.</div>
 </section>
 
 <!-- PAPER 2 -->
