@@ -1,0 +1,31 @@
+# SmartSepsis-Oph RTX 5090 compute deps
+# Pinned conservatively. The 00_check_environment script installs these.
+biopython>=1.81
+pandas>=2.0
+numpy>=1.24,<2.3
+tqdm>=4.66
+pyyaml>=6.0
+requests>=2.31
+
+# GPU stack (Torch 2.4+, build matching CUDA on the box)
+# If wheel install fails, use the CUDA index, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.4
+
+# Foundation models
+transformers>=4.45
+accelerate>=0.34
+bitsandbytes>=0.43   # 4-bit quant for Evo 2 7B if VRAM tight
+
+# Boltz-1 (ternary structure prediction; alternative to AF3 server)
+# https://github.com/jwohlwend/boltz
+boltz>=1.0
+
+# Evo 2 (Arc Institute) — install path may vary; agent should check
+# https://github.com/ArcInstitute/evo2
+# evo2 is typically installed from source; we attempt pip first.
+# (left unpinned because the package may need from-source install)
+
+# Plotting / output
+matplotlib>=3.8
+seaborn>=0.13
